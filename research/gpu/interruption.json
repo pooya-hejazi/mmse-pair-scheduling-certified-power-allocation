@@ -1,0 +1,19 @@
+{
+  "status": "INTERRUPTED_BY_COORDINATOR",
+  "users_in_progress": 64,
+  "columns": 580608,
+  "completed_sizes": [8, 16, 32],
+  "time_utc_approximately": "2026-10-30T18:04:00Z",
+  "process_start_utc": "2026-10-30T17:57:13Z",
+  "process_id": 8492,
+  "identity_verified": "Executable path tf-gpu/python.exe and start minute matched the launched run before Stop-Process",
+  "reason": "64-user case exceeded the expected aggregate of configured per-solver time limits plus setup. No per-call progress was persisted, so the exact blocking solve is unknown. No larger case or increased solver limit was tried.",
+  "peak_process_working_set_bytes_observed": 2044841984,
+  "no_result_claim": "No 64-user LP/MILP objective or GPU speedup is claimed. results.json remains the incremental artifact with 8/16/32 only; it has no total_seconds completion field.",
+  "timing_deviations": [
+    "8-user GPU first sparse-kernel execution took 54.117s despite a 30s check budget. Checking only every200iterations and incomplete sparse-kernel warmup allowed this overshoot.",
+    "Per-solver time_limit is not an externally enforced wall-clock timeout.",
+    "All precommitted sizes were visited until the unresolved 64-user case; nonconvergence at smaller sizes was recorded, not tuned away. No second timing run was performed."
+  ],
+  "required_remediation": "Separate solver subprocesses with wall-clock watchdog; explicit sparse-operator warmup; incremental per-call result persistence; equal-accuracy timing rerun only under a new recorded packet. S03G acceptance remains pending."
+}
