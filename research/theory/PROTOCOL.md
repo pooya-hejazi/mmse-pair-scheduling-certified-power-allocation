@@ -1,0 +1,7 @@
+# CR011 — constructive boundary between exactness and approximation
+
+The user authorized autonomous alternatives with Astra. CR010 failed the predeclared practical gate: exact finite-grid decision-only oracle opportunity0.5317%,23/32 no-acquisition certificates. Stop tuning that selector family. Consult Astra on a bounded mathematical alternative under existing REQ003/009 and T-A02/A04: channel-realizable LP nonintegrality and ideal-threshold complexity, not another estimator.
+
+Scope: generic resource-selective real/complex Gaussian multiantenna channel matrices, true linear-MMSE reception, K=2S users, exactly two per resource, each user once. Fixed-power theorem first; a separate equal-gain Jensen argument for joint-power ideal-threshold attainment. Receive dimension may grow polynomially withK. No claim for fixed4AP×8ant, DeepMIMO geometry, frequency-invariant channels, or fixed channel sparsity. No claim of a novel theorem until prior-art and independent review.
+
+Artifacts: exact rational channel construction; four-user symbolic positive gap surviving all odd-set cuts;3DM reduction with rational product threshold and polynomial encoding; classical near-orthogonality additive bound via transportation assignment; explicit claim/limitation ledger. CPU checks<=2min total, <=128MB artifacts, no simulations/training/GPU/install. Use Fraction for Gram entries and reward products, exhaustive tiny patterns, numerical LP/MILP only as supplementary checks. All prior evidence preserved. Stop on a failed identity or reduction witness.

@@ -1,0 +1,3327 @@
+{
+  "run_status": "COMPLETED",
+  "statuses": {
+    "COMPLETED": 213,
+    "WALL_TIMEOUT": 2
+  },
+  "contexts": [
+    {
+      "context": 0,
+      "geometry": "uniform",
+      "noise": 0.1,
+      "metrics": {
+        "random": {
+          "N": 8,
+          "actual_SE_mean": 11.500558307843662,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7050051500555128,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.15841461312428665
+        },
+        "weakest": {
+          "N": 8,
+          "actual_SE_mean": 11.486168495312015,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.706256349949399,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.15705730747561406
+        },
+        "joint": {
+          "N": 8,
+          "actual_SE_mean": 11.478508447827577,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7380219750339165,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.15841461312428665
+        },
+        "uniform_probe": {
+          "N": 8,
+          "actual_SE_mean": 11.480480969322038,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7085532874625642,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.156912513003576
+        },
+        "joint_cert": {
+          "N": 8,
+          "actual_SE_mean": 11.478508447827577,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7431210499780718,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.15841461312428665
+        },
+        "no_probe": {
+          "N": 8,
+          "actual_SE_mean": 11.539006723442935,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7105695125355851,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.15904570123918363
+        }
+      },
+      "paired": {
+        "joint-random_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": -0.022049860016083445,
+          "CI95": [
+            -0.059434576517392035,
+            0.001974957380012743
+          ]
+        },
+        "joint-weakest_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": -0.007660047484435939,
+          "CI95": [
+            -0.031605223154389295,
+            0.01598690611073366
+          ]
+        },
+        "joint_cert-joint_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_cert-joint_wall_seconds": {
+          "N": 8,
+          "mean": 0.005099074944155291,
+          "CI95": [
+            -0.00804637503460981,
+            0.017633363447384906
+          ]
+        },
+        "joint-no_probe_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": -0.0604982756153567,
+          "CI95": [
+            -0.09510486833885179,
+            -0.03030522904827037
+          ]
+        }
+      }
+    },
+    {
+      "context": 1,
+      "geometry": "uniform",
+      "noise": 1.0,
+      "metrics": {
+        "random": {
+          "N": 8,
+          "actual_SE_mean": 5.702059932775976,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.6025088375026826,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.21554032616308397
+        },
+        "weakest": {
+          "N": 8,
+          "actual_SE_mean": 5.744307556080196,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.5976785875391215,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.23034024919514154
+        },
+        "joint": {
+          "N": 8,
+          "actual_SE_mean": 5.741410935376512,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.622672187484568,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.2227561632983597
+        },
+        "uniform_probe": {
+          "N": 8,
+          "actual_SE_mean": 5.690432547092952,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.610697124939179,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.23133928370501997
+        },
+        "joint_cert": {
+          "N": 8,
+          "actual_SE_mean": 5.741410935376512,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.6288068249705248,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.2227561632983597
+        },
+        "no_probe": {
+          "N": 8,
+          "actual_SE_mean": 5.702212002023241,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.5912117125699297,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.21250659759365043
+        }
+      },
+      "paired": {
+        "joint-random_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.039351002600536256,
+          "CI95": [
+            -0.05368600670119861,
+            0.16813976005204442
+          ]
+        },
+        "joint-weakest_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": -0.0028966207036834613,
+          "CI95": [
+            -0.04939942828929401,
+            0.04550837936598018
+          ]
+        },
+        "joint_cert-joint_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_cert-joint_wall_seconds": {
+          "N": 8,
+          "mean": 0.006134637485956773,
+          "CI95": [
+            -0.002226185688778059,
+            0.01590728753944859
+          ]
+        },
+        "joint-no_probe_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.03919893335327029,
+          "CI95": [
+            -0.06624628493392626,
+            0.1844701338144893
+          ]
+        }
+      }
+    },
+    {
+      "context": 2,
+      "geometry": "nearby",
+      "noise": 0.1,
+      "metrics": {
+        "random": {
+          "N": 8,
+          "actual_SE_mean": 11.95812098889797,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7095202374912333,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.18376057278326255
+        },
+        "weakest": {
+          "N": 8,
+          "actual_SE_mean": 11.969927648223173,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7069663375150412,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.18376057278326255
+        },
+        "joint": {
+          "N": 8,
+          "actual_SE_mean": 11.966957736532457,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.740572625072673,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.1831961201338277
+        },
+        "uniform_probe": {
+          "N": 8,
+          "actual_SE_mean": 11.999435284245964,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7058547875494696,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.18153883662094433
+        },
+        "joint_cert": {
+          "N": 8,
+          "actual_SE_mean": 11.966957736532457,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7599584000417963,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.1831961201338277
+        },
+        "no_probe": {
+          "N": 8,
+          "actual_SE_mean": 11.964560549621146,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7052112249657512,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.18310839335811818
+        }
+      },
+      "paired": {
+        "joint-random_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.008836747634485276,
+          "CI95": [
+            -0.031739924811929665,
+            0.051078091703437835
+          ]
+        },
+        "joint-weakest_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": -0.002969911690716698,
+          "CI95": [
+            -0.03613279681868682,
+            0.03228954174881717
+          ]
+        },
+        "joint_cert-joint_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_cert-joint_wall_seconds": {
+          "N": 8,
+          "mean": 0.019385774969123304,
+          "CI95": [
+            -0.010906089370837434,
+            0.05483733746223152
+          ]
+        },
+        "joint-no_probe_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.0023971869113110778,
+          "CI95": [
+            -0.03569244654853969,
+            0.03960029971559788
+          ]
+        }
+      }
+    },
+    {
+      "context": 3,
+      "geometry": "nearby",
+      "noise": 1.0,
+      "metrics": {
+        "random": {
+          "N": 8,
+          "actual_SE_mean": 5.451198691522222,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.5920999874651898,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.3691849866342769
+        },
+        "weakest": {
+          "N": 8,
+          "actual_SE_mean": 5.470870325591877,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.6797603250306565,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.3691849866342769
+        },
+        "joint": {
+          "N": 8,
+          "actual_SE_mean": 5.457483417611165,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.7915590625198092,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.3691849866342769
+        },
+        "uniform_probe": {
+          "N": 8,
+          "actual_SE_mean": 5.451216919834762,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.6019654500414617,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.3559140234346268
+        },
+        "joint_cert": {
+          "N": 8,
+          "actual_SE_mean": 5.457483417611165,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.6286612749972846,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.3691849866342769
+        },
+        "no_probe": {
+          "N": 8,
+          "actual_SE_mean": 5.4866868544847085,
+          "power_W_mean": 0.4,
+          "wall_seconds_mean": 0.6018168249865994,
+          "certificate_stop_count": 0,
+          "max_nominal_certificate_gap_fraction": 0.36764499039374565
+        }
+      },
+      "paired": {
+        "joint-random_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.00628472608894215,
+          "CI95": [
+            -0.024989564720432567,
+            0.03553370937848144
+          ]
+        },
+        "joint-weakest_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": -0.013386907980711849,
+          "CI95": [
+            -0.05905516886671247,
+            0.02570577878661295
+          ]
+        },
+        "joint_cert-joint_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_cert-joint_wall_seconds": {
+          "N": 8,
+          "mean": -0.1628977875225246,
+          "CI95": [
+            -0.46686403758940287,
+            -0.0044887878400913924
+          ]
+        },
+        "joint-no_probe_actual_bandwidth_SE": {
+          "N": 8,
+          "mean": -0.02920343687354393,
+          "CI95": [
+            -0.07143374400432888,
+            0.01065353884081796
+          ]
+        }
+      }
+    }
+  ],
+  "power_rows": [
+    {
+      "mode": "power",
+      "users": 8,
+      "ids": [
+        10607,
+        11684,
+        11991,
+        11460,
+        11753,
+        11497,
+        10276,
+        11165
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-8.npz",
+      "sha256": "fb56044c341f30aa5d0f6ed6596a29615892f7645eac1c54760bbd4b7ba86fa0",
+      "arm": "uniform",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.5076271998696029,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.022455699974671006,
+        "p": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ]
+        ],
+        "nominal_SE": 81.88111586560628,
+        "upper_SE": 89.75202843539458,
+        "power_W": 0.8,
+        "stage": "completed",
+        "completed": true,
+        "arm": "uniform"
+      },
+      "pid": 32660
+    },
+    {
+      "mode": "power",
+      "users": 8,
+      "ids": [
+        10607,
+        11684,
+        11991,
+        11460,
+        11753,
+        11497,
+        10276,
+        11165
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-8.npz",
+      "sha256": "fb56044c341f30aa5d0f6ed6596a29615892f7645eac1c54760bbd4b7ba86fa0",
+      "arm": "uniform_min",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.49210930010303855,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.0356456998270005,
+        "p": [
+          0.07009938021328901,
+          0.07009938021328901,
+          0.07009938021328901,
+          0.07009938021328901,
+          0.07009938021328901,
+          0.07009938021328901,
+          0.07009938021328901,
+          0.07009938021328901
+        ],
+        "nominal_SE": 77.78706007232596,
+        "target_SE": 77.78706007232596,
+        "scope": "uniform continuous scaling on common fixed schedule; not joint minimum-power optimum",
+        "power_W": 0.5607950417063121,
+        "stage": "completed",
+        "completed": true,
+        "arm": "uniform_min"
+      },
+      "pid": 7692
+    },
+    {
+      "mode": "power",
+      "users": 8,
+      "ids": [
+        10607,
+        11684,
+        11991,
+        11460,
+        11753,
+        11497,
+        10276,
+        11165
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-8.npz",
+      "sha256": "fb56044c341f30aa5d0f6ed6596a29615892f7645eac1c54760bbd4b7ba86fa0",
+      "arm": "slsqp",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.5019207000732422,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.04744679993018508,
+        "p": [
+          0.10007038221011405,
+          0.10005833820541524,
+          0.10002093197145091,
+          0.1000694598961574,
+          0.0999540260168362,
+          0.09999092674860324,
+          0.09995024077128646,
+          0.09988569415947911
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ]
+        ],
+        "nominal_SE": 81.88111812333992,
+        "iterations": 6,
+        "optimizer_success": true,
+        "message": "Optimization terminated successfully",
+        "upper_SE": 86.91888884266228,
+        "power_W": 0.7999999999793426,
+        "stage": "completed",
+        "completed": true,
+        "arm": "slsqp"
+      },
+      "pid": 28408
+    },
+    {
+      "mode": "power",
+      "users": 8,
+      "ids": [
+        10607,
+        11684,
+        11991,
+        11460,
+        11753,
+        11497,
+        10276,
+        11165
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-8.npz",
+      "sha256": "fb56044c341f30aa5d0f6ed6596a29615892f7645eac1c54760bbd4b7ba86fa0",
+      "arm": "iwmmse",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.5048897999804467,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.026829899987205863,
+        "p": [
+          0.10000010130663176,
+          0.10000010750175434,
+          0.10000007050502406,
+          0.10000007723402929,
+          0.099999949996833,
+          0.10000003108211061,
+          0.09999994353190472,
+          0.09999971884171234
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ]
+        ],
+        "nominal_SE": 81.88111587384034,
+        "iterations": 1,
+        "history": [
+          81.88111586560628,
+          81.88111587384034
+        ],
+        "upper_SE": 86.91888884266228,
+        "certificate_stopped": false,
+        "scope": "fixed-schedule nominal stationary candidate; no global optimum claim",
+        "power_W": 0.8,
+        "stage": "completed",
+        "completed": true,
+        "arm": "iwmmse"
+      },
+      "pid": 8560
+    },
+    {
+      "mode": "power",
+      "users": 8,
+      "ids": [
+        10607,
+        11684,
+        11991,
+        11460,
+        11753,
+        11497,
+        10276,
+        11165
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-8.npz",
+      "sha256": "fb56044c341f30aa5d0f6ed6596a29615892f7645eac1c54760bbd4b7ba86fa0",
+      "arm": "cert_iwmmse",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.47368320007808506,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.027546199969947338,
+        "p": [
+          0.10000010130663176,
+          0.10000010750175434,
+          0.10000007050502406,
+          0.10000007723402929,
+          0.099999949996833,
+          0.10000003108211061,
+          0.09999994353190472,
+          0.09999971884171234
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ]
+        ],
+        "nominal_SE": 81.88111587384034,
+        "iterations": 1,
+        "history": [
+          81.88111586560628,
+          81.88111587384034
+        ],
+        "upper_SE": 86.91888884266228,
+        "certificate_stopped": false,
+        "scope": "fixed-schedule nominal stationary candidate; no global optimum claim",
+        "power_W": 0.8,
+        "stage": "completed",
+        "completed": true,
+        "arm": "cert_iwmmse"
+      },
+      "pid": 29076
+    },
+    {
+      "mode": "power",
+      "users": 8,
+      "ids": [
+        10607,
+        11684,
+        11991,
+        11460,
+        11753,
+        11497,
+        10276,
+        11165
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-8.npz",
+      "sha256": "fb56044c341f30aa5d0f6ed6596a29615892f7645eac1c54760bbd4b7ba86fa0",
+      "arm": "grid",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.5043112998828292,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.051618600031360984,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "setup_seconds": 0.0006812000647187233,
+        "solve_seconds": 0.021018199855461717,
+        "feasibility": {
+          "valid": true,
+          "equality": 0.0,
+          "box": 0.0,
+          "power_W": 0.0,
+          "rate_Mbps": 0.0,
+          "integrality": 0.0
+        },
+        "optimal": true,
+        "power_W": 0.8,
+        "selected": [
+          40,
+          427,
+          661,
+          958
+        ],
+        "solver_bound": 86.85363628953654,
+        "solver_relative_gap": 0.0,
+        "nominal_SE": 86.85363628953654,
+        "scope": "finite power grid; reported objective in sumSE, not Mbps",
+        "stage": "completed",
+        "completed": true,
+        "arm": "grid"
+      },
+      "pid": 26500
+    },
+    {
+      "mode": "power",
+      "users": 8,
+      "ids": [
+        10607,
+        11684,
+        11991,
+        11460,
+        11753,
+        11497,
+        10276,
+        11165
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-8.npz",
+      "sha256": "fb56044c341f30aa5d0f6ed6596a29615892f7645eac1c54760bbd4b7ba86fa0",
+      "arm": "lp",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.5087213001679629,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.03654090012423694,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "setup_seconds": 0.0006902001332491636,
+        "solve_seconds": 0.009444500086829066,
+        "feasibility": {
+          "valid": true,
+          "equality": 1.1102230246251565e-15,
+          "box": 1.1102230246251565e-15,
+          "power_W": 2.220446049250313e-16,
+          "rate_Mbps": 0.0,
+          "integrality": null
+        },
+        "optimal": true,
+        "power_W": 0.8000000000000003,
+        "selected": null,
+        "nominal_SE": 86.85363628953657,
+        "scope": "finite power grid; reported objective in sumSE, not Mbps",
+        "stage": "completed",
+        "completed": true,
+        "arm": "lp"
+      },
+      "pid": 12048
+    },
+    {
+      "mode": "power",
+      "users": 16,
+      "ids": [
+        11132,
+        11446,
+        10954,
+        11762,
+        10036,
+        10461,
+        10927,
+        11104,
+        11087,
+        10694,
+        11613,
+        11851,
+        10842,
+        10266,
+        10353,
+        10193
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-16.npz",
+      "sha256": "03d492cdd71a451355a3e444e470a90cd126f2e3d7d096bb7238e0ccc41e01f2",
+      "arm": "uniform",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.48799400008283556,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.025572899961844087,
+        "p": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ]
+        ],
+        "nominal_SE": 164.13571720994992,
+        "upper_SE": 179.8432522012998,
+        "power_W": 1.6,
+        "stage": "completed",
+        "completed": true,
+        "arm": "uniform"
+      },
+      "pid": 26104
+    },
+    {
+      "mode": "power",
+      "users": 16,
+      "ids": [
+        11132,
+        11446,
+        10954,
+        11762,
+        10036,
+        10461,
+        10927,
+        11104,
+        11087,
+        10694,
+        11613,
+        11851,
+        10842,
+        10266,
+        10353,
+        10193
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-16.npz",
+      "sha256": "03d492cdd71a451355a3e444e470a90cd126f2e3d7d096bb7238e0ccc41e01f2",
+      "arm": "uniform_min",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.49553580000065267,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.042158300057053566,
+        "p": [
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918,
+          0.07004002876086918
+        ],
+        "nominal_SE": 155.92893134945243,
+        "target_SE": 155.92893134945243,
+        "scope": "uniform continuous scaling on common fixed schedule; not joint minimum-power optimum",
+        "power_W": 1.1206404601739068,
+        "stage": "completed",
+        "completed": true,
+        "arm": "uniform_min"
+      },
+      "pid": 1184
+    },
+    {
+      "mode": "power",
+      "users": 16,
+      "ids": [
+        11132,
+        11446,
+        10954,
+        11762,
+        10036,
+        10461,
+        10927,
+        11104,
+        11087,
+        10694,
+        11613,
+        11851,
+        10842,
+        10266,
+        10353,
+        10193
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-16.npz",
+      "sha256": "03d492cdd71a451355a3e444e470a90cd126f2e3d7d096bb7238e0ccc41e01f2",
+      "arm": "slsqp",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.538549899822101,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.07993600005283952,
+        "p": [
+          0.10010455569867585,
+          0.09993730406807562,
+          0.10010453497400514,
+          0.10004880446877316,
+          0.10005285605960614,
+          0.09996957427338886,
+          0.09983023122666149,
+          0.09999026127172213,
+          0.09995664455510302,
+          0.09989637349102087,
+          0.10007509424763916,
+          0.10008434330851727,
+          0.0999425389508787,
+          0.10004830554861716,
+          0.09993397700703027,
+          0.1000246009936905
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ]
+        ],
+        "nominal_SE": 164.13572417796232,
+        "iterations": 14,
+        "optimizer_success": true,
+        "message": "Optimization terminated successfully",
+        "upper_SE": 174.8446569378217,
+        "power_W": 1.6000000001434054,
+        "stage": "completed",
+        "completed": true,
+        "arm": "slsqp"
+      },
+      "pid": 1624
+    },
+    {
+      "mode": "power",
+      "users": 16,
+      "ids": [
+        11132,
+        11446,
+        10954,
+        11762,
+        10036,
+        10461,
+        10927,
+        11104,
+        11087,
+        10694,
+        11613,
+        11851,
+        10842,
+        10266,
+        10353,
+        10193
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-16.npz",
+      "sha256": "03d492cdd71a451355a3e444e470a90cd126f2e3d7d096bb7238e0ccc41e01f2",
+      "arm": "iwmmse",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.4736808999441564,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.027591000078245997,
+        "p": [
+          0.10000006823015216,
+          0.09999992633238655,
+          0.10000007950824431,
+          0.10000014132998898,
+          0.1000000969068602,
+          0.10000001976250529,
+          0.0999994798681752,
+          0.10000005703391948,
+          0.09999999242861993,
+          0.09999981149059922,
+          0.10000012629647809,
+          0.10000011503339527,
+          0.09999995363602643,
+          0.10000010423940066,
+          0.09999991791333177,
+          0.1000001099899167
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ]
+        ],
+        "nominal_SE": 164.13571723495446,
+        "iterations": 1,
+        "history": [
+          164.13571720994992,
+          164.13571723495446
+        ],
+        "upper_SE": 174.8446569378217,
+        "certificate_stopped": false,
+        "scope": "fixed-schedule nominal stationary candidate; no global optimum claim",
+        "power_W": 1.6,
+        "stage": "completed",
+        "completed": true,
+        "arm": "iwmmse"
+      },
+      "pid": 26068
+    },
+    {
+      "mode": "power",
+      "users": 16,
+      "ids": [
+        11132,
+        11446,
+        10954,
+        11762,
+        10036,
+        10461,
+        10927,
+        11104,
+        11087,
+        10694,
+        11613,
+        11851,
+        10842,
+        10266,
+        10353,
+        10193
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-16.npz",
+      "sha256": "03d492cdd71a451355a3e444e470a90cd126f2e3d7d096bb7238e0ccc41e01f2",
+      "arm": "cert_iwmmse",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.4929412000346929,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.03320709988474846,
+        "p": [
+          0.10000006823015216,
+          0.09999992633238655,
+          0.10000007950824431,
+          0.10000014132998898,
+          0.1000000969068602,
+          0.10000001976250529,
+          0.0999994798681752,
+          0.10000005703391948,
+          0.09999999242861993,
+          0.09999981149059922,
+          0.10000012629647809,
+          0.10000011503339527,
+          0.09999995363602643,
+          0.10000010423940066,
+          0.09999991791333177,
+          0.1000001099899167
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ]
+        ],
+        "nominal_SE": 164.13571723495446,
+        "iterations": 1,
+        "history": [
+          164.13571720994992,
+          164.13571723495446
+        ],
+        "upper_SE": 174.8446569378217,
+        "certificate_stopped": false,
+        "scope": "fixed-schedule nominal stationary candidate; no global optimum claim",
+        "power_W": 1.6,
+        "stage": "completed",
+        "completed": true,
+        "arm": "cert_iwmmse"
+      },
+      "pid": 14696
+    },
+    {
+      "mode": "power",
+      "users": 16,
+      "ids": [
+        11132,
+        11446,
+        10954,
+        11762,
+        10036,
+        10461,
+        10927,
+        11104,
+        11087,
+        10694,
+        11613,
+        11851,
+        10842,
+        10266,
+        10353,
+        10193
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-16.npz",
+      "sha256": "03d492cdd71a451355a3e444e470a90cd126f2e3d7d096bb7238e0ccc41e01f2",
+      "arm": "grid",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.6891896000597626,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.23583190003409982,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "setup_seconds": 0.0015787000302225351,
+        "solve_seconds": 0.20098500000312924,
+        "feasibility": {
+          "valid": true,
+          "equality": 0.0,
+          "box": 0.0,
+          "power_W": 0.0,
+          "rate_Mbps": 0.0,
+          "integrality": 0.0
+        },
+        "optimal": true,
+        "power_W": 1.6,
+        "selected": [
+          499,
+          1894,
+          2101,
+          3991,
+          4873,
+          7528,
+          7618,
+          8284
+        ],
+        "solver_bound": 176.46184300389004,
+        "solver_relative_gap": 0.0,
+        "nominal_SE": 176.46184300389,
+        "scope": "finite power grid; reported objective in sumSE, not Mbps",
+        "stage": "completed",
+        "completed": true,
+        "arm": "grid"
+      },
+      "pid": 30096
+    },
+    {
+      "mode": "power",
+      "users": 16,
+      "ids": [
+        11132,
+        11446,
+        10954,
+        11762,
+        10036,
+        10461,
+        10927,
+        11104,
+        11087,
+        10694,
+        11613,
+        11851,
+        10842,
+        10266,
+        10353,
+        10193
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-16.npz",
+      "sha256": "03d492cdd71a451355a3e444e470a90cd126f2e3d7d096bb7238e0ccc41e01f2",
+      "arm": "lp",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.5733028999529779,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.11497760005295277,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "setup_seconds": 0.0015229000709950924,
+        "solve_seconds": 0.08195980009622872,
+        "feasibility": {
+          "valid": true,
+          "equality": 1.1102230246251565e-15,
+          "box": 0.0,
+          "power_W": 0.0,
+          "rate_Mbps": 0.0,
+          "integrality": null
+        },
+        "optimal": true,
+        "power_W": 1.5999999999999999,
+        "selected": null,
+        "nominal_SE": 176.46184300389,
+        "scope": "finite power grid; reported objective in sumSE, not Mbps",
+        "stage": "completed",
+        "completed": true,
+        "arm": "lp"
+      },
+      "pid": 31472
+    },
+    {
+      "mode": "power",
+      "users": 32,
+      "ids": [
+        10368,
+        11542,
+        11039,
+        11362,
+        12072,
+        10375,
+        11009,
+        11172,
+        11906,
+        11158,
+        11899,
+        9995,
+        10373,
+        10689,
+        11611,
+        10558,
+        11892,
+        12146,
+        11092,
+        10208,
+        10810,
+        12030,
+        10863,
+        10747,
+        11391,
+        10398,
+        10002,
+        11661,
+        10106,
+        10426,
+        11209,
+        12124
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-32.npz",
+      "sha256": "b2aa64b03a15f07f2075a567c69d1ecf69fc0cbf83112ec1f17a7746497aeddc",
+      "arm": "uniform",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.5060499999672174,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.030767499934881926,
+        "p": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ],
+          [
+            [
+              16,
+              17
+            ],
+            8
+          ],
+          [
+            [
+              18,
+              19
+            ],
+            9
+          ],
+          [
+            [
+              20,
+              21
+            ],
+            10
+          ],
+          [
+            [
+              22,
+              23
+            ],
+            11
+          ],
+          [
+            [
+              24,
+              25
+            ],
+            12
+          ],
+          [
+            [
+              26,
+              27
+            ],
+            13
+          ],
+          [
+            [
+              28,
+              29
+            ],
+            14
+          ],
+          [
+            [
+              30,
+              31
+            ],
+            15
+          ]
+        ],
+        "nominal_SE": 319.58922990643066,
+        "upper_SE": 363.0417300943736,
+        "power_W": 3.2,
+        "stage": "completed",
+        "completed": true,
+        "arm": "uniform"
+      },
+      "pid": 28588
+    },
+    {
+      "mode": "power",
+      "users": 32,
+      "ids": [
+        10368,
+        11542,
+        11039,
+        11362,
+        12072,
+        10375,
+        11009,
+        11172,
+        11906,
+        11158,
+        11899,
+        9995,
+        10373,
+        10689,
+        11611,
+        10558,
+        11892,
+        12146,
+        11092,
+        10208,
+        10810,
+        12030,
+        10863,
+        10747,
+        11391,
+        10398,
+        10002,
+        11661,
+        10106,
+        10426,
+        11209,
+        12124
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-32.npz",
+      "sha256": "b2aa64b03a15f07f2075a567c69d1ecf69fc0cbf83112ec1f17a7746497aeddc",
+      "arm": "uniform_min",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.529849500162527,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.054557699942961335,
+        "p": [
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617,
+          0.07069503341198617
+        ],
+        "nominal_SE": 303.6097684111091,
+        "target_SE": 303.6097684111091,
+        "scope": "uniform continuous scaling on common fixed schedule; not joint minimum-power optimum",
+        "power_W": 2.2622410691835575,
+        "stage": "completed",
+        "completed": true,
+        "arm": "uniform_min"
+      },
+      "pid": 6756
+    },
+    {
+      "mode": "power",
+      "users": 32,
+      "ids": [
+        10368,
+        11542,
+        11039,
+        11362,
+        12072,
+        10375,
+        11009,
+        11172,
+        11906,
+        11158,
+        11899,
+        9995,
+        10373,
+        10689,
+        11611,
+        10558,
+        11892,
+        12146,
+        11092,
+        10208,
+        10810,
+        12030,
+        10863,
+        10747,
+        11391,
+        10398,
+        10002,
+        11661,
+        10106,
+        10426,
+        11209,
+        12124
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-32.npz",
+      "sha256": "b2aa64b03a15f07f2075a567c69d1ecf69fc0cbf83112ec1f17a7746497aeddc",
+      "arm": "slsqp",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.6552790999412537,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.1901682000607252,
+        "p": [
+          0.10004519678487424,
+          0.09994735122696241,
+          0.10007306571556131,
+          0.10006648095051823,
+          0.09991779498161316,
+          0.09977195363810185,
+          0.09993695487516577,
+          0.09991339062166005,
+          0.10012917531364815,
+          0.1001250041517781,
+          0.10002959898692958,
+          0.09996458961147527,
+          0.10007113612292207,
+          0.10009944068476447,
+          0.10011040799491369,
+          0.10009642103056614,
+          0.09981002365888814,
+          0.10001320625048986,
+          0.10005933468595055,
+          0.10005601072502916,
+          0.09997505538501436,
+          0.1000590017694403,
+          0.0999489156907858,
+          0.09993603362245239,
+          0.10005026745765075,
+          0.10011802216695714,
+          0.0998656970077694,
+          0.09994682748696283,
+          0.09997702786589276,
+          0.10000443399429747,
+          0.09998529602274155,
+          0.09989688310442899
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ],
+          [
+            [
+              16,
+              17
+            ],
+            8
+          ],
+          [
+            [
+              18,
+              19
+            ],
+            9
+          ],
+          [
+            [
+              20,
+              21
+            ],
+            10
+          ],
+          [
+            [
+              22,
+              23
+            ],
+            11
+          ],
+          [
+            [
+              24,
+              25
+            ],
+            12
+          ],
+          [
+            [
+              26,
+              27
+            ],
+            13
+          ],
+          [
+            [
+              28,
+              29
+            ],
+            14
+          ],
+          [
+            [
+              30,
+              31
+            ],
+            15
+          ]
+        ],
+        "nominal_SE": 319.58924843369084,
+        "iterations": 10,
+        "optimizer_success": true,
+        "message": "Optimization terminated successfully",
+        "upper_SE": 343.7625413036946,
+        "power_W": 3.199999999586206,
+        "stage": "completed",
+        "completed": true,
+        "arm": "slsqp"
+      },
+      "pid": 8908
+    },
+    {
+      "mode": "power",
+      "users": 32,
+      "ids": [
+        10368,
+        11542,
+        11039,
+        11362,
+        12072,
+        10375,
+        11009,
+        11172,
+        11906,
+        11158,
+        11899,
+        9995,
+        10373,
+        10689,
+        11611,
+        10558,
+        11892,
+        12146,
+        11092,
+        10208,
+        10810,
+        12030,
+        10863,
+        10747,
+        11391,
+        10398,
+        10002,
+        11661,
+        10106,
+        10426,
+        11209,
+        12124
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-32.npz",
+      "sha256": "b2aa64b03a15f07f2075a567c69d1ecf69fc0cbf83112ec1f17a7746497aeddc",
+      "arm": "iwmmse",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.4815083001740277,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.026645199861377478,
+        "p": [
+          0.10000014967539167,
+          0.09999997787524449,
+          0.10000017158949852,
+          0.10000017420416082,
+          0.09999987388798853,
+          0.09999899854983164,
+          0.09999995355494032,
+          0.09999987841210507,
+          0.1000001098541695,
+          0.1000001210169668,
+          0.10000014066072142,
+          0.10000002729105437,
+          0.1000001495066723,
+          0.1000001273294823,
+          0.1000001451962231,
+          0.10000016875495474,
+          0.09999924373284257,
+          0.10000013002611984,
+          0.1000001814244255,
+          0.10000018134925034,
+          0.10000005079194077,
+          0.10000014397162459,
+          0.09999998422305714,
+          0.09999994336652149,
+          0.10000016915391656,
+          0.10000011160135247,
+          0.09999970487981169,
+          0.09999998149064404,
+          0.10000005274617267,
+          0.10000009889928649,
+          0.10000008072348446,
+          0.09999977426014438
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ],
+          [
+            [
+              16,
+              17
+            ],
+            8
+          ],
+          [
+            [
+              18,
+              19
+            ],
+            9
+          ],
+          [
+            [
+              20,
+              21
+            ],
+            10
+          ],
+          [
+            [
+              22,
+              23
+            ],
+            11
+          ],
+          [
+            [
+              24,
+              25
+            ],
+            12
+          ],
+          [
+            [
+              26,
+              27
+            ],
+            13
+          ],
+          [
+            [
+              28,
+              29
+            ],
+            14
+          ],
+          [
+            [
+              30,
+              31
+            ],
+            15
+          ]
+        ],
+        "nominal_SE": 319.5892299973018,
+        "iterations": 1,
+        "history": [
+          319.58922990643066,
+          319.5892299973018
+        ],
+        "upper_SE": 343.7625413036946,
+        "certificate_stopped": false,
+        "scope": "fixed-schedule nominal stationary candidate; no global optimum claim",
+        "power_W": 3.2,
+        "stage": "completed",
+        "completed": true,
+        "arm": "iwmmse"
+      },
+      "pid": 872
+    },
+    {
+      "mode": "power",
+      "users": 32,
+      "ids": [
+        10368,
+        11542,
+        11039,
+        11362,
+        12072,
+        10375,
+        11009,
+        11172,
+        11906,
+        11158,
+        11899,
+        9995,
+        10373,
+        10689,
+        11611,
+        10558,
+        11892,
+        12146,
+        11092,
+        10208,
+        10810,
+        12030,
+        10863,
+        10747,
+        11391,
+        10398,
+        10002,
+        11661,
+        10106,
+        10426,
+        11209,
+        12124
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-32.npz",
+      "sha256": "b2aa64b03a15f07f2075a567c69d1ecf69fc0cbf83112ec1f17a7746497aeddc",
+      "arm": "cert_iwmmse",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 0.5148090999573469,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.028373799985274673,
+        "p": [
+          0.10000014967539167,
+          0.09999997787524449,
+          0.10000017158949852,
+          0.10000017420416082,
+          0.09999987388798853,
+          0.09999899854983164,
+          0.09999995355494032,
+          0.09999987841210507,
+          0.1000001098541695,
+          0.1000001210169668,
+          0.10000014066072142,
+          0.10000002729105437,
+          0.1000001495066723,
+          0.1000001273294823,
+          0.1000001451962231,
+          0.10000016875495474,
+          0.09999924373284257,
+          0.10000013002611984,
+          0.1000001814244255,
+          0.10000018134925034,
+          0.10000005079194077,
+          0.10000014397162459,
+          0.09999998422305714,
+          0.09999994336652149,
+          0.10000016915391656,
+          0.10000011160135247,
+          0.09999970487981169,
+          0.09999998149064404,
+          0.10000005274617267,
+          0.10000009889928649,
+          0.10000008072348446,
+          0.09999977426014438
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ],
+          [
+            [
+              16,
+              17
+            ],
+            8
+          ],
+          [
+            [
+              18,
+              19
+            ],
+            9
+          ],
+          [
+            [
+              20,
+              21
+            ],
+            10
+          ],
+          [
+            [
+              22,
+              23
+            ],
+            11
+          ],
+          [
+            [
+              24,
+              25
+            ],
+            12
+          ],
+          [
+            [
+              26,
+              27
+            ],
+            13
+          ],
+          [
+            [
+              28,
+              29
+            ],
+            14
+          ],
+          [
+            [
+              30,
+              31
+            ],
+            15
+          ]
+        ],
+        "nominal_SE": 319.5892299973018,
+        "iterations": 1,
+        "history": [
+          319.58922990643066,
+          319.5892299973018
+        ],
+        "upper_SE": 343.7625413036946,
+        "certificate_stopped": false,
+        "scope": "fixed-schedule nominal stationary candidate; no global optimum claim",
+        "power_W": 3.2,
+        "stage": "completed",
+        "completed": true,
+        "arm": "cert_iwmmse"
+      },
+      "pid": 31128
+    },
+    {
+      "mode": "power",
+      "users": 32,
+      "ids": [
+        10368,
+        11542,
+        11039,
+        11362,
+        12072,
+        10375,
+        11009,
+        11172,
+        11906,
+        11158,
+        11899,
+        9995,
+        10373,
+        10689,
+        11611,
+        10558,
+        11892,
+        12146,
+        11092,
+        10208,
+        10810,
+        12030,
+        10863,
+        10747,
+        11391,
+        10398,
+        10002,
+        11661,
+        10106,
+        10426,
+        11209,
+        12124
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-32.npz",
+      "sha256": "b2aa64b03a15f07f2075a567c69d1ecf69fc0cbf83112ec1f17a7746497aeddc",
+      "arm": "grid",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 7.36955689988099,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 6.904425299959257,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "setup_seconds": 0.008328899974003434,
+        "solve_seconds": 6.848688599886373,
+        "feasibility": {
+          "valid": true,
+          "equality": 0.0,
+          "box": 0.0,
+          "power_W": 0.0,
+          "rate_Mbps": 0.0,
+          "integrality": 0.0
+        },
+        "optimal": true,
+        "power_W": 3.2,
+        "selected": [
+          4090,
+          8320,
+          12055,
+          15268,
+          17203,
+          21217,
+          30604,
+          35302,
+          41035,
+          43474,
+          47560,
+          50485,
+          52879,
+          55561,
+          56830,
+          60061
+        ],
+        "solver_bound": 354.80534361860526,
+        "solver_relative_gap": 0.0,
+        "nominal_SE": 354.8053436186053,
+        "scope": "finite power grid; reported objective in sumSE, not Mbps",
+        "stage": "completed",
+        "completed": true,
+        "arm": "grid"
+      },
+      "pid": 23600
+    },
+    {
+      "mode": "power",
+      "users": 32,
+      "ids": [
+        10368,
+        11542,
+        11039,
+        11362,
+        12072,
+        10375,
+        11009,
+        11172,
+        11906,
+        11158,
+        11899,
+        9995,
+        10373,
+        10689,
+        11611,
+        10558,
+        11892,
+        12146,
+        11092,
+        10208,
+        10810,
+        12030,
+        10863,
+        10747,
+        11391,
+        10398,
+        10002,
+        11661,
+        10106,
+        10426,
+        11209,
+        12124
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-32.npz",
+      "sha256": "b2aa64b03a15f07f2075a567c69d1ecf69fc0cbf83112ec1f17a7746497aeddc",
+      "arm": "lp",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "wall_seconds": 3.4028545999899507,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 2.9498797999694943,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "setup_seconds": 0.008149300003424287,
+        "solve_seconds": 2.8947978999931365,
+        "feasibility": {
+          "valid": true,
+          "equality": 4.440892098500626e-16,
+          "box": 0.0,
+          "power_W": 0.0,
+          "rate_Mbps": 0.0,
+          "integrality": null
+        },
+        "optimal": true,
+        "power_W": 3.2,
+        "selected": null,
+        "nominal_SE": 354.8162183318634,
+        "scope": "finite power grid; reported objective in sumSE, not Mbps",
+        "stage": "completed",
+        "completed": true,
+        "arm": "lp"
+      },
+      "pid": 7316
+    },
+    {
+      "mode": "power",
+      "users": 64,
+      "ids": [
+        10255,
+        11800,
+        10209,
+        11644,
+        11444,
+        11299,
+        10945,
+        10315,
+        11885,
+        10098,
+        10054,
+        10492,
+        12185,
+        10333,
+        11256,
+        11755,
+        11163,
+        10789,
+        10233,
+        10356,
+        12148,
+        10230,
+        10791,
+        11019,
+        11638,
+        10818,
+        10264,
+        10738,
+        11785,
+        10767,
+        11826,
+        12066,
+        9955,
+        11508,
+        12212,
+        11494,
+        11713,
+        12190,
+        10888,
+        10735,
+        11184,
+        11389,
+        11029,
+        10204,
+        12230,
+        11822,
+        12007,
+        11200,
+        11125,
+        11850,
+        11193,
+        10966,
+        10228,
+        11930,
+        11181,
+        10418,
+        10546,
+        10678,
+        11533,
+        10547,
+        10466,
+        10782,
+        10045,
+        11426
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-64.npz",
+      "sha256": "125e1b487d5f2f7f89708d4d7a34ec76ab3f673864ddd300cb5646f21234f408",
+      "arm": "grid",
+      "status": "WALL_TIMEOUT",
+      "exit_code": 1,
+      "wall_seconds": 20.070915000047535,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.16123979981057346,
+        "stage": "solver_entered",
+        "completed": false,
+        "p": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ],
+          [
+            [
+              16,
+              17
+            ],
+            8
+          ],
+          [
+            [
+              18,
+              19
+            ],
+            9
+          ],
+          [
+            [
+              20,
+              21
+            ],
+            10
+          ],
+          [
+            [
+              22,
+              23
+            ],
+            11
+          ],
+          [
+            [
+              24,
+              25
+            ],
+            12
+          ],
+          [
+            [
+              26,
+              27
+            ],
+            13
+          ],
+          [
+            [
+              28,
+              29
+            ],
+            14
+          ],
+          [
+            [
+              30,
+              31
+            ],
+            15
+          ],
+          [
+            [
+              32,
+              33
+            ],
+            16
+          ],
+          [
+            [
+              34,
+              35
+            ],
+            17
+          ],
+          [
+            [
+              36,
+              37
+            ],
+            18
+          ],
+          [
+            [
+              38,
+              39
+            ],
+            19
+          ],
+          [
+            [
+              40,
+              41
+            ],
+            20
+          ],
+          [
+            [
+              42,
+              43
+            ],
+            21
+          ],
+          [
+            [
+              44,
+              45
+            ],
+            22
+          ],
+          [
+            [
+              46,
+              47
+            ],
+            23
+          ],
+          [
+            [
+              48,
+              49
+            ],
+            24
+          ],
+          [
+            [
+              50,
+              51
+            ],
+            25
+          ],
+          [
+            [
+              52,
+              53
+            ],
+            26
+          ],
+          [
+            [
+              54,
+              55
+            ],
+            27
+          ],
+          [
+            [
+              56,
+              57
+            ],
+            28
+          ],
+          [
+            [
+              58,
+              59
+            ],
+            29
+          ],
+          [
+            [
+              60,
+              61
+            ],
+            30
+          ],
+          [
+            [
+              62,
+              63
+            ],
+            31
+          ]
+        ],
+        "nominal_SE": 655.3872528837799,
+        "power_W": 6.3999999999999995,
+        "optimal": false,
+        "columns": 580608
+      },
+      "pid": 26704
+    },
+    {
+      "mode": "power",
+      "users": 64,
+      "ids": [
+        10255,
+        11800,
+        10209,
+        11644,
+        11444,
+        11299,
+        10945,
+        10315,
+        11885,
+        10098,
+        10054,
+        10492,
+        12185,
+        10333,
+        11256,
+        11755,
+        11163,
+        10789,
+        10233,
+        10356,
+        12148,
+        10230,
+        10791,
+        11019,
+        11638,
+        10818,
+        10264,
+        10738,
+        11785,
+        10767,
+        11826,
+        12066,
+        9955,
+        11508,
+        12212,
+        11494,
+        11713,
+        12190,
+        10888,
+        10735,
+        11184,
+        11389,
+        11029,
+        10204,
+        12230,
+        11822,
+        12007,
+        11200,
+        11125,
+        11850,
+        11193,
+        10966,
+        10228,
+        11930,
+        11181,
+        10418,
+        10546,
+        10678,
+        11533,
+        10547,
+        10466,
+        10782,
+        10045,
+        11426
+      ],
+      "input": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\comparison\\inputs\\power-64.npz",
+      "sha256": "125e1b487d5f2f7f89708d4d7a34ec76ab3f673864ddd300cb5646f21234f408",
+      "arm": "lp",
+      "status": "WALL_TIMEOUT",
+      "exit_code": 1,
+      "wall_seconds": 20.04623349988833,
+      "limit_seconds": 20,
+      "result": {
+        "worker_elapsed": 0.15648530004546046,
+        "stage": "solver_entered",
+        "completed": false,
+        "p": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "schedule": [
+          [
+            [
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            4
+          ],
+          [
+            [
+              10,
+              11
+            ],
+            5
+          ],
+          [
+            [
+              12,
+              13
+            ],
+            6
+          ],
+          [
+            [
+              14,
+              15
+            ],
+            7
+          ],
+          [
+            [
+              16,
+              17
+            ],
+            8
+          ],
+          [
+            [
+              18,
+              19
+            ],
+            9
+          ],
+          [
+            [
+              20,
+              21
+            ],
+            10
+          ],
+          [
+            [
+              22,
+              23
+            ],
+            11
+          ],
+          [
+            [
+              24,
+              25
+            ],
+            12
+          ],
+          [
+            [
+              26,
+              27
+            ],
+            13
+          ],
+          [
+            [
+              28,
+              29
+            ],
+            14
+          ],
+          [
+            [
+              30,
+              31
+            ],
+            15
+          ],
+          [
+            [
+              32,
+              33
+            ],
+            16
+          ],
+          [
+            [
+              34,
+              35
+            ],
+            17
+          ],
+          [
+            [
+              36,
+              37
+            ],
+            18
+          ],
+          [
+            [
+              38,
+              39
+            ],
+            19
+          ],
+          [
+            [
+              40,
+              41
+            ],
+            20
+          ],
+          [
+            [
+              42,
+              43
+            ],
+            21
+          ],
+          [
+            [
+              44,
+              45
+            ],
+            22
+          ],
+          [
+            [
+              46,
+              47
+            ],
+            23
+          ],
+          [
+            [
+              48,
+              49
+            ],
+            24
+          ],
+          [
+            [
+              50,
+              51
+            ],
+            25
+          ],
+          [
+            [
+              52,
+              53
+            ],
+            26
+          ],
+          [
+            [
+              54,
+              55
+            ],
+            27
+          ],
+          [
+            [
+              56,
+              57
+            ],
+            28
+          ],
+          [
+            [
+              58,
+              59
+            ],
+            29
+          ],
+          [
+            [
+              60,
+              61
+            ],
+            30
+          ],
+          [
+            [
+              62,
+              63
+            ],
+            31
+          ]
+        ],
+        "nominal_SE": 655.3872528837799,
+        "power_W": 6.3999999999999995,
+        "optimal": false,
+        "columns": 580608
+      },
+      "pid": 34384
+    }
+  ],
+  "verification": "hashes, watchdog wall times, power feasibility, nominal certificate direction and information accounting passed",
+  "limits": "development networks, paired descriptive bootstrap, CSI certificates nominal only; uniform_probe is an idealized separately-observable-statistics reference, not demonstrated same-physical-pilot baseline"
+}

@@ -1,0 +1,9 @@
+# CR010 — decision-only oracle, before execution
+
+Astra follow-up after inspecting CR009: receiver-first decomposition is not a valid decision-only ceiling. Execute one bounded exact audit with the same32inputs, all six schedules, powers{.05,.1,.2}W and total<=.4W. The receiver is the deterministic mapping computed from the **initial estimate** for each action, never from new observations or true H. Power/action changes may change that mapping's numerical receiver. Only action selection is granted oracle knowledge.
+
+For each column c, q_f(c)=actual rate(H,receiver(initial_estimate,c)), with the same bandwidth normalization. Since every feasible decision still sums its columns, enumerate and solve the same ILP/LP with q_f. The causal baseline is the original estimated-score grid decision, evaluated with q_f. Define V_f=max feasible q_f and B_f=.975V_f−.98R0. Any one-extra-pilot policy whose receiver mapping remains fixed in this sense has gain<=B_f; optional probing<=max(0,B_f). Proof is simply feasible-action domination and pilot overhead. It is an offline diagnostic, not a causal rule or a bound on policies that improve the receiver.
+
+Same aggregate positive-opportunity1% engineering gate, all32/equal context weighting, no favorable subset selection. If <=1%, discontinue this finite-grid decision-only selective-information route at T200; do not infer the same result for unrestricted continuous power or other network models. If >1%, it is a necessary opportunity gate only; no selector designed in this packet.
+
+Budget: one serial existing-CPU worker per network,<=5s each,<=5min total,<=128MB artifacts,<=2GiB host. No GPU/install/test/source mutation. Verify each fixed-estimate coefficient<=true-MMSE coefficient, enumeration=ILP, valid reconstructedLPdual>=IP, oracle>=causal raw baseline, and q_f baseline equals direct receiver evaluation. Stop on failed inequality. Save source/input/witness hashes; no reruns for favorable outcomes.
