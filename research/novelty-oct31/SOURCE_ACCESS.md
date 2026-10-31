@@ -2,16 +2,18 @@
 
 31 October 2026. This is preliminary screening, **not** the requested formal review of at least 30 distinct papers. A landing page is not evidence that a complete paper was read. Versions of the same work count once.
 
-## Highest-priority full texts still needed
+## Four priority full texts — now supplied and examined
+
+Update after the user's four attachments on 31 October: all four access gaps below are closed. Their PDFs, extracted text and page renders remain local; the SHA256/page inventory is in supplied-source-manifest.json. See SUPPLIED_DECISION.md and the two Astra full-text reports. Earlier missing-access descriptions in ASTRA_SCREEN.md are historical.
 
 | Work | Verified landing link | Access and unresolved comparison |
 |---|---|---|
-| Ruder et al., *SC-FDMA user pairing and frequency allocation with imperfect channel state information* (2014) | [DOI](https://doi.org/10.1016/j.phycom.2014.10.001) | Publisher abstract/introduction preview; complete receiver model, exact formulation and proofs not obtained. |
-| Ruder et al., *Combined User Pairing and Spectrum Allocation for Multiuser SC-FDMA Transmission* (2011) | [DOI](https://doi.org/10.1109/ICC.2011.5962572) | Bibliographic/author listing; readable full text not obtained. |
-| Ruder et al., *Joint user grouping and frequency allocation for multiuser SC-FDMA transmission* (2013) | [DOI](https://doi.org/10.1016/j.phycom.2013.02.004) | Full formulation and theorem comparison pending. |
-| Fan et al., *Joint User Pairing and Resource Allocation for LTE Uplink Transmission* (2012) | [DOI](https://doi.org/10.1109/TWC.2012.070912.111305) | Metadata and branch-and-bound description; full text pending. |
+| Ruder et al., *SC-FDMA user pairing and frequency allocation with imperfect channel state information* (2014) | [DOI](https://doi.org/10.1016/j.phycom.2014.10.001) | 11-page supplied full text; model/optimization/evaluation read, decisive equations visually checked. RUDER_FULLTEXT.md. |
+| Ruder et al., *Combined User Pairing and Spectrum Allocation for Multiuser SC-FDMA Transmission* (2011) | [DOI](https://doi.org/10.1109/ICC.2011.5962572) | 6-page supplied full text; fixed-pair Hungarian vs joint heuristic and four-user case checked. RUDER_FULLTEXT.md. |
+| Ruder et al., *Joint user grouping and frequency allocation for multiuser SC-FDMA transmission* (2013) | [DOI](https://doi.org/10.1016/j.phycom.2013.02.004) | 13-page supplied full text; model, objective and complexity passages checked. Related extension of 2011, not an independent invention count. RUDER_FULLTEXT.md. |
+| Fan et al., *Joint User Pairing and Resource Allocation for LTE Uplink Transmission* (2012) | [DOI](https://doi.org/10.1109/TWC.2012.070912.111305) | 10-page supplied full text; MMSE, binary/B&B and fixed-power scope checked; printed exact-cover caveat recorded in FAN_FULLTEXT.md. |
 
-These are DOI landing pages, not verified open PDF downloads. The newly supplied author paper concerns widely-linear channel estimation; it supplies writing-style evidence and does not replace these pairing papers.
+These remain DOI landing pages, not verified open PDF downloads; full-text access came from the user. The earlier author paper concerns widely-linear channel estimation and remains the separate writing-style reference.
 
 ## Main accessible evidence inspected
 

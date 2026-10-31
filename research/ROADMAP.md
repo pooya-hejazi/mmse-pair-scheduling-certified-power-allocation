@@ -1,5 +1,7 @@
 # Research progress
 
+**Supplied-source follow-up:** all four requested Ruder/Fan PDFs are now available and their decisive model/optimization passages have been checked with Astra. [Full-text decision](novelty-oct31/SUPPLIED_DECISION.md) confirms direct MMSE scheduling and decision-only CSI prior art; no general LP exactness claim in these sources. [Model reconciliation](novelty-oct31/MODEL_RECONCILIATION.md) records service-contract and power/objective differences. The novelty decision remains PIVOT; no new network experiment or scientific-stage acceptance.
+
 **31 October update:** [targeted novelty decision and continuous-power correction](novelty-oct31/README.md). The colorful four-cycle obstruction and its strengthening cut have direct prior art. The physical embedding's independent novelty remains unresolved; the current bundle does not justify progression to a positive manuscript. A standard grid-to-continuous allowance passed 675 exact arithmetic checks but is about 9% on the existing coarse grids, not an observed performance gain. Formal 30-paper related work follows the user's requested model/evaluation-first order and has not started. This update supersedes the candidate recommendation below, while preserving its historical results.
 
 This branch preserves the original code and adds separate exploratory studies:
