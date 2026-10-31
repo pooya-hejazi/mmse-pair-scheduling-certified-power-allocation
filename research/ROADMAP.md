@@ -1,5 +1,7 @@
 # Research progress
 
+**31 October update:** [targeted novelty decision and continuous-power correction](novelty-oct31/README.md). The colorful four-cycle obstruction and its strengthening cut have direct prior art. The physical embedding's independent novelty remains unresolved; the current bundle does not justify progression to a positive manuscript. A standard grid-to-continuous allowance passed 675 exact arithmetic checks but is about 9% on the existing coarse grids, not an observed performance gain. Formal 30-paper related work follows the user's requested model/evaluation-first order and has not started. This update supersedes the candidate recommendation below, while preserving its historical results.
+
 This branch preserves the original code and adds separate exploratory studies:
 
 - [Selective channel information](selective/README.md): equal communication-budget policies with a fixed estimator; mostly negative performance results retained.

@@ -1,0 +1,75 @@
+# Astra targeted novelty screen — 31 October 2026
+
+**Recommendation: PIVOT.** Do not advance the present theorem bundle into the planned full manuscript and evaluation pipeline as though novelty had passed. Preserve it as a technically checked supporting note. A substantive channel-specific result is still needed; this screen does not establish one or promise that one exists.
+
+This is a bounded research consultation, not independent stage acceptance, a new proof audit, or an exhaustive novelty certificate. No simulations, installations, training, or subagents were used. Existing proof, review, source, and gate files were not changed. The user's own attached paper is a style reference, not the missing Ruder paper or evidence of novelty.
+
+## 1. What was inspected
+
+Local inputs: `research/theory/PROOF_NOTE.md`, `research/theory/LITERATURE_DIFFERENTIATION.md`, `research/theory/README.md`, and `research/theory/review/report.md`. The requested README and review report live under `research/theory/`, not the repository root. The independent report passes the scoped mathematics and expressly leaves publication novelty and practical integration unverified.
+
+The primary-source search targeted exact two-user linear-MMSE scheduling, frequency-dependent pairing, near-orthogonality and hardness, rainbow/colored matching, and local LP obstructions. Sources below distinguish inspected full-text passages from abstracts and unresolved access. Search non-results have no evidentiary weight for originality.
+
+## 2. Decisive combinatorial overlap
+
+[Kelk and Stamoulis, *Integrality Gaps for Colorful Matchings*](https://arxiv.org/pdf/1801.07937), arXiv v3, 12 January 2019; published in *Discrete Optimization* 32 (2019), 73–92, [DOI](https://doi.org/10.1016/j.disopt.2018.12.003). **Primary full text inspected.** Equation (1), printed pp. 4–5, uses vertex-degree and color-budget constraints; p. 5 explicitly states that gap two persists with blossom inequalities. Section 4, p. 13, identifies the alternating bichromatic four-cycle as the minimal obstruction. Section 4.1, pp. 19–20, gives its four-edge sum-at-most-one inequality; Lemma 3 derives these inequalities after two Sherali–Adams rounds.
+
+**Mapping to our note:** order the four users as 1–2–4–3–1; color edges 12 and 34 by resource 0, and 24 and 13 by resource 1. This is exactly our supported witness. The prior packing objective differs from our completed equalities and MMSE weights. Completing other columns with lower rates produces the note's positive wireless gap. Thus the channel embedding remains distinct, but the obstruction, blossom failure, and proposed local cut are known. The prior ratio two must not be transferred to our sum-rate objective.
+
+## 3. Other primary-source comparisons
+
+| Source and inspected evidence | Exact relevant scope | Consequence for this project |
+|---|---|---|
+| [Prasad et al., *Multi-User MIMO Scheduling in the Fourth Generation Cellular Uplink*](https://arxiv.org/pdf/1108.0013), v3 (2013). **Full-text Theorem 1 and Appendix B inspected**, especially printed pp. 23–24, equations (31)–(33). | Their hardness specialization has one RB, K receive antennas, single-antenna users, unit powers, and input selection cardinality C; objective is log-det capacity. | It does not directly prove the exactly-two-user, interference-treated-as-noise linear-MMSE theorem. It already establishes broad uplink scheduling hardness. Receiver/cardinality restrictions are a distinction, not a publication verdict. |
+| [Ruder, Moldovan, Gerstacker, *SC-FDMA user pairing and frequency allocation with imperfect channel state information*](https://www.sciencedirect.com/science/article/abs/pii/S1874490714000822), [DOI](https://doi.org/10.1016/j.phycom.2014.10.001), 2014. **Publisher abstract, introduction, and section previews inspected; full model/proof unavailable.** | Exactly two single-antenna users share time/frequency resources; SC-FDMA requires contiguous RB allocation. Introduction calls joint pairing/frequency allocation NP-hard and points to earlier work. The paper studies channel interpolation/prediction error and scheduling performance. | A close unresolved comparator. “MMSE” in its interpolation discussion is not enough to establish its scheduling receiver or objective. Neither duplicate theorem nor novelty can be inferred without its equations and cited antecedents. |
+| [Ruder, Dang, Gerstacker, *User Pairing for Multiuser SC-FDMA Transmission over Virtual MIMO ISI Channels*](https://cris.fau.de/publications/230349021/?lang=en_GB), [DOI](https://doi.org/10.1109/GLOCOM.2009.5426063). **Institutional author abstract inspected only.** | Two users and two receive antennas; linear-MMSE and SIC equalizers are explicitly discussed. The event is GLOBECOM 2009; institutional metadata labels publication year 2010. | Exact pair cardinality plus linear-MMSE is established background. Resource assignment restrictions and any hardness proof remain uninspected. |
+| [Le and Pfender, *Complexity Results for Rainbow Matchings*](https://arxiv.org/pdf/1312.7253), v1 (2013), published [TCS 2014](https://doi.org/10.1016/j.tcs.2013.12.013). **Full-text definitions and selected proofs inspected.** | Definition 1 and Lemma 1 identify the color-line conflict graph; Theorem 5 proves APX-completeness even for properly colored 2-regular graphs with each color used twice. Theorem 6 treats paths; Theorem 11 gives a polynomial case excluding P4 as any subgraph. | Sparse preferred-pair graphs or small color classes alone are not a fresh algorithmic escape. These are cardinality results; their approximation hardness does not automatically transfer through a large additive wireless rate baseline. |
+| [Hommelsheim, Jehmlich, Mühlenthaler, *A Complexity Dichotomy for Generalized Rainbow Matchings Based on Color Classes*](https://arxiv.org/html/2604.21025v1), 22 April 2026. **Preprint full-text theorem statements and algorithm discussion inspected; not independently proof-audited.** | Theorem 3 assumes a **color-closed graph class** and a constant number of exceptions to complete-multipartite color classes. Theorem 4 handles generalized color capacities when every color class is complete multipartite. These are maximum-cardinality results. | Any proposed structural tractability extension must compare against this current result. It is not a theorem that arbitrary weighted MMSE scheduling is easy whenever each complete candidate resource graph is complete multipartite; edge weights and the precise graph representation matter. |
+| [ProxySelect, *Frequency Selectivity-Aware Scheduling for Joint OFDMA and MU-MIMO in 802.11ax WiFi*](https://arxiv.org/html/2510.15452v1), 2025 preprint. **Full-text model and Sections III-A/B inspected.** | Downlink ZF, group/RU ILP, compatibility screening, and a norm/correlation proxy. It states that its proxy equals its true ZF rate for groups of size one or two, or zero correlation. | A paper cannot claim that pair-rate simplification, near-orthogonal candidate screening, and a frequency-selective group ILP form a new combination. Our uplink MMSE receiver remains different. No performance comparison was conducted. |
+
+## 4. What remains of the current contribution
+
+The local note supplies a clean rational realization of arbitrary preferred-pair graphs, with M=K² receive coordinates, equal channel norms, and small correlations. This makes a known combinatorial obstruction occur under a precisely defined physical rate formula. Its rational product threshold also avoids an exact-real oracle ambiguity. These are valuable proof details.
+
+However, the construction grants independent pair-specific coordinates and independently chosen channels on every resource. It thereby encodes essentially arbitrary combinatorics. Making correlations small scales down the penalty while leaving the encoded preference ordering intact. The note itself shows that the objective gap vanishes and a simple additive assignment has a classical small-loss guarantee. The present result therefore establishes a distinction between exact and approximate optimization, but not a practically consequential failure of near-orthogonal scheduling.
+
+The joint-power corollary is a correct equality-forcing extension in the reviewed note. It does not furnish a general joint-power algorithm, a usable power-coupled approximation guarantee, or a quantitative variable-power separation. Adding the same theorem to a larger list of network constraints would not address these limitations.
+
+My assessment is that the rational realization alone is **too narrow a foundation for the intended substantial wireless paper**, even if its exact statement eventually proves absent from the literature. It might belong as a proposition in a stronger paper, or as a focused note if a precise published misconception and an appropriate venue are identified. Neither condition was established here. This is a scientific judgment about contribution size, not a proof that no venue could publish it.
+
+## 5. A substantive extension would have to pass a new gate
+
+Do not spend the next stage on additional generic clique cuts, more simulation points for the same construction, or channel-estimator training. The known-combinatorics overlap is not cured by extra numerical results.
+
+The scientifically motivated remaining question is **which actual channel structure makes resource-dependent pairing certifiably tractable or accurately approximable**. The current construction leaves receive dimension and variation across resources unrestricted, while the project needs a certificate usable for its declared channel and power model. A concrete extension would need all of the following before it can justify proceeding:
+
+1. A stated, physically interpretable restriction on the joint family of channels across resources, such as a bounded-complexity shared propagation model, rather than arbitrary independent per-resource vectors. Derive its effect on the pair weights instead of postulating convenient weights.
+2. A nontrivial theorem for that restriction: an exact solvable subclass with genuine nonzero interaction and resource variation, or a quantitatively useful approximation/certification guarantee. It must improve on merely subtracting a worst-case interaction loss or checking a generic solver primal–dual gap.
+3. If joint power is retained, a proof that the certificate bounds the same joint-power optimum under the same budget and receiver. A fixed-power or finite-grid bound cannot certify an unrestricted continuous-power comparator.
+4. A direct comparison with the closest wireless formulations and existing colored-matching structural theorems before claiming a new method. A standard matching/flow reduction plus a generic perturbation estimate would still be routine.
+
+These are acceptance requirements, not a claimed algorithm or an assertion that this extension is available. **No positively validated replacement contribution emerged in this bounded screen.** If no specific theorem meeting these requirements can be stated and defended, stop this mathematical-paper route and retain the note as supporting analysis. That is preferable to committing to a new headline based only on missing search hits.
+
+There is also a basic limit on a tempting extension: one cannot demand uniformly vanishing all-pairs correlation for arbitrarily many users in a fixed receive dimension. For unit vectors, let G be their Gram matrix. Then rank(G)≤M, tr(G)=K, and tr(G²)≥K²/M, while tr(G²)≤K+K(K−1)μ². Hence μ²≥(K−M)/(M(K−1)) for K>M. This elementary rank calculation is included to rule out an impossible fixed-dimension asymptotic target, not as a new theorem.
+
+## 6. Missing full texts and access links
+
+The following are unresolved access dependencies. DOI links are publisher landing/access links, **not verified open PDF downloads**. Failed tool access is not evidence that no authorized copy exists. No author was contacted.
+
+| Priority | Needed source | Access link | What must be read |
+|---|---|---|---|
+| 1 | Ruder et al., 2014, imperfect-CSI pairing/frequency paper | [Publisher DOI](https://doi.org/10.1016/j.phycom.2014.10.001); [publisher page](https://www.sciencedirect.com/science/article/abs/pii/S1874490714000822) | Receiver/rate equations, scheduling equalities, contiguity, frequency dependence, and actual basis of NP-hardness claim. |
+| 1 | Ruder et al., *Combined User Pairing and Spectrum Allocation for Multiuser SC-FDMA Transmission*, ICC 2011 | [Publisher DOI](https://doi.org/10.1109/ICC.2011.5962572); [author-upload listing](https://www.researchgate.net/publication/221166627_Combined_User_Pairing_and_Spectrum_Allocation_for_Multiuser_SC-FDMA_Transmission) | Closest antecedent formulation, objectives and receiver distinction. Listing reports author-uploaded full text, but readable PDF was not obtained here. |
+| 1 | Ruder et al., *Joint user grouping and frequency allocation for multiuser SC-FDMA transmission*, 2013 | [Publisher DOI](https://doi.org/10.1016/j.phycom.2013.02.004) | Pair special case, capacity versus post-equalization criteria, formulation and proof. Metadata discovered; full text not inspected. |
+| 2 | Fan et al., *Joint User Pairing and Resource Allocation for LTE Uplink Transmission*, 2012 | [Publisher DOI](https://doi.org/10.1109/TWC.2012.070912.111305) | Branch-and-bound benchmark, pair rates, receiver and allocation constraints. Metadata discovered; full text not inspected. |
+
+Public full texts used in this screen are downloadable at [Kelk–Stamoulis PDF](https://arxiv.org/pdf/1801.07937), [Prasad et al. PDF](https://arxiv.org/pdf/1108.0013), [Le–Pfender PDF](https://arxiv.org/pdf/1312.7253), [2026 dichotomy PDF](https://arxiv.org/pdf/2604.21025), and [ProxySelect PDF](https://arxiv.org/pdf/2510.15452).
+
+## 7. Decision and confidence
+
+- **PIVOT — current theorem bundle as the principal contribution:** high confidence that its combinatorial witness and strengthening are prior art; moderate-to-high confidence that the residual realization is insufficient for the intended full paper without substantive extension.
+- **Exact wireless theorem priority:** unresolved, with moderate confidence in the documented distinction from Prasad and low confidence in any novelty claim against the inaccessible Ruder/Fan full texts. This screen does not mark it duplicated or novel.
+- **Next permissible research step:** a bounded theorem formulation for the channel-structure/certification question, accompanied by the missing full-text comparison. Do not treat this as a passed development gate or begin a broad experimental campaign on an unestablished contribution.
+- **User's downstream sequence remains conditional:** viable contribution → model → ILP/LP derivation → solving/evaluation → formal related work with at least 30 papers and strengths/limitations/gap table → introduction/abstract → conclusion. The present targeted screen is not that formal review, and no 30-paper review was drafted.
+
+Research consultation completed without changing existing source files or gate decisions.

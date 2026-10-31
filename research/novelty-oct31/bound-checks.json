@@ -1,0 +1,40 @@
+{
+  "result": "PASS",
+  "rational_cases": 675,
+  "derivative_assertions": 1350,
+  "negative_derivative_cases": 24,
+  "elapsed_seconds": 0.13781170011498034,
+  "rows": [
+    {
+      "users": 8,
+      "archived_grid_MILP_sumSE": 86.85363628953654,
+      "archived_grid_LP_sumSE_numerical": 86.85363628953657,
+      "rounding_allowance_sumSE": 7.997479666404264,
+      "allowance_over_archived_grid_value": 0.0920799635808425,
+      "conditional_LP_value_plus_allowance": 94.85111595594083,
+      "certified_continuous_upper_from_archived_dual": false,
+      "reason": "archived LP dual vectors were not retained; adding E to a reported numerical optimum is illustrative, not a new rigorous certificate"
+    },
+    {
+      "users": 16,
+      "archived_grid_MILP_sumSE": 176.46184300389,
+      "archived_grid_LP_sumSE_numerical": 176.46184300389,
+      "rounding_allowance_sumSE": 15.994742683983844,
+      "allowance_over_archived_grid_value": 0.0906413670610436,
+      "conditional_LP_value_plus_allowance": 192.45658568787385,
+      "certified_continuous_upper_from_archived_dual": false,
+      "reason": "archived LP dual vectors were not retained; adding E to a reported numerical optimum is illustrative, not a new rigorous certificate"
+    },
+    {
+      "users": 32,
+      "archived_grid_MILP_sumSE": 354.8053436186053,
+      "archived_grid_LP_sumSE_numerical": 354.8162183318634,
+      "rounding_allowance_sumSE": 31.990000923020798,
+      "allowance_over_archived_grid_value": 0.09016211705483261,
+      "conditional_LP_value_plus_allowance": 386.8062192548842,
+      "certified_continuous_upper_from_archived_dual": false,
+      "reason": "archived LP dual vectors were not retained; adding E to a reported numerical optimum is illustrative, not a new rigorous certificate"
+    }
+  ],
+  "scope": "standard bound checks and all3 existing input allowances; no new solver run, no performance improvement or novelty evidence"
+}

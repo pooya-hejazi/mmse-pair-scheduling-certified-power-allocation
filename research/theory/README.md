@@ -1,5 +1,7 @@
 # Exactness and certification limits of resource-selective pairing
 
+**31 October novelty update:** the [attribution addendum](../novelty-oct31/ATTRIBUTION_ADDENDUM.md) identifies direct prior art for the bichromatic C4 obstruction and four-edge cut. [Current decision](../novelty-oct31/README.md): PIVOT the main contribution; the rational physical realization remains a scoped, unresolved novelty question. The frozen proof note and its technical review are unchanged. The candidate publication path below is historical and conditional, not a cleared novelty claim. A separate [standard continuous-power bound](../novelty-oct31/GRID_CONTINUOUS_BOUND.md) repairs the grid/continuous distinction; it is not a new polynomial-time ILP solver.
+
 The candidate research question is now narrower: **when can a physically defined two-user MMSE scheduling problem be solved exactly through an LP/assignment model, and when is only a bound available?** This follows the failed selective-information performance/headroom gate; it does not restart channel-estimator development.
 
 - [Proof note](PROOF_NOTE.md): rational channel realization,4-user LP gap surviving projected odd sets, perfect3DM ideal-threshold reduction, continuous-power corollary, and classical additive near-orthogonality bound.
