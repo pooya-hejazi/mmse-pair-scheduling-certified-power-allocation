@@ -19,6 +19,10 @@ In a fresh copy with NumPy/SciPy, `python research/theory/checks.py` runs author
 
 The review directory is a byte-identical export of selected files from the original local audit/reviews/THEORY-CR011-A01; original path references in its report preserve provenance. review/frozen-manifest.json identifies the authored snapshot; the current PROOF_NOTE.md/checks.py/checks.json/PROTOCOL.md match it. No independent reviewer wrote the research code or planning bundle.
 
+## Subsequent technical progress
+
+[Novelty-resolution packet](../novelty-resolution/README.md) preserves this frozen proof and adds an M=3 restriction and exact continuous pair-pricing theorem, independently reviewed within their hypotheses. One separately reviewed K8 certificate bounds the continuous joint gap below0.790584%. Fixed dimension does not preserve global near-orthogonality or establish shared-ray realizability. Publication priority, matched-baseline benefit and scientific-stage acceptance remain open. The bounded decision below is historical; the current next-step contract is [NEXT_EVALUATION.md](../novelty-resolution/NEXT_EVALUATION.md).
+
 ## Bounded next research decision
 
 Working article theme: *Exactness and Certification Limits of Resource-Selective Pair Scheduling with Linear-MMSE Reception*. This is a candidate, not a finished or submission-ready manuscript.

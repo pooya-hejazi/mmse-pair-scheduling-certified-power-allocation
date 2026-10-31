@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "cancelled_denominator",
+      "candidate_boxes": 6,
+      "digits": 12,
+      "width": "1/12500000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "repeated_boundary",
+      "candidate_boxes": 7,
+      "digits": 12,
+      "width": "0"
+    },
+    {
+      "name": "negative_prices",
+      "candidate_boxes": 4,
+      "digits": 12,
+      "width": "1/12500000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "collapsed_x",
+      "candidate_boxes": 6,
+      "digits": 12,
+      "width": "1/10000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "collapsed_y",
+      "candidate_boxes": 4,
+      "digits": 12,
+      "width": "3/50000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "singleton",
+      "candidate_boxes": 4,
+      "digits": 12,
+      "width": "1/12500000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "separable_signed",
+      "candidate_boxes": 5,
+      "digits": 12,
+      "width": "1/12500000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "narrow_box",
+      "candidate_boxes": 4,
+      "digits": 12,
+      "width": "31/500000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "known_concave_max_1/10",
+      "candidate_boxes": 9,
+      "digits": 12,
+      "width": "31/500000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "known_concave_max_1/1000000000000000000000000000000",
+      "candidate_boxes": 9,
+      "digits": 12,
+      "width": "31/500000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "known_concave_max_1/4",
+      "candidate_boxes": 9,
+      "digits": 12,
+      "width": "31/500000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "independent_feasible_grid_points": 1331,
+  "log_cases": 6,
+  "exhaustion_fails_closed": true,
+  "repeated_root_fixture_verified": true,
+  "elapsed_seconds": 0.3769195999484509,
+  "scope": "isolated pair software checks; sampling is not proof of an upper bound"
+}

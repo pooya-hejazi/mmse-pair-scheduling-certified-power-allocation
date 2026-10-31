@@ -1,0 +1,7 @@
+# ORACLE-CR015-A01 independent software check contract
+
+Separate implementation checkpoint, not a second attempt at RESOLUTION-CR015. One initial attempt and at most one repair attempt; <=6 minutes each. Three reflections: coverage/contract; arithmetic and failure correctness; evidence/integration and limits. This may accept only the isolated pair oracle implementation, not a full network certificate, novelty or S03.
+
+Inspect rational_oracle.py, oracle_checks.py, ORACLE_PROTOCOL.md, oracle manifests/results/execution plus the technical theorem report and RESOLUTION-CR015-A01 report as context. The prototype uses exact rational polynomial isolation, excludes common denominator roots, clips candidate boxes conservatively, evaluates all edges/corners and r=0/degenerate cases, and encloses logs using directed division and neighboring correctly-rounded Decimal.ln. Verify no feasible maximizer can be lost and upper/lower directions are sound. Fail closed if refinement is exhausted. The implementation is not allowed to claim interval guarantees for arbitrary irrational input or additional constraints.
+
+Fresh nonauthor Astra reviewer; immutable ACL-protected snapshot and manifest. Only write audit/reviews/ORACLE-CR015-A01; optional independent checks <=30 seconds externally bounded. No installs, subagents, large experiments. Existing base Python C:/ProgramData/anaconda3/python.exe has SymPy/NumPy/SciPy. Verify all frozen hashes before/after. Do not edit source or fixtures. Broader integration and publication sufficiency must remain explicitly unverified.
