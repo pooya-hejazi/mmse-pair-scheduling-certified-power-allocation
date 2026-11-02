@@ -1,0 +1,610 @@
+{
+  "scope": "Source-specific scientific comparison and inspected-version locators; full third-party texts are not redistributed",
+  "references": [
+    {
+      "key": "Fan2012",
+      "role": "technical related work",
+      "contribution": "Two-user SC-FDMA linear-MMSE pairing and contiguous resource patterns; prescribed powers; weighted rates.",
+      "strength": "Direct same-receiver predecessor with joint binary allocation and a branch-and-bound benchmark.",
+      "applicability_boundary": "Power control is excluded. Printed exact-cover equations and optional-service description need reconciliation before reproduction.",
+      "gap_or_role_here": "Our contribution cannot be the pair-rate model, binary architecture or B&B. Distinction is restricted channel-realizable hardness and continuous-power pricing/certification.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "PDF pp.2–5, Eqs.(3)–(12); Appendix B; prior visual checks in FAN_FULLTEXT.md",
+          "version": "IEEE TWC 11(8), 2838–2847; supplied publisher PDF"
+        }
+      ]
+    },
+    {
+      "key": "Ruder2013",
+      "role": "technical related work",
+      "contribution": "SC-FDMA user grouping and frequency allocation, including homogeneous-resource and joint frequency-selective cases.",
+      "strength": "Separates solvable restricted pairing/allocation subproblems from the harder joint assignment and proposes practical algorithms.",
+      "applicability_boundary": "Generic assignment-hardness discussion does not by itself establish a fixed-dimensional rational physical-channel reduction.",
+      "gap_or_role_here": "We use it as direct scheduling prior art, then state exact additional assumptions and proof restrictions. Its ICC2011 precursor is grouped here, not counted again.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Printed pp.91–98, especially Section 6.1 p.97; conclusion; RUDER_FULLTEXT.md",
+          "version": "Physical Communication 8, 91–103; ICC2011 DOI10.1109/ICC.2011.5962572 grouped as same work family"
+        }
+      ]
+    },
+    {
+      "key": "Ruder2014",
+      "role": "technical related work",
+      "contribution": "Frequency-dependent two-user MMSE SC-FDMA allocation with imperfect-CSI scheduling considerations and fixed power.",
+      "strength": "Closest receiver/CSI-aware pair-allocation predecessor; explicitly studies the effect of information quality.",
+      "applicability_boundary": "Contiguous-pattern optional-service conventions and SC-FDMA aggregation differ from the full-service single-resource pair contract.",
+      "gap_or_role_here": "CSI-aware scheduling is established. Our nominal optimization certificate does not certify its actual rates under channel mismatch.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Printed pp.90–91 Eqs.(3)–(6); p.94 Eqs.(26)–(28); RUDER_FULLTEXT.md",
+          "version": "Physical Communication 13, 88–98; supplied publisher PDF"
+        }
+      ]
+    },
+    {
+      "key": "Mostafa2022",
+      "role": "technical related work",
+      "contribution": "Decorrelator plus SIC; pair/F-AP offloading, admission then energy, CPU/delay constraints.",
+      "strength": "Actual channel-encoded 3DM reduction and pairwise resource optimization followed by hypergraph BIP.",
+      "applicability_boundary": "Reduction antenna dimension grows with the constructed instance; objective, receiver and feasibility differ from full-service no-SIC MMSE sum rate.",
+      "gap_or_role_here": "Channel orthogonality encoding and pair/master decomposition are prior art. Only the precise fixed-M rational finite-alphabet and priced-MMSE results remain distinct from this source.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Printed pp.24458–24462; Eqs.(1)–(2),(8); Theorem4 and Remark2",
+          "version": "IEEE Access 10, 24456–24466; supplied publisher PDF"
+        }
+      ]
+    },
+    {
+      "key": "Shi2008",
+      "role": "technical related work",
+      "contribution": "Linear multiuser MIMO transceivers, virtual uplink, weighted rates and total power; fixed-filter geometric-programming subproblem.",
+      "strength": "Establishes rate–MMSE relation and efficient alternating filter/power optimization.",
+      "applicability_boundary": "Global solution of the frozen-filter GP does not give global optimality of the full alternating nonconvex problem.",
+      "gap_or_role_here": "Our two-user rectangle pricing recomputes MMSE at each power and covers all stationary/boundary candidates; it is much narrower than general multilayer transceiver design.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Printed pp.4022–4025 Eqs.(3)–(9), Section III-D; conclusion p.4027",
+          "version": "IEEE TSP 56(8), 4020–4030; supplied publisher PDF"
+        }
+      ]
+    },
+    {
+      "key": "Viterbo2008",
+      "role": "technical related work",
+      "contribution": "Fixed equal-power linear-MMSE pairing with channels constant across the frame; a separate expanded cyclic schedule.",
+      "strength": "Early direct fair full-service MMSE pairing formulation; distinguishes pairing and expanded scheduling constructions.",
+      "applicability_boundary": "Unrestricted Hungarian permutation need not form disjoint 2-cycles for Eq.(8); Eq.(11) is a different feasible family, not refuted by that observation.",
+      "gap_or_role_here": "Homogeneous fixed-power case uses classical general-graph perfect matching. Resource-selective continuous-power certification requires additional machinery.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Printed pp.243–244, Sections II-A–D, Eqs.(7),(8),(11)",
+          "version": "ISSSTA 2008, 242–246; supplied publisher PDF"
+        }
+      ]
+    },
+    {
+      "key": "Sharma2009",
+      "role": "technical related work",
+      "contribution": "Decentralized power allocation with externalities, private utility information, interference-temperature constraints and concavity assumptions.",
+      "strength": "Models information exchange explicitly and provides a global allocation mechanism within its stated utility assumptions.",
+      "applicability_boundary": "Two-user MMSE example uses negative MSE and a small-correlation approximate-concavity discussion, not the logarithmic sum-rate sharp threshold.",
+      "gap_or_role_here": "Our priced no-SIC pair log-rate has a separate exact curvature condition; do not import this paper’s global conclusion outside its assumptions.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Section II Assumption5; Section III; Appendix B, printed p.1830 Eqs.(46)–(48)",
+          "version": "IEEE/ACM ToN 17(6), 1819–1831; author-hosted PDF"
+        }
+      ]
+    },
+    {
+      "key": "Denno2025",
+      "role": "technical related work",
+      "contribution": "Subset selection for uplink multiantenna users with MMSE filters; iterative random sounding and incumbent carry-over.",
+      "strength": "Explicit sounding/computation tradeoff; practical frequency-selective 3D-cell study and a bounded candidate search per round.",
+      "applicability_boundary": "Eq.(7) inverse-Gram-trace utility is an approximate high-SINR throughput proxy. Selects a subset and does not jointly optimize continuous transmit powers.",
+      "gap_or_role_here": "Carry-over random neighborhood search can inspire a clearly labeled schedule heuristic; it is not an unchanged baseline for exact full-service pair sum rate.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Publisher full HTML Sections2–5; Eqs.(5),(7); Section4.2",
+          "version": "IEICE Trans. Communications E108-B(5), 665–672; DOI10.23919/transcom.2024EBP3119"
+        }
+      ]
+    },
+    {
+      "key": "Wang2023",
+      "role": "technical related work",
+      "contribution": "Multiantenna UEs/APs; Weichselberger Rayleigh channels, imperfect CSI, centralized and LSFD processing, weighted SE.",
+      "strength": "Receiver/weight/precoder iteration with explicit CSI-error covariance and practical centralized/distributed processing choices.",
+      "applicability_boundary": "Stationary iterative precoding is not a global joint pair-resource optimum; statistical/estimated-CSI objective differs from our nominal pair utility.",
+      "gap_or_role_here": "Our scalar-amplitude I-WMMSE is an explicit adaptation with common sum budget, powers and schedule-search costs, not reproduction of its figures.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Sections II–IV; Eqs.(16)–(20); Algorithm1; conclusion and Appendix D",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "ShenYu2018a",
+      "role": "technical related work",
+      "contribution": "Multiple-ratio continuous optimization, power control, beamforming and energy efficiency through quadratic transformation.",
+      "strength": "General exact auxiliary-variable transformation and efficient alternating convex subproblems, with stationary-point convergence under assumptions.",
+      "applicability_boundary": "A stationary point of a general nonconvex sum-rate problem is not a global certificate.",
+      "gap_or_role_here": "Transformation and iterative optimization are prior art; our complete low-dimensional root characterization has a different guarantee.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Theorems1–3; Algorithm1; Sections IV–V",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "ShenYu2018b",
+      "role": "technical related work",
+      "contribution": "Joint uplink scheduling/power/beamforming in multicell SISO and MIMO; auxiliary variables expose weighted matching.",
+      "strength": "Direct strong scheduling/power method that avoids premature link turn-off; matching subproblems and monotonic objective improvement.",
+      "applicability_boundary": "Proposition2 gives convergence and fixed-schedule continuous stationarity, not global mixed-integer optimality.",
+      "gap_or_role_here": "Matching-based alternating scheduling cannot be claimed novel here. Our pair incidence and total power require explicit adaptation before comparison.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Theorems3–4; Algorithms1–2; Eqs.(42)–(47); Proposition2",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Matthiesen2020",
+      "role": "technical related work",
+      "contribution": "Nonconvex optimization with mixed-monotone box representations and branch-reduce-bound.",
+      "strength": "General globally convergent eta-optimal reference under bound-improving selection; avoids weak reformulations.",
+      "applicability_boundary": "Generic spatial branching can be costly; application formulas do not automatically include our recomputed-MMSE utility.",
+      "gap_or_role_here": "Our mixed-monotone specialization and global branching are applications of established theory. The candidate distinction is structure-specific pricing/curvature and measured bound benefit.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Section II Eqs.(1)–(3); Section III Algorithm1 and Theorem1; application sections",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Hassan2014",
+      "role": "technical related work",
+      "contribution": "Fixed-gain interfering links under a sum-power constraint, with and without QoS.",
+      "strength": "Explicit two-link binary-versus-sharing cases and a finite stationary quadratic candidate calculation.",
+      "applicability_boundary": "Theorem proofs are partly delegated to the conference version; fixed cross gains and exhausted sum budget differ from MMSE rectangle pricing.",
+      "gap_or_role_here": "Finite candidate elimination is not a new principle. Our exact signed-price rectangle and degeneracy coverage need their own proof and matched benchmark.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Theorems1–3, Eq.(10), Algorithm1; three-link and QoS sections",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "ZhaoPottie2011",
+      "role": "technical related work",
+      "contribution": "Continuous-frequency spectrum sharing in fixed-gain Gaussian interference channels.",
+      "strength": "Pairwise FDMA sufficiency conditions and concave-envelope convexification with finite frequency-sharing support.",
+      "applicability_boundary": "Arbitrarily divisible frequency/time sharing differs from one integral pair and one power point per resource.",
+      "gap_or_role_here": "Configuration convexification is established; its exactness for divisible sharing does not prove exactness of our single-slot integral schedule.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Theorems1,3,5; Sections IV–V; conclusions",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Prasad2013",
+      "role": "technical related work",
+      "contribution": "LTE-A uplink multistream MU-MIMO scheduling with codebook, contiguity and interference/control constraints.",
+      "strength": "Explicit NP-hardness plus submodular/matroid/knapsack structure and approximation algorithms under a detailed scheduling contract.",
+      "applicability_boundary": "The MAC/log-det and variable-group-size construction is not the same fixed two-user no-SIC MMSE restriction.",
+      "gap_or_role_here": "General uplink scheduling hardness and structural approximation are prior art; our reduction must substantiate its physical fixed-dimensional restrictions.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Problem(11), Theorems1–2, Appendix B; scheduling algorithms and simulations",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "LePfender2013",
+      "role": "technical related work",
+      "contribution": "Maximum-cardinality rainbow matchings in edge-colored graphs.",
+      "strength": "Sharp tractability/hardness contrasts and approximation restrictions on highly constrained graph classes.",
+      "applicability_boundary": "Abstract colored-edge compatibility is not a physical channel realization; maximum-cardinality statements need not imply perfect-threshold variants automatically.",
+      "gap_or_role_here": "Our resource colors have an established combinatorial analogue, but the MMSE channel realization and decision-threshold premise require separate justification.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Theorems1,5–6 and restricted graph classes; reductions in Section3",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "KelkStamoulis2018",
+      "role": "technical related work",
+      "contribution": "Bounded-color matching LP and Sherali–Adams relaxations.",
+      "strength": "Constructs and explains color-constrained matching integrality gaps, including small-cycle obstructions.",
+      "applicability_boundary": "An abstract graph LP obstruction is not itself a realizable MMSE-rate example or a continuous-power mixing result.",
+      "gap_or_role_here": "Four-cycle fractional incidence is known; any claimed contribution must be its physically restricted realization, not discovery of the combinatorial gap.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Section3 integrality-gap constructions; bichromatic four-cycles and strengthening discussion",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Salaun2019",
+      "role": "technical related work",
+      "contribution": "Multicarrier uplink/downlink NOMA with SIC, individual budgets and generalized-mean utilities.",
+      "strength": "Detailed 3DM-based strong-hardness framework and explicit tractable special cases.",
+      "applicability_boundary": "SIC rates, admission through zero power and per-user multicarrier budgets differ from full-service positive-box no-SIC MMSE pairing.",
+      "gap_or_role_here": "General resource/power hardness is established. Our theorem must be stated as a narrower physical consequence, not the first joint-allocation NP-hardness result.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Section II SIC model; Section III; Lemmas5–6, Theorem7",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Bjornson2020",
+      "role": "technical related work",
+      "contribution": "Dynamic cooperation clusters, joint access/pilot/cluster assignment and scalable CF combining/precoding.",
+      "strength": "Explicit complexity/fronthaul scalability definitions and realistic imperfect-CSI combining models.",
+      "applicability_boundary": "Power optimization is not fully resolved in the proposed scalable framework; no exact full-service pair-resource-power certificate.",
+      "gap_or_role_here": "Joint architecture and MMSE combining are established. A common receiver vector alone is insufficient to claim all cell-free scalability benefits.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Definition1, Lemma1; Section V; Proposition1 Eqs.(17)–(20); conclusion",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Cheng2016",
+      "role": "technical related work",
+      "contribution": "Single-cell MRC/ZF uplink, joint pilot/data energy budget, weighted minimum or sum SE.",
+      "strength": "Optimal training length and convex reformulations expose globally solvable power-control structure.",
+      "applicability_boundary": "Statistical SE with MRC/ZF and pilot-energy coupling differs from instantaneous recomputed-MMSE pair scheduling.",
+      "gap_or_role_here": "Neither joint pilot/data design nor existence of an exact power-control subclass is new; our claimed structure is receiver- and domain-specific.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Theorem1; Theorems5–6, Eq.(31)–(32), virtual water-filling Algorithm1",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Ammar2021",
+      "role": "technical related work",
+      "contribution": "Distributed downlink user-centric CF scheduling/beamforming with channel-error leakage/interference and DU/CU architectures.",
+      "strength": "Combines uncertainty-aware resource allocation and matching with explicit distributed implementation.",
+      "applicability_boundary": "Downlink beam assignment and leakage surrogate are not the same uplink no-SIC pair rate or feasible family.",
+      "gap_or_role_here": "Relevant architecture/prior-art context; unchanged rates and reported gains cannot be used as a fair numerical baseline for this manuscript.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Sections II–IV; Algorithm1; Eqs.(10)–(16)",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Jang2022",
+      "role": "technical related work",
+      "contribution": "FDD MU-MIMO end-to-end pilot/feedback/precoder neural design, inspired by WMMSE.",
+      "strength": "Task-oriented learning explicitly connects acquisition and final communication objective.",
+      "applicability_boundary": "Training-dependent learned downlink policy has no instance-wise original joint-scheduling optimality certificate.",
+      "gap_or_role_here": "Generic end-to-end acquisition/RRM linkage is prior art; our negative CSI exploration must not be rebranded as that conceptual invention.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Section II Eqs.(1)–(8); Section III; Algorithm1; joint-design architecture",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Yoo2025",
+      "role": "technical related work",
+      "contribution": "Context-dependent covariate-shift calibration of pretrained wireless apps using learned importance ratios.",
+      "strength": "Coverage statement includes an explicit penalty for importance-weight/distribution error; multi-context calibration is considered.",
+      "applicability_boundary": "Marginal predictive coverage is not simultaneous decision-safe outage control for adaptive scheduling.",
+      "gap_or_role_here": "Conformal wireless calibration is prior art. Our information-policy bounds need their own causal/simultaneous event and cannot inherit coverage without conditions.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Section II distribution contract; Algorithm1; Lemma2 Eq.(26); Appendix A",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "DeepMIMO2019",
+      "role": "dataset provenance",
+      "contribution": "Parameterized channels derived from Wireless InSite ray-tracing, scenario geometry and transmitter/receiver locations.",
+      "strength": "Reproducible physical channel-generation contract with configurable antennas/subcarriers and documented O1 scenario.",
+      "applicability_boundary": "A dataset does not itself establish independent train/test groups or universal 6G relevance.",
+      "gap_or_role_here": "We must publish scenario and generation parameters, units and split provenance; simulation geometry is separate from adversarial hardness channels.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Sections II–IV, parameterized generation and O1 geometry; example application and conclusion",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Jiang2025",
+      "role": "technical related work",
+      "contribution": "Correlated multiantenna CF channels, centralized/distributed combining, comparative max-min power control.",
+      "strength": "Compares processing choices under a more consistent common system and CSI contract.",
+      "applicability_boundary": "Max-min SE and statistical/estimated-channel processing differ from instantaneous unweighted pair sum rate.",
+      "gap_or_role_here": "Useful contemporary receiver/power context. Its performance rankings and global-solution claims are not transferred to our distinct objective.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Sections II–V; Algorithm1 universal max-min power control; numerical evaluation and conclusion",
+          "version": "arXiv version; journal publication not re-verified"
+        }
+      ]
+    },
+    {
+      "key": "Barnhart1998",
+      "role": "methodological/theorem attribution",
+      "contribution": "Large-column integer programs, restricted masters, pricing and branch-and-price.",
+      "strength": "Explains stronger decomposition bounds and why pricing must continue after branching; distinguishes LP and integer solutions.",
+      "applicability_boundary": "General framework requires a problem-specific exact or appropriately bounded pricing oracle; a restricted master alone is not globally certified.",
+      "gap_or_role_here": "Column generation, dual repair and branching are established principles; our possible contribution is the physical pricing structure and documented implementation benefit.",
+      "evidence_status": "current-pass targeted primary-text excerpts plus prior technical-reading record",
+      "inspected_evidence": [
+        {
+          "locator": "Author manuscript pp.1–5, Section4 Lagrangian duality, Section5 branching, Section6 computational issues",
+          "version": "Operations Research 46(3), 316–329; author-hosted manuscript; DOI10.1287/opre.46.3.316"
+        }
+      ]
+    },
+    {
+      "key": "Edmonds1965",
+      "role": "methodological/theorem attribution",
+      "contribution": "General-graph weighted matching and the matching polytope with odd-set inequalities.",
+      "strength": "Exact polyhedral characterization and efficient general weighted-matching method.",
+      "applicability_boundary": "Adding resource/color and power constraints can destroy this matching polytope’s integrality.",
+      "gap_or_role_here": "Homogeneous fixed-power pairing is classical matching. Neither Hungarian assignment nor projected odd-set cuts solve the entire resource-selective model.",
+      "evidence_status": "prior primary fulltext reading carried forward; current reread blocked",
+      "inspected_evidence": [
+        {
+          "path_or_url": "https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn1-2p125_A1b.pdf",
+          "locator": "Sections1–3 pp.125–126, inequalities(1)–(3), Theorem(P); algorithm Sections4–7",
+          "version": "J. Res. NBS 69B(1–2), 125–130; official NIST full PDF"
+        }
+      ]
+    },
+    {
+      "key": "Dyer1985",
+      "role": "supporting complexity premise",
+      "contribution": "Original-author statement of bounded-occurrence perfect planar3DM NP-completeness.",
+      "strength": "Original-author statement of bounded-occurrence perfect planar3DM NP-completeness.",
+      "applicability_boundary": "Supports an external premise; no algorithmic comparison is appropriate.",
+      "gap_or_role_here": "Add exact locator p.141 Section2 Eq.(2.1): perfect planar3DM remains NP-complete when every element occurs in two or three triples; planarity may be discarded for our premise. Say the 1985 paper states and attributes the proof to Dyer-Frieze1986. Our separate reduction supplies channel construction and separation.",
+      "evidence_status": "current-pass targeted primary theorem/model reread",
+      "inspected_evidence": [
+        {
+          "locator": "Printed p.141, Section2, Eq.(2.1); PDF p.3",
+          "version": "Primary original or explicitly identified author version"
+        }
+      ]
+    },
+    {
+      "key": "AIM2008",
+      "role": "supporting geometric theorem",
+      "contribution": "Real3-dimensional faithful orthogonal representation of tree complements with pairwise independent vectors.",
+      "strength": "Real3-dimensional faithful orthogonal representation of tree complements with pairwise independent vectors.",
+      "applicability_boundary": "The source does not itself claim the rational unit-norm finite alphabet used by the present reduction.",
+      "gap_or_role_here": "Add Theorem3.16 p.1639, explicitly concerning faithful orthogonal representations of tree complements in real3-space. Separate this geometric antecedent from our rational unit-vector finite alphabet for a bounded forest family; do not allege a source weakness.",
+      "evidence_status": "current-pass targeted primary theorem/model reread",
+      "inspected_evidence": [
+        {
+          "path_or_url": "https://www.mat.uc.pt/~leal/FCT09/AIM08.pdf",
+          "locator": "Printed p.1639/PDF p.12, Theorem3.16 and definition immediately above",
+          "version": "Primary original or explicitly identified author version"
+        }
+      ]
+    },
+    {
+      "key": "Haustein2006",
+      "role": "closest same-objective predecessor",
+      "contribution": "Explicit recomputed linear-MMSE no-SIC sum rate and two-user SIMO SINRs; discusses general nonconcavity.",
+      "strength": "Explicit recomputed linear-MMSE no-SIC sum rate and two-user SIMO SINRs; discusses general nonconcavity.",
+      "applicability_boundary": "Later SIC/SNR-gap examples concern a different objective; no sharp quadrant threshold or priced quintic established by inspected passages.",
+      "gap_or_role_here": "Add printed pp.48,51/PDF pp.68,71 Eqs.(4.33)-(4.36),(4.47)-(4.49). Explicitly credit recomputed-MMSE no-SIC two-user rates and nonconcavity; retain our sharper theorem/oracle scope. Do not confuse later SIC-with-SNR-gap quadratic with no-SIC pricing.",
+      "evidence_status": "current-pass targeted primary theorem/model reread",
+      "inspected_evidence": [
+        {
+          "locator": "Printed pp.48,51-52/PDF pp.68,71-72, Eqs.(4.33)-(4.36),(4.47)-(4.49)",
+          "version": "Primary original or explicitly identified author version"
+        }
+      ]
+    },
+    {
+      "key": "Mollanoori2011",
+      "role": "supporting wireless-hardness predecessor",
+      "contribution": "Full-service scalar common-receiver SIC scheduling is hard even for two slots via PARTITION.",
+      "strength": "Full-service scalar common-receiver SIC scheduling is hard even for two slots via PARTITION.",
+      "applicability_boundary": "Allows arbitrary users per slot and input-dependent received powers; different from exactly-two no-SIC equal-norm pairing.",
+      "gap_or_role_here": "Add SectionII/Problem1/Theorem1 PDF pp.2-4: all users served once, one scalar receiver, fixed received powers, two-slot PARTITION hardness. Specify arbitrary slot population and input-dependent powers as applicability boundaries, not flaws.",
+      "evidence_status": "current-pass targeted primary theorem/model reread",
+      "inspected_evidence": [
+        {
+          "path_or_url": "https://cspages.ucalgary.ca/~mghaderi/docs/allerton11-sic.pdf",
+          "locator": "SectionII pp.2-3; Problem1 and Theorem1 pp.3-4",
+          "version": "Primary original or explicitly identified author version"
+        }
+      ]
+    },
+    {
+      "key": "Razaviyayn2010",
+      "role": "supporting fixed-antenna hardness predecessor",
+      "contribution": "DoF maximization and three-antenna interference-alignment feasibility hardness via independent-set/coloring reductions.",
+      "strength": "DoF maximization and three-antenna interference-alignment feasibility hardness via independent-set/coloring reductions.",
+      "applicability_boundary": "Multiple transmitter/receiver pairs and optimized subspaces; its dimension boundary is not the present scheduling boundary.",
+      "gap_or_role_here": "Add SectionIII Theorem1 and Theorem2 in inspected arXiv1009.3481v1: multi-receiver DoF/optimized-subspace feasibility hardness and its own <=2 antenna tractability. Do not transfer that dimension boundary to finite-SNR pair scheduling.",
+      "evidence_status": "current-pass targeted primary theorem/model reread",
+      "inspected_evidence": [
+        {
+          "path_or_url": "https://arxiv.org/html/1009.3481v1",
+          "locator": "SectionIII, Theorems1-2; inspected v1, distinct from final2012 journal citation",
+          "version": "Primary original or explicitly identified author version"
+        }
+      ]
+    },
+    {
+      "key": "Liu2016",
+      "role": "supporting fixed-antenna hardness predecessor",
+      "contribution": "Strong hardness for two-antenna single-carrier linear-transceiver SINR/power optimization.",
+      "strength": "Strong hardness for two-antenna single-carrier linear-transceiver SINR/power optimization.",
+      "applicability_boundary": "Multiple interference-channel links with optimized beamformers; no mandatory two-user orthogonal-resource schedule.",
+      "gap_or_role_here": "Add SectionIII-C Theorems3-4, draft pp.15-17, for two-antenna single-carrier interference-channel beamforming SINR/power objectives. Flag Eq.(14) apparent max/min extraction inconsistency and AppendixC minimization interpretation without claiming a source error.",
+      "evidence_status": "current-pass targeted primary theorem/model reread",
+      "inspected_evidence": [
+        {
+          "path_or_url": "https://optimization-online.org/wp-content/uploads/2016/10/5692.pdf",
+          "locator": "Draft29Oct2016, SectionIII-C pp.15-17, Theorems3-4; AppendixC pp.21-26",
+          "version": "Primary original or explicitly identified author version"
+        }
+      ]
+    },
+    {
+      "key": "Chen2026TCOM",
+      "role": "recent contextual related work",
+      "contribution": "Downlink OFDM hybrid analog/digital beamforming with limited RF chains; at least one user service over time; constant-modulus RF and per-subcarrier beamformer norm constraints.",
+      "strength": "Uses frequency allocation to counter beam squint.",
+      "applicability_boundary": "Penalty changes need not preserve rate monotonicity; no global joint certificate.",
+      "gap_or_role_here": "At-least-once hybrid downlink differs from exactly-once no-SIC uplink pairing.",
+      "evidence_status": "current-pass targeted primary model/algorithm passages; prior detailed version record retained",
+      "inspected_evidence": [
+        {
+          "locator": "Sec. II-B eq. (4), pp.3315-3316; Sec. IV-A eqs.(21)-(29), pp.3319-3320; Sec. IV-B Algorithms 1-2, p.3323; Sec. IV-B.4 convergence discussion, pp.3323-3324",
+          "version": "Author-hosted final issue PDF web extract; original PDF not saved locally"
+        }
+      ]
+    },
+    {
+      "key": "Elyasi2026TWC",
+      "role": "recent contextual related work",
+      "contribution": "Correlated Rayleigh multicell massive MIMO with estimated channels, intra/intercell pilot reuse and M-MMSE.",
+      "strength": "Jointly recognizes spatial correlation, pilot overhead, estimation and payload allocation.",
+      "applicability_boundary": "The weighted sum-SE power approximation does not certify the fully recomputed statistical or fixed-channel mixed scheduling problem.",
+      "gap_or_role_here": "Our instantaneous exact pair rate recomputes the receiver as powers change; no pilots optimized.",
+      "evidence_status": "current-pass targeted primary model/algorithm passages; prior detailed version record retained",
+      "inspected_evidence": [
+        {
+          "locator": "Final supplied journal text; Receiver is Eq.(9), not old ledger Eq.(7).; Former Eq.(15) becomes unnumbered; subsequent equation numbers decrease by one.; Final Eqs.(35)-(38), pp.38-39 retain high-SNR approximation and coefficients fixed at initial powers.",
+          "version": "IEEE Transactions on Wireless Communications 2026 supplied issue text, iranpaper overlay; pristine IEEE byte identity not claimed"
+        }
+      ]
+    },
+    {
+      "key": "Liu2025TWC",
+      "role": "recent contextual related work",
+      "contribution": "Mobile-AP downlink CF-mMIMO with MMSE channel estimation and MR transmission; AP movement and local powers.",
+      "strength": "Explicit policy symmetry and inter-agent coordination.",
+      "applicability_boundary": "Permutation structure and empirical learned-policy outcomes do not constitute instance-wise global scheduling certificates.",
+      "gap_or_role_here": "Fixed channels, no mobility decisions, centralized no-SIC MMSE and exact service equalities here.",
+      "evidence_status": "current-pass targeted primary model/algorithm passages; prior detailed version record retained",
+      "inspected_evidence": [
+        {
+          "locator": "Final supplied journal text; Inspected model Eqs.(1)-(22), permutation results Eqs.(23)-(33), and learned control Eqs.(34)-(53) retain relevant content and labels.; Algorithms 1-2 now pp.1823 and 1825; conclusion p.1830.",
+          "version": "IEEE Transactions on Wireless Communications 2025 supplied issue text, iranpaper overlay; pristine IEEE byte identity not claimed"
+        }
+      ]
+    },
+    {
+      "key": "Mobini2026TWC",
+      "role": "recent contextual related work",
+      "contribution": "Downlink multiantenna AP/users; cooperative beamforming clusters, user-centric association, statistical CSI and MMSE-SIC.",
+      "strength": "Explicit cooperation/fronthaul tradeoff.",
+      "applicability_boundary": "Penalty-limit and reported fixed-association stationarity assertions do not establish global joint association/power optimality; budgets are per AP.",
+      "gap_or_role_here": "No-SIC pair reception, full-service equalities and a single power budget are different constraints and rates.",
+      "evidence_status": "current-pass targeted primary model/algorithm passages; prior detailed version record retained",
+      "inspected_evidence": [
+        {
+          "locator": "Final supplied journal text; Model and optimization equation labels retained through Eq.(50).; Algorithm 1 and reported Fritz John stationarity now p.908.; Algorithm 2 top-channel-gain association remains heuristic; example enumeration is not a global guarantee.",
+          "version": "IEEE Transactions on Wireless Communications 2026 supplied issue text, iranpaper overlay; pristine IEEE byte identity not claimed"
+        }
+      ]
+    },
+    {
+      "key": "Daei2025TCOM",
+      "role": "recent contextual related work",
+      "contribution": "Single-antenna users and multiantenna BS; time-varying Rician means/covariances with nonstationary AR aging and LMMSE acquisition/reception.",
+      "strength": "Accounts for temporal acquisition overhead and aging.",
+      "applicability_boundary": "Tagged-user deterministic-equivalent SE design; source fixed-point convergence statement is not a certificate for joint discrete/continuous optimization.",
+      "gap_or_role_here": "Temporal pilot allocation and tagged-user average SE differ from instantaneous network pairing.",
+      "evidence_status": "current-pass targeted primary model/algorithm passages; prior detailed version record retained",
+      "inspected_evidence": [
+        {
+          "locator": "Final supplied journal text; Prop.2 Eqs.(7)-(8): covariance-normalized spatial correlation replaces old Eq.(6).; Remark 3 Eqs.(12)-(13): explicit small-symbol-time AR-model limitation.; New Prop.3 Eqs.(40)-(41) addresses SE fixed-point evaluation, not global convergence of Algorithm 1.; Algorithm 1 retains heuristic frame enumeration and projected power ascent.",
+          "version": "IEEE Transactions on Communications 2025 supplied issue text, iranpaper overlay; pristine IEEE byte identity not claimed"
+        }
+      ]
+    },
+    {
+      "key": "Fu2026TCOM",
+      "role": "recent distributed statistical downlink design",
+      "contribution": "DE expression for statistical-CSI LP-RZF ergodic downlink sum SE; continuous regularization/power control after LSF association",
+      "strength": "Derives desired-signal, power-normalization and interference DE terms and uses Taylor/SCA design under per-EDU budgets",
+      "applicability_boundary": "Asymptotic UatF/statistical objective; association fixed before continuous steps; source reports KKT stationarity, not a global finite-channel schedule bound",
+      "gap_or_role_here": "Compare actual receiver, active-user model, information, constraints and guarantee with positive-box full-service nominal pair scheduling; do not transfer numerical gains.",
+      "evidence_status": "Actually inspected supplied primary full text after user provision; earlier access failure historical only",
+      "inspected_evidence": [
+        {
+          "locator": "Journal6446-6450:Eqs1-25,Remark1,Prop1,Algorithms1-2,IV-C;AppendixA/B6444-6459;algorithm boxes visualPDF7",
+          "version": "Supplied publisher-formatted issue text with iranpaper overlay; full relevant actual technical reading; pristineIEEEbytesnotclaimed"
+        }
+      ]
+    },
+    {
+      "key": "Ou2026TCOM",
+      "role": "close no-SIC uplink optimization predecessor",
+      "contribution": "Dual-polarized two-stream/user no-SIC uplink with imperfect CSI and finite-blocklength sum-SE power design",
+      "strength": "Models covariance error/FBLdispersion and derives fixed-combiner transformed power updates with objective convergence and conditional stationarity",
+      "applicability_boundary": "AllKusersactive,per-userstreambudget;Algorithm1computescombinersbeforepowerloop,powerscalarsneglectedincombinerdesign;noglobaljointschedulecertificate",
+      "gap_or_role_here": "Compare actual receiver, active-user model, information, constraints and guarantee with positive-box full-service nominal pair scheduling; do not transfer numerical gains.",
+      "evidence_status": "Actually inspected supplied primary full text after user provision; earlier access failure historical only",
+      "inspected_evidence": [
+        {
+          "locator": "Journal14518-14527:Eqs27-55,Algorithm1PDF11,Eqs75-78;Astraactualreading record",
+          "version": "Supplied publisher-formatted issue text with iranpaper overlay; full relevant actual technical reading; pristineIEEEbytesnotclaimed"
+        }
+      ]
+    }
+  ]
+}
