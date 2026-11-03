@@ -1,3 +1,31 @@
+# MMSE Pair Scheduling: current reviewed revision R1
+
+The current version is **PDP2-CR030-R1**, synchronized on 3 November 2026. The previously reviewed scientific results are unchanged.
+
+- [Article PDF (13 pages)](releases/PDP2-CR030-R1/Manuscript.pdf)
+- [Article LaTeX source ZIP](releases/PDP2-CR030-R1/Manuscript_Source.zip)
+- [Technical supplement (32 pages)](releases/PDP2-CR030-R1/Supplementary_Material.pdf)
+- [Response to all 58 review comments (9 pages)](releases/PDP2-CR030-R1/Response_to_Review.pdf)
+- [Independent Astra review](releases/PDP2-CR030-R1/ASTRA_REVIEW.md)
+- [Exact delivery manifest](releases/PDP2-CR030-R1/DELIVERY_MANIFEST.json) and [validation](releases/PDP2-CR030-R1/VALIDATION.json)
+- [Complete R1 directory, cover letter and reference exports](releases/PDP2-CR030-R1/)
+
+## Reassemble the supplementary archive
+
+Download this repository as a ZIP and extract it, or download all seven `Supplementary_Materials.zip.partNN` files together with `ARCHIVE_PARTS.json` and `reassemble.py` from the R1 directory. Run:
+
+```text
+python releases/PDP2-CR030-R1/reassemble.py
+```
+
+For files downloaded into one folder, run `python reassemble.py` there. The script verifies every part and reconstructs the exact reviewed `Supplementary_Materials.zip` (10,052,799 bytes; SHA-256 `6dc52e28c6d1352029c2f6b8f23afa77a4e5440cc3239655d4bb806ca0636639`). Extract it and follow its README for source builds, saved-statistics and certificate replay. All 3,627 scientific reproduction files are unchanged. No new optimization, training or channel generation was performed.
+
+The split is a connector transport workaround. The original R1 PDFs, source ZIP, manifests and review files retain their exact audited bytes. Statements about local preparation/public release in those immutable documents describe their preparation state. Synchronization does not change repository visibility or constitute journal submission; the repository remains private. Raw DeepMIMO datasets and third-party full texts are not included in R1.
+
+## Earlier version (historical)
+
+The older root-level files and instructions below are retained as historical material. Use the R1 links above for the current manuscript and supplement.
+
 # MMSE Pair Scheduling: Computational Complexity and Certified Power Allocation
 
 This companion material contains the manuscript sources, a separate technical supplement, figures, saved computational outcomes, proof receipts and programs for checking or plotting those outcomes. It contains no raw DeepMIMO scenario archive or channel-pool NPZ file. The original and corrective studies remain separate; original input-window failures and the disclosed recovery allocation are preserved.
