@@ -1,6 +1,22 @@
-# MMSE Pair Scheduling: current reviewed revision R1
+# MMSE Pair Scheduling: current release PDP2-CDL-2026-11-09
 
-The current version is **PDP2-CR030-R1**, synchronized on 3 November 2026. The previously reviewed scientific results are unchanged.
+The current release is **PDP2-CDL-2026-11-09**, synchronized on 9 November 2026. It replaces the DeepMIMO rate claim with a standardized 3GPP TR 38.901 CDL-A/B/C benchmark and adds the exact-assignment plus SQP power search.
+
+- [Manuscript PDF (13 pages)](releases/PDP2-CDL-2026-11-09/Manuscript.pdf)
+- [Manuscript source ZIP](releases/PDP2-CDL-2026-11-09/Manuscript_Source.zip)
+- [Supplementary material (47 pages)](releases/PDP2-CDL-2026-11-09/Supplementary_Material.pdf)
+- [Supplementary source and complete reproducible code](releases/PDP2-CDL-2026-11-09/Supplementary_Materials.zip)
+- [Cover letter](releases/PDP2-CDL-2026-11-09/Cover_Letter.pdf)
+- [Release notes and scope](releases/PDP2-CDL-2026-11-09/README.md)
+- [Delivery manifest](releases/PDP2-CDL-2026-11-09/DELIVERY_MANIFEST.json)
+
+Headline result: 53 CDL-A/B/C cases at `K=16`, `M=2`; median gain over the best common-model baseline **1.31%**, absolute **0.129 bit/s/Hz**, 95% interval **[1.19,1.42]%**, **53 wins / 0 ties / 0 losses**. The `M=8` DeepMIMO result remains only as a certification and receive-dimension cross-check (27/32 certificates at 0.01 nat, 97.82% median gap reduction). CDL rate gains are feasible and verified but not globally certified.
+
+---
+
+# Earlier release: reviewed revision R1
+
+The R1 version is **PDP2-CR030-R1**, synchronized on 3 November 2026. Its previously reviewed scientific results are unchanged.
 
 - [Article PDF (13 pages)](releases/PDP2-CR030-R1/Manuscript.pdf)
 - [Article LaTeX source ZIP](releases/PDP2-CR030-R1/Manuscript_Source.zip)
