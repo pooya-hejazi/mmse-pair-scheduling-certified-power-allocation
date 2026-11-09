@@ -1,0 +1,1467 @@
+{
+  "schema": "PHASE1_BENCHMARK_V1",
+  "description": "Deterministic M-truncation of all 32 stored DeepMIMO cases; no outcome-based selection.",
+  "factors": {
+    "M": [
+      2,
+      4,
+      8
+    ],
+    "K": [
+      8,
+      16
+    ],
+    "pmin": "1/1000",
+    "pmax": "1/5",
+    "budget_over_K": "13/100",
+    "grid": [
+      "1/20",
+      "1/10",
+      "1/5"
+    ],
+    "anchor": "sequential pairing + uniform P/K"
+  },
+  "cases": [
+    {
+      "name": "asu-main-00-M2",
+      "source": "asu-main-00",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "b27d3c86e93e6bea41ab995a8edb744c0109441d3444404196e012874e3522fd",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-00-M4",
+      "source": "asu-main-00",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "b569b352618cef2a4078f06715bd6a3ca701a96209560a0daabb16bd409a1931",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-00-M8",
+      "source": "asu-main-00",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "e17f4dc38efd8a40092e9f87fe3301cec69beb84ee12e55c6d7e5a61e98b01d8",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-01-M2",
+      "source": "asu-main-01",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "a241bf9970eb14e5a60a946f26d02d38f9f3b4683cdd10a1caead03e07545db0",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-01-M4",
+      "source": "asu-main-01",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "d881938c393cdd24cde74c00153dbd8e5775b992182a374fe2d3dd4a8343bfb1",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-01-M8",
+      "source": "asu-main-01",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "9724e848044c4fe6fca8d1fea5766dda4d9907386bbcbe2cc40de98c0b87f358",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-02-M2",
+      "source": "asu-main-02",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "a10ff24ee37895fa7bba63f598702d67697f04350a9ce7000b3fc8e295e0f693",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-02-M4",
+      "source": "asu-main-02",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "aaf4e973b6839c2a2202dc03a0a881bea5a79466f814aa86891c21b40ae7f7a9",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-02-M8",
+      "source": "asu-main-02",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "a346a22ae4ab51d0e0bb11a70f96e85515523d74a8957ffb313220e751896836",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-03-M2",
+      "source": "asu-main-03",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "6caeb74837a2e7f94a17d9a8409493239c4d8f0257ba4c927803a3bb24e20b8a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-03-M4",
+      "source": "asu-main-03",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "39f6613837a869b0ad06b200e019cdb4193517b35efba18d77affcd36077c312",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-03-M8",
+      "source": "asu-main-03",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "d3a6e188a5d856c6c4c06ecabe7147e039e7b0b5561a43d9956556e41a3b908d",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-04-M2",
+      "source": "asu-main-04",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "737e3459e91f499318926fa4251bf1c7009cda501c19935c389040a2c0994f66",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-04-M4",
+      "source": "asu-main-04",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "46bb1a41a113c8a805e4b48952e5ca87723856269fd4b8dc520d2101210eb6d6",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-04-M8",
+      "source": "asu-main-04",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "1dfd12636025f3c18c5e8eee87394babd63f323f1616e08270a37a68413ccb0b",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-05-M2",
+      "source": "asu-main-05",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "29ad8da4393a84bf160e38cf9dcba9582867f1527ac21e37bc2322774e538f70",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-05-M4",
+      "source": "asu-main-05",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "b4b60f4f72396c21913e6ab149234e7b5928ecd5a2936eb6629f637aa19e897c",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-05-M8",
+      "source": "asu-main-05",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "b4a04ef896b7bec336573381ed15b4cd04d25eae9613d187b36097398e2556ef",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-06-M2",
+      "source": "asu-main-06",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "63bcd0c68218c5d6f2ad4c0381f9d4a4aab6a144d83fcee3b61b566e37c5ead6",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-06-M4",
+      "source": "asu-main-06",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "66b6b87a8d4b2d4fb63b0ca192caea7cfac3978043b1ad62cea0a5c1e0ff5037",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-06-M8",
+      "source": "asu-main-06",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "4550f71e3f24777e5e649dd62d88889ca844360fc4c15468f34513f861763a94",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-07-M2",
+      "source": "asu-main-07",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "37e24b167c6eaa0bf08d90c9dd10189ed4cef77e5b3c7c5815027e4126667503",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-07-M4",
+      "source": "asu-main-07",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "d6cd2866bb4c30cccdc92e62fca8cc7518eae1c6150d3b88c3abee58bcdc088a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-07-M8",
+      "source": "asu-main-07",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "a26eee23f65aa57fccc711f3770d3798ed67e940a080264f98e5523dca4e0776",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-08-M2",
+      "source": "asu-main-08",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "8b2d620fc4a17c9ba9bd875181334d8d64e7f9ed6355ea76e5cfd6ecb89c6f5d",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-08-M4",
+      "source": "asu-main-08",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "df9b8a3360877819eab14c06629bb22c2efbdc6507a792b30c9650d02b79713d",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-08-M8",
+      "source": "asu-main-08",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "bc312fccde4260e7d3615f4d98ff3374e941cafd476127433dbf76b09cf39da6",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-09-M2",
+      "source": "asu-main-09",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "023b5cdabb73f87219c25a15475fcd82880a4a6816a6768c766d28f49e48733a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-09-M4",
+      "source": "asu-main-09",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "a191938bcb1285649f531a23e9ab0dc60e2b4be4649beff3bfa5d62b821e122f",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-09-M8",
+      "source": "asu-main-09",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "677f8aad3d8a1bbbabb61bc28a82553c21293bdb724c6a503598e5faaa92ca45",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-10-M2",
+      "source": "asu-main-10",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "22a9cdf713009fe100f87b864d47e170981b39ebdbb2ca1eeb331b5ba33ff537",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-10-M4",
+      "source": "asu-main-10",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "468fd31b96ea22a5266554b095e0aeb7a8e7429b1808507c0db5228c35475cbc",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-10-M8",
+      "source": "asu-main-10",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "72ce2c1eb51bc1cde91c69d4490031bedcab0a2e5711540698ecd7a243ff4033",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-11-M2",
+      "source": "asu-main-11",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "ef6322b69d3bad6cd3f1f02bfb875fec4647399ff58a414422b39f1e6d673f9f",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-11-M4",
+      "source": "asu-main-11",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "99e8e87e7a34bbb3e421cc33c70d171c4541702048cf989051ac91c8e21d99d7",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-main-11-M8",
+      "source": "asu-main-11",
+      "scene": "asu",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "9119f0a2ca90a3d2feb4cf901422f636e7fa4fb49ef7455e8146d38ea5347aad",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-00-M2",
+      "source": "asu-scale-00",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "3b9c9b6f9783bf32d19072793d4c8a044372e0679cbaf61c8fe35574d5047d6d",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-00-M4",
+      "source": "asu-scale-00",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "51100f9be0dc7ed806c44ebb956cb66986f61312fb44856ac55f80bf678cd39f",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-00-M8",
+      "source": "asu-scale-00",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "c348219443b81809dc7aedd54a26ba70ea061a74aacab67266afd0f8aa62e70d",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-01-M2",
+      "source": "asu-scale-01",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "283614d1f655564b09fcee747a3180c63c031de22431479c0b0d1bd869f55408",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-01-M4",
+      "source": "asu-scale-01",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "5c7f499d68052a8e5db87e1da8e7539dc1ea9c7ac192ba479e70db89fe7d45c9",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-01-M8",
+      "source": "asu-scale-01",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "58d9d5d3d2023bc1872eea174aca6afc06b0a6315a92f83e1efe396b834ab72e",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-02-M2",
+      "source": "asu-scale-02",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "c08d3d36cbf791396b919449745b0d8c56781e3e7516837a59a743e350511086",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-02-M4",
+      "source": "asu-scale-02",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "b9eb5273f50686019abb214db89f7d0e1dd3a5577eec9530751a0dde36c1a208",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-02-M8",
+      "source": "asu-scale-02",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "efef5c5ce5cd25100e87f87b438941d5fd7cc77a646c234903569ea246d74ce9",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-03-M2",
+      "source": "asu-scale-03",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "b038ada20ee326831734fc7beda58a182b17b747bf0d64e28b33595d6ec95be5",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-03-M4",
+      "source": "asu-scale-03",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "d1bc46eecae420362ac23a5365ff5bc575ace5aac458a812099fa9ed375d9c54",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "asu-scale-03-M8",
+      "source": "asu-scale-03",
+      "scene": "asu",
+      "K": 16,
+      "S": 8,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "7c292a9969f5f50d4c4b1a30e50a018fe1ef05c192aac6970fc2cff61c2ef55c",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-00-M2",
+      "source": "o1-main-00",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "111ea6525b1bf5983ef6ea55a38287de2a3891d64d31e537dfd9ca300d9a6b43",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-00-M4",
+      "source": "o1-main-00",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "6a1694decddfff355db867ed6745579998bb2ea6f986bfbd22d7be2bd563b4b6",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-00-M8",
+      "source": "o1-main-00",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "0c0a7809f877975f51c3605415bcf3bd26430c0b8675efa997c749b61e84a68a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-01-M2",
+      "source": "o1-main-01",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "80da2023e9e70e523a391159e3f119b72dbc30d47a1dc1a2e6023c296a544a88",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-01-M4",
+      "source": "o1-main-01",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "0a0f7a4a76fc9d9090d8c209bf26205742a79000acb85064e9a5ccf68c6076ce",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-01-M8",
+      "source": "o1-main-01",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "20a9da038071576e30ee23a47c90087da4a5b9c7702bdabeeb06339a35cbbe63",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-02-M2",
+      "source": "o1-main-02",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "a7d4cf304250119772fd66c5efad853748b09a7abdb590cb56a77408dfc7262a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-02-M4",
+      "source": "o1-main-02",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "cf66bdbb08e577cbf41f3d1d848f50922f9916af35a8b13c1ad5c460d74dc7d6",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-02-M8",
+      "source": "o1-main-02",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "14a07d6172737e13cef15d9ad68a74fbbb3d0c42351f64fc42b28b927901ac7e",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-03-M2",
+      "source": "o1-main-03",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "731c57b7a2083f89d46f820b94f3aceb199449a279e3dc29d442b76431994831",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-03-M4",
+      "source": "o1-main-03",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "5b279ac25f251a9dd0abb42bdd34700b742a177a85c72e8c1c9a6ff92961acfc",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-03-M8",
+      "source": "o1-main-03",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "930d29f058bab7f2479d15c95fa8feb9acd89d713fd9f98fac6add18fa210cbf",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-04-M2",
+      "source": "o1-main-04",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "d59f7bac7fc7c595558e377b53b7d6704373ff476f80c28f71e36f3f87f9de5b",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-04-M4",
+      "source": "o1-main-04",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "87088b5905ca3ea377355a9387c78b21764f58fb35858b99010db1f56e72c1e9",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-04-M8",
+      "source": "o1-main-04",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "fcc6fe69c89e39962b1202d2474cb3914f78b685bb7090535ec55a5daa717029",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-05-M2",
+      "source": "o1-main-05",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "b791e8196debed5688233f959803b8c4881deb1cf041e86abac35fc24c8b4771",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-05-M4",
+      "source": "o1-main-05",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "5e9881e1f311b84aa7477a6a9f9c0658c8c5138f10f5ae5508e2b9d4ac658043",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-05-M8",
+      "source": "o1-main-05",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "d3e3aff6ee5c3c9d7910d96261453bdef7b2ab2c1698236b512e046046d0b994",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-06-M2",
+      "source": "o1-main-06",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "c3bec7fa9b3087357a78b330dadc9828469ed3afc16f7b2fc060c17850252abf",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-06-M4",
+      "source": "o1-main-06",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "bae97ec115292472afce5b6168cd676ec3ac3184886b55fde21ead519b416112",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-06-M8",
+      "source": "o1-main-06",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "050cbb7bc9b9b91cf6eeababcbbda56e9d44889b94dee46eed7ede18384c8054",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-07-M2",
+      "source": "o1-main-07",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "9018e0a2d8c160c69d1b492c48d1d4ea0ed717ea38cef390927657da5c560c4b",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-07-M4",
+      "source": "o1-main-07",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "4ab62c5dba307e74fe3709070bf59aeea78328c7ff0ab674ded6e1ff51fe5e26",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-07-M8",
+      "source": "o1-main-07",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "50b6187b3058c1492405f14fb3260ca2775376f43eaa4f282ec5a9e382984f3e",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-08-M2",
+      "source": "o1-main-08",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "548fcbc0c015c67c786bb6be5b5ddd01a81284a64ef124d0ba552cfdf52011a1",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-08-M4",
+      "source": "o1-main-08",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "2169eaf1880182819bccd99a9acc670b4713c47c94bcb2c6628ffb84c3c59d2a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-08-M8",
+      "source": "o1-main-08",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "21afadd1a6c2a782dfc5df180f723b0d3268e8bfb714e0b358c893eeab87d23a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-09-M2",
+      "source": "o1-main-09",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "ed94524306e4513ac5826975a61c61d400139b5431f3bd685e79f840bdc16656",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-09-M4",
+      "source": "o1-main-09",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "118afbd1bae0a78964865ab1f74fec9458871a8718954a71a1a79baa6ebb24ed",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-09-M8",
+      "source": "o1-main-09",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "400ef9931bad5d8f8300172500f57e5ab96479ab16854caabd9d2ab79855db98",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-10-M2",
+      "source": "o1-main-10",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "6db10f1d9a60297d9d89cd618b9c9017173a00cd497d0b43e189dcb4cdc9b993",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-10-M4",
+      "source": "o1-main-10",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "4e04884ef5f899c86c017c7026b1047eeb89d97225cbae22929072bbd4be633a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-10-M8",
+      "source": "o1-main-10",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "70a1fd513b58eec40d7a8eddda6a2ba656fcb43958a42093a919912e1c062371",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-11-M2",
+      "source": "o1-main-11",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "3f6201868bee0b4647c16b339a10ec620165e3cb3727e4822f577009e3e551b1",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-11-M4",
+      "source": "o1-main-11",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "be64f053ffd659d24f5c6f260309df316d3da7a1fad859550c29efa70eff04dd",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-main-11-M8",
+      "source": "o1-main-11",
+      "scene": "o1",
+      "K": 8,
+      "S": 4,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "26/25",
+      "sha256": "2ca984626456541379bad71dacd9c15fdf5d575824c7aaff0ab69e8b1ca7363a",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-00-M2",
+      "source": "o1-scale-00",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "a0035c76f9c51d3d0877a516b93d0d551c222ba7df0230861bf11c17f035dcd1",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-00-M4",
+      "source": "o1-scale-00",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "55e239ee20e557c2a586414e16e903f862d99b795d03e265d16550a2c032d549",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-00-M8",
+      "source": "o1-scale-00",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "acff15338c7e32023169d7e6c135d25df735905e5de57971cfd6ae305aac5a50",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-01-M2",
+      "source": "o1-scale-01",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "5487065fec567babd60c4698a2df5ad20c705a4b12194b2f640fec45a0bc6b83",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-01-M4",
+      "source": "o1-scale-01",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "1d1e7015df2c25a33d022853de56359bce9d5bad4e2f52f533219ff83e471de7",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-01-M8",
+      "source": "o1-scale-01",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "aa0ac1c77ecb4792770f3757b4b35045162fc6c9c322976c1f00568e1d963cec",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-02-M2",
+      "source": "o1-scale-02",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "5e823dda85e2bc0cfe714772b54c8364d1d24bff03e99502d9eb197ae0165182",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-02-M4",
+      "source": "o1-scale-02",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "8de338d575b37baff23266a9bd3f41d3045ab5384292b3e133358b523d7a921f",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-02-M8",
+      "source": "o1-scale-02",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "12d7803d97065d1e76432f5d8b52fbb3b22c69d54b7f3c52db28ea09bd2adb61",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-03-M2",
+      "source": "o1-scale-03",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 2,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "5a1bb8d82dfb32367d3264a36298ccce64dc882d8c946e506476a448503fcb47",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-03-M4",
+      "source": "o1-scale-03",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 4,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "720ca5860aba43ef2ef76cf54d62dfe5faf9a3e906f454a84805dc0d529d98e6",
+      "challenge": {
+        "pairing_gain": null
+      }
+    },
+    {
+      "name": "o1-scale-03-M8",
+      "source": "o1-scale-03",
+      "scene": "o1",
+      "K": 16,
+      "S": 8,
+      "M": 8,
+      "pmin": "1/1000",
+      "pmax": "1/5",
+      "budget": "52/25",
+      "sha256": "761453f81de65d0445dbad0c6e3f589c32cdea23ada7faa72d0c4781b63c51d9",
+      "challenge": {
+        "pairing_gain": null
+      }
+    }
+  ],
+  "n": 96
+}
