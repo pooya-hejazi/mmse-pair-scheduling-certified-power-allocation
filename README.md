@@ -39,6 +39,29 @@ Results are written to:
 - `code/research/phase1-cdl-20261109/cdl_summary.json`
 - `code/research/phase1-cdl-20261109/figures/`
 
+## Independent Sionna cross-check
+
+The hand-rolled generator is a simplified CDL realisation. An independent Sionna 2.2.0 cross-check regenerates the 53 K=16 cases and gives:
+
+- median gain: **1.65%**, 95% interval **[1.57, 1.74]%**
+- absolute median: **0.155 bit/s/Hz**
+- **53 wins / 0 ties / 0 losses**
+
+The E3-A angle ablation gives 1.58%, within 4.6% of Sionna, so the deterministic z-scored angle construction explains most of the magnitude shift. The paper retains 1.31% as the primary simplified-CDL result and reports 1.65% as a robustness check. No certified-rate claim is made at M=2.
+
+```text
+cd code
+pip install -r research/phase3-cdl-crosscheck-20261110/env/requirements-sionna.txt
+python research/phase3-cdl-crosscheck-20261110/scripts/e2_sionna_channels.py --n-real 3
+python research/phase3-cdl-crosscheck-20261110/scripts/e2_run.py --seconds 10
+python research/phase3-cdl-crosscheck-20261110/scripts/e2_analyze.py
+python research/phase3-cdl-crosscheck-20261110/scripts/e3a_gaussian_angles.py
+python research/phase3-cdl-crosscheck-20261110/scripts/e2_run.py --cases-dir research/phase3-cdl-crosscheck-20261110/cases_e3a --glob "*-e3a.json" --out e3a_results.csv
+python research/phase3-cdl-crosscheck-20261110/scripts/e3_analyze.py
+```
+
+The raw Sionna case JSONs are omitted from the repository; the scripts regenerate them. See `RESULTS.md` in that folder for the frozen protocol, gates and diagnostics.
+
 ## Reproduce the K=8 result
 
 ```text

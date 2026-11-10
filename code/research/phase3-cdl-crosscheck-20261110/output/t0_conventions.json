@@ -1,0 +1,59 @@
+{
+  "sionna_version": "2.2.0",
+  "array_positions_m": [
+    [
+      0.0,
+      -0.02141374722123146,
+      0.0
+    ],
+    [
+      0.0,
+      0.02141374722123146,
+      0.0
+    ]
+  ],
+  "wavelength_m": 0.085654988,
+  "t0a": {
+    "max_ratio_error": 3.196358954789079e-08,
+    "max_full_error": 0.292893218813453,
+    "note": "resp = exp(-j*pi/2*sin(theta)) * paper_array_response"
+  },
+  "t0b": {
+    "mapping": [
+      {
+        "phi": -0.6,
+        "aoa_in": 0.7,
+        "aoa_out": 1.2999999523162842
+      },
+      {
+        "phi": -0.3,
+        "aoa_in": 0.7,
+        "aoa_out": 0.9999999403953552
+      },
+      {
+        "phi": 0.0,
+        "aoa_in": 0.7,
+        "aoa_out": 0.699999988079071
+      },
+      {
+        "phi": 0.3,
+        "aoa_in": 0.7,
+        "aoa_out": 0.3999999463558197
+      },
+      {
+        "phi": 0.6,
+        "aoa_in": 0.7,
+        "aoa_out": 0.09999994933605194
+      }
+    ],
+    "profile_mean_aoa_deg": {
+      "A": 10.917391304347827,
+      "B": -6.217391304347829,
+      "C": 36.516666666666666
+    },
+    "note": "aoa_lcs = aoa_gcs - phi; set phi_deg = mean_aoa - theta_i"
+  },
+  "t0c": {
+    "max_conj_r_difference": 0.0
+  }
+}

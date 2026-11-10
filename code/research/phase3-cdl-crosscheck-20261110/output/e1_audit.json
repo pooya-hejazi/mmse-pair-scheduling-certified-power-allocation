@@ -1,0 +1,247 @@
+{
+  "e1a": {
+    "errors": [],
+    "rows": [
+      {
+        "profile": "A",
+        "delays": {
+          "max_abs_diff": 0.0,
+          "tol": 0.0001,
+          "ok": true
+        },
+        "powers": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "aod": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "aoa": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "zod": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "zoa": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "cASD": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cASA": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cZSD": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cZSA": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "xpr": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "n_clusters": {
+          "ours": 23,
+          "ref": 23,
+          "ok": true
+        }
+      },
+      {
+        "profile": "B",
+        "delays": {
+          "max_abs_diff": 0.0,
+          "tol": 0.0001,
+          "ok": true
+        },
+        "powers": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "aod": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "aoa": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "zod": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "zoa": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "cASD": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cASA": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cZSD": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cZSA": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "xpr": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "n_clusters": {
+          "ours": 23,
+          "ref": 23,
+          "ok": true
+        }
+      },
+      {
+        "profile": "C",
+        "delays": {
+          "max_abs_diff": 0.0,
+          "tol": 0.0001,
+          "ok": true
+        },
+        "powers": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "aod": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "aoa": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "zod": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "zoa": {
+          "max_abs_diff": 0.0,
+          "tol": 0.05,
+          "ok": true
+        },
+        "cASD": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cASA": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cZSD": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "cZSA": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "xpr": {
+          "diff": 0.0,
+          "ok": true
+        },
+        "n_clusters": {
+          "ours": 24,
+          "ref": 24,
+          "ok": true
+        }
+      }
+    ],
+    "reference": "Sionna 2.2.0 TR 38.901 V19.2 CDL JSON"
+  },
+  "e1b": {
+    "checks": [
+      {
+        "item": "power normalisation",
+        "verdict": "correct",
+        "evidence": "powers=10**(dB/10); powers/=powers.sum()",
+        "verified": true
+      },
+      {
+        "item": "fixed 100 ns delay spread",
+        "verdict": "disclosed simplification",
+        "evidence": "delay_spread = 100e-9; metadata delay_spread_s=100e-9",
+        "verified": true
+      },
+      {
+        "item": "z-scored deterministic cluster-angle offsets",
+        "verdict": "undisclosed material simplification",
+        "evidence": "aoa=(aoa-aoa.mean())/aoa.std(); cluster_angles=theta[i]+cASA*aoa. TR 38.901 draws i.i.d. N(0,1) offsets per cluster and per drop.",
+        "verified": true
+      },
+      {
+        "item": "one ray per cluster",
+        "verdict": "undisclosed simplification",
+        "evidence": "v = sum_n sqrt(p_n) a(theta_n) exp(j...); no 20-ray expansion",
+        "verified": false
+      },
+      {
+        "item": "polarisation / XPR ignored",
+        "verdict": "undisclosed simplification",
+        "evidence": "xpr present in table but never referenced in build_cdl.py",
+        "verified": true
+      },
+      {
+        "item": "half-wavelength ULA, isotropic elements, azimuth only",
+        "verdict": "disclosed simplification",
+        "evidence": "exp(j*pi*m*sin(theta))/sqrt(m); metadata says ULA M=2",
+        "verified": true
+      },
+      {
+        "item": "first eight tones of a 50 MHz / 32-tone grid",
+        "verdict": "disclosed simplification",
+        "evidence": "freqs = arange(8)*(50e6/32); metadata model text",
+        "verified": true
+      },
+      {
+        "item": "unit-norm per-tone channel with fixed per-user gain",
+        "verdict": "disclosed design choice",
+        "evidence": "v /= norm(v); h = sqrt(gain)*v; metadata base_snr_db/nearfar_db",
+        "verified": true
+      },
+      {
+        "item": "independent per-cluster, per-user, per-tone phases",
+        "verdict": "correct for the stated model",
+        "evidence": "rng.uniform(0, 2*pi, size=(n_clusters, S))",
+        "verified": true
+      },
+      {
+        "item": "no elevation / ZoA-ZoD use",
+        "verdict": "undisclosed minor simplification",
+        "evidence": "only table['aoa'] is read; zod/zoa unused",
+        "verified": true
+      }
+    ]
+  },
+  "verdict": "approximation"
+}
