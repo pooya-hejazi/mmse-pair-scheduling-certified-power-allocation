@@ -136,7 +136,15 @@ $d  = "D:\PostDocProposal\PostDocPaper2\research\phase3-cdl-crosscheck-20261110"
 
 The optimizer run used four concurrent single-threaded workers on an 8-core CPU for the remaining cases after a sequential start; each method retained its frozen 10 s wall-clock budget. The sequential partial CSV is preserved as `output/e2_results_seq_partial.csv`.
 
-## 9. Honest limitations
+## 9. Publication outputs (10 November 2026)
+
+- **Paper 2:** `main.tex` 13 pages, `supplementary.tex` 47 pages; both compiled cleanly with no undefined references.
+- **Submission package:** `output/Paper2-Submission-2026-11-10/` (exactly two `.tex` files), zip `Paper2-Submission-2026-11-10.zip`; the zip hash is recorded in the package's `SHA256SUMS.txt`.
+- **Paper hashes:** `Paper/main.pdf` `B65809120BE15E673726A246056351460F3AFA82E3450560F195DFA66DC50F30`; `Supplementary_Materials/supplementary.pdf` `8AE9426A330CA5F339F7289423B700A1104B188E7E1E0682143EA4B895630F43`.
+- **Proposal:** `AUT-Postdoc-Proposal.docx` SHA-256 `5C25ED5BD5FF197A2BBC32B71EC4C23416C57B0C3E5BF1136AD4A8395B35D724`; `AUT-Postdoc-Proposal.pdf` SHA-256 `6F59D7270215C0BC66D7AA03B226C660106ACBDF8AD652FE04555A9C34508B0B`; 11 pages, 22 English/LTR footnotes preserved.
+- **GitHub:** commit `39df235` ("Add independent Sionna CDL cross-check") on `main`, repository contains only `README.md` and `code/`.
+
+## 10. Honest limitations
 
 - Sionna’s CDL is a fuller model, not ground truth; it includes 20 rays/cluster, random coupling, elevation and frequency selectivity that the simplified generator omits.
 - The 53 cases are a fixed, seed-reproducible population; the bootstrap intervals are descriptive, not design-based confidence guarantees.

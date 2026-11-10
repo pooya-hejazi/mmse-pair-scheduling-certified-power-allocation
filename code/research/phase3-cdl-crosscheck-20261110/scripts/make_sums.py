@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import PHASE3, sha256
 
 INCLUDE = ["CROSSCHECK_PROTOCOL.md", "README.md", "RESULTS.md", "scripts", "cases",
-           "output", "env", "frozen_inputs", "tables"]
+           "cases_e3a", "output", "env", "frozen_inputs", "tables"]
 
 
 def main() -> None:
