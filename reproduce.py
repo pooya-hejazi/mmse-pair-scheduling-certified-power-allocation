@@ -20,7 +20,7 @@ SCAN = Path("research/phase0-audit-20261109")
 COMPONENTS = Path("research/review-20261110/comparison")
 STATS = Path("research/review-20261110/statistics")
 STUDIES = ("native", "priced", "certificates", "native-certificate", "subarray", "components",
-           "historical", "figures", "computational", "optimizer")
+           "historical", "headroom", "equal-power", "adaptive", "figures", "computational", "optimizer")
 
 
 def read(path):
@@ -208,16 +208,47 @@ def replay(selected, output):
             run("historical/replay.py","--output",record)
             check_equal("PASS",read(record)["status"],"historical replay")
             report["studies"]["historical"] = {"receipt":record.name,"sha256":digest(record)}
+        if "headroom" in selected:
+            folder = Path("research/cdl-headroom-20261111")
+            destination = output / "headroom"
+            run(folder / "diagnose.py", "--output", destination, "--workers", 4)
+            bounds = read(destination / "paired_bounds.json")
+            check_equal(read(published_code / folder / "paired_bounds.json"), bounds, "paired global upper bounds")
+            report["studies"]["headroom"] = bounds["all_cases"]
+        if "equal-power" in selected:
+            folder = Path("research/equal-power-bound-20261111")
+            run(folder / "tests.py")
+            run(folder / "validate.py", "check", "--workers", 4)
+            summary = read(code / folder / "summary.json")
+            check_equal("PASS", summary["status"], "equal-power finite-SNR bound")
+            destination = output / "equal-power"
+            destination.mkdir()
+            for name in ("cases.csv", "summary.json"):
+                shutil.copyfile(code / folder / name, destination / name)
+            report["studies"]["equal-power"] = summary["by_snr_db"]
+        if "adaptive" in selected:
+            folder = Path("research/adaptive-pricing-20261111")
+            destination = output / "adaptive"
+            run(folder / "generate.py", "verify")
+            run(folder / "audit_analysis.py", "--runs", code / folder / "runs/main", "--output", destination)
+            published = published_code / folder / "analysis"
+            saved, results = read(published / "results.json"), read(destination / "results.json")
+            short = "short_price_vs_full.json"
+            run(folder / "short_price_contrast.py", "--runs", code / folder / "runs/main",
+                "--audit", destination / "audit.json", "--output", destination / short)
+            check_equal(read(published / short), read(destination / short), "short versus full pricing")
+            for field in ("primary", "decisions", "contrasts", "screen_passes"):
+                check_equal(saved[field], results[field], "adaptive " + field)
+            for table in ("case_values.csv", "run_values.csv", "block_effects.csv", "cell_contrasts.csv"):
+                check_table(published / table, destination / table)
+            report["studies"]["adaptive"] = {"primary": results["primary"], "decisions": results["decisions"],
+                                            "screen_passes": results["screen_passes"]}
         if "figures" in selected:
             args = ["--output", output / "figures"]
             if "native" in selected:
                 args.extend(["--native-plots", code / NATIVE / "analysis/figures"])
             run("../figures/reproduce.py", *args)
-            if "priced" not in selected:
-                run(PRICED/"analyze_study.py")
-                run(PRICED/"plot_comparison.py")
-                run(PRICED/"plot_endpoints.py")
-            current = read(work / "figures/manifest-tcom.json")
+            current = read(work / "figures/manifest-headroom.json")
             published = {}
             plotted_data = {}
             for row in current["figures"]:
@@ -225,10 +256,6 @@ def replay(selected, output):
                 if Path(asset).name != asset or not asset.endswith(".pdf"):
                     raise ValueError("Unexpected figure name")
                 check_equal(row["pdf_sha256"], digest(work/"figures"/asset), asset)
-                if asset in ("priced_cdl_comparison.pdf", "priced_cdl_endpoints.pdf"):
-                    for ext in (".pdf",".png"):
-                        name = Path(asset).with_suffix(ext).name
-                        shutil.copyfile(code/PRICED/"analysis/figures"/name, output/"figures"/name)
                 png = Path(asset).with_suffix(".png").name
                 check_equal(row["png"], png, "PNG name for " + asset)
                 check_equal(row["png_sha256"], digest(work / "figures" / png), png)
@@ -284,7 +311,7 @@ def replay(selected, output):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--only", choices=STUDIES, help="Reproduce one part of the study.")
+    parser.add_argument("--only", action="append", choices=STUDIES, help="Reproduce a named study. Repeat to select additional studies.")
     parser.add_argument("--output", type=Path, default=ROOT/"reproduced", help="New or empty results directory.")
     args = parser.parse_args()
-    replay((args.only,) if args.only else STUDIES, args.output.resolve())
+    replay(args.only or STUDIES, args.output.resolve())

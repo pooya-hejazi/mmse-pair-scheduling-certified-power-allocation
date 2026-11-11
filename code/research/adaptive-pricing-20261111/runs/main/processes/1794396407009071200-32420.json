@@ -1,0 +1,292 @@
+{
+  "process": "1794396407009071200-32420",
+  "source_manifest_sha256": "aa3ea9ce31379e1aeef1f2723a2cf7a313822e73aa2d89b877411619f2eb8a0e",
+  "arms": [
+    {
+      "case": "native-b00-A-snr00",
+      "arms": {
+        "Adaptive-DP-SQP": {
+          "elapsed": 0.337741699999242,
+          "se": 4.829305530349475,
+          "screen": {
+            "elasticities": [
+              0.8231205976222594,
+              0.5095272553622606,
+              0.8617772199834436,
+              0.9044674338016704,
+              0.5965811305548638,
+              0.5239084358844972,
+              0.6119280597594496,
+              0.7328395945983666,
+              0.6679932382021798,
+              0.7838561384319546,
+              0.9619681494313306,
+              0.54017949114728,
+              0.9130809639431721,
+              0.6247184368106588,
+              0.7307312161856204,
+              0.8851262025382151
+            ],
+            "minimum": 0.5095272553622606,
+            "passed": false,
+            "uniform_assignment": [
+              [
+                7,
+                13
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                2,
+                14
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                0,
+                12
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            "equal_power": "13/100"
+          },
+          "counts": {
+            "starts_started": 2,
+            "starts_completed": 2,
+            "dp_completed": 16,
+            "power_calls": 14,
+            "accepted": 4,
+            "price_dp_completed": 6,
+            "price_schedules": 4
+          }
+        },
+        "Uniform-start-DP-SQP": {
+          "elapsed": 0.06606139999894367,
+          "se": 4.829305530349475,
+          "screen": null,
+          "counts": {
+            "starts_started": 1,
+            "starts_completed": 1,
+            "dp_completed": 3,
+            "power_calls": 3,
+            "accepted": 4,
+            "price_dp_completed": 0,
+            "price_schedules": 0
+          }
+        },
+        "Always-short-price": {
+          "elapsed": 0.35499909999998636,
+          "se": 4.829305530349475,
+          "screen": null,
+          "counts": {
+            "starts_started": 2,
+            "starts_completed": 2,
+            "dp_completed": 16,
+            "power_calls": 14,
+            "accepted": 4,
+            "price_dp_completed": 6,
+            "price_schedules": 4
+          }
+        },
+        "DP-SQP": {
+          "elapsed": 0.4744596000000456,
+          "se": 4.829305530349475,
+          "screen": null,
+          "counts": {
+            "starts_started": 8,
+            "starts_completed": 8,
+            "dp_completed": 20,
+            "power_calls": 20,
+            "accepted": 4
+          }
+        },
+        "Price-DP-SQP": {
+          "elapsed": 0.749922200000583,
+          "se": 4.829305530349475,
+          "screen": null,
+          "counts": {
+            "starts_started": 8,
+            "starts_completed": 8,
+            "dp_completed": 39,
+            "power_calls": 30,
+            "accepted": 4,
+            "price_dp_completed": 14,
+            "price_schedules": 5
+          }
+        }
+      }
+    },
+    {
+      "case": "native-b00-A-snr20",
+      "arms": {
+        "Adaptive-DP-SQP": {
+          "elapsed": 0.052506399999401765,
+          "se": 17.01779091782124,
+          "screen": {
+            "elasticities": [
+              0.9978404775530453,
+              0.9889583815901476,
+              0.9983048870931484,
+              0.9989007005466771,
+              0.9934199585733468,
+              0.9910675179705342,
+              0.9922519811297454,
+              0.9961670524019883,
+              0.9950070909923,
+              0.9972383706637046,
+              0.9995457688455983,
+              0.9915426166490147,
+              0.9989834453836147,
+              0.9938054364879171,
+              0.996238612914526,
+              0.9984172184513063
+            ],
+            "minimum": 0.9889583815901476,
+            "passed": true,
+            "uniform_assignment": [
+              [
+                7,
+                13
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                2,
+                14
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                0,
+                12
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            "equal_power": "13/100"
+          },
+          "counts": {
+            "starts_started": 1,
+            "starts_completed": 1,
+            "dp_completed": 2,
+            "power_calls": 2,
+            "accepted": 2,
+            "price_dp_completed": 0,
+            "price_schedules": 0
+          }
+        },
+        "Uniform-start-DP-SQP": {
+          "elapsed": 0.05106059999889112,
+          "se": 17.01779091782124,
+          "screen": null,
+          "counts": {
+            "starts_started": 1,
+            "starts_completed": 1,
+            "dp_completed": 2,
+            "power_calls": 2,
+            "accepted": 2,
+            "price_dp_completed": 0,
+            "price_schedules": 0
+          }
+        },
+        "Always-short-price": {
+          "elapsed": 0.24854189999859955,
+          "se": 17.01779091782124,
+          "screen": null,
+          "counts": {
+            "starts_started": 2,
+            "starts_completed": 2,
+            "dp_completed": 12,
+            "power_calls": 8,
+            "accepted": 2,
+            "price_dp_completed": 6,
+            "price_schedules": 2
+          }
+        },
+        "DP-SQP": {
+          "elapsed": 0.3783667999996396,
+          "se": 17.01779091782124,
+          "screen": null,
+          "counts": {
+            "starts_started": 8,
+            "starts_completed": 8,
+            "dp_completed": 16,
+            "power_calls": 16,
+            "accepted": 2
+          }
+        },
+        "Price-DP-SQP": {
+          "elapsed": 0.6063549999998941,
+          "se": 17.01779091782124,
+          "screen": null,
+          "counts": {
+            "starts_started": 8,
+            "starts_completed": 8,
+            "dp_completed": 32,
+            "power_calls": 20,
+            "accepted": 2,
+            "price_dp_completed": 14,
+            "price_schedules": 2
+          }
+        }
+      }
+    }
+  ],
+  "thread_pools": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 1,
+      "prefix": "mkl_rt",
+      "filepath": "C:\\ProgramData\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+      "version": "2025.0-Product",
+      "threading_layer": "intel"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "C:\\ProgramData\\anaconda3\\Library\\bin\\libiomp5md.dll",
+      "version": null
+    }
+  ],
+  "numba_threads": 1,
+  "elapsed_seconds": 4.64506750000146,
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.3.4",
+  "scipy": "1.16.3",
+  "numba": "0.62.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+  "logical_cpus": 16
+}

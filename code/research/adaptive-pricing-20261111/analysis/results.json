@@ -1,0 +1,249 @@
+{
+  "status": "COMPLETE",
+  "cases": 180,
+  "blocks": 20,
+  "allocations": 900,
+  "bootstrap_seed": 1719166472,
+  "bootstrap_draws": 20000,
+  "rate_margin": -0.001,
+  "time_margin": 0.5,
+  "tie_band": 1e-05,
+  "primary": {
+    "rate": {
+      "mean": -0.0002875562886548444,
+      "low": -0.0008626688659645332,
+      "high": 0.0
+    },
+    "wins": 0,
+    "ties": 179,
+    "losses": 1,
+    "worst_case": "native-b01-B-snr10",
+    "minimum_delta": -0.05176013195787199,
+    "time_ratio": {
+      "mean": 0.21482094109555275,
+      "low": 0.20412253762921864,
+      "high": 0.22360380039728037
+    }
+  },
+  "decisions": {
+    "rate": true,
+    "time": true,
+    "joint": true
+  },
+  "contrasts": {
+    "Price-DP-SQP": {
+      "rate": {
+        "mean": -0.0002875562886548444,
+        "low": -0.0008626688659645332,
+        "high": 0.0
+      },
+      "wins": 0,
+      "ties": 179,
+      "losses": 1,
+      "worst_case": "native-b01-B-snr10",
+      "minimum_delta": -0.05176013195787199,
+      "time_ratio": {
+        "mean": 0.21482094109555275,
+        "low": 0.20412253762921864,
+        "high": 0.22360380039728037
+      }
+    },
+    "DP-SQP": {
+      "rate": {
+        "mean": 0.0014964188689022852,
+        "low": 0.0008409833261669012,
+        "high": 0.0021788096185298344
+      },
+      "wins": 20,
+      "ties": 159,
+      "losses": 1,
+      "worst_case": "native-b01-B-snr10",
+      "minimum_delta": -0.05176013195787732,
+      "time_ratio": {
+        "mean": 0.34741576256141876,
+        "low": 0.3303309611810793,
+        "high": 0.36182350004528835
+      }
+    },
+    "Uniform-start-DP-SQP": {
+      "rate": {
+        "mean": 0.0077170191874207416,
+        "low": 0.005546975442926217,
+        "high": 0.010056618495338237
+      },
+      "wins": 49,
+      "ties": 131,
+      "losses": 0,
+      "worst_case": "native-b00-A-snr10",
+      "minimum_delta": 0.0,
+      "time_ratio": {
+        "mean": 3.2188524657996975,
+        "low": 3.0517022596261265,
+        "high": 3.3582250800707794
+      }
+    },
+    "Always-short-price": {
+      "rate": {
+        "mean": -0.0002875562886548444,
+        "low": -0.0008626688659645332,
+        "high": 0.0
+      },
+      "wins": 0,
+      "ties": 179,
+      "losses": 1,
+      "worst_case": "native-b01-B-snr10",
+      "minimum_delta": -0.05176013195787199,
+      "time_ratio": {
+        "mean": 0.5337656338307905,
+        "low": 0.5085770994721716,
+        "high": 0.5539438448141746
+      }
+    },
+    "DP-SQP-time-prefix": {
+      "rate": {
+        "mean": 0.0021126471863191906,
+        "low": 0.0013940811468775862,
+        "high": 0.0028327478815880617
+      },
+      "wins": 24,
+      "ties": 156,
+      "losses": 0,
+      "worst_case": "native-b02-B-snr00",
+      "minimum_delta": -5.9117155615240335e-12
+    }
+  },
+  "arms": {
+    "Adaptive-DP-SQP": {
+      "mean_se": 10.323399812175001,
+      "mean_seconds": 0.21062112222213425,
+      "median_seconds": 0.24887039999975968,
+      "deadlines": 0,
+      "starts": {
+        "2": 116,
+        "1": 64
+      },
+      "total": {
+        "prices": 696,
+        "price_schedules": 433,
+        "dp_completed": 1729,
+        "power_calls": 1466,
+        "accepted": 523
+      },
+      "mean_stage_seconds": {
+        "screen": 0.00011881777783047356,
+        "fixed_dp": 0.0269088833333424,
+        "price_dp": 0.013884628888808948,
+        "grid_setup": 0.01845842944442969,
+        "initial_price": 0.00017251500007154795,
+        "sqp": 0.038476943888680476,
+        "other": 0.1126009038889707
+      }
+    },
+    "Uniform-start-DP-SQP": {
+      "mean_se": 10.315682792987582,
+      "mean_seconds": 0.04748804722230489,
+      "median_seconds": 0.04349325000112003,
+      "deadlines": 0,
+      "starts": {
+        "1": 180
+      },
+      "total": {
+        "prices": 0,
+        "price_schedules": 0,
+        "dp_completed": 406,
+        "power_calls": 406,
+        "accepted": 452
+      },
+      "mean_stage_seconds": {
+        "screen": 0.0,
+        "fixed_dp": 0.010717323333281254,
+        "price_dp": 0.0,
+        "grid_setup": 0.0,
+        "initial_price": 0.0,
+        "sqp": 0.009698220555492298,
+        "other": 0.027072503333531332
+      }
+    },
+    "Always-short-price": {
+      "mean_se": 10.323687368463657,
+      "mean_seconds": 0.28247904222216674,
+      "median_seconds": 0.26477095000063855,
+      "deadlines": 0,
+      "starts": {
+        "2": 180
+      },
+      "total": {
+        "prices": 1080,
+        "price_schedules": 563,
+        "dp_completed": 2375,
+        "power_calls": 1858,
+        "accepted": 524
+      },
+      "mean_stage_seconds": {
+        "screen": 0.0,
+        "fixed_dp": 0.03388175277790045,
+        "price_dp": 0.02155668333339741,
+        "grid_setup": 0.028357122777773233,
+        "initial_price": 0.0002715422222637345,
+        "sqp": 0.04928225777809227,
+        "other": 0.14912968333273965
+      }
+    },
+    "DP-SQP": {
+      "mean_se": 10.321903393306098,
+      "mean_seconds": 0.4320071711111268,
+      "median_seconds": 0.4205111499995837,
+      "deadlines": 0,
+      "starts": {
+        "8": 180
+      },
+      "total": {
+        "prices": 0,
+        "price_schedules": 0,
+        "dp_completed": 3549,
+        "power_calls": 3549,
+        "accepted": 537
+      },
+      "mean_stage_seconds": {
+        "screen": 0.0,
+        "fixed_dp": 0.09347574499999811,
+        "price_dp": 0.0,
+        "grid_setup": 0.0,
+        "initial_price": 0.0,
+        "sqp": 0.10615679999989677,
+        "other": 0.2323746261112319
+      }
+    },
+    "Price-DP-SQP": {
+      "mean_se": 10.323687368463657,
+      "mean_seconds": 0.6981212133333328,
+      "median_seconds": 0.6703481499998816,
+      "deadlines": 0,
+      "starts": {
+        "8": 180
+      },
+      "total": {
+        "prices": 2520,
+        "price_schedules": 594,
+        "dp_completed": 6531,
+        "power_calls": 4605,
+        "accepted": 524
+      },
+      "mean_stage_seconds": {
+        "screen": 0.0,
+        "fixed_dp": 0.10505535166660897,
+        "price_dp": 0.05058758222226566,
+        "grid_setup": 0.028487403333292603,
+        "initial_price": 0.0002752505554983347,
+        "sqp": 0.13299694722225266,
+        "other": 0.38071867833341455
+      }
+    }
+  },
+  "screen_passes": {
+    "0": 0,
+    "10": 4,
+    "20": 60
+  },
+  "audit_sha256": "83bd0aa3690e17d4bfd56e0efe6a98ce07307d46badfc2d4b05b728f87290c65"
+}

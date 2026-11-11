@@ -9,6 +9,7 @@ import json
 import math
 import os
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -36,16 +37,25 @@ def load_module(name, path):
     return module
 
 
-def check_release_files():
-    record = read_json(HERE / "manifest.json")
+def check_release_files(index):
+    record = read_json(index)
     figures = record["figures"]
-    if len(figures) != len({r["asset"] for r in figures}) or len(figures) != 27:
-        raise ValueError("Expected 27 distinct final figure assets")
+    if len(figures) != len({r["asset"] for r in figures}) or len(figures) != record["figure_asset_count"]:
+        raise ValueError("Distinct figure count differs from " + index.name)
+    hashes = {}
     for row in figures:
-        for key, digest in (("asset", "pdf_sha256"), ("png", "png_sha256")):
-            if sha(HERE / row[key]) != row[digest]:
-                raise ValueError("Release asset hash mismatch: " + row[key])
-    return figures
+        pdf = Path(row["asset"])
+        if pdf.name != row["asset"] or pdf.suffix != ".pdf":
+            raise ValueError("Invalid figure asset: " + row["asset"])
+        for key, ext in (("asset", "pdf"), ("png", "png"), ("data", "csv")):
+            if key == "data" and key not in row:
+                continue
+            filename = pdf.with_suffix("." + ext).name
+            digest = row[("data" if key == "data" else ext) + "_sha256"]
+            if row[key] != filename or sha(HERE / filename) != digest:
+                raise ValueError("Release asset hash mismatch: " + filename)
+            hashes[filename] = digest
+    return figures, hashes
 
 
 def redraw_historical(out):
@@ -129,19 +139,21 @@ def compare_m_scan(out):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, help="Empty or new directory for PDFs, PNGs and replay receipt")
-    parser.add_argument("--verify-only", action="store_true", help="Check the delivered PDFs and PNGs against their hash manifest")
+    parser.add_argument("--verify-only", action="store_true", help="Check the edition PDFs, PNGs and plotted-data CSVs against their hash manifest")
     parser.add_argument("--native-plots", type=Path, help="Use plots from a separate fresh native analysis replay")
     parser.add_argument("--recompute-m-scan", action="store_true", help="Also repeat all 96 fixed-power receive-dimension checks from raw case channels")
     args = parser.parse_args()
-    rows = check_release_files()
+    historical = HERE / "manifest.json"
+    rows, _ = check_release_files(historical)
+    if len(rows) != 27:
+        raise ValueError("Expected 27 historical figure assets")
+    index = next(HERE / name for name in ("manifest-headroom.json", "manifest-tcom.json", "manifest-priced.json", "manifest.json")
+                 if (HERE / name).is_file())
+    edition, release_hashes = check_release_files(index)
+    count = len(edition)
+    tables = sum("data" in row for row in edition)
     if args.verify_only:
-        index = HERE / "manifest-tcom.json"
-        edition = read_json(index if index.exists() else HERE / "manifest-priced.json")["figures"]
-        for row in edition:
-            for key, checksum in (("asset", "pdf_sha256"), ("png", "png_sha256")):
-                if sha(HERE / row[key]) != row[checksum]:
-                    raise ValueError("Edition figure hash mismatch: " + row[key])
-        print(f"Verified {len(edition)} edition PDF/PNG pairs and all 27 historical pairs")
+        print(f"Verified {count} edition PDF/PNG pairs, {tables} plotted-data tables and all 27 historical pairs.")
         return
     if args.output is None:
         parser.error("--output is required for regeneration")
@@ -165,29 +177,30 @@ def main():
         archived_cdl.comparison_plot(RESEARCH, out)
     with plt.rc_context():
         redraw_native(out, rows, args.native_plots)
-    release_hashes = {}
-    for row in rows:
-        release_hashes[row["asset"]] = row["pdf_sha256"]
-        release_hashes[row["png"]] = row["png_sha256"]
-    actual = {p.name: sha(p) for p in sorted(out.iterdir()) if p.suffix in (".pdf", ".png")}
+    priced = RESEARCH / "priced-assignment-20261111"
+    for asset, script in (("priced_cdl_comparison.pdf", "plot_comparison.py"), ("priced_cdl_endpoints.pdf", "plot_endpoints.py")):
+        if asset in release_hashes:
+            subprocess.run([sys.executable, "-B", str(priced / script), "--analysis-dir", str(priced / "analysis"),
+                            "--output-dir", str(out)], check=True)
+    if "native_assignment_power_margins.pdf" in release_hashes:
+        import cdl_margins
+        cdl_margins.generate(out)
+    if index.name == "manifest-headroom.json":
+        import cdl_decisions
+        cdl_decisions.generate(out, [name for name in cdl_decisions.PLOTS if name + ".pdf" in release_hashes])
+    actual = {p.name: sha(p) for p in sorted(out.iterdir()) if p.suffix in (".pdf", ".png", ".csv")}
     if actual.keys() != release_hashes.keys():
-        raise ValueError("Regenerated figure-set mismatch: " + str(set(actual) ^ set(release_hashes)))
-    import cdl_margins
-    cdl_margins.generate(out)
-    for name in cdl_margins.NAMES:
-        for ext in (".pdf", ".png", ".csv"):
-            filename = name + ext
-            actual[filename] = sha(out / filename)
-            release_hashes[filename] = sha(HERE / filename)
-        if actual[name + ".csv"] != release_hashes[name + ".csv"]:
+        raise ValueError("Regenerated file-set mismatch: " + str(set(actual) ^ set(release_hashes)))
+    for name in actual:
+        if name.endswith(".csv") and actual[name] != release_hashes[name]:
             raise ValueError("Regenerated plotted values differ: " + name)
-    receipt = dict(status="PASS", rendered_or_reused_assets=60,
+    receipt = dict(status="PASS", manifest=index.name, rendered_or_reused_assets=2 * count, plotted_data_tables=tables,
                    reused_native_plots=args.native_plots is not None,
                    m_scan_uniform_median_ratios=medians, output_sha256=actual,
                    byte_identical_to_release={k: v == release_hashes[k] for k,v in actual.items()},
                    note="Rendering metadata, fonts and installed library versions may affect bytes. Release assets have separately verified hashes.")
     (out / "figure-replay.json").write_text(json.dumps(receipt,indent=2)+"\n", encoding="utf-8")
-    print("Produced 30 PDF/PNG pairs and three paired-CDL data tables in", out)
+    print(f"Produced {count} PDF/PNG pairs and {tables} plotted-data tables in", out)
 
 
 if __name__ == "__main__":

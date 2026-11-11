@@ -1,0 +1,23 @@
+# Adaptive priced search on an independent native CDL holdout
+
+## Methods fixed before the third holdout
+
+All five arms receive the same eight feasible starts, exact fixed-power subset assignment kernel, power box and sum budget, scalar objective, matrix cross-check, 10 s search allowance, 5 s maximum SQP block and eight alternations per trajectory. Start 0 uses equal powers and consecutive user pairs. The remaining seven starts have independently drawn assignments and powers. The common start set for each population is reused across its three SNRs.
+
+1. **Adaptive-DP-SQP.** At the exact equal-power assignment compute the dimensionless marginal values `e_i = q ∂R/∂p_i`, where `q = P/K` and `R` is the sum in nats for the selected assignment. Reuse that assignment as the first alternating step. If `min_i e_i >= 0.90`, finish only the first DP–SQP trajectory. Otherwise finish the same first trajectory, process the first six published price trials and at most one further common start. Pricing retains the published 33-by-33 edge grid, price initialization, bracketing, feasibility repair, duplicate test, local polishing and verified incumbent updates. The gate is a local diagnostic. It provides no global optimality certificate.
+2. **Uniform-start-DP-SQP.** Finish the same unpriced first trajectory as the adaptive method. This arm uses start 0.
+3. **Always-short-price.** Always run the reduced priced branch of the adaptive method, including at most six price trials and two starts. This arm omits the marginal screen.
+4. **DP-SQP.** Run the published eight-start DP–SQP control.
+5. **Price-DP-SQP.** Run the full published Price–DP–SQP method with up to fourteen price trials and all eight common starts.
+
+Within a case run the arms serially on one numerical thread. Visit cases by block, profile and SNR and rotate arm order by one place per case. The 180 cases put every arm in every position 36 times. Warm all five methods and compile the subset kernel on historical data before the first timed case in every process. Measure algorithm-specific dispatch, cache clearing, screening, assignment, pricing, refinement, feasible incumbent updates and the final producer-side matrix check. Common channel/Problem construction, generation of the offered starts, harness installation, storage and the independent replay are outside the per-arm search timer. Timings are end to end on this warm host. Save each feasible retained allocation, clock, work counts, component time and final allocation.
+
+For a retrospective equal-time comparison, select the last verified incumbent from the full DP–SQP history available by that case's adaptive wall time. The initially offered feasible start is available at time zero when the first retained checkpoint exceeds the budget. Keep the published full-DP result when it finished early. This prefix establishes an observed rate at the same allowance and has no independently measured runtime.
+
+## Population and decisions
+
+Use 20 fresh independent root blocks. Each contains independently generated CDL-A, B and C user populations at 0, 10 and 20 dB, giving 180 paired cases. The input population is separate from the two earlier campaigns and from historical development. No fresh case is used for tuning. Historical checks use only the older published cases. All five arms must finish, yielding 900 final allocations, before inspecting fresh contrasts.
+
+The joint primary endpoint requires both (i) a lower 2.5th percentile for the mean paired occupied-band spectral-efficiency difference Adaptive-DP-SQP minus Price-DP-SQP of at least −0.001 bit/s/Hz and (ii) an upper 97.5th percentile for the geometric mean of the paired adaptive/full-price search-time ratios below 0.5. Average the nine case differences and log time ratios within each block, then weight all twenty blocks equally. Use the reserved bootstrap seed and the same 20,000 resamplings of complete blocks for both endpoints. Exponentiate the mean log ratio and its percentile endpoints. These two one-sided 97.5% bounds give at least nominal 95% joint coverage by Bonferroni under the block bootstrap approximation. Both margins are study choices.
+
+Report both decisions even on failure. Also report rate differences, win/tie/loss counts with the inclusive ±0.00001 bit/s/Hz tie band, times, geometric paired ratios, gate activity, starts used, deadline counts, stage work, per-SNR/per-profile cell behavior and the worst losses. All other intervals are descriptive pointwise 95% complete-block bootstrap intervals. Do not pool historical and fresh cases. No global optimality or cross-host timing conclusion follows from this comparison.
