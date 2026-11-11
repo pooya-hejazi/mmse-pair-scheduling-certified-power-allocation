@@ -1,6 +1,6 @@
 # MMSE pair scheduling and power allocation
 
-This repository contains the algorithms, channel inputs, saved schedules and powers, rate checks and figures for *When Does Power Allocation Improve Uplink MMSE Pair Scheduling?*. Each user transmits once, two users share each resource, and a linear MMSE receiver is recomputed at the assigned powers. The occupied-band spectral efficiency is the sum rate in nats divided by the number of resources and by ln 2.
+This repository contains the algorithms, channel inputs, saved schedules and powers, rate checks and figures for *Equal-Power Loss Bounds and Adaptive Pair Scheduling for Uplink MMSE Reception*. Each user transmits once, two users share each resource, and a linear MMSE receiver is recomputed at the assigned powers. The occupied-band spectral efficiency is the sum rate in nats divided by the number of resources and by ln 2.
 
 ## Reproduce the results
 
