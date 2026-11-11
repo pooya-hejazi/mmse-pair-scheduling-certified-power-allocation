@@ -20,7 +20,7 @@ SCAN = Path("research/phase0-audit-20261109")
 COMPONENTS = Path("research/review-20261110/comparison")
 STATS = Path("research/review-20261110/statistics")
 STUDIES = ("native", "priced", "certificates", "native-certificate", "subarray", "components",
-           "historical", "figures", "optimizer")
+           "historical", "figures", "computational", "optimizer")
 
 
 def read(path):
@@ -143,9 +143,9 @@ def replay(selected, output):
         env.pop("PYTHONPATH", None)
         env.pop("PYTHONOPTIMIZE", None)
 
-        def run(script, *arguments):
-            path = (code / script).resolve()
-            rel = path.relative_to(work).as_posix()
+        def run(script, *arguments, source=code):
+            path = (source / script).resolve()
+            rel = path.relative_to(source.parent).as_posix()
             log = output / f"{len(report['commands'])+1:02d}-{path.stem}.log"
             print("Running", rel, *arguments, flush=True)
             start = time.monotonic()
@@ -233,6 +233,13 @@ def replay(selected, output):
             check_equal(current["figure_asset_count"], len(published), "edition figure count")
             report["studies"]["figures"] = {"published_panels_redrawn":len(published),
                                             "regenerated_pdf_sha256":published}
+        if "computational" in selected:
+            destination = output / "computational"
+            # The sensitivity reader compares with the original releases and creates its own working copy.
+            run("research/computational-replay-20261111/replay.py", "--output", destination, source=published_code)
+            receipt = destination / "report.json"
+            check_equal("PASS", read(receipt)["status"], "same-channel computational repeat")
+            report["studies"]["computational"] = {"receipt": "computational/report.json", "sha256": digest(receipt)}
         if "optimizer" in selected:
             # Exercise the production runner on one preselected case in the disposable copy.
             case = "native-b00-A-snr00"

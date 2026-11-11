@@ -23,6 +23,7 @@ The command works on a temporary copy of the scientific inputs. It checks the sa
 | Earlier comparisons | 72 saved common-model allocations and the paired analyses for the earlier simplified CDL and ray-traced inputs. | `python reproduce.py --only components` |
 | Historical supplement | Scientific records from the earlier studies. The historical replay guide lists what can be recovered for each experiment. | `python reproduce.py --only historical` |
 | Published figures | Vector PDFs and matching PNGs, figure-to-paper mapping, plotting sources and numerical inputs. | `python reproduce.py --only figures` |
+| Re-solving the same channels | 720 additional timed searches on the November 11 channels in a clean Python environment. Check their allocations and compare both runs case by case. | `python reproduce.py --only computational` |
 | Optimizer rerun | A fresh execution of all four methods on the first CDL-A, 0-dB case, followed by independent checking and a comparison with their stored rates. | `python reproduce.py --only optimizer` |
 
 ## Numerical results
@@ -41,6 +42,10 @@ On the separate eight-antenna ray-traced networks, 27 of 32 global upper/lower g
 - The two 2026 *IEEE Transactions on Communications* comparisons adapt the published Fu SCA and Thu differential-evolution power components to this receiver, feasible set and objective. They compare achieved rates under a common budget. The original papers study different systems and objectives. [Fu *et al.*](https://doi.org/10.1109/TCOMM.2026.3672179) · [Thu *et al.*](https://doi.org/10.1109/TCOMM.2026.3717002)
 - The simplified 53-case CDL study and its gain-normalized cross-check share random streams across conditions. Historical rate summaries are retained where the original experiment did not save the final powers. The independent native-CDL studies supply the allocation-level evidence. [Earlier analysis](code/research/review-20261110/statistics/corrected_statistics.json) · [Earlier scientific archives](code/historical/README.md)
 - The figure directory includes identifiable assets for each panel. Vector export can vary with fonts, Matplotlib and embedded dates. The replay checks the delivered file hashes and regenerates the data and plots. [Figure files and instructions](figures/README.md)
+
+## Re-solving the 180 cases
+
+A fresh GitHub checkout supplied the same 180 inputs, eight starts and deadline for each of the four searches. We ran all 720 searches again after installing the Python wheels in a clean environment on the original host. Price-guided assignment gained 0.002238 bit/s/Hz over the highest achieved control rate per case (95% block interval 0.001030 to 0.003718). The warm-time ratio to the fastest control was 1.618 (97.5% interval 1.592 to 1.645). Both executions gave 23 wins, 157 ties and no losses within the stated tolerance. Neither met the practical rate or efficiency criterion. The Thu adaptation varied by more than 0.00001 bit/s/Hz in 89 cases. It overtook DP–SQP as the strongest control in one of them. These 180 paired comparisons use the original channel blocks. [Results and paired records](code/research/computational-replay-20261111/RESULTS.md) · [Recheck the archive](code/research/computational-replay-20261111/README.md)
 
 ## Regenerating channels or repeating a timed search
 
