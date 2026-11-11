@@ -1,0 +1,507 @@
+{
+  "status": "COMPLETE",
+  "n_cases": 180,
+  "n_allocations": 720,
+  "n_independent_blocks": 20,
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 1721630546,
+  "tie_band_bpshz": 1e-05,
+  "primary_margin_bpshz": 0.01,
+  "secondary_floor_bpshz": -0.001,
+  "secondary_time_ratio_threshold": 0.5,
+  "primary_rate": {
+    "mean": 0.002374782370747871,
+    "low": 0.0011712996781341647,
+    "high": 0.003844161872175736,
+    "confidence": 0.95,
+    "independent_blocks": 20
+  },
+  "secondary_rate": {
+    "mean": 0.002374782370747871,
+    "low": 0.001040209098797701,
+    "high": 0.004065422580457977,
+    "confidence": 0.975,
+    "independent_blocks": 20
+  },
+  "secondary_log_time_ratio": {
+    "mean": 0.4792159957551826,
+    "low": 0.4676580208963779,
+    "high": 0.49097494424514576,
+    "confidence": 0.975,
+    "independent_blocks": 20
+  },
+  "geometric_time_ratio": {
+    "mean": 1.6148078895421538,
+    "low": 1.5962514247044672,
+    "high": 1.633908413284027
+  },
+  "decisions": {
+    "rate_superiority": false,
+    "secondary_rate_condition": true,
+    "secondary_time_condition": false,
+    "secondary_efficiency": false
+  },
+  "contrasts": {
+    "casewise_best": {
+      "rate_difference": {
+        "mean": 0.002374782370747871,
+        "low": 0.0011712996781341647,
+        "high": 0.003844161872175736,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "case_wtl": {
+        "wins": 23,
+        "ties": 157,
+        "losses": 0
+      },
+      "block_wtl": {
+        "wins": 15,
+        "ties": 5,
+        "losses": 0
+      },
+      "exact_case_sign": {
+        "positive": 40,
+        "equal": 126,
+        "negative": 14
+      }
+    },
+    "DP-SQP": {
+      "rate_difference": {
+        "mean": 0.002374782370747871,
+        "low": 0.0011712996781341647,
+        "high": 0.003844161872175736,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "case_wtl": {
+        "wins": 23,
+        "ties": 157,
+        "losses": 0
+      },
+      "block_wtl": {
+        "wins": 15,
+        "ties": 5,
+        "losses": 0
+      },
+      "exact_case_sign": {
+        "positive": 40,
+        "equal": 126,
+        "negative": 14
+      }
+    },
+    "DP-Fu-SCA": {
+      "rate_difference": {
+        "mean": 0.002409578322386704,
+        "low": 0.0011730604870152312,
+        "high": 0.003939771888034428,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "case_wtl": {
+        "wins": 23,
+        "ties": 157,
+        "losses": 0
+      },
+      "block_wtl": {
+        "wins": 15,
+        "ties": 5,
+        "losses": 0
+      },
+      "exact_case_sign": {
+        "positive": 180,
+        "equal": 0,
+        "negative": 0
+      }
+    },
+    "DP-Thu-IDE": {
+      "rate_difference": {
+        "mean": 0.014721859908472449,
+        "low": 0.012025909238224695,
+        "high": 0.017850507271754777,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "case_wtl": {
+        "wins": 176,
+        "ties": 4,
+        "losses": 0
+      },
+      "block_wtl": {
+        "wins": 20,
+        "ties": 0,
+        "losses": 0
+      },
+      "exact_case_sign": {
+        "positive": 180,
+        "equal": 0,
+        "negative": 0
+      }
+    }
+  },
+  "arm_summaries": {
+    "Price-DP-SQP": {
+      "mean_rate": {
+        "mean": 10.30897349312522,
+        "low": 10.13195297936753,
+        "high": 10.482370550391915,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "mean_search_seconds": {
+        "mean": 0.6321920749986829,
+        "low": 0.6222173065003396,
+        "high": 0.6427385127048021,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "median_search_seconds": 0.6193882999941707,
+      "diagnostics": {
+        "completed_work_totals": {
+          "starts_started": 1440,
+          "starts_completed": 1440,
+          "dp_completed": 6501,
+          "power_calls": 4556,
+          "accepted": 521,
+          "price_dp_completed": 2520,
+          "price_schedules": 575
+        },
+        "categorical": {
+          "[].message": {
+            "Optimization terminated successfully": 3947,
+            "Positive directional derivative for linesearch": 609
+          },
+          "[].method": {
+            "COMMON_START": 1440,
+            "LOCAL_SQP": 4556,
+            "GRID_PRICE": 2520
+          },
+          "[].success": {
+            "True": 3947,
+            "False": 609
+          },
+          "run_status": {
+            "starts_exhausted": 180
+          }
+        },
+        "numerical": {
+          "[].iterations": {
+            "n": 4556,
+            "minimum": 1,
+            "maximum": 52,
+            "median": 16.0
+          },
+          "[].numerical_upper_nats": {
+            "n": 2520,
+            "minimum": 20.239366493669177,
+            "maximum": 101.64293284800581,
+            "median": 55.69881666208326
+          },
+          "[].price": {
+            "n": 2520,
+            "minimum": 1.8568819393403828,
+            "maximum": 14.7980833388865,
+            "median": 6.9301418204815946
+          },
+          "[].start_id": {
+            "n": 1440,
+            "minimum": 0,
+            "maximum": 7,
+            "median": 3.5
+          },
+          "[].unprojected_power": {
+            "n": 2520,
+            "minimum": 0.6598943506836568,
+            "maximum": 3.2,
+            "median": 2.0840407861872148
+          }
+        }
+      }
+    },
+    "DP-SQP": {
+      "mean_rate": {
+        "mean": 10.30659871075447,
+        "low": 10.13013012166053,
+        "high": 10.479960056295745,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "mean_search_seconds": {
+        "mean": 0.39188553722180786,
+        "low": 0.3847491100129749,
+        "high": 0.39944119876490725,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "median_search_seconds": 0.3858751500083599,
+      "diagnostics": {
+        "completed_work_totals": {
+          "starts_started": 1440,
+          "starts_completed": 1440,
+          "dp_completed": 3552,
+          "power_calls": 3552,
+          "accepted": 565
+        },
+        "categorical": {
+          "[].message": {
+            "Optimization terminated successfully": 3085,
+            "Positive directional derivative for linesearch": 467
+          },
+          "[].method": {
+            "LOCAL_SQP": 3552
+          },
+          "[].success": {
+            "True": 3085,
+            "False": 467
+          },
+          "run_status": {
+            "starts_exhausted": 180
+          }
+        },
+        "numerical": {
+          "[].iterations": {
+            "n": 3552,
+            "minimum": 1,
+            "maximum": 52,
+            "median": 17.0
+          }
+        }
+      }
+    },
+    "DP-Fu-SCA": {
+      "mean_rate": {
+        "mean": 10.306563914802831,
+        "low": 10.130110295571628,
+        "high": 10.479942024274337,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "mean_search_seconds": {
+        "mean": 3.6855367699948447,
+        "low": 3.4412357372846842,
+        "high": 3.9491972776891635,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "median_search_seconds": 2.199102899961872,
+      "diagnostics": {
+        "completed_work_totals": {
+          "starts_started": 1415,
+          "starts_completed": 1398,
+          "dp_completed": 3455,
+          "power_calls": 3455,
+          "accepted": 6667
+        },
+        "categorical": {
+          "[].method": {
+            "FU_SCA": 3455
+          },
+          "[].stop_reason": {
+            "numerical_stall": 3419,
+            "stationary_tolerance": 3,
+            "deadline": 15,
+            "surrogate_validation_failure": 18
+          },
+          "run_status": {
+            "starts_exhausted": 163,
+            "deadline": 17
+          }
+        },
+        "numerical": {
+          "[].accepted": {
+            "n": 3455,
+            "minimum": 0,
+            "maximum": 305,
+            "median": 7.0
+          },
+          "[].cap_count": {
+            "n": 3455,
+            "minimum": 0,
+            "maximum": 0,
+            "median": 0.0
+          },
+          "[].elapsed_seconds": {
+            "n": 3455,
+            "minimum": 0.0036951000220142305,
+            "maximum": 4.250029199989513,
+            "median": 0.11491649999516085
+          },
+          "[].error_count": {
+            "n": 3455,
+            "minimum": 0,
+            "maximum": 1,
+            "median": 0.0
+          },
+          "[].evaluations": {
+            "n": 3455,
+            "minimum": 4,
+            "maximum": 10923,
+            "median": 275.0
+          },
+          "[].iterations": {
+            "n": 3455,
+            "minimum": 1,
+            "maximum": 306,
+            "median": 8.0
+          },
+          "[].last_subproblem_status": {
+            "n": 3447,
+            "minimum": 0,
+            "maximum": 8,
+            "median": 0.0
+          },
+          "[].stationarity_residual": {
+            "n": 3447,
+            "minimum": 2.4438784329561258e-14,
+            "maximum": 0.1718136286337061,
+            "median": 0.00018291032387779405
+          }
+        }
+      }
+    },
+    "DP-Thu-IDE": {
+      "mean_rate": {
+        "mean": 10.294251633216746,
+        "low": 10.118190874379493,
+        "high": 10.466559707803125,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "mean_search_seconds": {
+        "mean": 10.0029495655559,
+        "low": 10.002755530791376,
+        "high": 10.003148441417894,
+        "confidence": 0.95,
+        "independent_blocks": 20
+      },
+      "median_search_seconds": 10.002888899995014,
+      "diagnostics": {
+        "completed_work_totals": {
+          "starts_started": 180,
+          "starts_completed": 0,
+          "dp_completed": 360,
+          "power_calls": 360,
+          "accepted": 1692
+        },
+        "categorical": {
+          "[].incomplete_generation": {
+            "True": 360
+          },
+          "[].method": {
+            "THU_IDE": 360
+          },
+          "[].stop_reason": {
+            "deadline": 360
+          },
+          "run_status": {
+            "deadline": 180
+          }
+        },
+        "numerical": {
+          "[].accepted": {
+            "n": 360,
+            "minimum": 0,
+            "maximum": 26,
+            "median": 0.0
+          },
+          "[].archive_size": {
+            "n": 360,
+            "minimum": 64,
+            "maximum": 64,
+            "median": 64.0
+          },
+          "[].cap_count": {
+            "n": 360,
+            "minimum": 0,
+            "maximum": 0,
+            "median": 0.0
+          },
+          "[].elapsed_seconds": {
+            "n": 360,
+            "minimum": 4.922273800009862,
+            "maximum": 5.006305699993391,
+            "median": 4.991125399974408
+          },
+          "[].error_count": {
+            "n": 360,
+            "minimum": 0,
+            "maximum": 0,
+            "median": 0.0
+          },
+          "[].evaluations": {
+            "n": 360,
+            "minimum": 747,
+            "maximum": 1149,
+            "median": 896.0
+          },
+          "[].generations": {
+            "n": 360,
+            "minimum": 10,
+            "maximum": 16,
+            "median": 13.0
+          },
+          "[].initializations": {
+            "n": 360,
+            "minimum": 1,
+            "maximum": 1,
+            "median": 1.0
+          },
+          "[].iterations": {
+            "n": 360,
+            "minimum": 10,
+            "maximum": 16,
+            "median": 13.0
+          },
+          "[].last_window_gains[]": {
+            "n": 720,
+            "minimum": 57.76958324094849,
+            "maximum": 443.0193703381249,
+            "median": 192.67678656072655
+          },
+          "[].last_window_invocations[]": {
+            "n": 720,
+            "minimum": 102,
+            "maximum": 538,
+            "median": 320.0
+          },
+          "[].mu_CR[]": {
+            "n": 720,
+            "minimum": 0.5881691735559778,
+            "maximum": 1.0,
+            "median": 0.9336211354372487
+          },
+          "[].mu_F[]": {
+            "n": 720,
+            "minimum": 0.07910895734864232,
+            "maximum": 1.0,
+            "median": 0.5600331425987344
+          },
+          "[].operator1_probability": {
+            "n": 360,
+            "minimum": 0.2,
+            "maximum": 0.8,
+            "median": 0.8
+          },
+          "[].operator_invocations[]": {
+            "n": 720,
+            "minimum": 168,
+            "maximum": 671,
+            "median": 495.5
+          },
+          "[].restarts": {
+            "n": 360,
+            "minimum": 0,
+            "maximum": 0,
+            "median": 0.0
+          }
+        }
+      }
+    }
+  },
+  "interval_scope": "Primary two-sided 95%; two marginal two-sided 97.5% intervals for joint secondary endpoint; individual/cell contrasts pointwise 95%. All resample whole blocks.",
+  "efficiency_scope": "Matched warm-runtime search on the recorded single-thread host under the 10-second cap.",
+  "bounds_scope": "Exact signs use rational objective products. Price-grid numerical upper diagnostics are floating-point quantities.",
+  "audit_sha256": "57355181cee38f216cf3361dc9ab274e8a06d3f0b874e51438ec4256ac5e98df",
+  "source_manifest_sha256": "3a8a3ea59fc927a200934e9cca3d9ef4a63fc2a8e5962481af7bb4732ab15b63",
+  "seed_manifest_sha256": "62cfeb039830058910dc35b7727c0229c0a77a20283984fb4919a505ed14dc45"
+}

@@ -1,0 +1,3861 @@
+{
+  "status": "PASS",
+  "phase": "main",
+  "generator_sha256": "4a915941b440dae9f20adf802d7a5abc39cd34a5153ee17f8a19e9591dfb056c",
+  "protocol_sha256": "802bf939f72c5089339e4ec31957db1b6f016e4472fed99c755fedf0cd5abb54",
+  "seed_manifest_sha256": "1c15391815480d681dc48ee2fb792cafb14aa15293f31d53289a8f9c768967c3",
+  "seconds": 20.56300000002375,
+  "profile_count": 60,
+  "case_count": 180,
+  "profiles": [
+    {
+      "phase": "main",
+      "block": 0,
+      "profile": "A",
+      "native_path": "native/native-b00-A.npz",
+      "native_sha256": "3c07443478affc69493ed4097b41dea7b2ac81bf866de9bc27e600ac1a24ea8e",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.363009218753289e-15,
+      "min_tone_gain_range": 1.1679238526699132,
+      "native_gain_quantiles": [
+        0.06060371509383398,
+        0.4363794156088433,
+        1.508160722664449,
+        4.154281115799734,
+        9.78100322052288
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b00-A-snr00.json",
+          "case_sha256": "a29fc3d74ebd7305fe481780ed890a9e13a74efaad4c4669f3815ee9110373b8",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -24.082674398446482,
+            -10.653858924146576,
+            -1.7464372754604478,
+            4.326254885563472,
+            8.736024847645796
+          ]
+        },
+        {
+          "case_path": "cases/native-b00-A-snr10.json",
+          "case_sha256": "a225bfdc4fb8fea836ecf260d6f139408046179a491c9bb1cf1f0ff578eebd94",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -14.082674398446484,
+            -0.6538589241465729,
+            8.25356272453955,
+            14.326254885563472,
+            18.736024847645798
+          ]
+        },
+        {
+          "case_path": "cases/native-b00-A-snr20.json",
+          "case_sha256": "f721cdf735ab540698016495df6fec3b79b0b9d9045c84c22e04e3d7d657d5cb",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -4.082674398446484,
+            9.346141075853426,
+            18.253562724539556,
+            24.326254885563472,
+            28.73602484764579
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 0,
+      "profile": "B",
+      "native_path": "native/native-b00-B.npz",
+      "native_sha256": "7cf107b8e4f61e01a6bc3f494334cee675bf4752c82b701cae17408a0198a6b8",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.8928600614273756e-15,
+      "min_tone_gain_range": 1.0857436031150454,
+      "native_gain_quantiles": [
+        0.012474330828947508,
+        0.416953528777279,
+        1.6191190467948011,
+        4.008970557262086,
+        8.24245156825955
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b00-B-snr00.json",
+          "case_sha256": "aaf10870ecdf702d391fe62c9276b5458e544647b41d09867762677db7e8f34f",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -22.67719310975908,
+            -11.055431824471786,
+            -1.0270262083220998,
+            5.951679272518236,
+            10.830159592954649
+          ]
+        },
+        {
+          "case_path": "cases/native-b00-B-snr10.json",
+          "case_sha256": "5f85c873e2a15d9c2669d1a4a51407cb8a9549ce4dc55649e6cd83401ce2ce37",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -12.67719310975908,
+            -1.0554318244717866,
+            8.9729737916779,
+            15.951679272518234,
+            20.83015959295465
+          ]
+        },
+        {
+          "case_path": "cases/native-b00-B-snr20.json",
+          "case_sha256": "11e1e8d9de372b47b683b84902ca3e5d78bf2d6b4dea8e14e89a1e7c632646fd",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -2.6771931097590818,
+            8.944568175528213,
+            18.972973791677898,
+            25.951679272518234,
+            30.830159592954654
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 0,
+      "profile": "C",
+      "native_path": "native/native-b00-C.npz",
+      "native_sha256": "f34c28a64ad277d7c5dc5157e6f907a3838f157211880ff8ccb20fc201678fa5",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.482534153247273e-15,
+      "min_tone_gain_range": 0.803803287398108,
+      "native_gain_quantiles": [
+        0.030759732302164423,
+        0.3423660880625205,
+        1.4371926137569346,
+        4.0575286867485945,
+        10.173022650737119
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b00-C-snr00.json",
+          "case_sha256": "29dc823ab02afeea82d30061487c735bd78739526a5c590a4451b75630147f33",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -30.597011773700004,
+            -11.863469673597784,
+            -2.5400131143548483,
+            5.8837895806126905,
+            13.562408557108473
+          ]
+        },
+        {
+          "case_path": "cases/native-b00-C-snr10.json",
+          "case_sha256": "a4c0b0d3bc00947b1b2807c2f3569689c2de4daaa5bfd2e75dc51d8665122a37",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -20.597011773700004,
+            -1.8634696735977836,
+            7.459986885645153,
+            15.883789580612692,
+            23.562408557108473
+          ]
+        },
+        {
+          "case_path": "cases/native-b00-C-snr20.json",
+          "case_sha256": "028d76265b99445dac8961b25ceb3ffea153cd5a9b180cacd18ec9dcfb3c1a95",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -10.597011773700007,
+            8.136530326402216,
+            17.459986885645154,
+            25.883789580612692,
+            33.56240855710847
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 1,
+      "profile": "A",
+      "native_path": "native/native-b01-A.npz",
+      "native_sha256": "aeee08ece603a07f6c7644449929fcb9382db5785126c2c007ae22f2ee2e0931",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.4434815930397148e-15,
+      "min_tone_gain_range": 2.229570784219369,
+      "native_gain_quantiles": [
+        0.10051880642998767,
+        0.5618137369356991,
+        2.382014284516357,
+        5.476523035673401,
+        8.560920593587943
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b01-A-snr00.json",
+          "case_sha256": "a317a7a32f492c5e1d3c82996c397f2f9fc00817232db4248aa10f8df679db38",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -22.283679225504276,
+            -6.6983376008677205,
+            1.912307156115296,
+            8.151242824413362,
+            11.422548661618775
+          ]
+        },
+        {
+          "case_path": "cases/native-b01-A-snr10.json",
+          "case_sha256": "fe203c38455e0ebcb45603638092b52d638f3c76200dd5c915ca037fc68cf5ff",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -12.283679225504276,
+            3.3016623991322778,
+            11.912307156115297,
+            18.151242824413366,
+            21.422548661618777
+          ]
+        },
+        {
+          "case_path": "cases/native-b01-A-snr20.json",
+          "case_sha256": "2c4270ab47a9007997a82ab465ced7f79043febf283ad975f838683a61e37e1d",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -2.283679225504273,
+            13.301662399132276,
+            21.912307156115297,
+            28.15124282441336,
+            31.422548661618777
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 1,
+      "profile": "B",
+      "native_path": "native/native-b01-B.npz",
+      "native_sha256": "17e34238a115371e0f617b47a80a7c35f7927a655609f4dd5879166954fdeb2b",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.4200263976433585e-15,
+      "min_tone_gain_range": 1.5833759636959015,
+      "native_gain_quantiles": [
+        0.07124360152020687,
+        0.46659121736811426,
+        1.6059558797103164,
+        3.7222809051057224,
+        6.19237301849863
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b01-B-snr00.json",
+          "case_sha256": "0bbd6f67a23c45acfedc00197a91e8655e79843035f0b1e27981981106ffe5e2",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -29.309881754597207,
+            -12.434415974285542,
+            -3.4092196082897117,
+            4.6945515728380744,
+            11.723218085303468
+          ]
+        },
+        {
+          "case_path": "cases/native-b01-B-snr10.json",
+          "case_sha256": "10cd98cc84d111152fdccf44037afd6dcddda2c89e8f88ef84a438e38cd14b8c",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -19.30988175459721,
+            -2.4344159742855416,
+            6.590780391710288,
+            14.694551572838078,
+            21.72321808530347
+          ]
+        },
+        {
+          "case_path": "cases/native-b01-B-snr20.json",
+          "case_sha256": "d4ac00271bad3adfa47978b5bf1ca822859215df3d10281e6b297bdbfbc44447",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -9.30988175459721,
+            7.565584025714459,
+            16.59078039171029,
+            24.69455157283808,
+            31.723218085303465
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 1,
+      "profile": "C",
+      "native_path": "native/native-b01-C.npz",
+      "native_sha256": "096a32e5106bfc830faeb63dcf8368d1dd1c74d67867408c3a2d32933af705cc",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.3551386880256627e-15,
+      "min_tone_gain_range": 1.3412332236708717,
+      "native_gain_quantiles": [
+        0.01590179720498587,
+        0.704383572589321,
+        2.025228836641959,
+        4.101974949834943,
+        6.77413875455245
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b01-C-snr00.json",
+          "case_sha256": "0b072a4dee3595e9a4d503c1c5b659ca7ef6b783dfa7650faf5bed504813cca4",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -33.68851498486044,
+            -8.474060683670313,
+            -0.22471109548740759,
+            6.939767387685489,
+            10.798888799822945
+          ]
+        },
+        {
+          "case_path": "cases/native-b01-C-snr10.json",
+          "case_sha256": "5e2d0344b713113dce8fb7087103bc18cee2d2f9f1ac2f803f63b030a26f721b",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -23.68851498486044,
+            1.525939316329688,
+            9.775288904512593,
+            16.93976738768549,
+            20.798888799822947
+          ]
+        },
+        {
+          "case_path": "cases/native-b01-C-snr20.json",
+          "case_sha256": "aaaf7bc3ca56c705b6153620fc8e469251a445812bfe48cb8663189607bec9f1",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -13.688514984860438,
+            11.525939316329687,
+            19.775288904512593,
+            26.939767387685492,
+            30.79888879982295
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 2,
+      "profile": "A",
+      "native_path": "native/native-b02-A.npz",
+      "native_sha256": "f278756cbcc3413ee7782ff93b1e6941b3d11b1d67b84e4d8d1ae422f9e21822",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.0287934084557967e-15,
+      "min_tone_gain_range": 0.374192689239328,
+      "native_gain_quantiles": [
+        0.10718950410945535,
+        0.504691994502708,
+        1.5790178861026818,
+        3.5597824187935205,
+        6.416188539648072
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b02-A-snr00.json",
+          "case_sha256": "48c3a9090bad1257897c02fa79a17ccf4a582d43735b2b9f517144136e1a6ac4",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -29.724630175658874,
+            -11.62395591535925,
+            -1.443421797050665,
+            6.1358837952880805,
+            11.835022727791761
+          ]
+        },
+        {
+          "case_path": "cases/native-b02-A-snr10.json",
+          "case_sha256": "dff118a60222302971f91a190e7e3475abe4b7537baee0b283682cdc5cb29425",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -19.724630175658874,
+            -1.6239559153592498,
+            8.556578202949336,
+            16.13588379528808,
+            21.83502272779176
+          ]
+        },
+        {
+          "case_path": "cases/native-b02-A-snr20.json",
+          "case_sha256": "09623b2c50dcabd6dec6e5ebff67f90bd00f74142a2aff6fb1bb5168e1836a09",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -9.72463017565887,
+            8.37604408464075,
+            18.556578202949336,
+            26.13588379528808,
+            31.83502272779176
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 2,
+      "profile": "B",
+      "native_path": "native/native-b02-B.npz",
+      "native_sha256": "dbee17b04d5402c69b82f1787a9cf9b0a7fbd2d79709aab6d2efda9ba019aaca",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.572178254219406e-15,
+      "min_tone_gain_range": 1.3141855296518596,
+      "native_gain_quantiles": [
+        0.022633851090401762,
+        0.442562285644421,
+        1.7212702093174608,
+        3.5640822377039583,
+        8.604480926605067
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b02-B-snr00.json",
+          "case_sha256": "7f890f3ee171428490fa2ddc2df8a20039e3df5b073c44e2f026367df80f8b08",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -37.5467740659657,
+            -9.656527381172069,
+            -0.23625038682302654,
+            6.919415607298212,
+            13.29503349987231
+          ]
+        },
+        {
+          "case_path": "cases/native-b02-B-snr10.json",
+          "case_sha256": "bcc6eef8623eeb05ffd452322ae3c4378cb529dfac975eb93319d1d3924faf0c",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -27.5467740659657,
+            0.34347261882793023,
+            9.763749613176975,
+            16.919415607298212,
+            23.29503349987231
+          ]
+        },
+        {
+          "case_path": "cases/native-b02-B-snr20.json",
+          "case_sha256": "dc6387f944aa3dce84e482e1e3e96ae5b0ee4ff530e593f34b48134070690f5d",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -17.546774065965693,
+            10.343472618827931,
+            19.763749613176973,
+            26.91941560729821,
+            33.29503349987231
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 2,
+      "profile": "C",
+      "native_path": "native/native-b02-C.npz",
+      "native_sha256": "b07d4b85b9d6dbcc7966dc763f4f1de5419563977dd45ab88244258dabfce0b3",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.0014830212433605e-15,
+      "min_tone_gain_range": 1.39658072951971,
+      "native_gain_quantiles": [
+        0.2499073928275647,
+        0.7683216762984819,
+        1.9554684022337745,
+        4.3244688206768656,
+        9.386016957610488
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b02-C-snr00.json",
+          "case_sha256": "0e4de62a65f89e070d5a2c540e8320614f5b3cf21c12623bfa09a4006dcb1996",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -24.643394268373875,
+            -6.930758421586572,
+            0.3741959856932401,
+            6.3314775045583325,
+            11.41808339978365
+          ]
+        },
+        {
+          "case_path": "cases/native-b02-C-snr10.json",
+          "case_sha256": "23ab622baeb51fb886274c488b655fb5cf00729661a562757561dcc9b528d225",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -14.643394268373873,
+            3.069241578413429,
+            10.374195985693241,
+            16.331477504558336,
+            21.41808339978365
+          ]
+        },
+        {
+          "case_path": "cases/native-b02-C-snr20.json",
+          "case_sha256": "b9952734a5c6e46d06b4da2abd4e30db428423c8477d44fec31491d5623113f4",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -4.643394268373872,
+            13.069241578413429,
+            20.37419598569324,
+            26.331477504558332,
+            31.41808339978365
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 3,
+      "profile": "A",
+      "native_path": "native/native-b03-A.npz",
+      "native_sha256": "6a7d574fb683e8529d98ad765280117fc209183ec5deeda7c2e8917d5c7f9236",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.580361673049448e-15,
+      "min_tone_gain_range": 1.160539364774802,
+      "native_gain_quantiles": [
+        0.02831349769149298,
+        0.3932810330076147,
+        1.6569475678832148,
+        3.607263580010166,
+        8.656753329417828
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b03-A-snr00.json",
+          "case_sha256": "f63a6404962d6747188849a5fc5c0757273c14735b7dea21bcc3554181f16c9d",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -19.84649362421097,
+            -10.074305411712867,
+            -2.3948723900872912,
+            4.802997436992228,
+            11.128462344171107
+          ]
+        },
+        {
+          "case_path": "cases/native-b03-A-snr10.json",
+          "case_sha256": "ba348d36fdd781fbbc54208dcbbc7beac55e4c897cd37c486a35bdd3195df871",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -9.846493624210973,
+            -0.0743054117128668,
+            7.605127609912708,
+            14.802997436992229,
+            21.128462344171105
+          ]
+        },
+        {
+          "case_path": "cases/native-b03-A-snr20.json",
+          "case_sha256": "ed303d1271c99370216ef32342645f219e906b76ebb470d3d2f47615a20dcddb",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            0.15350637578902834,
+            9.925694588287133,
+            17.605127609912707,
+            24.80299743699223,
+            31.128462344171105
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 3,
+      "profile": "B",
+      "native_path": "native/native-b03-B.npz",
+      "native_sha256": "701bf71432f8dd3ba75cf231ef0cc1425cc137762eb09541d862f4674a99aa14",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 5.661048867003676e-15,
+      "min_tone_gain_range": 1.5498075052999467,
+      "native_gain_quantiles": [
+        0.009585467980145233,
+        0.4601472677936889,
+        1.6566968390860697,
+        3.9046354622822954,
+        6.8321382847436425
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b03-B-snr00.json",
+          "case_sha256": "a8a6eee20c080901b1da0f40b490a5fabf59fbd5049ad98093da7d72220df52e",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -31.6764389869735,
+            -10.155828501624326,
+            -1.2217189779899744,
+            6.353148276663196,
+            11.146263839821975
+          ]
+        },
+        {
+          "case_path": "cases/native-b03-B-snr10.json",
+          "case_sha256": "2d3de9bab4967555ea946256661073b0ec006f7a848d17f67ca75d26c81ab641",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.6764389869735,
+            -0.15582850162432585,
+            8.778281022010024,
+            16.353148276663198,
+            21.146263839821977
+          ]
+        },
+        {
+          "case_path": "cases/native-b03-B-snr20.json",
+          "case_sha256": "75a6a42a1bea3a18a9f0c6c97deadc07d2cf1e6ead314af8595bd9ba8cbc3133",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.676438986973501,
+            9.844171498375676,
+            18.778281022010027,
+            26.353148276663195,
+            31.146263839821977
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 3,
+      "profile": "C",
+      "native_path": "native/native-b03-C.npz",
+      "native_sha256": "8c7864cd7eb25aecbe8b65fce12c827ff7b796a8683ada68f2ea14134c432e64",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.5208725561797295e-15,
+      "min_tone_gain_range": 1.3363765652746835,
+      "native_gain_quantiles": [
+        0.11632621098331049,
+        0.4679846252360038,
+        1.3857737564737875,
+        2.9770128159733664,
+        5.75420657831808
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b03-C-snr00.json",
+          "case_sha256": "218d2fdd28d20fcbea599d603501c3ddf460367f681a699750eaff1b4c32a2d9",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -52.48535284306227,
+            -10.685766161621943,
+            -2.211795941740974,
+            3.702744341392362,
+            8.412380999627233
+          ]
+        },
+        {
+          "case_path": "cases/native-b03-C-snr10.json",
+          "case_sha256": "e562baa3307fd2509dc88ac44c52f1b23b5f4c86bfb0aaca559bb09e1c9057b7",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -42.48535284306227,
+            -0.6857661616219437,
+            7.788204058259026,
+            13.702744341392364,
+            18.41238099962723
+          ]
+        },
+        {
+          "case_path": "cases/native-b03-C-snr20.json",
+          "case_sha256": "e0f865401178541880c8736b4b1219ea328a0d0c26183a1597cc279c892ee19f",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -32.48535284306227,
+            9.314233838378055,
+            17.788204058259026,
+            23.70274434139236,
+            28.41238099962723
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 4,
+      "profile": "A",
+      "native_path": "native/native-b04-A.npz",
+      "native_sha256": "36c98f9e991bd7dde8e91bd188030f8b4ce02d1a911bb7197182709a1016ced0",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.635450680502071e-15,
+      "min_tone_gain_range": 0.7575597854038902,
+      "native_gain_quantiles": [
+        0.16726015429404525,
+        0.5302191309128703,
+        1.4643755492244783,
+        3.187155959817122,
+        5.343768672548578
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b04-A-snr00.json",
+          "case_sha256": "4dc0a64be2c993a8e9dd81e1d7d97e0a54a7b9fd675a2fe174a5d4fcdad6fc75",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -30.299371993118505,
+            -9.535404968562347,
+            -1.3413401718506819,
+            5.242905750287741,
+            9.919816491552583
+          ]
+        },
+        {
+          "case_path": "cases/native-b04-A-snr10.json",
+          "case_sha256": "e08f2e7a6f686932e29ed0a585cec3ef1103eb9c29cd2ab150d8023d8d722aeb",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -20.29937199311851,
+            0.4645950314376519,
+            8.658659828149318,
+            15.242905750287736,
+            19.91981649155258
+          ]
+        },
+        {
+          "case_path": "cases/native-b04-A-snr20.json",
+          "case_sha256": "e495fdda1a5ac08bfc50aa8ddf3206b022eadddb299d40a007a3ab35e212ce5a",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -10.299371993118505,
+            10.464595031437653,
+            18.658659828149318,
+            25.242905750287743,
+            29.919816491552584
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 4,
+      "profile": "B",
+      "native_path": "native/native-b04-B.npz",
+      "native_sha256": "9f49f821160aedf2bc6bd705a9bde825c2eab61d57c8a6c2f0ef8402a12db89a",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.934640423845915e-15,
+      "min_tone_gain_range": 1.391951684869457,
+      "native_gain_quantiles": [
+        0.03434991297202538,
+        0.7225865865696333,
+        1.7309951952389235,
+        3.609967120000893,
+        7.040857039428699
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b04-B-snr00.json",
+          "case_sha256": "c5cd20eba57c822c928a87653b7a420c5105533da0f322412aec73685274751a",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -22.52840757508426,
+            -9.900574307859959,
+            -0.15758739363511703,
+            6.147982473715661,
+            11.90546633861137
+          ]
+        },
+        {
+          "case_path": "cases/native-b04-B-snr10.json",
+          "case_sha256": "35061472ad836d6aae66228408c3605567424eeb29a2c822b37b922fecede89d",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -12.528407575084257,
+            0.09942569214004104,
+            9.842412606364883,
+            16.147982473715665,
+            21.90546633861137
+          ]
+        },
+        {
+          "case_path": "cases/native-b04-B-snr20.json",
+          "case_sha256": "a0e8c894f8c9892e4cc328865ac996cfc9e030b56165d0952d5917f886efff08",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -2.5284075750842554,
+            10.099425692140041,
+            19.84241260636488,
+            26.147982473715665,
+            31.905466338611372
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 4,
+      "profile": "C",
+      "native_path": "native/native-b04-C.npz",
+      "native_sha256": "a435d150025cfbcd772c6b35da806b60137486d0febe92fce7662e6dd4eda0b5",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.6604844918946563e-15,
+      "min_tone_gain_range": 1.4323972741819373,
+      "native_gain_quantiles": [
+        0.0772786002171624,
+        0.5416081091087406,
+        2.001833459183145,
+        4.1018631500962055,
+        6.735886833338608
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b04-C-snr00.json",
+          "case_sha256": "182f0c61b2b06bd4379d5d794cff52e93b4940dd21f8d525e029990e0ca1917d",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -23.976970839928736,
+            -11.451092195501523,
+            -2.196335259419919,
+            5.217614347855553,
+            12.226260449175559
+          ]
+        },
+        {
+          "case_path": "cases/native-b04-C-snr10.json",
+          "case_sha256": "1b58104f58e7cdcd3d98a228c51331330fda64fdf9cc211a0b82a765e8c3e0b3",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -13.976970839928736,
+            -1.451092195501523,
+            7.803664740580079,
+            15.217614347855553,
+            22.22626044917556
+          ]
+        },
+        {
+          "case_path": "cases/native-b04-C-snr20.json",
+          "case_sha256": "054abf24f97e5dd20866f4686f1b3f9e9661830d837881331b56cbb962ab8673",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -3.9769708399287333,
+            8.548907804498477,
+            17.803664740580082,
+            25.217614347855555,
+            32.226260449175555
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 5,
+      "profile": "A",
+      "native_path": "native/native-b05-A.npz",
+      "native_sha256": "1a39a4b56fb99f1d9d9594026813bcafa03bb2025919a2d78a641423bfd5c02c",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.624839920960301e-15,
+      "min_tone_gain_range": 1.1796531188835453,
+      "native_gain_quantiles": [
+        0.1572887708745083,
+        0.5789180051443944,
+        1.7045385657657768,
+        3.9689142325404116,
+        6.916445166223651
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b05-A-snr00.json",
+          "case_sha256": "2b2bb8152572b59847e547e01d0f22d4419edf65cfe0cbfa0837c16407b2603d",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.396639222520232,
+            -11.704647840751296,
+            -1.4426390345126552,
+            6.317845463247931,
+            11.45834963043372
+          ]
+        },
+        {
+          "case_path": "cases/native-b05-A-snr10.json",
+          "case_sha256": "18514937d31a8220ff6a1432bb73728311f36425d6509e582ecae746bf74049d",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.396639222520236,
+            -1.7046478407512944,
+            8.557360965487344,
+            16.31784546324793,
+            21.45834963043372
+          ]
+        },
+        {
+          "case_path": "cases/native-b05-A-snr20.json",
+          "case_sha256": "748961f2a7afbdff0fe902b808735105b2c8bcd9702db23288aececb88e2c3b9",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -1.3966392225202324,
+            8.295352159248706,
+            18.557360965487348,
+            26.31784546324793,
+            31.45834963043372
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 5,
+      "profile": "B",
+      "native_path": "native/native-b05-B.npz",
+      "native_sha256": "88d67ef929a62a056c36d109dc9c56edfc372ccbca9ec3740f25bbcc0650859c",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.353380413511798e-15,
+      "min_tone_gain_range": 1.690824329010412,
+      "native_gain_quantiles": [
+        0.1933230361830951,
+        0.529846267944972,
+        1.7410905580457674,
+        4.004052307643945,
+        8.600786204066566
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b05-B-snr00.json",
+          "case_sha256": "52e5e43501b97ad7b6b6d18d6009aa2fe0b82473d6aa08f8e3c1e758784b43e0",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -38.10307398699724,
+            -9.608295928738109,
+            -1.477616388548425,
+            5.881910630608317,
+            13.529488786861192
+          ]
+        },
+        {
+          "case_path": "cases/native-b05-B-snr10.json",
+          "case_sha256": "3259d7c41ab0d81c441f5ad92e6cb3b3713179a446ed094d8e3beec018d93d9a",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -28.103073986997238,
+            0.3917040712618915,
+            8.522383611451573,
+            15.881910630608317,
+            23.529488786861194
+          ]
+        },
+        {
+          "case_path": "cases/native-b05-B-snr20.json",
+          "case_sha256": "f12a3e87d1fed2b9c76d122f5ffd16c4eea723a2b716b87ac688511bf7de2151",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -18.103073986997238,
+            10.391704071261895,
+            18.522383611451573,
+            25.881910630608317,
+            33.529488786861194
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 5,
+      "profile": "C",
+      "native_path": "native/native-b05-C.npz",
+      "native_sha256": "cd8cb07e4e98a6c84d1b40ba6a1c405a7b906acdee8171be304f739d689e4657",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 1.897149936107019e-15,
+      "min_tone_gain_range": 0.7063616490455322,
+      "native_gain_quantiles": [
+        0.11816579432488833,
+        0.3411409079216341,
+        1.5795347386774559,
+        2.8471381834365785,
+        6.525117532329666
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b05-C-snr00.json",
+          "case_sha256": "0731c596ba3bc4fb8d793b5acc68a40ea9af85173b16cd2da538492251c1534b",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -24.345436317776382,
+            -11.58695941563002,
+            -1.542275229930676,
+            3.8467568275517645,
+            7.637348254266035
+          ]
+        },
+        {
+          "case_path": "cases/native-b05-C-snr10.json",
+          "case_sha256": "a4d8d77c474d5c0968c7fa681c2ef6e61b39eb548f6935627ea881fef7225a78",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -14.345436317776386,
+            -1.5869594156300195,
+            8.457724770069323,
+            13.846756827551763,
+            17.637348254266033
+          ]
+        },
+        {
+          "case_path": "cases/native-b05-C-snr20.json",
+          "case_sha256": "bd2d157c1dcb049c122d0de080ddaf526b65d7287ce2cfa240214b0d70264b82",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -4.345436317776386,
+            8.41304058436998,
+            18.457724770069323,
+            23.846756827551765,
+            27.637348254266033
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 6,
+      "profile": "A",
+      "native_path": "native/native-b06-A.npz",
+      "native_sha256": "c88b89199e4c2654c572dcb858b1b328890018d95075b2376269dc3d9e6e02d0",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.3298697960381105e-15,
+      "min_tone_gain_range": 0.7478953176660768,
+      "native_gain_quantiles": [
+        0.009159080294193569,
+        0.58265913521936,
+        1.6734919020139758,
+        4.802647586032623,
+        9.303117286711274
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b06-A-snr00.json",
+          "case_sha256": "96dd360c2025378d276035def822088016e89890eeecffdf0f756cf16facacb9",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -31.870789053921328,
+            -11.582378703948915,
+            -1.352281779477806,
+            5.970385036842297,
+            10.471490745998777
+          ]
+        },
+        {
+          "case_path": "cases/native-b06-A-snr10.json",
+          "case_sha256": "97dc1183e6df8283fb74617544f2fcab192909ca5cbc2a608f1bc8b786b242f3",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.870789053921328,
+            -1.5823787039489143,
+            8.647718220522194,
+            15.970385036842298,
+            20.47149074599878
+          ]
+        },
+        {
+          "case_path": "cases/native-b06-A-snr20.json",
+          "case_sha256": "7f0b086d1fef8136a342158d60a4cc1a6419016019ffdbadd6bc993e8bafd9d6",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.870789053921328,
+            8.417621296051085,
+            18.647718220522194,
+            25.9703850368423,
+            30.471490745998775
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 6,
+      "profile": "B",
+      "native_path": "native/native-b06-B.npz",
+      "native_sha256": "3cbe217b1965de3d2adb10194460cfea24859af9c51c58bac7b2a3a133e58bc1",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.232725281383409e-15,
+      "min_tone_gain_range": 1.1617023786579168,
+      "native_gain_quantiles": [
+        0.1772370242425689,
+        0.5384242917139229,
+        1.3750640945517263,
+        2.906120299798875,
+        6.511934826431531
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b06-B-snr00.json",
+          "case_sha256": "22f760615d2ca0436336144e1171c5dee83f45ef0fadf0abb0c1e3921414633e",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -31.98779255614769,
+            -11.71427209796948,
+            -2.95598439753518,
+            4.430913417565184,
+            11.58691429397206
+          ]
+        },
+        {
+          "case_path": "cases/native-b06-B-snr10.json",
+          "case_sha256": "ac5d963672f202415f124abfa4393065c0d729c2479b6d12743bba11ceecfed7",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.98779255614769,
+            -1.714272097969481,
+            7.044015602464821,
+            14.430913417565183,
+            21.586914293972058
+          ]
+        },
+        {
+          "case_path": "cases/native-b06-B-snr20.json",
+          "case_sha256": "855a98b148084723bb11bb0f6887aea339eb98cd08bb81d2e86e075eb8b9dd91",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.987792556147689,
+            8.285727902030517,
+            17.04401560246482,
+            24.430913417565186,
+            31.586914293972058
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 6,
+      "profile": "C",
+      "native_path": "native/native-b06-C.npz",
+      "native_sha256": "482fb24bcff5412a48c3986b2de2f09be4c6b2a9ae4c6e54742eef3c684496bf",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.7290944067463696e-15,
+      "min_tone_gain_range": 1.0018106667905537,
+      "native_gain_quantiles": [
+        0.13848456722388708,
+        0.4121517374809457,
+        1.231326599490714,
+        3.6889789372847996,
+        7.05127275812007
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b06-C-snr00.json",
+          "case_sha256": "e660f8f1496dcd39388258e6074a60aecc3b5b29038971033dd702374a1fb3e2",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -24.920029430101465,
+            -10.414142518465962,
+            -2.5003329681612967,
+            4.823184780694498,
+            12.53378245340725
+          ]
+        },
+        {
+          "case_path": "cases/native-b06-C-snr10.json",
+          "case_sha256": "e688f1d17ebdcd807e72c8456efaa9680da039910d81327bf0f464d16849a9eb",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -14.920029430101467,
+            -0.41414251846596106,
+            7.499667031838705,
+            14.823184780694499,
+            22.53378245340725
+          ]
+        },
+        {
+          "case_path": "cases/native-b06-C-snr20.json",
+          "case_sha256": "4bd089830fc6eeac7df17163bbcef7468573d0d6bb92484f950ed126dcb6b68d",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -4.92002943010147,
+            9.585857481534038,
+            17.499667031838705,
+            24.823184780694497,
+            32.533782453407255
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 7,
+      "profile": "A",
+      "native_path": "native/native-b07-A.npz",
+      "native_sha256": "9113dc5e84e2219a452b4a240cfa5e50e3f6ba2284c151568a404b21b65c47dc",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.3839044131518772e-15,
+      "min_tone_gain_range": 2.0213973323214516,
+      "native_gain_quantiles": [
+        0.03071272667999149,
+        0.6656129369537106,
+        1.7443990765729076,
+        4.134561318350051,
+        9.56107763268523
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b07-A-snr00.json",
+          "case_sha256": "51f9607503adf3f164d0b9495048efdc569e36b50c502f6baccb2eed479f2117",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -27.091429302107723,
+            -9.289092005594888,
+            -0.9243445141263443,
+            6.713993273406092,
+            11.215847287168794
+          ]
+        },
+        {
+          "case_path": "cases/native-b07-A-snr10.json",
+          "case_sha256": "943c6a45453012b8b7e294d11c7be39c38a76eda8d42632c42e04e7e880f5522",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -17.091429302107727,
+            0.7109079944051095,
+            9.075655485873655,
+            16.713993273406093,
+            21.215847287168792
+          ]
+        },
+        {
+          "case_path": "cases/native-b07-A-snr20.json",
+          "case_sha256": "354bdf16e893dde63380f1216b38edbaaa6129d8d6d77bfea66bfb5b4f035492",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -7.091429302107725,
+            10.710907994405108,
+            19.075655485873654,
+            26.71399327340609,
+            31.215847287168792
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 7,
+      "profile": "B",
+      "native_path": "native/native-b07-B.npz",
+      "native_sha256": "bb65ee30e76bbd1d5be1345e80ab8c49770c027ef77fcc1ebe92c1ab2eb4d696",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 5.43052572781265e-15,
+      "min_tone_gain_range": 2.020052409472468,
+      "native_gain_quantiles": [
+        0.24292753531049444,
+        0.6310378695180711,
+        2.1552971352155055,
+        4.674479636921046,
+        7.529212042813986
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b07-B-snr00.json",
+          "case_sha256": "834b464cb3f2c3643ad0732b7402607520fa2ca6143677a190b25db47e88f523",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -31.634823370620026,
+            -10.142925762277741,
+            -0.5405018873941946,
+            6.228187055219376,
+            10.073497261656412
+          ]
+        },
+        {
+          "case_path": "cases/native-b07-B-snr10.json",
+          "case_sha256": "9198affb3bcf35a04dadada5aa7cae30adafe3785d1d7506f2d3d2c28378c0a5",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.634823370620026,
+            -0.1429257622777413,
+            9.459498112605806,
+            16.228187055219376,
+            20.073497261656414
+          ]
+        },
+        {
+          "case_path": "cases/native-b07-B-snr20.json",
+          "case_sha256": "9f1bac5ee172d0825d178f6387cf79848906c8a0a4e0aa9f3051211f904efca3",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.634823370620024,
+            9.85707423772226,
+            19.459498112605807,
+            26.228187055219372,
+            30.073497261656414
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 7,
+      "profile": "C",
+      "native_path": "native/native-b07-C.npz",
+      "native_sha256": "b3b893488d251d65d2ea219798315c1c0b83efdffbf032d097213f5c634ec748",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.5918417478740242e-15,
+      "min_tone_gain_range": 0.9267766438614504,
+      "native_gain_quantiles": [
+        0.017946546297552407,
+        0.4010150218755954,
+        1.479445614524441,
+        3.8874037285217526,
+        7.487273266378134
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b07-C-snr00.json",
+          "case_sha256": "358956ca3bcf7a5578ca653cad800dedff6227d5b7feb08394c6eb86d94d7c2e",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -26.848415983514847,
+            -10.76126712219152,
+            -2.5815113003119725,
+            3.140108527443409,
+            8.654883613056162
+          ]
+        },
+        {
+          "case_path": "cases/native-b07-C-snr10.json",
+          "case_sha256": "c05a174ceaab466b309e8cefd6c96ab39e8e28068667c431f3374a2169c9afd7",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -16.848415983514847,
+            -0.7612671221915198,
+            7.418488699688028,
+            13.140108527443411,
+            18.654883613056164
+          ]
+        },
+        {
+          "case_path": "cases/native-b07-C-snr20.json",
+          "case_sha256": "a363d4335912e6c5c331f03d85ded8e16e0825d91be0c818fe77f8769b630d1f",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -6.848415983514851,
+            9.23873287780848,
+            17.418488699688027,
+            23.140108527443406,
+            28.654883613056164
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 8,
+      "profile": "A",
+      "native_path": "native/native-b08-A.npz",
+      "native_sha256": "20ad95ef57993e35998d0bab4f5b5c811cfa9f4a845707dc2d6500758d8185f8",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.808666774861361e-15,
+      "min_tone_gain_range": 0.727914642860941,
+      "native_gain_quantiles": [
+        0.13520492432305573,
+        0.42745184199762126,
+        1.6590217950452777,
+        3.764816369134198,
+        6.812858743424528
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b08-A-snr00.json",
+          "case_sha256": "6ac675c10a891d3ba09c3b11b3045982458945e8dda0301fa982f60a6080728e",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -42.51054195168558,
+            -11.786689108177075,
+            -2.8038116456172357,
+            6.147569299313808,
+            13.594595222181917
+          ]
+        },
+        {
+          "case_path": "cases/native-b08-A-snr10.json",
+          "case_sha256": "4f30ef3edf043d1924888760f116b5803c8492ccd3508901d748cfaf81fb7f1b",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -32.51054195168558,
+            -1.7866891081770766,
+            7.196188354382764,
+            16.14756929931381,
+            23.594595222181916
+          ]
+        },
+        {
+          "case_path": "cases/native-b08-A-snr20.json",
+          "case_sha256": "6a5717afea3e78b0a18d24a7ba774f3be38b32c4c2d5dd68a7d33946ca4e5787",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -22.510541951685582,
+            8.213310891822921,
+            17.196188354382762,
+            26.14756929931381,
+            33.59459522218192
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 8,
+      "profile": "B",
+      "native_path": "native/native-b08-B.npz",
+      "native_sha256": "b3b9b705d8163b2dabb3aba9b35e4cfe0fd0309e58abf0e12db791681cddfc85",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.930190325141863e-15,
+      "min_tone_gain_range": 1.0860746648792392,
+      "native_gain_quantiles": [
+        0.0974154166311745,
+        0.5182504642731943,
+        1.8116937441195131,
+        3.7822077359708324,
+        6.1949076375431815
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b08-B-snr00.json",
+          "case_sha256": "20a5a17921c4399c76a73a4b2d594284d671d4d34de223f6a55b5717fe279326",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -25.671964501762798,
+            -12.474342370171973,
+            -3.3248355955775866,
+            4.266402297445701,
+            10.468380147639882
+          ]
+        },
+        {
+          "case_path": "cases/native-b08-B-snr10.json",
+          "case_sha256": "b1dfcd97d350749131570acfcdffb9b8195b4ad0844baaef3df21c5c561649f6",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -15.671964501762798,
+            -2.474342370171973,
+            6.675164404422414,
+            14.266402297445701,
+            20.468380147639884
+          ]
+        },
+        {
+          "case_path": "cases/native-b08-B-snr20.json",
+          "case_sha256": "642ba8a66c6f9b5163604e5b4455bf4edc0adb4a781c3f7b71289cdce5edd858",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -5.6719645017627975,
+            7.525657629828027,
+            16.675164404422414,
+            24.266402297445698,
+            30.468380147639884
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 8,
+      "profile": "C",
+      "native_path": "native/native-b08-C.npz",
+      "native_sha256": "f127f4c53b391d864177ebe39eec14de7ae3fa1307584aa25168b78f47635bfa",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.130545537163258e-15,
+      "min_tone_gain_range": 0.742722531386719,
+      "native_gain_quantiles": [
+        0.09971879325344779,
+        0.5401726367926534,
+        1.9749683081831118,
+        4.318982078488954,
+        6.200184190265187
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b08-C-snr00.json",
+          "case_sha256": "12d31eb4f423335d93e927302d3dfc2cc08271db6235087d51fcbc6df5a685e9",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -35.36724359447523,
+            -9.39841881001987,
+            -0.013357374802044176,
+            7.124296704043451,
+            12.218613661485628
+          ]
+        },
+        {
+          "case_path": "cases/native-b08-C-snr10.json",
+          "case_sha256": "eabfba854984d234e69971944c8e70d5f73c874abab3878e43780ad2297e5934",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -25.367243594475227,
+            0.6015811899801313,
+            9.986642625197957,
+            17.124296704043452,
+            22.218613661485627
+          ]
+        },
+        {
+          "case_path": "cases/native-b08-C-snr20.json",
+          "case_sha256": "b83cef447cb38c47f86dcb96afa528e050e82acc73dc6cf4a5f549ac5806258d",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -15.367243594475223,
+            10.60158118998013,
+            19.98664262519796,
+            27.124296704043452,
+            32.218613661485634
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 9,
+      "profile": "A",
+      "native_path": "native/native-b09-A.npz",
+      "native_sha256": "2a69eb8b70efc026661cbfd46944a216a66ef83acc3d3a59a637da748850a951",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.9546328455357126e-15,
+      "min_tone_gain_range": 1.248640271284786,
+      "native_gain_quantiles": [
+        0.05372750792283361,
+        0.4763679234115884,
+        1.44950101716542,
+        3.2049032641503454,
+        8.514165028322427
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b09-A-snr00.json",
+          "case_sha256": "5ba3151c80434e0c3b4b6c1eef54e7fffd07783c633a6430b7bdbe7cccfdbe1c",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -24.902603164926454,
+            -11.015329610700094,
+            -2.294817904746828,
+            3.9708391222082193,
+            11.723769041286573
+          ]
+        },
+        {
+          "case_path": "cases/native-b09-A-snr10.json",
+          "case_sha256": "a9d074868449f8c916eaf28b6a2b2c092b677922db256524d17f33f0678bc90f",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -14.902603164926456,
+            -1.0153296107000953,
+            7.705182095253173,
+            13.97083912220822,
+            21.723769041286573
+          ]
+        },
+        {
+          "case_path": "cases/native-b09-A-snr20.json",
+          "case_sha256": "50d90ed0dc30ac6f200ef181a0afef31bd5a36f89c66df9650dcf25767983a2f",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -4.902603164926458,
+            8.984670389299904,
+            17.70518209525317,
+            23.97083912220822,
+            31.723769041286573
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 9,
+      "profile": "B",
+      "native_path": "native/native-b09-B.npz",
+      "native_sha256": "64cbc8c5f5b71174e485a6ceab1f3101bef4c6817fd6501ada658240ad15fae5",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.126629686350828e-15,
+      "min_tone_gain_range": 0.7139332440221704,
+      "native_gain_quantiles": [
+        0.07303419832432735,
+        0.4169225250649803,
+        1.4176942460902415,
+        3.896440765731668,
+        7.585969696770816
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b09-B-snr00.json",
+          "case_sha256": "a2d7bc8da18e483f303618da0df735e604eba8a3bdd84cbd52e2014dc04678c5",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -29.129432207642058,
+            -9.974938707413049,
+            -2.4781528028681326,
+            5.029040755839125,
+            11.904554871871365
+          ]
+        },
+        {
+          "case_path": "cases/native-b09-B-snr10.json",
+          "case_sha256": "7b6e8295ee761b2efd5329f5211013ccfa80780eee2263334d3b965f5f116f99",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -19.12943220764206,
+            0.025061292586948822,
+            7.521847197131867,
+            15.029040755839125,
+            21.904554871871365
+          ]
+        },
+        {
+          "case_path": "cases/native-b09-B-snr20.json",
+          "case_sha256": "459de319cf0111458485f66b135aa52d89974446e1dbcea66280be6a293ff2dd",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -9.129432207642061,
+            10.02506129258695,
+            17.52184719713187,
+            25.029040755839123,
+            31.904554871871365
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 9,
+      "profile": "C",
+      "native_path": "native/native-b09-C.npz",
+      "native_sha256": "4f6fff6eff3a7e2b178d9e1ac608d668e6f6720f3ed5ed790735824a8f925395",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.167779754565684e-15,
+      "min_tone_gain_range": 1.410789618307039,
+      "native_gain_quantiles": [
+        0.1709428819073749,
+        0.6594180041300493,
+        1.7341904643980044,
+        3.445008500854286,
+        6.90980063022603
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b09-C-snr00.json",
+          "case_sha256": "b969ef3b168c8d7c144809e8a51744e873c564222752ca21dbec34901e71456d",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -40.3219586980689,
+            -11.325766583780965,
+            -2.8700449286171796,
+            4.361743838986571,
+            9.689948085157225
+          ]
+        },
+        {
+          "case_path": "cases/native-b09-C-snr10.json",
+          "case_sha256": "b5d9165391a265218208a0a580a9181119ff2dd6d282116285665beb5ff5eca0",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -30.32195869806889,
+            -1.325766583780964,
+            7.129955071382822,
+            14.361743838986571,
+            19.689948085157226
+          ]
+        },
+        {
+          "case_path": "cases/native-b09-C-snr20.json",
+          "case_sha256": "120fd66ab843af94bbacf81d9a2b5bf00cd16deb2f2389b1d8a71c17f8317926",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -20.321958698068883,
+            8.674233416219035,
+            17.129955071382824,
+            24.36174383898657,
+            29.689948085157226
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 10,
+      "profile": "A",
+      "native_path": "native/native-b10-A.npz",
+      "native_sha256": "87c630aa8194e178f036dab485d4a9bc4a71d86ac5b000e522a45c966c3af42f",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.9527023026111907e-15,
+      "min_tone_gain_range": 1.4366863241845895,
+      "native_gain_quantiles": [
+        0.07659336670227447,
+        0.5855445100799156,
+        1.6103290473027676,
+        3.2766346570388136,
+        7.376483010023229
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b10-A-snr00.json",
+          "case_sha256": "bcf39d86eb3b1b2f9b6c9c8fb9f504a18e9ae706f78aaa7d2a272a0501907d30",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -35.57221480092411,
+            -9.32985359136928,
+            -1.2775841200816918,
+            4.479412375899427,
+            14.221150949467168
+          ]
+        },
+        {
+          "case_path": "cases/native-b10-A-snr10.json",
+          "case_sha256": "0fd35977b0c25578cb0b2f9370f069bd1bf203d47427d9102e8c5ed7fd8327ba",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -25.572214800924108,
+            0.670146408630719,
+            8.722415879918309,
+            14.479412375899425,
+            24.22115094946717
+          ]
+        },
+        {
+          "case_path": "cases/native-b10-A-snr20.json",
+          "case_sha256": "289de71456a3050b07de9f8877dc22da79ea5bcb0c14263e46ab77b56ca57d7e",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -15.572214800924108,
+            10.670146408630718,
+            18.722415879918305,
+            24.47941237589943,
+            34.22115094946717
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 10,
+      "profile": "B",
+      "native_path": "native/native-b10-B.npz",
+      "native_sha256": "3fe71f7a2be61a7af49cdf0148dcc15177dabe977d5dce3bac4e9005d9649f95",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.300591871119545e-15,
+      "min_tone_gain_range": 0.8342072578625689,
+      "native_gain_quantiles": [
+        0.014221531588212462,
+        0.43169680835456625,
+        1.5510292015276321,
+        3.355444106234902,
+        12.528135588741133
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b10-B-snr00.json",
+          "case_sha256": "99115194233d50eee862d013e0132ac508f1eb9e55e1c25c6967d3705e1a5b93",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -28.766256363917332,
+            -12.260879856617183,
+            -2.5428528528939562,
+            5.841649485366016,
+            10.13559453784016
+          ]
+        },
+        {
+          "case_path": "cases/native-b10-B-snr10.json",
+          "case_sha256": "915743ac3d6d62f5049ae0397277cf3b27e5e029d3de94b92b575956d8632017",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -18.766256363917332,
+            -2.2608798566171853,
+            7.457147147106045,
+            15.841649485366016,
+            20.13559453784016
+          ]
+        },
+        {
+          "case_path": "cases/native-b10-B-snr20.json",
+          "case_sha256": "a62cbed3b7b78dd4747b896bfd004b226f4618767ebd0297135666fe3d9bcf89",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -8.766256363917332,
+            7.739120143382816,
+            17.457147147106042,
+            25.841649485366013,
+            30.13559453784016
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 10,
+      "profile": "C",
+      "native_path": "native/native-b10-C.npz",
+      "native_sha256": "e42823abdc773c27f8f78522f9aa164b030ffb589aa6f23b4970487c173b09be",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.0471501066083613e-15,
+      "min_tone_gain_range": 0.9267743703680055,
+      "native_gain_quantiles": [
+        0.3628800066838174,
+        0.7397920078944785,
+        1.8969321409014688,
+        5.05865566615945,
+        8.617030799944962
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b10-C-snr00.json",
+          "case_sha256": "44ec4fb461be9eb6f9affe20d2cfba97ba333a76d609113dc7ddba901aee4cf3",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -32.10280490683847,
+            -8.95356136130891,
+            -0.6489982270816033,
+            6.095540715335025,
+            11.143767444773015
+          ]
+        },
+        {
+          "case_path": "cases/native-b10-C-snr10.json",
+          "case_sha256": "fac5745d013b45559dcd152465ee8295280a99a024b93b75c45687e19b03990d",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -22.102804906838468,
+            1.0464386386910909,
+            9.351001772918398,
+            16.095540715335023,
+            21.143767444773015
+          ]
+        },
+        {
+          "case_path": "cases/native-b10-C-snr20.json",
+          "case_sha256": "bc31db4a228a5f60b0a397c64f490c65b8d19ee2f96d1715e9538f9b5d8084fd",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -12.102804906838468,
+            11.04643863869109,
+            19.351001772918398,
+            26.095540715335027,
+            31.143767444773015
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 11,
+      "profile": "A",
+      "native_path": "native/native-b11-A.npz",
+      "native_sha256": "c71839047325acbd2b3c4378ce65ee51005d73b5589cabe131644aa03fc5cac2",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.80331313717852e-15,
+      "min_tone_gain_range": 0.7887382216594958,
+      "native_gain_quantiles": [
+        0.13775060866552064,
+        0.4266655128886766,
+        1.3243088957688145,
+        3.739766988293313,
+        8.911146681272077
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b11-A-snr00.json",
+          "case_sha256": "99d2a58518f670d322983077588d7a0711697161dfcc4a3893dd41a4e71cddaa",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -23.89265740054737,
+            -9.783996450507814,
+            -2.2304341181216616,
+            5.000990979766554,
+            9.947749227792526
+          ]
+        },
+        {
+          "case_path": "cases/native-b11-A-snr10.json",
+          "case_sha256": "b790499fd9f3a4479a3dd1700efbb2a62769064305d1f1b205bddf877c02a57c",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -13.892657400547373,
+            0.21600354949218756,
+            7.769565881878339,
+            15.000990979766556,
+            19.94774922779252
+          ]
+        },
+        {
+          "case_path": "cases/native-b11-A-snr20.json",
+          "case_sha256": "0dd984652348116a957a50f793fd66bf3d3e1f402402d261235fc4627cd8d42a",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -3.8926574005473666,
+            10.216003549492186,
+            17.76956588187834,
+            25.000990979766556,
+            29.94774922779252
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 11,
+      "profile": "B",
+      "native_path": "native/native-b11-B.npz",
+      "native_sha256": "d679b9ef29697b00d22a10ce34ff7a75bcbecab2f37cad1b4eaf32f8cbe88316",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 5.149388650541292e-15,
+      "min_tone_gain_range": 1.1943569919709627,
+      "native_gain_quantiles": [
+        0.11191320244721042,
+        0.5850918968306781,
+        1.5025457292353575,
+        3.160743421475556,
+        6.594352090847853
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b11-B-snr00.json",
+          "case_sha256": "17129879d0c5a49b594d047fb7df03f6e07fd47bf16bc1ab86a911d2abc2b0b9",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -31.690560357411627,
+            -9.488726687662199,
+            -0.6214565069301525,
+            4.954819281749051,
+            9.57496619788109
+          ]
+        },
+        {
+          "case_path": "cases/native-b11-B-snr10.json",
+          "case_sha256": "e8bc9b4f66a0ad2a55eb6a53cc379e4d95a4bba0ad1a85822e2026760f9fa1af",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.690560357411634,
+            0.5112733123378012,
+            9.378543493069849,
+            14.954819281749053,
+            19.574966197881093
+          ]
+        },
+        {
+          "case_path": "cases/native-b11-B-snr20.json",
+          "case_sha256": "5036c01807489959bf174423cc57227a653e113f857fc1a087653a5169fcf19c",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.69056035741163,
+            10.511273312337801,
+            19.37854349306985,
+            24.954819281749053,
+            29.57496619788109
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 11,
+      "profile": "C",
+      "native_path": "native/native-b11-C.npz",
+      "native_sha256": "f7f14b8a33c682ec7ead90f5cb059f786e172570c5f1839b0d868de64f337bd8",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 1.9641850382783467e-15,
+      "min_tone_gain_range": 0.9299699800572804,
+      "native_gain_quantiles": [
+        0.07763179136702175,
+        0.4492487014812867,
+        1.469276653380366,
+        3.53782517969237,
+        8.1308040754109
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b11-C-snr00.json",
+          "case_sha256": "c208c0cb61e2d65d96fc496b3c7e897f17e9101d793dec004f84b09690aa7671",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -26.86150891565864,
+            -11.619275734550888,
+            -1.249908034225291,
+            4.364760144429821,
+            8.123540893325465
+          ]
+        },
+        {
+          "case_path": "cases/native-b11-C-snr10.json",
+          "case_sha256": "38d58e3da37067af0b439d05d10af671f6607947551b4759e462a71a3784f966",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -16.86150891565864,
+            -1.6192757345508877,
+            8.750091965774708,
+            14.364760144429821,
+            18.12354089332547
+          ]
+        },
+        {
+          "case_path": "cases/native-b11-C-snr20.json",
+          "case_sha256": "29062f46e7c5ebbaf12203b85ac3c3bad734ab209acd4be539b1d067c247477b",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -6.8615089156586375,
+            8.380724265449114,
+            18.750091965774708,
+            24.364760144429823,
+            28.12354089332547
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 12,
+      "profile": "A",
+      "native_path": "native/native-b12-A.npz",
+      "native_sha256": "00a8b8b6b7eb6f5f72bc5de54621be0a132b11dc4fa602e77924f84ba71c0e5e",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.817602607417583e-15,
+      "min_tone_gain_range": 1.5070848052033385,
+      "native_gain_quantiles": [
+        0.049750717069162856,
+        0.5307284355917197,
+        1.7564715007268101,
+        3.272146437372542,
+        7.741526971478593
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b12-A-snr00.json",
+          "case_sha256": "59cd8a9f5ed686fcd1c9d3382b8a4986f345b46e49922830fcb7b35a79229a99",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -22.97715700282414,
+            -9.944068403385497,
+            -2.8396773229615127,
+            3.628677891164447,
+            10.112007642555165
+          ]
+        },
+        {
+          "case_path": "cases/native-b12-A-snr10.json",
+          "case_sha256": "3b7bc64435f4a7eb662b01fda91db3980c4557f5d8cb93366544674eb1ce4959",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -12.977157002824137,
+            0.05593159661450314,
+            7.160322677038487,
+            13.628677891164449,
+            20.112007642555163
+          ]
+        },
+        {
+          "case_path": "cases/native-b12-A-snr20.json",
+          "case_sha256": "a35bb498f4e146e2eed323ddfb4a6f53fa8350e43b9f78b9a699582528d21689",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -2.9771570028241436,
+            10.055931596614503,
+            17.160322677038486,
+            23.628677891164443,
+            30.11200764255516
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 12,
+      "profile": "B",
+      "native_path": "native/native-b12-B.npz",
+      "native_sha256": "39fbd8db82831e046c49650b54e191fd414981d15a33aa8753e1e0513ad644e4",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 7.225921039599792e-15,
+      "min_tone_gain_range": 1.3565856477613722,
+      "native_gain_quantiles": [
+        0.08467771178428254,
+        0.5139389057557406,
+        1.6973202259285998,
+        3.6791509693425675,
+        8.699912033835211
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b12-B-snr00.json",
+          "case_sha256": "a5f7de86c0b986062fd18bbebe131512958cf0e1a1074f50830f5fc374979670",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -23.90346101986261,
+            -10.843698711744311,
+            -1.6960090383449953,
+            5.5912099501010655,
+            14.39396075070147
+          ]
+        },
+        {
+          "case_path": "cases/native-b12-B-snr10.json",
+          "case_sha256": "c16fe730473a8bb36a4e09bffef9218f036083dc0db04c17446b2125718d2b39",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -13.903461019862613,
+            -0.8436987117443093,
+            8.303990961655005,
+            15.591209950101064,
+            24.393960750701467
+          ]
+        },
+        {
+          "case_path": "cases/native-b12-B-snr20.json",
+          "case_sha256": "0019f71d445c21209c385277a15d932d4ca800daca13ef27a58b9c5effa41b22",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -3.9034610198626147,
+            9.15630128825569,
+            18.303990961655007,
+            25.591209950101064,
+            34.39396075070147
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 12,
+      "profile": "C",
+      "native_path": "native/native-b12-C.npz",
+      "native_sha256": "5ebd63a636ff4580da170af5ce5969073bcab2c518905c73d7808ef3b118e0fe",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.5121479338940403e-15,
+      "min_tone_gain_range": 1.5063457561556728,
+      "native_gain_quantiles": [
+        0.16455185986099086,
+        0.4785938661833702,
+        1.6396826063348762,
+        4.494117860979114,
+        7.6884907027284
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b12-C-snr00.json",
+          "case_sha256": "32094f7804ad70e3971d610aaeb998d5d4e10686b6a61dd7104178b44eb6b11b",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -33.90690566956648,
+            -10.865851240856689,
+            -0.8950145584142262,
+            5.452580916084019,
+            9.848897571194179
+          ]
+        },
+        {
+          "case_path": "cases/native-b12-C-snr10.json",
+          "case_sha256": "3ccc689fd3e6bee54c0bdf8f13a39f0c5cd71a72f6559bd8d926c23897ae99b8",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -23.90690566956647,
+            -0.865851240856689,
+            9.104985441585773,
+            15.452580916084017,
+            19.84889757119418
+          ]
+        },
+        {
+          "case_path": "cases/native-b12-C-snr20.json",
+          "case_sha256": "938662723bfd6d5ed7b6179a8be248b9b9a808429e28b25bfc390f063072199c",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -13.906905669566477,
+            9.134148759143308,
+            19.104985441585775,
+            25.452580916084017,
+            29.848897571194183
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 13,
+      "profile": "A",
+      "native_path": "native/native-b13-A.npz",
+      "native_sha256": "75c68a13642b993b1b384c69de7e8ef2c2cb7b50e8c182b5a00ba469ea3cdac4",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.751962059186864e-15,
+      "min_tone_gain_range": 1.2537383791715548,
+      "native_gain_quantiles": [
+        0.06517551513717101,
+        0.6876616202870115,
+        1.952062618329418,
+        3.961387546568478,
+        7.900193253716429
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b13-A-snr00.json",
+          "case_sha256": "26d32cb095863b30b640fd56f065a54d8b4504163bc975db965a95b832007ae5",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -29.330223826736407,
+            -10.206573971889563,
+            -0.09376850913954893,
+            5.811782434373399,
+            9.463382896980278
+          ]
+        },
+        {
+          "case_path": "cases/native-b13-A-snr10.json",
+          "case_sha256": "8804258f159a0e0dc26f42dcdacc8050429995c5da5cff60cf6c275a6ddde708",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -19.330223826736407,
+            -0.20657397188956222,
+            9.906231490860451,
+            15.811782434373399,
+            19.463382896980278
+          ]
+        },
+        {
+          "case_path": "cases/native-b13-A-snr20.json",
+          "case_sha256": "a551b6e1b56f714fc1ed188c38d4ddac8e1c02a82e138be7d376098edc91d53b",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -9.330223826736406,
+            9.793426028110439,
+            19.90623149086045,
+            25.8117824343734,
+            29.463382896980278
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 13,
+      "profile": "B",
+      "native_path": "native/native-b13-B.npz",
+      "native_sha256": "bd7ec48c2ecd82a6b9378683a0e1a7d564d8feb6f588c62705db14aaf0ac79db",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 5.277940006822451e-15,
+      "min_tone_gain_range": 1.1504627908575296,
+      "native_gain_quantiles": [
+        0.0756240364635442,
+        0.4890935068121641,
+        1.3863249404893152,
+        3.6543641113323253,
+        6.028214473130166
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b13-B-snr00.json",
+          "case_sha256": "8fd81adff36d401c5e6588429685809904fb13dae36643dc67f90459539d000b",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -23.021359901065885,
+            -9.457336325192497,
+            -1.1557609361707795,
+            5.850390268332354,
+            11.45936260661096
+          ]
+        },
+        {
+          "case_path": "cases/native-b13-B-snr10.json",
+          "case_sha256": "39af1c43d1d80ba97ae6f2f3bbd37028d2947d7d422b8420da2a7b76ecba3392",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -13.021359901065885,
+            0.5426636748075013,
+            8.84423906382922,
+            15.850390268332355,
+            21.459362606610956
+          ]
+        },
+        {
+          "case_path": "cases/native-b13-B-snr20.json",
+          "case_sha256": "95930c6b3bcbf130c925ee59a6b9adef086bcc7fa7c89bfa5584943fe6e60da0",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -3.021359901065889,
+            10.542663674807503,
+            18.84423906382922,
+            25.850390268332355,
+            31.459362606610956
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 13,
+      "profile": "C",
+      "native_path": "native/native-b13-C.npz",
+      "native_sha256": "f91ac0944edb91a6e6318b3e2e78ae22d5f8ab523dd10028a15aa8ab1c0c6752",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.4701292793724788e-15,
+      "min_tone_gain_range": 1.6275079215974826,
+      "native_gain_quantiles": [
+        0.042972082788284266,
+        0.4910500699296571,
+        1.7395743153850842,
+        4.065346336420164,
+        6.037329654171803
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b13-C-snr00.json",
+          "case_sha256": "69a5c27999b2017071329e34bedd3ced90a7a7f1a545e9d93e7cfad17806403d",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -32.29020997374659,
+            -10.180145436340261,
+            -1.8524950114771317,
+            5.832512291620047,
+            10.697484200394117
+          ]
+        },
+        {
+          "case_path": "cases/native-b13-C-snr10.json",
+          "case_sha256": "d42ccb0620adc665d0916aa7ce58ec24cb044e861f542d939692fa62a5cb5066",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -22.29020997374659,
+            -0.18014543634026176,
+            8.147504988522869,
+            15.832512291620047,
+            20.697484200394115
+          ]
+        },
+        {
+          "case_path": "cases/native-b13-C-snr20.json",
+          "case_sha256": "521a75aa5e9f2203d7e7ee929fc16e964a231690709a9e4ad4d6096be4ea63ec",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -12.290209973746592,
+            9.819854563659739,
+            18.14750498852287,
+            25.83251229162005,
+            30.69748420039412
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 14,
+      "profile": "A",
+      "native_path": "native/native-b14-A.npz",
+      "native_sha256": "1817d638130b98c3ee6636547a3f13b64dd2ad239f3ff0fad79eb45a9edeaa40",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.4861710114481205e-15,
+      "min_tone_gain_range": 0.9988695504380392,
+      "native_gain_quantiles": [
+        0.056401169184262454,
+        0.37363614476125184,
+        1.5068865779279235,
+        3.1306779898505233,
+        5.008420112948608
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b14-A-snr00.json",
+          "case_sha256": "db24e45c42152551466910c3e99dcda4b5cda9bb14eb1e54e4b250f84b221e1d",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -31.858195593304053,
+            -11.048574447592674,
+            -2.7106219948456634,
+            4.770206741866964,
+            10.277466352705698
+          ]
+        },
+        {
+          "case_path": "cases/native-b14-A-snr10.json",
+          "case_sha256": "95b2bf021efc23245394bae7ba6b144dbd0b8d80ecafea214c4ef8c7ca3b279e",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.85819559330405,
+            -1.048574447592674,
+            7.289378005154338,
+            14.770206741866964,
+            20.2774663527057
+          ]
+        },
+        {
+          "case_path": "cases/native-b14-A-snr20.json",
+          "case_sha256": "4a836731ca8d43eb96d3623e771dabcb5510afb07d25da3031ea1a05b5d6d623",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.85819559330405,
+            8.951425552407326,
+            17.28937800515434,
+            24.770206741866964,
+            30.277466352705694
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 14,
+      "profile": "B",
+      "native_path": "native/native-b14-B.npz",
+      "native_sha256": "79ad9c9cdd63580d5a05996bfa5f28abdc251f8ed2d675d108d835915bee6f72",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.223797681452354e-15,
+      "min_tone_gain_range": 1.9553604808193068,
+      "native_gain_quantiles": [
+        0.1088993198159864,
+        0.6937529687391171,
+        1.9482210994200644,
+        4.127672313764069,
+        6.314292744007366
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b14-B-snr00.json",
+          "case_sha256": "46a626a7edcc357a95afca7339a07376c21571a238671ed713a5b1f0f2d36bc3",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -26.326017350913343,
+            -9.339015669072412,
+            -0.9075010389223448,
+            6.478408855774638,
+            10.973277338118148
+          ]
+        },
+        {
+          "case_path": "cases/native-b14-B-snr10.json",
+          "case_sha256": "8a3fe880a6b44aafa1feddb726404993499a41b0cd6782d90f19dae3be0bd75b",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -16.32601735091334,
+            0.6609843309275887,
+            9.092498961077652,
+            16.47840885577464,
+            20.973277338118148
+          ]
+        },
+        {
+          "case_path": "cases/native-b14-B-snr20.json",
+          "case_sha256": "d06ba50b09976e52caf02ca8549224e58f49356c2daf93c16e4aea8272940497",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -6.326017350913338,
+            10.660984330927583,
+            19.092498961077652,
+            26.478408855774635,
+            30.973277338118148
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 14,
+      "profile": "C",
+      "native_path": "native/native-b14-C.npz",
+      "native_sha256": "2fa9415c47b7a5e8816cb4bca589eac0ca750bf5191fd2d133191e235fa26970",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.531698018113677e-15,
+      "min_tone_gain_range": 0.4438242945547911,
+      "native_gain_quantiles": [
+        0.10069812562093962,
+        0.48383079471006757,
+        1.590733785785242,
+        5.071418437688314,
+        7.712343335681542
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b14-C-snr00.json",
+          "case_sha256": "a4dccc2647646ccfeed43c48deaea80741ae61478bb3c03c183cbffad0bd1c62",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -27.78149956718659,
+            -11.971284938071607,
+            -1.7392636578716423,
+            3.857599165370777,
+            12.65617471686355
+          ]
+        },
+        {
+          "case_path": "cases/native-b14-C-snr10.json",
+          "case_sha256": "3206b7132f45693a2f2df9929ba94b7f13cbb2d54f144502f37913a23e5be075",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -17.781499567186586,
+            -1.971284938071606,
+            8.260736342128357,
+            13.857599165370775,
+            22.65617471686355
+          ]
+        },
+        {
+          "case_path": "cases/native-b14-C-snr20.json",
+          "case_sha256": "b30462f912d2ff27299b74d7452a0101415ccd4428ca0ff75c6e9ce3e55c6638",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -7.781499567186589,
+            8.028715061928395,
+            18.26073634212836,
+            23.85759916537078,
+            32.65617471686355
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 15,
+      "profile": "A",
+      "native_path": "native/native-b15-A.npz",
+      "native_sha256": "cd9edbbb7ac50247cd233e40b31886f3d641496bc91faea72a6fcd1b47616a9d",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.7012892057857034e-15,
+      "min_tone_gain_range": 1.7333621453104384,
+      "native_gain_quantiles": [
+        0.03554996893587429,
+        0.7356287687301304,
+        1.6795803652813062,
+        3.6712565381185382,
+        6.523472205858142
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b15-A-snr00.json",
+          "case_sha256": "af2aa75e9465c8ddb9129f9d7553e56271a10ae5f1f580e6bb0c444a2466b76f",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -31.40045375363604,
+            -11.807345933784614,
+            -2.3553065722598077,
+            4.750871306710447,
+            12.15199373385477
+          ]
+        },
+        {
+          "case_path": "cases/native-b15-A-snr10.json",
+          "case_sha256": "5ff583024fff82d6d60d85ed492390cf0d637a0803ff265c0eb3716f63edbb3c",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.40045375363604,
+            -1.807345933784616,
+            7.644693427740192,
+            14.750871306710447,
+            22.15199373385477
+          ]
+        },
+        {
+          "case_path": "cases/native-b15-A-snr20.json",
+          "case_sha256": "fb2a449ee1e1a4c6a51a0193eb624536e3305d17ae7b3b220ae57b9b050c14a7",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.40045375363604,
+            8.192654066215383,
+            17.644693427740194,
+            24.750871306710444,
+            32.151993733854766
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 15,
+      "profile": "B",
+      "native_path": "native/native-b15-B.npz",
+      "native_sha256": "08600a735345189465799b0f4eebf4f984dbeabd16f0005ead9535c6d213e718",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.615157064722331e-15,
+      "min_tone_gain_range": 1.7223039489398706,
+      "native_gain_quantiles": [
+        0.03481768549390158,
+        0.548405912061811,
+        1.8373920252181781,
+        3.9314937682178352,
+        6.933112744635157
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b15-B-snr00.json",
+          "case_sha256": "825ffc3f33bf672aede794528bccf057ff38d7b6b7f576ffee48855cf37ddbb7",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -25.59509348833743,
+            -11.706277618710445,
+            -1.7933089315349902,
+            7.0951042769356825,
+            11.97305927494589
+          ]
+        },
+        {
+          "case_path": "cases/native-b15-B-snr10.json",
+          "case_sha256": "77d34d95b312a30b0273a773bca57f6567b91ce765aaa79eeb4b6e3fb04dc9e1",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -15.59509348833743,
+            -1.7062776187104438,
+            8.20669106846501,
+            17.095104276935682,
+            21.97305927494589
+          ]
+        },
+        {
+          "case_path": "cases/native-b15-B-snr20.json",
+          "case_sha256": "78824a5147055341a6164bdf0ff8facbf4b6ce9e9e7d25dc02b7462ac662059e",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -5.59509348833743,
+            8.293722381289555,
+            18.20669106846501,
+            27.095104276935682,
+            31.97305927494589
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 15,
+      "profile": "C",
+      "native_path": "native/native-b15-C.npz",
+      "native_sha256": "cf672471663b49e91e0404904763dcd111f2db2481619372500ef44b9132dee4",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.7420485960113417e-15,
+      "min_tone_gain_range": 0.8211904737635123,
+      "native_gain_quantiles": [
+        0.21749942873073194,
+        0.6152473137545786,
+        1.7224500858820626,
+        4.824947497091661,
+        7.3198132969922725
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b15-C-snr00.json",
+          "case_sha256": "ebf9520166fba5f63faeeaebe4517d37d9c67934db4918e0cd3255327e82bf67",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -25.363112957030054,
+            -9.354042265380102,
+            -1.3971879454547986,
+            4.9794043072482115,
+            9.884518635820198
+          ]
+        },
+        {
+          "case_path": "cases/native-b15-C-snr10.json",
+          "case_sha256": "bb316b9d6bcb7be31b804aa89c02ed7652c4cae591ef286a338a07b0b23d28d5",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -15.363112957030054,
+            0.6459577346198999,
+            8.6028120545452,
+            14.97940430724821,
+            19.8845186358202
+          ]
+        },
+        {
+          "case_path": "cases/native-b15-C-snr20.json",
+          "case_sha256": "a12776416c0e2a7fb95852bd6e3f6bb3126bf8d885a384b3eedfcde65f298683",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -5.363112957030056,
+            10.645957734619902,
+            18.602812054545204,
+            24.97940430724821,
+            29.884518635820196
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 16,
+      "profile": "A",
+      "native_path": "native/native-b16-A.npz",
+      "native_sha256": "80dbdf24feb1b312c58c2c972074ecd32e54657004bafc20ed469044750d87ba",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.4844027277880974e-15,
+      "min_tone_gain_range": 1.284061504364921,
+      "native_gain_quantiles": [
+        0.051056484936453914,
+        0.42453343998318793,
+        1.420933507065958,
+        3.6954098615571973,
+        10.174340653517373
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b16-A-snr00.json",
+          "case_sha256": "4be8975549a49127c6d728ea8d5d4a388c5b596141563ba7a3d9694765ad147b",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -26.366952282218286,
+            -12.292645496486811,
+            -2.3359711434791057,
+            5.293276467174441,
+            9.571327661218467
+          ]
+        },
+        {
+          "case_path": "cases/native-b16-A-snr10.json",
+          "case_sha256": "3de06aeeb4420932939b1587961500f7ae6a75d39304fc2e3ed76b1ada1b8420",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -16.366952282218282,
+            -2.292645496486812,
+            7.664028856520895,
+            15.293276467174444,
+            19.57132766121847
+          ]
+        },
+        {
+          "case_path": "cases/native-b16-A-snr20.json",
+          "case_sha256": "6b56849016d98f36192ab84b8c1c213fdd21918e05f98f40a8b12f4226f4584f",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -6.366952282218282,
+            7.707354503513186,
+            17.664028856520893,
+            25.293276467174437,
+            29.571327661218465
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 16,
+      "profile": "B",
+      "native_path": "native/native-b16-B.npz",
+      "native_sha256": "38d2cb5ec3e8ad2e395ca1a8abf3dcb5e55e1c487d8b821962a946d8b19fa2bc",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.897895812212364e-15,
+      "min_tone_gain_range": 1.1479364716920182,
+      "native_gain_quantiles": [
+        0.14526417283447138,
+        0.5221270742170927,
+        1.6162670057738184,
+        3.7441767107839325,
+        6.580343006107909
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b16-B-snr00.json",
+          "case_sha256": "caa510b303e86a2cb705dde1b472610fb22fea519afce9171ec8c5a45e2189c3",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -29.031350551609965,
+            -11.909980172595013,
+            -2.111492060844941,
+            5.262126833734074,
+            10.074199677798896
+          ]
+        },
+        {
+          "case_path": "cases/native-b16-B-snr10.json",
+          "case_sha256": "1f9d9561ecabfbf52b51e0ad8bbeca311acd068ab235f15a212b44045c7c9fba",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -19.031350551609965,
+            -1.909980172595012,
+            7.88850793915506,
+            15.262126833734074,
+            20.074199677798894
+          ]
+        },
+        {
+          "case_path": "cases/native-b16-B-snr20.json",
+          "case_sha256": "372659691f120aa9275dd81816067b4c1ad2d1d5a50dcb1ada1fd83842d01867",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -9.031350551609966,
+            8.090019827404987,
+            17.888507939155062,
+            25.262126833734076,
+            30.074199677798894
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 16,
+      "profile": "C",
+      "native_path": "native/native-b16-C.npz",
+      "native_sha256": "f1a11767e359d36b60179bd6175d1dd5e4c4c644d74520480dcc7720b5fff4d8",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.5989654674417885e-15,
+      "min_tone_gain_range": 0.4107446267386463,
+      "native_gain_quantiles": [
+        0.14768849933336156,
+        0.5402969849031158,
+        1.646249836509989,
+        3.5861037476303066,
+        5.8704934918166725
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b16-C-snr00.json",
+          "case_sha256": "23bf9bb0f6aca48a7ec61af7f80f732b8f3db060c728bc4eee6c9c2bc4df6b67",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -20.207742226157084,
+            -7.289759941049916,
+            -0.4726933951968363,
+            5.065235856612224,
+            10.977603704181039
+          ]
+        },
+        {
+          "case_path": "cases/native-b16-C-snr10.json",
+          "case_sha256": "0ca42c4e7484c1a75b190c6fce52d56209beb8fa1697b165051f5820a8b2c163",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -10.207742226157086,
+            2.710240058950083,
+            9.527306604803163,
+            15.065235856612226,
+            20.97760370418104
+          ]
+        },
+        {
+          "case_path": "cases/native-b16-C-snr20.json",
+          "case_sha256": "291e6c0a21a490e6586b7e30550a0927b80dbdde17b416709ace2dd7c64ed3ad",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -0.20774222615708637,
+            12.710240058950081,
+            19.527306604803165,
+            25.065235856612226,
+            30.97760370418104
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 17,
+      "profile": "A",
+      "native_path": "native/native-b17-A.npz",
+      "native_sha256": "d1915c4ec96522960451aaa7e8e588b3836223262e3eae50314d215fae203620",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.229680569158701e-15,
+      "min_tone_gain_range": 1.2623924587686028,
+      "native_gain_quantiles": [
+        0.3046942330176059,
+        0.8376432644303109,
+        1.7608741603389628,
+        4.4565418701250055,
+        9.312251408084796
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b17-A-snr00.json",
+          "case_sha256": "2c9d49686e6b792bc4a1fbcf6b7672cf6ac5c4a1a42346ec0b076bb4293e8c47",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -15.923475829449018,
+            -8.993127121667216,
+            -0.6931296537200251,
+            5.721367790423772,
+            10.477593185853173
+          ]
+        },
+        {
+          "case_path": "cases/native-b17-A-snr10.json",
+          "case_sha256": "274f51637f010a4fff83133765253970c6cf2d618f4479f6221a82753057bb3c",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -5.923475829449016,
+            1.0068728783327852,
+            9.306870346279975,
+            15.72136779042377,
+            20.477593185853173
+          ]
+        },
+        {
+          "case_path": "cases/native-b17-A-snr20.json",
+          "case_sha256": "92a6ad41fa323285843e082f169e1d9eed926d6b6307e77191db639c710e52ed",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            4.076524170550984,
+            11.006872878332782,
+            19.306870346279975,
+            25.72136779042377,
+            30.477593185853173
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 17,
+      "profile": "B",
+      "native_path": "native/native-b17-B.npz",
+      "native_sha256": "ec9b79655e1443e4460f33e7e63df221fc25cbc5ac1c6d75a0e2c99da59a0991",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 5.040522574729372e-15,
+      "min_tone_gain_range": 1.1472226214008945,
+      "native_gain_quantiles": [
+        0.06147933050648732,
+        0.5284538798164068,
+        1.7181867801736317,
+        3.4487212293700606,
+        6.0616783810523645
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b17-B-snr00.json",
+          "case_sha256": "c1501fc3a0ae7831f5b0ff6828976fa476da4b16070dd19fc97f6104c3b027b4",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -28.207947774097235,
+            -12.413325789502203,
+            -3.4573927781634577,
+            3.056148602780737,
+            7.47143929674099
+          ]
+        },
+        {
+          "case_path": "cases/native-b17-B-snr10.json",
+          "case_sha256": "eb4d3719c24ddd489eea38dc2f9759e9c3bceabe4e79d4a7b08461dfe09addff",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -18.20794777409724,
+            -2.4133257895022027,
+            6.542607221836541,
+            13.056148602780738,
+            17.47143929674099
+          ]
+        },
+        {
+          "case_path": "cases/native-b17-B-snr20.json",
+          "case_sha256": "e32bd09aae1135afa4113b04725cb657f1cc9a9f5c65c6e60e8b1927ca1a1341",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -8.207947774097237,
+            7.586674210497797,
+            16.54260722183654,
+            23.05614860278074,
+            27.471439296740986
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 17,
+      "profile": "C",
+      "native_path": "native/native-b17-C.npz",
+      "native_sha256": "996edadeabdc0299cb54fd5e93c344a94f6294d8e48d4696faba6124f6a29f0b",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.394109460214978e-15,
+      "min_tone_gain_range": 1.225390134407723,
+      "native_gain_quantiles": [
+        0.11473983231105872,
+        0.6231567153717624,
+        1.771968057509877,
+        4.405084739853024,
+        8.436905313029
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b17-C-snr00.json",
+          "case_sha256": "d0e507d7574c19d8c65d348e7f6c4e91e38f9f948e3aa8f5d1fb527e2090a23b",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -31.326505105398176,
+            -9.438589628551586,
+            -1.7513523718765196,
+            5.273171837251247,
+            8.738413908829312
+          ]
+        },
+        {
+          "case_path": "cases/native-b17-C-snr10.json",
+          "case_sha256": "9153fe10e7759256ed4b65b69453fc351b4c1be66febff1e397609fb0296bccb",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -21.326505105398176,
+            0.5614103714484141,
+            8.24864762812348,
+            15.273171837251247,
+            18.73841390882931
+          ]
+        },
+        {
+          "case_path": "cases/native-b17-C-snr20.json",
+          "case_sha256": "17e0bee0cb9287098bbc4761009f14eb2fd6bcd1d5f0a7df1b1ac2332d03e973",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -11.326505105398176,
+            10.561410371448414,
+            18.24864762812348,
+            25.273171837251247,
+            28.738413908829315
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 18,
+      "profile": "A",
+      "native_path": "native/native-b18-A.npz",
+      "native_sha256": "5cde7addf7ab02f61fbdf7d8f9222f2d663e3e88a94cab35d4df7c9b6dd35638",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.3601445959922215e-15,
+      "min_tone_gain_range": 1.0356664547525307,
+      "native_gain_quantiles": [
+        0.19655767413955427,
+        0.5933362090904747,
+        1.6020865370224853,
+        4.119645770866726,
+        12.24259429778284
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b18-A-snr00.json",
+          "case_sha256": "88006666c4c3c6e94861f8ec4f4037d11a21576e7c56e456db226671c3e0eae5",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -29.40876280716308,
+            -11.446404874670346,
+            -3.4044952425351473,
+            2.987495118950098,
+            14.009601163126701
+          ]
+        },
+        {
+          "case_path": "cases/native-b18-A-snr10.json",
+          "case_sha256": "045777af9cbcaa7ea1dc3509c960d20ae1c3fca3565e9bc35893d345392fab68",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -19.40876280716308,
+            -1.446404874670347,
+            6.595504757464852,
+            12.987495118950097,
+            24.009601163126703
+          ]
+        },
+        {
+          "case_path": "cases/native-b18-A-snr20.json",
+          "case_sha256": "168d2c51181ff9fc8e56da0d63532e8cb103bb94febca91ac11f3aa94f0487ab",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -9.408762807163079,
+            8.553595125329654,
+            16.59550475746485,
+            22.9874951189501,
+            34.0096011631267
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 18,
+      "profile": "B",
+      "native_path": "native/native-b18-B.npz",
+      "native_sha256": "79b35c331852e78a240fb9bcb195fe5ba0083551a5723b1380f23cc2911c87ab",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.5193032509710784e-15,
+      "min_tone_gain_range": 0.5909233174024319,
+      "native_gain_quantiles": [
+        0.18270459884657325,
+        0.6541278108439941,
+        1.615474459718516,
+        3.751818887665393,
+        5.4184066879725865
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b18-B-snr00.json",
+          "case_sha256": "45112a04b1b7bc77da0543ca95c52c71c1b767ebd6442ede1929ab373fb86db9",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -24.529171417016364,
+            -10.756964447580941,
+            -3.2570236959531487,
+            4.13639206513753,
+            9.975884628068613
+          ]
+        },
+        {
+          "case_path": "cases/native-b18-B-snr10.json",
+          "case_sha256": "c4cfe933a7483d0e847b0037241b2e935ac2ffe8fbf161ebced02b92194f6d25",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -14.529171417016364,
+            -0.7569644475809418,
+            6.7429763040468504,
+            14.136392065137528,
+            19.975884628068613
+          ]
+        },
+        {
+          "case_path": "cases/native-b18-B-snr20.json",
+          "case_sha256": "6fdfe533d218484bf4f81da959028d870e6600b332d9e87d8890f3fc67a68a32",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -4.529171417016362,
+            9.243035552419059,
+            16.74297630404685,
+            24.136392065137528,
+            29.975884628068613
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 18,
+      "profile": "C",
+      "native_path": "native/native-b18-C.npz",
+      "native_sha256": "612b50a938b689c9e239bf954f7a0ef5dbefa38f82f481764f617e591eee520e",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.288783399261119e-15,
+      "min_tone_gain_range": 1.425052840257067,
+      "native_gain_quantiles": [
+        0.02084269083448124,
+        0.6453659180516509,
+        1.7660860269647949,
+        4.232198986569196,
+        9.466230587470196
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b18-C-snr00.json",
+          "case_sha256": "e8107b4a979ddfb1c1e6c0bfc4b465c56e662e0c9e9ef4037bada38fec293634",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -45.3486450604818,
+            -10.243216219058953,
+            -0.31410085882665173,
+            7.352989000261923,
+            11.19157930936105
+          ]
+        },
+        {
+          "case_path": "cases/native-b18-C-snr10.json",
+          "case_sha256": "80627e244b0a8daa2d38648eba77ad70f0030e3d67c4ae04f28dfd54d75634ec",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -35.34864506048179,
+            -0.24321621905895388,
+            9.68589914117335,
+            17.35298900026192,
+            21.19157930936105
+          ]
+        },
+        {
+          "case_path": "cases/native-b18-C-snr20.json",
+          "case_sha256": "ea90cac2861f0ab53dac8c68c641bc90f71a75afe5519ee7d5e736cd924626f7",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -25.348645060481797,
+            9.756783780941046,
+            19.68589914117335,
+            27.352989000261925,
+            31.19157930936105
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 19,
+      "profile": "A",
+      "native_path": "native/native-b19-A.npz",
+      "native_sha256": "12b7e016900d0c190ad4c01b817aabb31123ad5f835b92c98929d173a33b006a",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.142637229273806e-15,
+      "min_tone_gain_range": 1.1338449062130844,
+      "native_gain_quantiles": [
+        0.08598984363988331,
+        0.4054630674010686,
+        1.5143851763098624,
+        3.544860632507633,
+        5.8914034749755215
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b19-A-snr00.json",
+          "case_sha256": "9ef1f8be66d03823413fd0b1791246590214b17833b11dfd233656cca742b23d",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -28.930912074635376,
+            -12.495421098440461,
+            -3.919344771474229,
+            2.7973197408201553,
+            9.341593182402534
+          ]
+        },
+        {
+          "case_path": "cases/native-b19-A-snr10.json",
+          "case_sha256": "01bb0b7dc794520625090d9d95d0e4d220c3a6b4f9e8c72e0cb3f5d059ab62e9",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -18.930912074635376,
+            -2.495421098440465,
+            6.080655228525771,
+            12.797319740820155,
+            19.341593182402534
+          ]
+        },
+        {
+          "case_path": "cases/native-b19-A-snr20.json",
+          "case_sha256": "f12667f423b052b79f12e55939646fa3bc84de52349483b2005cdf4b957549ed",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -8.930912074635376,
+            7.5045789015595386,
+            16.08065522852577,
+            22.797319740820157,
+            29.341593182402534
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 19,
+      "profile": "B",
+      "native_path": "native/native-b19-B.npz",
+      "native_sha256": "21ebc42a10b55ec0c549aab21f47c29fc179b42cf948ebbb166c8de210c6f093",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 4.552675923179184e-15,
+      "min_tone_gain_range": 1.9744943540109021,
+      "native_gain_quantiles": [
+        0.09849910745220862,
+        0.6509613811841726,
+        2.011171264572312,
+        4.492696113839517,
+        8.129142749970583
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b19-B-snr00.json",
+          "case_sha256": "39161f2516e154c6d12e05ab8bed51388f07824388edfb7af191371ca052279f",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -36.56833660877227,
+            -9.945502114432696,
+            -1.1783322870421045,
+            7.324789379070186,
+            14.023397501826885
+          ]
+        },
+        {
+          "case_path": "cases/native-b19-B-snr10.json",
+          "case_sha256": "c7dba51bccbf6c7088bed573f1de39eed6f555db1cab60c41c88979533b06c3a",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -26.56833660877227,
+            0.054497885567304366,
+            8.821667712957897,
+            17.32478937907019,
+            24.023397501826885
+          ]
+        },
+        {
+          "case_path": "cases/native-b19-B-snr20.json",
+          "case_sha256": "cdfd8849956b332fc7902cc4ec46dfeaa2f9838c5d2c29d52b54fb7bee8e9851",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -16.56833660877227,
+            10.054497885567306,
+            18.821667712957897,
+            27.324789379070182,
+            34.023397501826885
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "block": 19,
+      "profile": "C",
+      "native_path": "native/native-b19-C.npz",
+      "native_sha256": "d0f9ac157ae5422bfb09e4f43b9a61a1e40589c077c6530bb2f0f1e263f2441b",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.286089127109703e-15,
+      "min_tone_gain_range": 1.621107648271058,
+      "native_gain_quantiles": [
+        0.12378897472008937,
+        0.59235401028502,
+        1.7264367193637842,
+        4.156005196495704,
+        7.371816308705864
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/native-b19-C-snr00.json",
+          "case_sha256": "226330e5060dd2b0176169ac1d4566786024c9aba6b391364b2b516c5e5d5d05",
+          "snr_db": 0,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -20.788304467867885,
+            -9.95667711816705,
+            -1.2934435390393086,
+            5.688860991914335,
+            11.1825185901111
+          ]
+        },
+        {
+          "case_path": "cases/native-b19-C-snr10.json",
+          "case_sha256": "1907ccd2ec138c52a57f891e9125f65298a763744779f97699ca481c3ce3a619",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -10.788304467867885,
+            0.043322881832949155,
+            8.706556460960693,
+            15.688860991914336,
+            21.182518590111098
+          ]
+        },
+        {
+          "case_path": "cases/native-b19-C-snr20.json",
+          "case_sha256": "172cab4e75682ff776e0bd5bb7df89e0d1cb59593e5c4e88f8b429146aef16b9",
+          "snr_db": 20,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -0.7883044678678847,
+            10.043322881832948,
+            18.70655646096069,
+            25.688860991914332,
+            31.182518590111098
+          ]
+        }
+      ]
+    }
+  ],
+  "gates": {
+    "unique_disjoint_effective_seeds": true,
+    "deterministic_regeneration": true,
+    "independent_fourier": true,
+    "finite_double_shapes": true,
+    "frequency_selective_raw_gains": true,
+    "fixed_common_arrays": true,
+    "exact_binary64_pair_coefficients": true
+  }
+}

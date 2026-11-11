@@ -1,0 +1,165 @@
+{
+  "all_seen_candidates": [
+    "candidate-000000.json"
+  ],
+  "best_receipt": "receipt-000001.json",
+  "case_id": "o1-main-00",
+  "case_sha256": "25df03c3c0ddc08ecbcd5a44089a474f8b98a2d1e19fdfabb917d6b4b21d7736",
+  "charged_actual": 15.156000000191852,
+  "charged_allowance": 20,
+  "deadline": 1423455.812,
+  "elapsed": 11.156000000191852,
+  "errors": [],
+  "incumbent_upper_nats": "24594517005137014642898687647035/316912650057057350374175801344",
+  "late_candidates": [],
+  "lower_nats": "98378068020548058571594750558889/1267650600228229401496703205376",
+  "method": "THU_IDE",
+  "peak_RSS_bytes": 0,
+  "receipts": [
+    {
+      "completed_at": 1423439.828,
+      "file": "receipt-000000.json",
+      "sha256": "ca8f0e6b2c6f02af37c585e34f590c4098a7a7657a1b6e8d62ca774cf3f3eb20",
+      "timely": true
+    },
+    {
+      "completed_at": 1423443.765,
+      "file": "receipt-000001.json",
+      "sha256": "e149551dc98001508f2a55b4a24fd83044c903c60aa4a5427540809811e7982a",
+      "timely": true
+    }
+  ],
+  "returncode": 0,
+  "schedule": [
+    {
+      "powers": [
+        "3602912477506271/36028797018963968",
+        "1801438080475353/18014398509481984"
+      ],
+      "resource": 0,
+      "users": [
+        0,
+        1
+      ]
+    },
+    {
+      "powers": [
+        "1801033746023063/18014398509481984",
+        "3603024358307531/36028797018963968"
+      ],
+      "resource": 1,
+      "users": [
+        3,
+        4
+      ]
+    },
+    {
+      "powers": [
+        "18015803272052237/180143985094819840",
+        "3603098868576307/36028797018963968"
+      ],
+      "resource": 2,
+      "users": [
+        5,
+        6
+      ]
+    },
+    {
+      "powers": [
+        "1801419322236077/18014398509481984",
+        "28148898116419/281474976710656"
+      ],
+      "resource": 3,
+      "users": [
+        2,
+        7
+      ]
+    }
+  ],
+  "search_deadline": 1423450.812,
+  "solver_seed": 2026113548,
+  "started_at": 1423439.812,
+  "status": "RETURNED",
+  "upper_nats": "120598715016231406629469389650577/1267650600228229401496703205376",
+  "utc": "2026-11-03T04:58:49.177980+00:00",
+  "valid": true,
+  "verification_seconds": 0.030999999959021807,
+  "verification_timeouts": [],
+  "virtual_seconds": 4,
+  "worker_status": {
+    "diagnostics": {
+      "common_anchor": [
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 0,
+          "users": [
+            0,
+            1
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 1,
+          "users": [
+            3,
+            4
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 2,
+          "users": [
+            5,
+            6
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 3,
+          "users": [
+            2,
+            7
+          ]
+        }
+      ],
+      "elapsed_seconds": 10.452999999979511,
+      "errors": [],
+      "exchange_accepted": 0,
+      "exchange_candidates": 0,
+      "method": "THU_IDE",
+      "neighborhoods_completed": 0,
+      "planned_start_sha256": "0a29b9bdc6e0d54dc0fc82333b3ea9863ff134c7a3e3141199b95f0b132ab8ae",
+      "power_call_policy": "full_remaining_deadline",
+      "publish_calls": 1,
+      "rejected": 0,
+      "seed": 2026113548,
+      "starts_completed": 0,
+      "starts_started": 1,
+      "stopped_phase": "start"
+    },
+    "diagnostics_sidecar": {
+      "bytes": 350,
+      "completed_at": 1423450.812,
+      "file": "worker-diagnostics.json.gz",
+      "sha256": "ce02633a91af756d209fd6ea5a6399ee003a00f98b78fa2d7b09a4847c5980cb",
+      "uncompressed_bytes": 645,
+      "uncompressed_sha256": "36f27b155f078aac75e437cfd8c5779aa02eadb02b4e7f3042c48aa78eb6464d"
+    },
+    "ended": 1423450.812,
+    "entered": 1423439.906,
+    "normal": true,
+    "status": "deadline"
+  }
+}

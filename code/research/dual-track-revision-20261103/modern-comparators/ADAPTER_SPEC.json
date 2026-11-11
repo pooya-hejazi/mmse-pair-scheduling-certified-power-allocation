@@ -1,0 +1,225 @@
+{
+  "schema": "CR033_MODERN_ADAPTER_SPEC_V1",
+  "status": "PROPOSED_NOT_ACCEPTED",
+  "generated_utc": "2026-11-03",
+  "performance_outcomes_generated": false,
+  "common": {
+    "objective": "sum_pair[2*ln(1+x+y+(1-r)*x*y)-ln(1+x)-ln(1+y)]/(S*ln(2))",
+    "x": "gain_u*power_u",
+    "y": "gain_v*power_v",
+    "K": 8,
+    "M": 8,
+    "S": 4,
+    "pmin": "1/20",
+    "pmax": "1/5",
+    "budget": "4/5",
+    "service": "exactly once each user; exactly two per labelled resource",
+    "receiver": "power-dependent optimal linear MMSE, no SIC",
+    "outer": "same common multistart and exact-four-user assignment exchange as core T/S; all refinements charged",
+    "interface": "refine_power(problem, assignment, p0, deadline, rng, publish) -> incumbent, diagnostics",
+    "required_inputs": [
+      "immutable channel arrays[K,M,S]",
+      "exact pair coefficients",
+      "common starting candidates",
+      "absolute monotonic deadline",
+      "seeded generator"
+    ],
+    "required_output": [
+      "exact rational feasible powers",
+      "assignment",
+      "independently checked lower bound",
+      "true matrix/scalar SE agreement",
+      "stop reason",
+      "start/iteration/evaluation counts",
+      "elapsed charged time",
+      "source and input hashes"
+    ],
+    "forbidden": [
+      "source published curve imports",
+      "claim source architecture reproduced",
+      "source global guarantee transfer",
+      "additional per-arm free preprocessing"
+    ]
+  },
+  "arms": [
+    {
+      "id": "FU_SCA",
+      "label": "Fu-SCA (TCOM 2026, adapted; exact denominator)",
+      "source": "Fu2026",
+      "source_component": "Eq25c quadratic-over-linear tangent and power-block SCA, Algorithm2 power phase",
+      "retained": [
+        "amplitude variables",
+        "tight tangent of psi^2/pi",
+        "log-of-concave SINR surrogate",
+        "iterated power blocks"
+      ],
+      "modified": [
+        "instantaneous uplink channels instead of statistical DE downlink",
+        "power-dependent MMSE recomputed outer loop instead of LP-RZF regularization",
+        "exact N(v), explicitly replacing printed Eq25e extra old-denominator term",
+        "common positive box and shared budget",
+        "common assignment wrapper",
+        "no QoS target"
+      ],
+      "equations": {
+        "w": "normalize((I+sum_same_resource p_j*h_j*h_j^H)^(-1)*h_i); phase so w_i^H*h_i>=0",
+        "b": "abs(w_i^H*h_i)",
+        "c": "abs(w_i^H*h_j)^2 for same resource j!=i; zero otherwise",
+        "n": "||w_i||^2",
+        "v": "sqrt(p)",
+        "N": "n_i+sum_j c_ij*v_j^2",
+        "a": "b_i*vbar_i/N_i(vbar)",
+        "t": "2*a_i*b_i*v_i-a_i^2*N_i(v)",
+        "H": "sum_i log1p(t_i(v))",
+        "gradient_j": "sum_i (2*a_i*b_i*delta_ij-2*a_i^2*c_ij*v_j)/(1+t_i)",
+        "minorization_gap": "(b_i*v_i-a_i*N_i(v))^2/N_i(v)"
+      },
+      "subproblem": {
+        "objective": "minimize -H",
+        "constraints": [
+          "sqrt(pmin)<=v<=sqrt(pmax)",
+          "sum(v^2)<=budget",
+          "t_i(v)>=0"
+        ],
+        "engine": "analytic-gradient SLSQP for convex subproblem only",
+        "ftol": 1e-10,
+        "maxiter": 500,
+        "iteration_cap_policy": "resume same convex subproblem from feasible endpoint if deadline allows; log cap, never imply convergence",
+        "acceptance": "finite+feasible; H not below old H beyond numerical tolerance; recomputed true objective not below old incumbent; rational repair and checker before publish",
+        "absolute_ascent_tolerance_nats": 1e-9,
+        "relative_ascent_tolerance": 1e-10,
+        "stop": "deadline; or verified small objective change plus stationarity residual; numerical stall separately"
+      },
+      "guarantee": "tight common-model minorant; exact block solutions imply ascent; no finite-time global claim; no source DE guarantee",
+      "critical_source_issue": "Eq25e literally adds pi_hat to full interference/noise; visual PDF inspection confirms; substituting exact N is a disclosed adaptation"
+    },
+    {
+      "id": "THU_IDE",
+      "label": "Thu-IDE (TCOM 2026 accepted MS, adapted power search)",
+      "source": "Thu2026v1",
+      "source_component": "SecIV-B Eqs31-36 and Algorithm1 adaptive two-mutation IDE",
+      "retained": [
+        "pbest/1",
+        "current-to-pbest/1",
+        "binomial crossover",
+        "displaced-parent archive",
+        "operator gain-per-invocation adaptation",
+        "per-operator success-weighted Lehmer F and CR means"
+      ],
+      "modified": [
+        "power-only chromosome for common assignment wrapper instead of satellite/AP binary-real vector",
+        "instantaneous SE/MMSE objective instead of MRC ergodic energy efficiency",
+        "positive box/shared-budget projection",
+        "common warm starts",
+        "deadline stopping"
+      ],
+      "parameters": {
+        "dimension": "K",
+        "population": "min(4*K,300)",
+        "max_generations": 500,
+        "initial_mu_F": [
+          0.2,
+          0.2
+        ],
+        "initial_mu_CR": [
+          1,
+          1
+        ],
+        "initial_operator1_probability": 0.2,
+        "operator_adapt_period": 10,
+        "pbest_fraction": 0.1,
+        "pbest_count": "max(2,ceil(.1*Q))",
+        "cauchy_scale": 0.1,
+        "normal_stddev": 0.1,
+        "archive_capacity": "Q",
+        "history": "two scalar means for each operator, updated per generation; successful parameter lists reset each generation; no undocumented multi-entry SHADE circular memory",
+        "unspecified_source_choices": [
+          "pbest_fraction=.1",
+          "sampling scale=.1",
+          "archive capacity Q and uniform eviction",
+          "per-generation success-list scope",
+          "rank ties by original population index",
+          "synchronous archive snapshot",
+          "distinct donor identities"
+        ],
+        "source_discrepancy": "CE all-attempts in prose vs successful-branch-only Algorithm1; use all attempts, fixed before outcomes"
+      },
+      "encoding": {
+        "z": "(p-pmin)/(pmax-pmin)",
+        "initialization": "p0 then common uniform/random starts, deduplicate exact power vectors; iid uniform normalized draws fill Q; project all",
+        "projection": "p=clip(p_raw-tau,pmin,pmax), tau=0 if feasible else common-multiplier bisection; exact rational repair before publication; re-encode repaired phenotype",
+        "assignment_change": "reset population/archive/operator means using same documented common starts for that assignment; no stale fitness"
+      },
+      "steps": [
+        "Freeze old population and old archive for generation; rank descending fitness, stable index ties.",
+        "For each parent choose op1 with probability lambda; CE[op] increments for every trial.",
+        "Draw F from Cauchy(muF[op],.1), resample <=0, clip >1; CR from Normal(muCR[op],.1), clip[0,1].",
+        "Uniform pbest from top pool, r1 from old population excluding parent, r2 from old population+old archive excluding parent and r1 identity.",
+        "op1 mutant=pbest+F*(r1-r2); op2 mutant=parent+F*(pbest-parent)+F*(r1-r2).",
+        "Binomial crossover with forced uniform coordinate; project and evaluate true common-model rate.",
+        "Strictly improving trial replaces parent; successful displaced parent queued for archive; record positive gain and F/CR by operator.",
+        "Complete generation then combine archived parents and uniformly evict to capacityQ. On deadline publish only already checked incumbent; incomplete generation logged.",
+        "For each operator normalize current-generation successful gains into weights; muF=sum(w*F^2)/sum(w*F), muCR=sum(w*CR^2)/sum(w*CR); empty/zero denominator retains old mean.",
+        "Every10 generations set lambda=.8 if gain1/CE1 > gain2/CE2 else.2; if either CE zero retain lambda; reset window totals.",
+        "At500 generations, if time remains restart with retained incumbent, same next deterministic RNG stream, reset archive/means; no additional time."
+      ],
+      "guarantee": "feasible best-so-far heuristic only; no stationary/global certificate; source offspring-uniformity assumption not established for actual operations"
+    }
+  ],
+  "not_extra_arms": [
+    {
+      "id": "OU_QT",
+      "reason": "Shannon-limit Eq67/72/74 plus recomputed MMSE is algebraically existing WMMSE amplitude block; FBL Eq73 vanishes",
+      "allowed_use": "source connection and analytic equivalence fixture only"
+    },
+    {
+      "id": "CHEN_IUSH",
+      "reason": "coupled downlink hybrid RF/beam-squint architecture and different service model would be discarded by adaptation",
+      "allowed_use": "contextual comparison only"
+    }
+  ],
+  "fixtures": [
+    "scalar-vs-matrix MMSE for orthogonal/collinear/unequal-gain/near-collinear deterministic channels",
+    "Fu tangent equality+global gap identity+gradient finite differences+concavity+surrogate and true ascent",
+    "Fu printed-extra-pi_hat fails tangency fixture",
+    "Fu tiny convex subproblem independent KKT/grid check",
+    "Ou/WMMSE quadratic coefficient and amplitude-step equivalence",
+    "IDE scripted-RNG two mutations/crossover/CE/adaptation/archive/synchronous generation",
+    "IDE projection KKT/rational feasibility/strict selection/nonfinite failure",
+    "common timeout and publication failure retains last verified feasible incumbent"
+  ],
+  "cost": {
+    "no_scientific_cells_before_protocol_acceptance": true,
+    "per_main_cell_seconds": 20,
+    "shared_charge_seconds": 4,
+    "search_seconds": 11,
+    "verification_publication_seconds": 5,
+    "all_startup_and_refinement_charged": true,
+    "proposed_inputs": 52,
+    "proposed_main_cells": 260,
+    "main_reserved_seconds": 5200,
+    "actual_shared_preprocessing_seconds": 208,
+    "correctness_seconds": 480,
+    "reference_seconds": 480,
+    "generation_analysis_seconds": 180,
+    "contingency_seconds": 300,
+    "total_seconds": 6848,
+    "remaining_seconds": 352,
+    "population": "4 pilot(1 preselected group)+44 holdout(11 preselected groups x4 regimes)+4 preselected legacy; exact retained IDs root-frozen before generation",
+    "warning": "one pilot group weakens operational coverage; retain comprehensive deterministic correctness fixtures; original32 Full outcomes unchanged separate certification track",
+    "rate_arms": ["T", "W", "S", "FU_SCA", "THU_IDE"],
+    "F_role": "legacy certification only, not new matched-budget rate claim",
+    "fallback_six_arm": {"inputs": 44, "holdout_groups": 7, "total_seconds": 6896}
+  },
+  "endpoints": {
+    "modern_primary": "mean_g average_regime(SE_T-max(SE_FU,SE_THU)) and mean_g average_regime((SE_T-max(SE_FU,SE_THU))/max(SE_FU,SE_THU))",
+    "substantial_absolute_threshold": 0.1,
+    "substantial_relative_threshold": 0.05,
+    "confidence": "both paired whole-seed-group 95% bootstrap lower endpoints exceed respective thresholds; show all cases/groups",
+    "strong_controls": "Always report T versus W and S and envelope max(W,S,FU,THU); modern-only win is scoped to two adapted components",
+    "all_baseline_guard": "Broader new-rate superiority requires same dual effect criterion against max(W,S,FU,THU); F remains separate legacy evidence, no matched-budget F claim",
+    "old_endpoint": "retain .02bit/s/Hz useful-effect endpoint against max(W,S,FU,THU); do not call .02 substantial",
+    "threshold_origin": "prospective project choice, not a universal communications standard",
+    "legacy_headroom": "known .52-2.74% upper headroom does not support5% legacy improvement; no tuning/selection to force success"
+  }
+}

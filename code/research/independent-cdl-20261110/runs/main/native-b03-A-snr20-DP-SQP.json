@@ -1,0 +1,528 @@
+{
+  "arm": "DP-SQP",
+  "rate_nats": 91.56188611915225,
+  "se_bits": 16.51198487981762,
+  "lower_nats": "116068479896972137018619583839979/1267650600228229401496703205376",
+  "upper_nats": "116068479896972137018619583840011/1267650600228229401496703205376",
+  "schedule": [
+    {
+      "users": [
+        8,
+        14
+      ],
+      "resource": 0,
+      "powers": [
+        "2345313040770929/18014398509481984",
+        "4634464000347335/36028797018963968"
+      ]
+    },
+    {
+      "users": [
+        2,
+        9
+      ],
+      "resource": 1,
+      "powers": [
+        "1168357523301017/9007199254740992",
+        "2351581630469083/18014398509481984"
+      ]
+    },
+    {
+      "users": [
+        11,
+        15
+      ],
+      "resource": 2,
+      "powers": [
+        "4691928333321983/36028797018963968",
+        "4678074741645359/36028797018963968"
+      ]
+    },
+    {
+      "users": [
+        1,
+        13
+      ],
+      "resource": 3,
+      "powers": [
+        "2333823442801793/18014398509481984",
+        "4680010176708199/36028797018963968"
+      ]
+    },
+    {
+      "users": [
+        0,
+        10
+      ],
+      "resource": 4,
+      "powers": [
+        "116895157718224911/900719925474099200",
+        "146783043916517/1125899906842624"
+      ]
+    },
+    {
+      "users": [
+        7,
+        12
+      ],
+      "resource": 5,
+      "powers": [
+        "2351333656644203/18014398509481984",
+        "146952402032175/1125899906842624"
+      ]
+    },
+    {
+      "users": [
+        3,
+        6
+      ],
+      "resource": 6,
+      "powers": [
+        "586703426383083/4503599627370496",
+        "4665890347485837/36028797018963968"
+      ]
+    },
+    {
+      "users": [
+        4,
+        5
+      ],
+      "resource": 7,
+      "powers": [
+        "36618664153447/281474976710656",
+        "1173959890891809/9007199254740992"
+      ]
+    }
+  ],
+  "total_power": "52/25",
+  "elapsed_seconds": 5.475536899990402,
+  "cap_seconds": 10.0,
+  "block_seconds": 5.0,
+  "overrun_seconds": 0.0,
+  "audit_seconds": 0.0006504000048153102,
+  "audit": {
+    "scalar": 91.56188611915225,
+    "matrix": 91.5618861191522,
+    "discrepancy": 4.263256414560601e-14
+  },
+  "status": "starts_exhausted",
+  "counts": {
+    "starts_started": 8,
+    "starts_completed": 8,
+    "dp_completed": 16,
+    "power_calls": 16,
+    "accepted": 2
+  },
+  "history": [
+    {
+      "kind": "initial",
+      "seconds": 0.005272799986414611,
+      "schedule": [
+        {
+          "users": [
+            0,
+            1
+          ],
+          "resource": 0,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            2,
+            3
+          ],
+          "resource": 1,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            4,
+            5
+          ],
+          "resource": 2,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            6,
+            7
+          ],
+          "resource": 3,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            8,
+            9
+          ],
+          "resource": 4,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            10,
+            11
+          ],
+          "resource": 5,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            12,
+            13
+          ],
+          "resource": 6,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            14,
+            15
+          ],
+          "resource": 7,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        }
+      ],
+      "rate_nats": 61.55304423968039,
+      "se_bits": 11.100283959525735,
+      "lower_nats": "78027753476305598205925191534577/1267650600228229401496703205376",
+      "upper_nats": "78027753476305598205925191534609/1267650600228229401496703205376"
+    },
+    {
+      "kind": "improvement",
+      "seconds": 0.3941758000291884,
+      "schedule": [
+        {
+          "users": [
+            8,
+            14
+          ],
+          "resource": 0,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            2,
+            9
+          ],
+          "resource": 1,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            11,
+            15
+          ],
+          "resource": 2,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            1,
+            13
+          ],
+          "resource": 3,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            0,
+            10
+          ],
+          "resource": 4,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            7,
+            12
+          ],
+          "resource": 5,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            3,
+            6
+          ],
+          "resource": 6,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        },
+        {
+          "users": [
+            4,
+            5
+          ],
+          "resource": 7,
+          "powers": [
+            "13/100",
+            "13/100"
+          ]
+        }
+      ],
+      "rate_nats": 91.56177687517723,
+      "se_bits": 16.511965179099995,
+      "lower_nats": "116068341413781629314910671996771/1267650600228229401496703205376",
+      "upper_nats": "116068341413781629314910671996803/1267650600228229401496703205376"
+    },
+    {
+      "kind": "improvement",
+      "seconds": 0.4076138000236824,
+      "schedule": [
+        {
+          "users": [
+            8,
+            14
+          ],
+          "resource": 0,
+          "powers": [
+            "2345313040770929/18014398509481984",
+            "4634464000347335/36028797018963968"
+          ]
+        },
+        {
+          "users": [
+            2,
+            9
+          ],
+          "resource": 1,
+          "powers": [
+            "1168357523301017/9007199254740992",
+            "2351581630469083/18014398509481984"
+          ]
+        },
+        {
+          "users": [
+            11,
+            15
+          ],
+          "resource": 2,
+          "powers": [
+            "4691928333321983/36028797018963968",
+            "4678074741645359/36028797018963968"
+          ]
+        },
+        {
+          "users": [
+            1,
+            13
+          ],
+          "resource": 3,
+          "powers": [
+            "2333823442801793/18014398509481984",
+            "4680010176708199/36028797018963968"
+          ]
+        },
+        {
+          "users": [
+            0,
+            10
+          ],
+          "resource": 4,
+          "powers": [
+            "116895157718224911/900719925474099200",
+            "146783043916517/1125899906842624"
+          ]
+        },
+        {
+          "users": [
+            7,
+            12
+          ],
+          "resource": 5,
+          "powers": [
+            "2351333656644203/18014398509481984",
+            "146952402032175/1125899906842624"
+          ]
+        },
+        {
+          "users": [
+            3,
+            6
+          ],
+          "resource": 6,
+          "powers": [
+            "586703426383083/4503599627370496",
+            "4665890347485837/36028797018963968"
+          ]
+        },
+        {
+          "users": [
+            4,
+            5
+          ],
+          "resource": 7,
+          "powers": [
+            "36618664153447/281474976710656",
+            "1173959890891809/9007199254740992"
+          ]
+        }
+      ],
+      "rate_nats": 91.56188611915225,
+      "se_bits": 16.51198487981762,
+      "lower_nats": "116068479896972137018619583839979/1267650600228229401496703205376",
+      "upper_nats": "116068479896972137018619583840011/1267650600228229401496703205376"
+    }
+  ],
+  "diagnostics": [
+    {
+      "success": false,
+      "iterations": 19,
+      "message": "Positive directional derivative for linesearch",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 34,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 38,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 39,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 30,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 37,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 35,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 34,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    }
+  ],
+  "case": "native-b03-A-snr20",
+  "block": 3,
+  "profile": "A",
+  "snr_db": 20,
+  "stage": "main",
+  "case_path": "cases/native-b03-A-snr20.json",
+  "case_sha256": "ed303d1271c99370216ef32342645f219e906b76ebb470d3d2f47615a20dcddb",
+  "source_manifest_sha256": "b4340bc932ae9a2c796a3d97c800604c1112d9a6bd623842c2ab239ade09d776",
+  "initialization_seed": 947905455,
+  "search_seed": 1840955912,
+  "order": [
+    "DP-uniform",
+    "DP-SQP",
+    "DP-Fu-SCA",
+    "DP-Thu-IDE",
+    "Fixed-SQP"
+  ],
+  "preparation_seconds": 0.07428960001561791
+}

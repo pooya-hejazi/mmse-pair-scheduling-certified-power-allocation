@@ -1,0 +1,27 @@
+# Replaying the 32 eight-antenna certificates
+
+From the repository root, run `python -I -B code/m8_replay/replay.py`. The command uses the Python standard library and reads the frozen scientific records. It emits a JSON summary on success and exits with a failure if a required hash, record, endpoint, schedule or aggregate differs. Verification uses an unrestricted clock so host speed does not change the result. The historical 10-second producer and 15-second checking allowances belong to the original experiment.
+
+The frozen study belongs at `code/research/manuscript-refinement-20261106/certification/`. Its complete original scientific directory can be used as delivered. For a minimal repository copy, take the two files `FROZEN.json` and `final/OUTPUT_MANIFEST.json`, every path in `FROZEN.json:source_sha256`, every `final/` path in `OUTPUT_MANIFEST.json:files`, and every `file` path listed in `members.json`. Their union comprises 489 original files (22,176,505 bytes), including all stored witnesses and receipts. The staged code also expects the following three original files under `code/output/TCOM-Submission-2026-11-06-R4/legacy-method/CR033/method/core/vendor/`:
+
+- `verify_upper.py` reconstructs the generic baseline bound.
+- `certificates.py` and `grid_core.py` are historical dependencies whose hashes appear in the freeze. The replay verifies their hashes and uses the original independent checkers for bound reconstruction.
+
+Preserve the exact bytes in these two frozen directories. The delivered JSON and source files use a mixture of LF and CRLF. Git attributes that disable newline normalization for the frozen paths (for example, `code/research/manuscript-refinement-20261106/certification/** -text` in the repository-root attributes file) preserve those original SHA-256 bindings across platforms. Apply the corresponding rule to the pinned vendor directory.
+
+The 32 cases each contribute one integral-method witness and one generic baseline witness. The program first validates the pinned source freeze, its source hashes, the vendor hashes, and the 291 entries in the pinned final output manifest. It then reads each case, original grid allocation and archived dual, applies the unmodified `checker.verify` and `verify_upper.verify`, and compares the exact rational endpoints with the stored receipts and result rows. Each of the 84 historical schedules is checked against its physical input and both of its saved rate endpoints.
+
+At the target of 0.01 nat, 27 of 32 integral-method gaps and 0 of 32 generic gaps meet the target. For each case, the upper-bound comparison uses the same original grid lower bound. The program takes the median of the 32 values of `1 - (new_upper - grid_lower) / (baseline_upper - grid_lower)`. The resulting reduction is 97.81623727255304 percent, reported as 97.82 percent. These are certificates for the stored nominal eight-antenna inputs.
+
+## Original archive provenance
+
+`members.json` identifies each archived JSON member by container, original name, SHA-256, byte count and existing path under `certification/inputs/corrected/`. Its 184 entries comprise 160 from the nested container and 24 from the outer container, totalling 6,617,523 extracted bytes. The original study's copy of every selected file is byte-identical to the corresponding original archive member, so one stored copy serves both the campaign and the independent replay.
+
+The original outer ZIP had SHA-256 `3ad5da1406feee58bce5d484ea6c6b96c4366c130095d3ec2f0848c955881764`. Its member `baseline_R1/Supplementary_Materials.zip` had SHA-256 `6dc52e28c6d1352029c2f6b8f23afa77a4e5440cc3239655d4bb806ca0636639`. The maintainer verified both complete original container hashes during extraction. A repository-only replay authenticates the selected unmodified raw member bytes against the frozen input bindings and checks the provenance fields against those same bindings. The published subset has its own inventory and makes no claim to the identity of either complete ZIP.
+
+With the complete historical delivery available offline, a maintainer can reproduce the extraction using `python -B code/m8_replay/extract_members.py PATH_TO_DELIVERY_CODE NEW_DIRECTORY`. The destination must be new and outside the delivery. This command verifies both containers, reads only JSON members on the frozen allowlist, verifies each member against the original saved copy, and writes those raw bytes and the standalone member manifest. Neither replay nor extraction writes to the frozen witnesses.
+
+## Receive-subarray figure
+
+The numerical input to `phase1_pairing_vs_M` is `code/research/phase0-audit-20261109/phase0_m_scan.csv` (SHA-256 `b7e303e2db352eb3ca38f6914a309b2122052547480aabf2f166edcf013d5beb`). Its 96 rows contain the same 32 networks at receive dimensions 2, 4 and 8. The plotting block in the November 10 delivery's `code/research/review-20261110/make_figures.py` groups `pairing_gain_uniform` by case for the thin lines and by dimension for the median. The other figures in that script use separate inputs. To regenerate the 96 numerical rows, `code/research/phase0-audit-20261109/run_m_scan.py` reads the frozen `final/results.csv`, the 32 local case/grid files already covered by this replay, and helper functions in the adjacent `run_audit.py`. That optional regeneration uses NumPy and Matplotlib and writes its historical CSV/figure outputs; run it in a separate working copy.
+

@@ -1,0 +1,44 @@
+{
+  "process": "1794362690684278700-45064",
+  "source_manifest_sha256": "3a8a3ea59fc927a200934e9cca3d9ef4a63fc2a8e5962481af7bb4732ab15b63",
+  "historical_case": "pilot-A-snr10",
+  "total_seconds": 2.682173800014425,
+  "arms": {
+    "Price-DP-SQP": {
+      "elapsed_seconds": 0.5020208999630995,
+      "retained": 4
+    },
+    "DP-SQP": {
+      "elapsed_seconds": 0.38856140000279993,
+      "retained": 5
+    },
+    "DP-Fu-SCA": {
+      "elapsed_seconds": 0.5015787999727763,
+      "retained": 9
+    },
+    "DP-Thu-IDE": {
+      "elapsed_seconds": 0.503636900044512,
+      "retained": 2
+    }
+  },
+  "thread_pools": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 1,
+      "prefix": "mkl_rt",
+      "filepath": "C:\\ProgramData\\anaconda3\\Library\\bin\\mkl_rt.2.dll",
+      "version": "2025.0-Product",
+      "threading_layer": "intel"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "C:\\ProgramData\\anaconda3\\Library\\bin\\libiomp5md.dll",
+      "version": null
+    }
+  ],
+  "numba_threads": 1
+}

@@ -1,0 +1,157 @@
+{
+  "all_seen_candidates": [],
+  "best_receipt": "receipt-000000.json",
+  "case_id": "o1-main-06",
+  "case_sha256": "16178f960a793bcd32d31ffaa8c25760a287917324d697175d4525ab92e24a10",
+  "charged_actual": 15.140000000130385,
+  "charged_allowance": 20,
+  "deadline": 1423523.156,
+  "elapsed": 11.140000000130385,
+  "errors": [],
+  "incumbent_upper_nats": "24326774286756441193876858060359/316912650057057350374175801344",
+  "late_candidates": [],
+  "lower_nats": "48653548573512882387753716105649/633825300114114700748351602688",
+  "method": "W",
+  "peak_RSS_bytes": 0,
+  "receipts": [
+    {
+      "completed_at": 1423507.187,
+      "file": "receipt-000000.json",
+      "sha256": "03bcbcc771cacf8f21f66b263b82c4ecb28788c72d5f16d7b267df3143859d12",
+      "timely": true
+    }
+  ],
+  "returncode": 0,
+  "schedule": [
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 0,
+      "users": [
+        0,
+        4
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 1,
+      "users": [
+        5,
+        7
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 2,
+      "users": [
+        1,
+        6
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 3,
+      "users": [
+        2,
+        3
+      ]
+    }
+  ],
+  "search_deadline": 1423518.156,
+  "solver_seed": 2026113549,
+  "started_at": 1423507.156,
+  "status": "RETURNED",
+  "upper_nats": "60960752840129365422546929882683/633825300114114700748351602688",
+  "utc": "2026-11-03T04:59:56.528170+00:00",
+  "valid": true,
+  "verification_seconds": 0.015999999828636646,
+  "verification_timeouts": [],
+  "virtual_seconds": 4,
+  "worker_status": {
+    "diagnostics": {
+      "common_anchor": [
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 0,
+          "users": [
+            0,
+            4
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 1,
+          "users": [
+            5,
+            7
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 2,
+          "users": [
+            1,
+            6
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 3,
+          "users": [
+            2,
+            3
+          ]
+        }
+      ],
+      "elapsed_seconds": 10.469000000040978,
+      "errors": [],
+      "exchange_accepted": 0,
+      "exchange_candidates": 0,
+      "method": "W",
+      "neighborhoods_completed": 0,
+      "planned_start_sha256": "d1d22d79cf8f98d2756469f362a3c46b61f6733015484d32dcb65a7b561b9c6f",
+      "power_call_policy": "full_remaining_deadline",
+      "publish_calls": 0,
+      "rejected": 3000,
+      "seed": 2026113549,
+      "starts_completed": 2,
+      "starts_started": 3,
+      "stopped_phase": "start"
+    },
+    "diagnostics_sidecar": {
+      "bytes": 457,
+      "completed_at": 1423518.156,
+      "file": "worker-diagnostics.json.gz",
+      "sha256": "28be8649e0dc4765b9ab6d6eaf746b3fa5303d02274c94b89b333c5426db0098",
+      "uncompressed_bytes": 1156,
+      "uncompressed_sha256": "07ed26a7438365ee869000cc811ef10082ac72c6de75e2168327498dbb57b35e"
+    },
+    "ended": 1423518.156,
+    "entered": 1423507.25,
+    "normal": true,
+    "status": "deadline"
+  }
+}

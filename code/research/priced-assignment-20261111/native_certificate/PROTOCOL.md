@@ -1,0 +1,12 @@
+# Prospective native-M2 certificate protocol
+
+Protocol decision recorded 2026-11-11 02:10:02 UTC, before access to fresh trial outcomes. This secondary per-instance certificate study begins numerical work after all timed optimization finishes. Its results do not change the primary comparisons, margin or timing.
+
+Include exactly the fresh CDL-B, 10 dB case in each of the twenty root blocks 0 through 19. Report every selected case. Independently replay the saved Price-DP-SQP allocation at the ten-second allowance. Use the last completed finite, nonnegative GRID_PRICE price in its saved diagnostic sequence (exact binary64 value), or zero if no such row exists. No additional search is permitted.
+
+Use a common rational grid including 0.001 and 0.2 W. Each next point is the smaller of the upper bound and the previous point multiplied by 17/16 and rounded down to a billionth of a watt. Cover the full two-dimensional power box for every candidate pair and resource. Upper-bound the continuous price-penalized pair rate by a rigorously rounded maximum over grid nodes plus interpolation remainder. Upper-bound the network optimum by exact resource-labelled maximum-weight assignment plus price times total budget. Reconstruct channel coefficients from the stored binary64 channels. Check the allocation's feasibility and provide a rigorous achievable log-rate lower bound. Preserve rational endpoints, input hashes and replayable evidence.
+
+Report all individual upper and lower endpoints and differences in nats, and a conservative occupied-band gap in bit/s/Hz using a lower enclosure of S ln(2). Summarize all twenty gaps descriptively, including coverage and failures. Distinguish additive interpolation slack from the total bound gap. These witnesses concern only these nominal M=2 channels. They address achievable-rate headroom, separate from timing, solver superiority, population optimality and the ray-traced M=8 study.
+
+Freeze implementation hashes before the historical engineering pilot. Check signed edge prices, interior interpolation, zero gains, full correlation, extreme inputs, exact feasibility, rounding monotonicity, assignment coverage, tiny exhaustive oracles, input/receipt mutation and deterministic reconstruction. Save and disclose failures without case replacement. Document any algorithmic defect and source version before repeating affected computations. Accept only deterministically replayed certificates.
+

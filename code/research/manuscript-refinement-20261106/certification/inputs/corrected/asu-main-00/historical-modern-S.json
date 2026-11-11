@@ -1,0 +1,186 @@
+{
+  "all_seen_candidates": [
+    "candidate-000000.json",
+    "candidate-000001.json",
+    "candidate-000002.json",
+    "candidate-000003.json"
+  ],
+  "best_receipt": "receipt-000004.json",
+  "case_id": "asu-main-00",
+  "case_sha256": "c34a8efcc0856fb1646397a27a0ede777141f22860b5b9417126b6cadca15aae",
+  "charged_actual": 15.171999999787658,
+  "charged_allowance": 20,
+  "deadline": 1423584.343,
+  "elapsed": 11.171999999787658,
+  "errors": [],
+  "incumbent_upper_nats": "20545924166817945933752408887579/633825300114114700748351602688",
+  "late_candidates": [],
+  "lower_nats": "41091848333635891867504817760977/1267650600228229401496703205376",
+  "method": "S",
+  "peak_RSS_bytes": 0,
+  "receipts": [
+    {
+      "completed_at": 1423568.375,
+      "file": "receipt-000000.json",
+      "sha256": "ad9b95f5dceac7efa318620bd9dc14c6df58fe045c58c1f0f14eaa28dc7fe5bf",
+      "timely": true
+    },
+    {
+      "completed_at": 1423568.968,
+      "file": "receipt-000001.json",
+      "sha256": "369aac9873d6b4d8efdf09ea225e8c3eee2236bbb595fea18150907bfd9fd275",
+      "timely": true
+    },
+    {
+      "completed_at": 1423568.984,
+      "file": "receipt-000002.json",
+      "sha256": "0579753aa3dd7ad295f79e21fefe26f6c7db0ee8ab2c4b66cf18e6b134bbc65e",
+      "timely": true
+    },
+    {
+      "completed_at": 1423569.015,
+      "file": "receipt-000003.json",
+      "sha256": "079475788b7ca1566a249d5e7fff1fcf19a45a1103540cf48be5010b4ae36151",
+      "timely": true
+    },
+    {
+      "completed_at": 1423569.031,
+      "file": "receipt-000004.json",
+      "sha256": "4f5ec66eb9cedc77edc68314e67c2b69eeecc3a7d4989f4341c1808f975307e4",
+      "timely": true
+    }
+  ],
+  "returncode": 0,
+  "schedule": [
+    {
+      "powers": [
+        "43102787591149609/360287970189639680",
+        "8310663738830365/72057594037927936"
+      ],
+      "resource": 0,
+      "users": [
+        4,
+        6
+      ]
+    },
+    {
+      "powers": [
+        "3602879701896397/72057594037927936",
+        "4067199327069871/36028797018963968"
+      ],
+      "resource": 1,
+      "users": [
+        0,
+        5
+      ]
+    },
+    {
+      "powers": [
+        "4941954313523437/72057594037927936",
+        "8603309687376801/72057594037927936"
+      ],
+      "resource": 2,
+      "users": [
+        2,
+        3
+      ]
+    },
+    {
+      "powers": [
+        "7272351078467989/72057594037927936",
+        "127499383404339/1125899906842624"
+      ],
+      "resource": 3,
+      "users": [
+        1,
+        7
+      ]
+    }
+  ],
+  "search_deadline": 1423579.343,
+  "solver_seed": 2026113550,
+  "started_at": 1423568.343,
+  "status": "RETURNED",
+  "upper_nats": "2057686798801596025007956001253/39614081257132168796771975168",
+  "utc": "2026-11-03T05:00:57.709996+00:00",
+  "valid": true,
+  "verification_seconds": 0.01600000006146729,
+  "verification_timeouts": [],
+  "virtual_seconds": 4,
+  "worker_status": {
+    "diagnostics": {
+      "common_anchor": [
+        {
+          "powers": [
+            "1/5",
+            "1/10"
+          ],
+          "resource": 0,
+          "users": [
+            4,
+            6
+          ]
+        },
+        {
+          "powers": [
+            "1/20",
+            "1/10"
+          ],
+          "resource": 1,
+          "users": [
+            0,
+            5
+          ]
+        },
+        {
+          "powers": [
+            "1/20",
+            "1/10"
+          ],
+          "resource": 2,
+          "users": [
+            2,
+            3
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 3,
+          "users": [
+            1,
+            7
+          ]
+        }
+      ],
+      "elapsed_seconds": 10.437000000150874,
+      "errors": [],
+      "exchange_accepted": 29,
+      "exchange_candidates": 489,
+      "method": "S",
+      "neighborhoods_completed": 5,
+      "planned_start_sha256": "f8cf30f7b301379f44f43648f1860b95887addb352c369330e6417d5fe6fc7a1",
+      "power_call_policy": "full_remaining_deadline",
+      "publish_calls": 4,
+      "rejected": 2682,
+      "seed": 2026113550,
+      "starts_completed": 5,
+      "starts_started": 6,
+      "stopped_phase": "exchange"
+    },
+    "diagnostics_sidecar": {
+      "bytes": 3118,
+      "completed_at": 1423579.343,
+      "file": "worker-diagnostics.json.gz",
+      "sha256": "1f02e87ed9f5e76e709aad33d73b46f323a35347ecb388f59418d801baa26a8d",
+      "uncompressed_bytes": 98822,
+      "uncompressed_sha256": "afc8c0622715d6d5d589dfab966e21c27eb8bc84b7ca011761623eb4d7da3c36"
+    },
+    "ended": 1423579.343,
+    "entered": 1423568.453,
+    "normal": true,
+    "status": "deadline"
+  }
+}

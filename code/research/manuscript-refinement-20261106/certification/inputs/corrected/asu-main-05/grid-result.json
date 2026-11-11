@@ -1,0 +1,98 @@
+{
+  "all_seen_candidates": [
+    "candidate-000001.json",
+    "candidate-000002.json"
+  ],
+  "case": "asu-main-05",
+  "charged": 18,
+  "elapsed": 0.5656421999447048,
+  "errors": [],
+  "gap_nats": 21.663849617760206,
+  "index": 5,
+  "lower_nats": "43835623956476600211410004993195/1267650600228229401496703205376",
+  "mathematical_success": false,
+  "method": "grid",
+  "normal": true,
+  "operational_success": false,
+  "panel": "main",
+  "peak_RSS_bytes": 83492864,
+  "receipts": [
+    {
+      "completed_at": 1304384.2079831,
+      "file": "receipt-000000.json",
+      "sha256": "58a2575ba4c1326bbc44e1e9064e974f56c7c266d9ba1b5b10894136b4c5b37c",
+      "timely": true
+    },
+    {
+      "completed_at": 1304384.3175681,
+      "file": "receipt-000001.json",
+      "sha256": "36ac806aa1861546d45d9a36019074127fca12765c312bc3661a848bb28ae411",
+      "timely": true
+    },
+    {
+      "completed_at": 1304384.7240955,
+      "file": "receipt-000002.json",
+      "sha256": "0d3adb0d1f112341f70944eff37a2620706880935925ec91eca650164e5ddc3c",
+      "timely": true
+    }
+  ],
+  "returncode": 0,
+  "scene": "asu",
+  "schedule": [
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 0,
+      "users": [
+        1,
+        2
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/5"
+      ],
+      "resource": 1,
+      "users": [
+        6,
+        7
+      ]
+    },
+    {
+      "powers": [
+        "1/20",
+        "1/10"
+      ],
+      "resource": 2,
+      "users": [
+        0,
+        3
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/20"
+      ],
+      "resource": 3,
+      "users": [
+        4,
+        5
+      ]
+    }
+  ],
+  "scope": "Parent independently reconstructed all accepted uppers; actual receipt completion by deadline; normal return required for primary success",
+  "seed": 1206,
+  "status": "RETURNED",
+  "upper_nats": "71297815927684425841851995418519/1267650600228229401496703205376",
+  "verification_timeouts": [],
+  "worker_status": {
+    "errors": [],
+    "finished_at": 1304384.7002939,
+    "normal": true,
+    "sequence": 2
+  }
+}

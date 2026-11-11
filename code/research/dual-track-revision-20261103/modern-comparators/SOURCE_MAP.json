@@ -1,0 +1,159 @@
+{
+  "schema": "CR033_SOURCE_MAP_V1",
+  "status": "READ_NOT_IMPLEMENTED",
+  "sources": [
+    {
+      "id": "Fu2026",
+      "title": "Deterministic Equivalent-Based Resource Allocation for Cell-Free Massive MIMO",
+      "authors": [
+        "Jiafei Fu",
+        "Peng Jiang",
+        "Pengcheng Zhu",
+        "Hien Quoc Ngo",
+        "Michail Matthaiou"
+      ],
+      "venue": "IEEE Transactions on Communications",
+      "year": 2026,
+      "volume": 74,
+      "doi": "10.1109/TCOMM.2026.3672179",
+      "version": "supplied publisher issue PDF",
+      "path": "C:/Users/pooya/Downloads/535bd1166f96a3f547cfc40307c1efb6.pdf",
+      "sha256": "75e29994f05dc448036d4113f16c98fae14500a446658a98a04efdd5959cdb50",
+      "read_locations": [
+        "pp6447-6448 Eqs10-19",
+        "p6449 Eqs23-25 and Algorithm2",
+        "p6450 convergence"
+      ],
+      "visual_evidence": "fu-alg2.png",
+      "source_to_adapter": [
+        {
+          "source": "Eq25c",
+          "target": "t_i=2*a_i*b_i*v_i-a_i^2*N_i(v)",
+          "status": "same quadratic-over-linear first-order minorant"
+        },
+        {
+          "source": "Eq25d",
+          "target": "psi_i=b_i*v_i",
+          "status": "common-model exact scalar replacement"
+        },
+        {
+          "source": "Eq25e",
+          "target": "pi_i=N_i(v)",
+          "status": "explicit denominator modification; printed old-denominator addition not used"
+        },
+        {
+          "source": "Algorithm2 step3",
+          "target": "convex power block",
+          "status": "retained component"
+        },
+        {
+          "source": "Eq24 / Algorithm2 steps1-2",
+          "target": null,
+          "status": "LP-RZF regularization not transferred"
+        }
+      ]
+    },
+    {
+      "id": "Ou2026",
+      "title": "Uplink RSMA With Dual-Polarized Multi-User MIMO Over Correlated Rician Channels in Finite Blocklength Regime",
+      "doi": "10.1109/TCOMM.2026.3731763",
+      "version": "supplied publisher issue PDF",
+      "year": 2026,
+      "venue": "IEEE Transactions on Communications",
+      "volume": 74,
+      "pages": "14516-14531",
+      "path": "C:/Users/pooya/Downloads/a04d8485a744c0cde3e56f6757e1a67d.pdf",
+      "sha256": "232148eaee8ce056ac03abe5dc21525ed9a7240e4c527cc64ec16accf3c3761d",
+      "read_locations": [
+        "pp14524-14526 Eqs52-77",
+        "p14526 Algorithm1"
+      ],
+      "visual_evidence": "ou-alg1.png",
+      "decision": "do not add redundant arm",
+      "reason": "Shannon limit removes FBL-specific Eq73 and remaining source power quadratic with recomputed MMSE equals WMMSE"
+    },
+    {
+      "id": "Thu2026v1",
+      "title": "Joint Load Balancing and Transmit Power Control for Energy Efficiency Maximization in the Satellite-Cell-Free Massive MIMO Uplink",
+      "authors": [
+        "Ngo Tran Anh Thu",
+        "Lo Hai Long",
+        "Le Duc Anh Vu",
+        "Trinh Van Chien",
+        "Lajos Hanzo"
+      ],
+      "version": "arXiv2607.21860v1,23Jul2026",
+      "primary_metadata": "https://arxiv.org/abs/2607.21860v1",
+      "primary_fulltext": "https://arxiv.org/html/2607.21860v1",
+      "primary_acceptance_evidence": "author-deposited arXiv Comments states Accepted by IEEE TCOM",
+      "journal_doi_discovered": "10.1109/TCOMM.2026.3717002",
+      "journal_doi_primary_verified": false,
+      "journal_final_pages_primary_verified": false,
+      "pdf_download_status": "arXiv PDF web cache miss; shell HTTPS authentication failure; actual primary HTML algorithms and math read",
+      "read_locations": [
+        "SecIV-B1 Eq30",
+        "SecIV-B2 Eqs31-33",
+        "SecIV-B3 Eq34",
+        "SecIV-B4 Eqs35-36",
+        "Algorithm1",
+        "SecIV-B5 Eqs37-39",
+        "SecV initial parameter settings"
+      ],
+      "source_to_adapter": [
+        {
+          "source": "Eq31",
+          "target": "pbest+F*(r1-r2)"
+        },
+        {
+          "source": "Eq32",
+          "target": "parent+F*(pbest-parent)+F*(r1-r2)"
+        },
+        {
+          "source": "Eq33",
+          "target": "lambda=.8 or .2 from gain per invocation"
+        },
+        {
+          "source": "Eq34",
+          "target": "binomial crossover+forced coordinate"
+        },
+        {
+          "source": "Eq35",
+          "target": "Cauchy F, normal CR; per-op means"
+        },
+        {
+          "source": "Eq36",
+          "target": "gain-weighted Lehmer means, per operator"
+        },
+        {
+          "source": "Eq30",
+          "target": "K normalized power entries; common assignment wrapper",
+          "status": "explicit reduced encoding"
+        },
+        {
+          "source": "Algorithm1 CE ambiguity",
+          "target": "all-invocation counts following prose",
+          "status": "disclosed convention"
+        },
+        {
+          "source": "Eqs37-39 guarantee",
+          "target": null,
+          "status": "not transferred; uniform offspring-density assumption unsupported by DE operations"
+        }
+      ]
+    },
+    {
+      "id": "Chen2026",
+      "title": "Integrated User Grouping, Subcarrier Allocation, and Hybrid Beamforming for Wideband Multiuser mmWave Massive MIMO",
+      "doi": "10.1109/TCOMM.2026.3652527",
+      "primary_url": "https://signal.seu.edu.cn/_upload/tpl/0a/67/2663/template2663/JournalFiles/TCOM2026BeamSquintKangjian.pdf",
+      "saved_primary_extract": "research/revision-20261101/sources/raw/chen-web-evidence.json",
+      "read_locations": [
+        "Eq4 service and hybrid constraints",
+        "Algorithms1-2 contextual extract",
+        "SecIV-B4 convergence"
+      ],
+      "access_status": "new direct fetch timed out; existing saved primary extract read",
+      "decision": "do not force numerical adapter"
+    }
+  ]
+}

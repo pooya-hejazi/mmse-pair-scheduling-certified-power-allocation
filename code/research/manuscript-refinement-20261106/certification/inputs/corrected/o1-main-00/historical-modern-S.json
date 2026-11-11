@@ -1,0 +1,165 @@
+{
+  "all_seen_candidates": [
+    "candidate-000000.json"
+  ],
+  "best_receipt": "receipt-000001.json",
+  "case_id": "o1-main-00",
+  "case_sha256": "25df03c3c0ddc08ecbcd5a44089a474f8b98a2d1e19fdfabb917d6b4b21d7736",
+  "charged_actual": 15.140000000130385,
+  "charged_allowance": 20,
+  "deadline": 1423489.156,
+  "elapsed": 11.140000000130385,
+  "errors": [],
+  "incumbent_upper_nats": "24594517019535963703518359777007/316912650057057350374175801344",
+  "late_candidates": [],
+  "lower_nats": "98378068078143854814073439078779/1267650600228229401496703205376",
+  "method": "S",
+  "peak_RSS_bytes": 0,
+  "receipts": [
+    {
+      "completed_at": 1423473.171,
+      "file": "receipt-000000.json",
+      "sha256": "48d44ea43f46a0e94a79776414cb6a79b54149d39a897a5b6d6755615831a26a",
+      "timely": true
+    },
+    {
+      "completed_at": 1423473.75,
+      "file": "receipt-000001.json",
+      "sha256": "827c68d892d5cf81595bdc67d765a8ee1480dc001cda529cb9aa0ea0360ac972",
+      "timely": true
+    }
+  ],
+  "returncode": 0,
+  "schedule": [
+    {
+      "powers": [
+        "3602797574357275/36028797018963968",
+        "7205614485257481/72057594037927936"
+      ],
+      "resource": 0,
+      "users": [
+        0,
+        1
+      ]
+    },
+    {
+      "powers": [
+        "7202422127280847/72057594037927936",
+        "3603397884020683/36028797018963968"
+      ],
+      "resource": 1,
+      "users": [
+        3,
+        4
+      ]
+    },
+    {
+      "powers": [
+        "3602981170307583/36028797018963968",
+        "36033991099340879/360287970189639680"
+      ],
+      "resource": 2,
+      "users": [
+        5,
+        6
+      ]
+    },
+    {
+      "powers": [
+        "7206349062561417/72057594037927936",
+        "3603269039001673/36028797018963968"
+      ],
+      "resource": 3,
+      "users": [
+        2,
+        7
+      ]
+    }
+  ],
+  "search_deadline": 1423484.156,
+  "solver_seed": 2026113548,
+  "started_at": 1423473.156,
+  "status": "RETURNED",
+  "upper_nats": "120598715016231406629469389650577/1267650600228229401496703205376",
+  "utc": "2026-11-03T04:59:22.528136+00:00",
+  "valid": true,
+  "verification_seconds": 0.01600000006146729,
+  "verification_timeouts": [],
+  "virtual_seconds": 4,
+  "worker_status": {
+    "diagnostics": {
+      "common_anchor": [
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 0,
+          "users": [
+            0,
+            1
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 1,
+          "users": [
+            3,
+            4
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 2,
+          "users": [
+            5,
+            6
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 3,
+          "users": [
+            2,
+            7
+          ]
+        }
+      ],
+      "elapsed_seconds": 10.469000000040978,
+      "errors": [],
+      "exchange_accepted": 112,
+      "exchange_candidates": 1550,
+      "method": "S",
+      "neighborhoods_completed": 17,
+      "planned_start_sha256": "0a29b9bdc6e0d54dc0fc82333b3ea9863ff134c7a3e3141199b95f0b132ab8ae",
+      "power_call_policy": "full_remaining_deadline",
+      "publish_calls": 1,
+      "rejected": 2706,
+      "seed": 2026113548,
+      "starts_completed": 17,
+      "starts_started": 18,
+      "stopped_phase": "exchange"
+    },
+    "diagnostics_sidecar": {
+      "bytes": 5379,
+      "completed_at": 1423484.156,
+      "file": "worker-diagnostics.json.gz",
+      "sha256": "68114d6efe84ac96f4742db9664ee1aba279d13d3e36a2f404f1a532d959ee58",
+      "uncompressed_bytes": 309590,
+      "uncompressed_sha256": "5905cc49bbb370d3fb271d8843bef4f3cdfba667da047075862cec19fbb3bba2"
+    },
+    "ended": 1423484.156,
+    "entered": 1423473.265,
+    "normal": true,
+    "status": "deadline"
+  }
+}

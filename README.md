@@ -1,137 +1,51 @@
-# Reproducible code: MMSE Pair Scheduling
+# MMSE pair scheduling and power allocation
 
-This repository contains **only the reproducible code and saved outputs** for the paper
-*MMSE Pair Scheduling: Sharp Complexity, Certified Power Allocation, and Regime-Dependent Rate Gains*.
-It does not contain the manuscript, supplement, PDFs, cover letter, or any `.tex` source.
+This repository contains the algorithms, channel inputs, saved schedules and powers, rate checks and figures for *MMSE Pair Scheduling: Sharp Complexity, Certified Power Allocation, and Regime-Dependent Rate Gains*. Each user transmits once, two users share each resource, and a linear MMSE receiver is recomputed at the assigned powers. The occupied-band spectral efficiency is the sum rate in nats divided by the number of resources and by ln 2.
 
-## Environment
+## Reproduce the results
 
-Python 3.12 with:
+Clone this repository, change to its root and use Python 3.13. The recorded numerical environment used Python 3.13.5.
 
-```text
-pip install -r code/requirements.txt
+```sh
+python -m pip install -r code/requirements.txt
+python reproduce.py
 ```
 
-The CDL generator is CPU-only. It uses the 3GPP TR 38.901 CDL-A/B/C cluster tables
-included under `code/research/phase1-cdl-20261109/tables/`.
+The command works on a temporary copy of the scientific inputs. It checks the saved allocations against the channels and power constraints, recomputes inference, checks the recorded tables and certificates, and redraws the figures. The results, plots, command logs and final status are written to `reproduced/`. Use an empty destination for another run, for example `python reproduce.py --only priced --output replay-priced`. The replay reads local files and uses the installed scientific packages.
 
-## Reproduce the headline CDL result
+| Study | Stored evidence | Direct entry |
+|---|---|---|
+| Native CDL, November 10 | 180 cases in 20 independent blocks. Five methods give 900 main allocations. A 30-s sensitivity gives 60 more on 20 of the same cases. | `python reproduce.py --only native` |
+| Price-guided assignment, November 11 | Independent 180-case panel with 720 final allocations, common starts and three controls using the same accelerated assignment kernel. | `python reproduce.py --only priced` |
+| Ray-traced certificates | 32 eight-antenna networks, 64 upper-bound witnesses, and 84 earlier feasible schedules. | `python reproduce.py --only certificates` |
+| Native two-antenna certificates | 20 fixed CDL-B, 10-dB channels, with a feasible lower bound and a continuous global upper bound for each saved price-guided allocation. | `python reproduce.py --only native-certificate` |
+| Receive subarrays | Exact fixed-power reassignment on the same 32 networks with two, four and eight receive components. | `python reproduce.py --only subarray` |
+| Earlier comparisons | 72 saved common-model allocations and the paired analyses for the earlier simplified CDL and ray-traced inputs. | `python reproduce.py --only components` |
+| Historical supplement | Scientific records from the earlier studies. The historical replay guide lists what can be recovered for each experiment. | `python reproduce.py --only historical` |
+| Published figures | Vector PDFs and matching PNGs, figure-to-paper mapping, plotting sources and numerical inputs. | `python reproduce.py --only figures` |
+| Optimizer rerun | A fresh execution of all four methods on the first CDL-A, 0-dB case, followed by independent checking and a comparison with their stored rates. | `python reproduce.py --only optimizer` |
 
-From this directory:
+## Numerical results
 
-```text
-cd code
-python research/phase1-cdl-20261109/build_cdl.py
-python research/phase1-cdl-20261109/run_cdl.py
-python research/phase1-cdl-20261109/analyze_cdl.py
-```
+In the first independent native-CDL study, local SQP exceeds the Fu-SCA adaptation by a mean 0.000319 bit/s/Hz. The individual 97.5% block interval is [0.000066, 0.000662]. The corresponding difference from the Thu-IDE adaptation is 0.012243 [0.008315, 0.016827] bit/s/Hz. The win/tie/loss counts are 6/174/0 and 173/6/1 at a tolerance of 0.00001 bit/s/Hz. On the prespecified CDL-B, 10-dB subset, increasing the allowances reduces the mean difference from IDE from 0.002761 to 0.000274 bit/s/Hz. [Saved estimates](code/research/independent-cdl-20261110/analysis/RESULTS.md)
 
-This regenerates the 53 K=16, M=2 CDL cases and the benchmark results. Expected headline values:
+On the second independent 180-case panel, price-guided search gained a mean **0.002375 bit/s/Hz** over the best of three controls in each case. The 95% whole-block interval [0.001171, 0.003844] lies below the prespecified 0.01 material improvement margin. At 0.00001 bit/s/Hz tolerance there were 23 wins, 157 ties and zero losses. Exact rational comparisons found 40 increases, 126 equalities and 14 decreases. Mean gains relative to DP–SQP, the Fu adaptation and the Thu adaptation were 0.002375, 0.002410 and 0.014722 bit/s/Hz, respectively. Relative to the fastest control per case, the geometric mean warm-time ratio was 1.615 [1.596, 1.634], a 97.5% interval. The secondary efficiency criterion also failed. Each run retains its shared starts, improvements, final assignment and powers, method order and time. [Prospective protocol](code/research/priced-assignment-20261111/PROTOCOL.md) · [Full results](code/research/priced-assignment-20261111/analysis/results.json)
 
-- median gain over the best common-model baseline: **1.31%**
-- absolute median gain: **0.129 bit/s/Hz**
-- 95% interval: **[1.19, 1.42]%**
-- **53 wins / 0 ties / 0 losses**
+For a separate, prespecified subset of 20 two-antenna CDL-B cases at 10 dB, offline witnesses bound the remaining possible improvement over the saved price-guided allocation by **0.00150 bit/s/Hz or less on every case**. The median upper gap is 0.001052 bit/s/Hz. The checker covers every integral assignment and continuous power vector allowed by that case, using rational interpolation bounds, integer assignment and an independently evaluated feasible lower endpoint. Witness construction and verification run outside the ten-second search allowance. [Proof and checker](code/research/priced-assignment-20261111/native_certificate/PROOF.md) · [20 witnesses](code/research/priced-assignment-20261111/native_certificate/witnesses)
 
-Results are written to:
+On the separate eight-antenna ray-traced networks, 27 of 32 global upper/lower gaps are at most 0.01 nat. The median reduction in the upper gap above the same grid lower bound is 97.82%. Individual inputs, witnesses, endpoints and the common grid allocation are retained. [Certificate replay](code/m8_replay/README.md)
 
-- `code/research/phase1-cdl-20261109/cdl_results.csv`
-- `code/research/phase1-cdl-20261109/cdl_summary.json`
-- `code/research/phase1-cdl-20261109/figures/`
+## Inputs and figure sources
 
-## Independent Sionna cross-check
+- The two native-CDL study folders contain their own seed registries, raw complex impulse responses and delays (`native/*.npz`), scaled frequency responses and exact rational pair data (`cases/*.json`), allocations (`runs/`), and checked per-case and per-block tables (`analysis/`). The second registry records 2,041 distinct effective identifiers and a zero intersection with the 4,063 recorded historical identifiers. Block, profile and SNR are explicit in each case. [November 10 data](code/research/independent-cdl-20261110) · [November 11 data](code/research/priced-assignment-20261111)
+- The two 2026 *IEEE Transactions on Communications* comparisons adapt the published Fu SCA and Thu differential-evolution power components to this receiver, feasible set and objective. They compare achieved rates under a common budget. The original papers study different systems and objectives. [Fu *et al.*](https://doi.org/10.1109/TCOMM.2026.3672179) · [Thu *et al.*](https://doi.org/10.1109/TCOMM.2026.3717002)
+- The simplified 53-case CDL study and its gain-normalized cross-check share random streams across conditions. Historical rate summaries are retained where the original experiment did not save the final powers. The independent native-CDL studies supply the allocation-level evidence. [Earlier analysis](code/research/review-20261110/statistics/corrected_statistics.json) · [Earlier scientific archives](code/historical/README.md)
+- The figure directory includes identifiable assets for each panel. Vector export can vary with fonts, Matplotlib and embedded dates. The replay checks the delivered file hashes and regenerates the data and plots. [Figure files and instructions](figures/README.md)
 
-The hand-rolled generator is a simplified CDL realisation. An independent Sionna 2.2.0 cross-check regenerates the 53 K=16 cases and gives:
+## Regenerating channels or repeating a timed search
 
-- median gain: **1.65%**, 95% interval **[1.57, 1.74]%**
-- absolute median: **0.155 bit/s/Hz**
-- **53 wins / 0 ties / 0 losses**
+The default command reconstructs results from the achieved allocations. Full native link regeneration in the November 11 campaign additionally uses the recorded Sionna 2.2.0, CPU Torch 2.15.0 and NumPy 2.5.4 generation environment. With that environment, run `python -B code/research/priced-assignment-20261111/verify_holdout.py --regenerate-links` to regenerate and compare all 960 links with their archived values. The verifier locates runtime source files by their installation-relative names.
 
-The E3-A angle ablation gives 1.58%, within 4.6% of Sionna, so the deterministic z-scored angle construction explains most of the magnitude shift. The paper retains 1.31% as the primary simplified-CDL result and reports 1.65% as a robustness check. No certified-rate claim is made at M=2.
+For the November 10 study run `python -I -B code/verify_native_links.py` with the same generation environment. The verifier uses the archived generator and registry to regenerate 960 main and 48 pilot links and compare all 183 scaled case channels.
 
-```text
-cd code
-pip install -r research/phase3-cdl-crosscheck-20261110/env/requirements-sionna.txt
-python research/phase3-cdl-crosscheck-20261110/scripts/e2_sionna_channels.py --n-real 3
-python research/phase3-cdl-crosscheck-20261110/scripts/e2_run.py --seconds 10
-python research/phase3-cdl-crosscheck-20261110/scripts/e2_analyze.py
-python research/phase3-cdl-crosscheck-20261110/scripts/e3a_gaussian_angles.py
-python research/phase3-cdl-crosscheck-20261110/scripts/e2_run.py --cases-dir research/phase3-cdl-crosscheck-20261110/cases_e3a --glob "*-e3a.json" --out e3a_results.csv
-python research/phase3-cdl-crosscheck-20261110/scripts/e3_analyze.py
-```
-
-The raw Sionna case JSONs are omitted from the repository; the scripts regenerate them. See `RESULTS.md` in that folder for the frozen protocol, gates and diagnostics.
-
-## Reproduce the K=8 result
-
-```text
-cd code
-python research/phase1-cdl-20261109/build_cdl_k8.py
-python research/phase1-cdl-20261109/run_cdl_k8.py
-```
-
-The K=8 results are in `cdl_k8_results.csv`. The paper's K=8 statement is an efficiency result:
-the proposed method is about 211 times faster than SLSQP by the ratio of median times, while the
-absolute rate gain is negligible (about 0.0017 bit/s/Hz).
-
-## Reproduce the attribution and 30-s baseline sensitivity
-
-```text
-cd code
-python research/phase1-cdl-20261109/run_cdl_ablation.py
-python research/phase1-cdl-20261109/run_long_baselines.py
-python research/phase1-cdl-20261109/analyze_cdl.py
-```
-
-- `cdl_ablation.csv` — assignment-only, power-only and joint arms.
-- `cdl_long_baseline.csv` — 30-s matching/SLSQP sensitivity; the proposed 10-s result remains ahead
-  in all 12 tested cases, median 1.07%.
-
-## Reproduce the receive-dimension audit
-
-```text
-cd code
-python research/phase0-audit-20261109/run_audit.py
-python research/phase0-audit-20261109/run_m_scan.py
-```
-
-These scripts use the stored DeepMIMO cases included under
-`code/research/phase1-benchmark-20261109/`.
-
-## Finite-box/integral certificate
-
-The certificate code is under:
-
-```text
-code/research/manuscript-refinement-20261106/certification/
-```
-
-It includes the producer, independent checker, integer-log enclosure, protocol, frozen metadata
-and the final aggregate result tables. The full archived ray-traced input archive is **not**
-redistributed in this repository; the code, protocol and saved summaries are included. DeepMIMO is
-retained only as the `M=8` certification and receive-dimension cross-check; it is not used for the
-CDL rate claim.
-
-## Code map
-
-| Path | Purpose |
-|---|---|
-| `code/research/phase1-cdl-20261109/build_cdl.py` | Generate 3GPP CDL-A/B/C K=16/M=2 cases |
-| `code/research/phase1-cdl-20261109/run_cdl.py` | Run grid, SLSQP, I-WMMSE, matching-WMMSE and the proposed exact search |
-| `code/research/phase1-cdl-20261109/analyze_cdl.py` | Produce result tables and figures |
-| `code/research/phase1-cdl-20261109/build_cdl_k8.py` | Generate K=8 CDL cases |
-| `code/research/phase1-cdl-20261109/run_cdl_k8.py` | K=8 benchmark |
-| `code/research/phase1-cdl-20261109/run_cdl_ablation.py` | Assignment/power attribution |
-| `code/research/phase1-cdl-20261109/run_long_baselines.py` | 30-s baseline sensitivity |
-| `code/research/phase1-benchmark-20261109/` | Stored DeepMIMO cross-check cases and phase-1 runners |
-| `code/research/phase0-audit-20261109/` | M-truncation and pairing-headroom audit |
-| `code/research/manuscript-refinement-20261106/certification/` | Finite-box/integral certificate code |
-| `code/research/completion-20261031/confirmation/local_core.py` | Grid/SLSQP/I-WMMSE baseline |
-| `code/research/dual-track-revision-20261103/baseline-code/matching_baseline.py` | Matching–WMMSE baseline |
-
-## Notes
-
-- No raw DeepMIMO scene archive is redistributed.
-- The CDL generator, CDL tables, cases, saved results and plotting code are included.
-- All scripts use paths relative to the extracted `code/` directory.
-- This repository intentionally contains no manuscript or supplement files.
+To repeat the November 11 timed optimization on the same channels, use a separate copy of this checkout. Rename its `code/research/priced-assignment-20261111/runs` directory so the runner starts with empty results. From that study directory run `python -B run_study.py run`, `python -B verify_study.py`, then `python -B analyze_study.py`. Keep the supplied seed, input, source and generator manifests. The generic warmup uses a November 10 pilot channel. Search is serial with a ten-second per-method allowance. New timings and deadline-limited incumbents can depend on host load and library versions. The two independent campaigns have distinct source freezes and timing conditions.

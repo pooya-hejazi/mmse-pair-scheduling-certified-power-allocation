@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "phase": "pilot",
+  "generator_sha256": "4a915941b440dae9f20adf802d7a5abc39cd34a5153ee17f8a19e9591dfb056c",
+  "protocol_sha256": "802bf939f72c5089339e4ec31957db1b6f016e4472fed99c755fedf0cd5abb54",
+  "seed_manifest_sha256": "1c15391815480d681dc48ee2fb792cafb14aa15293f31d53289a8f9c768967c3",
+  "seconds": 0.6410000000032596,
+  "profile_count": 3,
+  "case_count": 3,
+  "profiles": [
+    {
+      "phase": "pilot",
+      "block": 0,
+      "profile": "A",
+      "native_path": "native/pilot-A.npz",
+      "native_sha256": "19d360cdd376879dfb0430da47eab31c5a83c43644fc197a74471321afdbd3e9",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 3.722145839155691e-15,
+      "min_tone_gain_range": 1.3017487992766013,
+      "native_gain_quantiles": [
+        0.024644924800812214,
+        0.5877455643883988,
+        1.765418291780719,
+        3.318344197665351,
+        8.912813748929342
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/pilot-A-snr10.json",
+          "case_sha256": "204612bbe6fdfc49f81b6473fcd1bd6c8b7c9d1666bdd705442d019265b3b847",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -15.89288418140659,
+            0.09577455915589042,
+            8.232115292860453,
+            15.64125245421219,
+            19.660203846464842
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "pilot",
+      "block": 0,
+      "profile": "B",
+      "native_path": "native/pilot-B.npz",
+      "native_sha256": "15c5a321e69d0b30b023bd021671fa0f53b70c3e48cb757dc4c60910ae4b7707",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 5.024985802454786e-15,
+      "min_tone_gain_range": 1.5165153699999079,
+      "native_gain_quantiles": [
+        0.1524079512418066,
+        0.5514802529141447,
+        1.9273329637637133,
+        3.8961767240449667,
+        8.809230341633365
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        23
+      ],
+      "native_delay_shape": [
+        16,
+        23
+      ],
+      "cases": [
+        {
+          "case_path": "cases/pilot-B-snr10.json",
+          "case_sha256": "5c9803df54017261abb539d7a878c733e48be22ab319270c9492cd1760a4e0c8",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -10.175384181083233,
+            0.40881338383465315,
+            8.639635934933715,
+            15.279872607057765,
+            21.135899534408935
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "pilot",
+      "block": 0,
+      "profile": "C",
+      "native_path": "native/pilot-C.npz",
+      "native_sha256": "c339777f0f9ec0f22abf5dd437b8360813017891c97588ac38b21f5489c4509f",
+      "regeneration_bit_exact": true,
+      "max_fourier_abs_error": 2.144196810752504e-15,
+      "min_tone_gain_range": 1.1418146651840309,
+      "native_gain_quantiles": [
+        0.06056120882676071,
+        0.6549710924858979,
+        1.7093652105058075,
+        4.403825700913386,
+        8.33304665250224
+      ],
+      "native_cir_shape": [
+        16,
+        2,
+        24
+      ],
+      "native_delay_shape": [
+        16,
+        24
+      ],
+      "cases": [
+        {
+          "case_path": "cases/pilot-C-snr10.json",
+          "case_sha256": "f9d7f2daaf27d78aa5586d15ef5d22131a16a00bfcbdf5add183a522a057f9ca",
+          "snr_db": 10,
+          "realized_perantenna_reference_snr_db_quantiles": [
+            -18.46058678913572,
+            -0.5132258844435975,
+            8.128274390111578,
+            14.958286144216144,
+            21.65019046554315
+          ]
+        }
+      ]
+    }
+  ],
+  "gates": {
+    "unique_disjoint_effective_seeds": true,
+    "deterministic_regeneration": true,
+    "independent_fourier": true,
+    "finite_double_shapes": true,
+    "frequency_selective_raw_gains": true,
+    "fixed_common_arrays": true,
+    "exact_binary64_pair_coefficients": true
+  }
+}

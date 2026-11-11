@@ -1,0 +1,85 @@
+{
+  "LP_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "LP_status": 0,
+  "MILP_incumbent_valid": true,
+  "MILP_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "MILP_status": 0,
+  "Q_nats": 77.60661170014066,
+  "alpha": [
+    "-411067267103847/281474976710656",
+    "-228946221981695/140737488355328",
+    "-107123117539735/70368744177664",
+    "-163639552611799/140737488355328",
+    "-256172811000377/140737488355328",
+    "-324727371969507/281474976710656",
+    "-89203176417/4398046511104",
+    "0"
+  ],
+  "columns": 1008,
+  "errors": [],
+  "lambda": "487320122534625/35184372088832",
+  "method": "grid",
+  "numerical_LP_nats": 77.63689055301955,
+  "numerical_MILP_dual_bound": 77.60661170014066,
+  "numerical_MILP_gap": 0.0,
+  "numerical_MILP_nats": 77.60661170014066,
+  "radiated_power": "4/5",
+  "resource_duals": [
+    "1301970568339409/70368744177664",
+    "1309686333316159/70368744177664",
+    "5365509575503695/281474976710656",
+    "2694684638831043/140737488355328"
+  ],
+  "schedule": [
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 0,
+      "users": [
+        0,
+        1
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 1,
+      "users": [
+        3,
+        4
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 2,
+      "users": [
+        5,
+        6
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/10"
+      ],
+      "resource": 3,
+      "users": [
+        2,
+        7
+      ]
+    }
+  ],
+  "scope": "numerical finite-grid ILP/LP; LP is not a continuous-domain bound",
+  "seconds": 0.03785059996880591,
+  "sequence": 2,
+  "stage": "grid",
+  "status": "GRID_SOLVES_RETURNED",
+  "worker_elapsed": 0.5202367000747472
+}

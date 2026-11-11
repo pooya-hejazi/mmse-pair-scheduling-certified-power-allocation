@@ -1,0 +1,238 @@
+{
+  "arm": "DP-SQP",
+  "rate_nats": 58.226378141559614,
+  "se_bits": 10.5003633742192,
+  "aggregate_bits": 84.0029069937536,
+  "elapsed_seconds": 5.835878000012599,
+  "cap_seconds": 10.0,
+  "overrun_seconds": 0.0,
+  "audit_seconds": 0.0006282999529503286,
+  "status": "starts_exhausted",
+  "counts": {
+    "starts_started": 8,
+    "starts_completed": 8,
+    "dp_completed": 17,
+    "power_calls": 17,
+    "accepted": 2
+  },
+  "schedule": [
+    {
+      "users": [
+        1,
+        12
+      ],
+      "resource": 0,
+      "powers": [
+        "2437752804703453/18014398509481984",
+        "8901761530443761/72057594037927936"
+      ]
+    },
+    {
+      "users": [
+        6,
+        9
+      ],
+      "resource": 1,
+      "powers": [
+        "1204305928318929/9007199254740992",
+        "8423255463978523/72057594037927936"
+      ]
+    },
+    {
+      "users": [
+        2,
+        13
+      ],
+      "resource": 2,
+      "powers": [
+        "4659625841045593/36028797018963968",
+        "2449726828042833/18014398509481984"
+      ]
+    },
+    {
+      "users": [
+        0,
+        3
+      ],
+      "resource": 3,
+      "powers": [
+        "243670600574795247/1801439850948198400",
+        "8393246002254517/72057594037927936"
+      ]
+    },
+    {
+      "users": [
+        8,
+        11
+      ],
+      "resource": 4,
+      "powers": [
+        "4713645140455765/36028797018963968",
+        "4886099309405319/36028797018963968"
+      ]
+    },
+    {
+      "users": [
+        4,
+        15
+      ],
+      "resource": 5,
+      "powers": [
+        "1222386415727885/9007199254740992",
+        "2400257526815053/18014398509481984"
+      ]
+    },
+    {
+      "users": [
+        5,
+        14
+      ],
+      "resource": 6,
+      "powers": [
+        "2423833805857725/18014398509481984",
+        "145502650800411/1125899906842624"
+      ]
+    },
+    {
+      "users": [
+        7,
+        10
+      ],
+      "resource": 7,
+      "powers": [
+        "4559486979299779/36028797018963968",
+        "1150625221691439/9007199254740992"
+      ]
+    }
+  ],
+  "audit": {
+    "scalar": 58.226378141559614,
+    "matrix": 58.226378141559614,
+    "discrepancy": 0.0
+  },
+  "total_power": "52/25",
+  "history": [
+    {
+      "seconds": 0.3323932000203058,
+      "rate_nats": 58.21031764551685
+    },
+    {
+      "seconds": 0.3457011000136845,
+      "rate_nats": 58.226378141559614
+    }
+  ],
+  "diagnostics": [
+    {
+      "success": false,
+      "iterations": 23,
+      "message": "Positive directional derivative for linesearch",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": false,
+      "iterations": 35,
+      "message": "Positive directional derivative for linesearch",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 1,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": false,
+      "iterations": 30,
+      "message": "Positive directional derivative for linesearch",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 11,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": false,
+      "iterations": 7,
+      "message": "Positive directional derivative for linesearch",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": false,
+      "iterations": 33,
+      "message": "Positive directional derivative for linesearch",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 28,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": false,
+      "iterations": 7,
+      "message": "Positive directional derivative for linesearch",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 41,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 36,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 5,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 24,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    },
+    {
+      "success": true,
+      "iterations": 2,
+      "message": "Optimization terminated successfully",
+      "method": "LOCAL_SQP"
+    }
+  ],
+  "case": "cdl-a-sep12-s2026110901-M2",
+  "profile": "A",
+  "separation_deg": 12,
+  "seed": 2026110901,
+  "case_sha256": "47623a80bf8036f4b242e28ca388236fb1dce2465b4252a9802f28114458e519",
+  "order": [
+    "DP-SQP",
+    "DP-Fu-SCA",
+    "DP-Thu-IDE"
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "arm": "DP-Thu-IDE",
+  "rate_nats": 58.17217819074803,
+  "se_bits": 10.490589124187661,
+  "aggregate_bits": 83.92471299350129,
+  "elapsed_seconds": 10.003460499981884,
+  "cap_seconds": 10.0,
+  "overrun_seconds": 0.0034604999818839133,
+  "audit_seconds": 0.0007041000062599778,
+  "status": "deadline",
+  "counts": {
+    "starts_started": 2,
+    "starts_completed": 1,
+    "dp_completed": 5,
+    "power_calls": 5,
+    "accepted": 2
+  },
+  "schedule": [
+    {
+      "users": [
+        3,
+        13
+      ],
+      "resource": 0,
+      "powers": [
+        "553273434855161/4503599627370496",
+        "1213127318006351/9007199254740992"
+      ]
+    },
+    {
+      "users": [
+        1,
+        7
+      ],
+      "resource": 1,
+      "powers": [
+        "2406543908894409/18014398509481984",
+        "2402336038827157/18014398509481984"
+      ]
+    },
+    {
+      "users": [
+        2,
+        5
+      ],
+      "resource": 2,
+      "powers": [
+        "149288912793709/1125899906842624",
+        "76039504758423/562949953421312"
+      ]
+    },
+    {
+      "users": [
+        4,
+        15
+      ],
+      "resource": 3,
+      "powers": [
+        "146919951540235/1125899906842624",
+        "2389882581242973/18014398509481984"
+      ]
+    },
+    {
+      "users": [
+        8,
+        11
+      ],
+      "resource": 4,
+      "powers": [
+        "4434934270699113/36028797018963968",
+        "1181915365631567/9007199254740992"
+      ]
+    },
+    {
+      "users": [
+        10,
+        12
+      ],
+      "resource": 5,
+      "powers": [
+        "248860399431183597/1801439850948198400",
+        "1208138396757527/9007199254740992"
+      ]
+    },
+    {
+      "users": [
+        0,
+        6
+      ],
+      "resource": 6,
+      "powers": [
+        "2279354498905943/18014398509481984",
+        "1142430639836755/9007199254740992"
+      ]
+    },
+    {
+      "users": [
+        9,
+        14
+      ],
+      "resource": 7,
+      "powers": [
+        "8369916817164165/72057594037927936",
+        "2316358376401927/18014398509481984"
+      ]
+    }
+  ],
+  "audit": {
+    "scalar": 58.17217819074803,
+    "matrix": 58.17217819074801,
+    "discrepancy": 1.4210854715202004e-14
+  },
+  "total_power": "52/25",
+  "history": [
+    {
+      "seconds": 0.3847053999779746,
+      "rate_nats": 58.17096312140118
+    },
+    {
+      "seconds": 7.406576199980918,
+      "rate_nats": 58.17217819074803
+    }
+  ],
+  "diagnostics": [
+    {
+      "method": "THU_IDE",
+      "stop_reason": "deadline",
+      "evaluations": 319,
+      "iterations": 3,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "generations": 3,
+      "restarts": 0,
+      "initializations": 1,
+      "incomplete_generation": true,
+      "operator_invocations": [
+        56,
+        200
+      ],
+      "mu_F": [
+        0.3733101138853962,
+        0.6157213076466911
+      ],
+      "mu_CR": [
+        0.9608103753950693,
+        0.9490825003349457
+      ],
+      "operator1_probability": 0.2,
+      "archive_size": 64,
+      "elapsed_seconds": 2.0051651999820024
+    },
+    {
+      "method": "THU_IDE",
+      "stop_reason": "deadline",
+      "evaluations": 360,
+      "iterations": 4,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "generations": 4,
+      "restarts": 0,
+      "initializations": 1,
+      "incomplete_generation": true,
+      "operator_invocations": [
+        51,
+        246
+      ],
+      "mu_F": [
+        0.5149275177590885,
+        0.7963900564097297
+      ],
+      "mu_CR": [
+        0.9766070759508756,
+        0.9417633969807303
+      ],
+      "operator1_probability": 0.2,
+      "archive_size": 64,
+      "elapsed_seconds": 2.0007026999955997
+    },
+    {
+      "method": "THU_IDE",
+      "stop_reason": "deadline",
+      "evaluations": 346,
+      "iterations": 4,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 2,
+      "generations": 4,
+      "restarts": 0,
+      "initializations": 1,
+      "incomplete_generation": true,
+      "operator_invocations": [
+        55,
+        228
+      ],
+      "mu_F": [
+        0.3242758640817641,
+        0.563600773000221
+      ],
+      "mu_CR": [
+        0.9765569097238235,
+        0.9574172339111717
+      ],
+      "operator1_probability": 0.2,
+      "archive_size": 64,
+      "elapsed_seconds": 2.0013272000360303
+    },
+    {
+      "method": "THU_IDE",
+      "stop_reason": "deadline",
+      "evaluations": 361,
+      "iterations": 4,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "generations": 4,
+      "restarts": 0,
+      "initializations": 1,
+      "incomplete_generation": true,
+      "operator_invocations": [
+        49,
+        249
+      ],
+      "mu_F": [
+        0.41759930376126725,
+        0.670506991806944
+      ],
+      "mu_CR": [
+        0.959384865540274,
+        0.9615729358310587
+      ],
+      "operator1_probability": 0.2,
+      "archive_size": 64,
+      "elapsed_seconds": 2.0020432000164874
+    },
+    {
+      "method": "THU_IDE",
+      "stop_reason": "deadline",
+      "evaluations": 38,
+      "iterations": 0,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "generations": 0,
+      "restarts": 0,
+      "initializations": 0,
+      "incomplete_generation": false,
+      "operator_invocations": [
+        0,
+        0
+      ],
+      "elapsed_seconds": 0.19571199995698407
+    }
+  ],
+  "case": "cdl-b-sep0.5-s2026110901-M2",
+  "profile": "B",
+  "separation_deg": 0.5,
+  "seed": 2026110901,
+  "case_sha256": "1d4caa6200c41ef02ef3ce681d49f39b933ff70968192122526fc4f28892b3ac",
+  "order": [
+    "DP-Thu-IDE",
+    "DP-SQP",
+    "DP-Fu-SCA"
+  ]
+}

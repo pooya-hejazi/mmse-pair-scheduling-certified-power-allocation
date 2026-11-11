@@ -1,0 +1,76 @@
+{
+  "all_seen_candidates": [
+    "candidate-000001.json",
+    "candidate-000002.json"
+  ],
+  "case": "registered-reliability-fixture",
+  "charged": 8,
+  "elapsed": 0.6155145999509841,
+  "errors": [],
+  "gap_nats": 0.8266785731844679,
+  "index": 0,
+  "lower_nats": "40479222283486386332261632889/39614081257132168796771975168",
+  "mathematical_success": false,
+  "method": "grid",
+  "normal": true,
+  "operational_success": false,
+  "panel": "reliability",
+  "peak_RSS_bytes": 82034688,
+  "receipts": [
+    {
+      "completed_at": 1302448.6894148,
+      "file": "receipt-000000.json",
+      "sha256": "2b4e631cf2fe30dab34926a555b21d77ed7770b444b8a94b7fbc07fb0ce6ef38",
+      "timely": true
+    },
+    {
+      "completed_at": 1302448.8051835,
+      "file": "receipt-000001.json",
+      "sha256": "aa49df41e3046d4cd528dae5feee7870fa6ec6dfae8a8936d1ef98b27f87380a",
+      "timely": true
+    },
+    {
+      "completed_at": 1302449.2696736,
+      "file": "receipt-000002.json",
+      "sha256": "7f4a345ad9799c816ef03a8d65c082c8bc690b064b87f1e4a0b1d1077d09b974",
+      "timely": true
+    }
+  ],
+  "returncode": 0,
+  "scene": "analytic",
+  "schedule": [
+    {
+      "powers": [
+        "1/20",
+        "1/20"
+      ],
+      "resource": 0,
+      "users": [
+        0,
+        1
+      ]
+    },
+    {
+      "powers": [
+        "1/10",
+        "1/5"
+      ],
+      "resource": 1,
+      "users": [
+        2,
+        3
+      ]
+    }
+  ],
+  "scope": "Parent independently reconstructed all accepted uppers; actual receipt completion by deadline; normal return required for primary success",
+  "seed": 1101,
+  "status": "RETURNED",
+  "upper_nats": "585818675641167851003847064227/316912650057057350374175801344",
+  "verification_timeouts": [],
+  "worker_status": {
+    "errors": [],
+    "finished_at": 1302449.2430774,
+    "normal": true,
+    "sequence": 2
+  }
+}

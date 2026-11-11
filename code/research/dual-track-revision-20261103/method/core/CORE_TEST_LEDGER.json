@@ -1,0 +1,26 @@
+{
+  "cap_seconds": 260,
+  "entries": [
+    {
+      "index": 0,
+      "script": "test_core.py",
+      "reserved_seconds": 60.0,
+      "status": "passed",
+      "started_utc": "2026-11-03T04:34:44Z",
+      "actual_seconds": 4.656999999890104,
+      "returncode": 0,
+      "log": "test-execution-00.log"
+    },
+    {
+      "index": 1,
+      "script": "test_guards.py",
+      "reserved_seconds": 25.0,
+      "status": "passed",
+      "started_utc": "2026-11-03T04:36:08Z",
+      "actual_seconds": 1.077999999979511,
+      "returncode": 0,
+      "log": "test-execution-01.log"
+    }
+  ],
+  "scope": "All core test executions including process startup/import, failures and cleanup; no performance cases or registered seeds"
+}

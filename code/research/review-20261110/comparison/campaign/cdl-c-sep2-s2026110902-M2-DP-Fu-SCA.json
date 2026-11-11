@@ -1,0 +1,368 @@
+{
+  "arm": "DP-Fu-SCA",
+  "rate_nats": 52.8367340400756,
+  "se_bits": 9.528411772048269,
+  "aggregate_bits": 76.22729417638615,
+  "elapsed_seconds": 7.25867189996643,
+  "cap_seconds": 10.0,
+  "overrun_seconds": 0.0,
+  "audit_seconds": 0.0006506000063382089,
+  "status": "starts_exhausted",
+  "counts": {
+    "starts_started": 8,
+    "starts_completed": 8,
+    "dp_completed": 17,
+    "power_calls": 17,
+    "accepted": 9
+  },
+  "schedule": [
+    {
+      "users": [
+        1,
+        15
+      ],
+      "resource": 0,
+      "powers": [
+        "2477766505098781/18014398509481984",
+        "1243598964063837/9007199254740992"
+      ]
+    },
+    {
+      "users": [
+        0,
+        14
+      ],
+      "resource": 1,
+      "powers": [
+        "633552143524783/4503599627370496",
+        "2448721562791495/18014398509481984"
+      ]
+    },
+    {
+      "users": [
+        9,
+        11
+      ],
+      "resource": 2,
+      "powers": [
+        "2495960700493563/18014398509481984",
+        "475153023758487/4503599627370496"
+      ]
+    },
+    {
+      "users": [
+        6,
+        13
+      ],
+      "resource": 3,
+      "powers": [
+        "8988760008002399/72057594037927936",
+        "2502149920320189/18014398509481984"
+      ]
+    },
+    {
+      "users": [
+        2,
+        4
+      ],
+      "resource": 4,
+      "powers": [
+        "1269659749295983/9007199254740992",
+        "2026290402381287/18014398509481984"
+      ]
+    },
+    {
+      "users": [
+        3,
+        10
+      ],
+      "resource": 5,
+      "powers": [
+        "2406229473989449/18014398509481984",
+        "7509262502106345/72057594037927936"
+      ]
+    },
+    {
+      "users": [
+        5,
+        7
+      ],
+      "resource": 6,
+      "powers": [
+        "5072876425546705/36028797018963968",
+        "3942081741467217/36028797018963968"
+      ]
+    },
+    {
+      "users": [
+        8,
+        12
+      ],
+      "resource": 7,
+      "powers": [
+        "1272221052606701/9007199254740992",
+        "4950130845094987/36028797018963968"
+      ]
+    }
+  ],
+  "audit": {
+    "scalar": 52.8367340400756,
+    "matrix": 52.836734040075584,
+    "discrepancy": 1.4210854715202004e-14
+  },
+  "total_power": "74939897799445053/36028797018963968",
+  "history": [
+    {
+      "seconds": 0.334033899998758,
+      "rate_nats": 52.76892894864346
+    },
+    {
+      "seconds": 0.35495989996707067,
+      "rate_nats": 52.82684199801129
+    },
+    {
+      "seconds": 0.3685270000132732,
+      "rate_nats": 52.835257821050874
+    },
+    {
+      "seconds": 0.3810687999939546,
+      "rate_nats": 52.836510671072325
+    },
+    {
+      "seconds": 0.40043119998881593,
+      "rate_nats": 52.83669992226354
+    },
+    {
+      "seconds": 0.41488569998182356,
+      "rate_nats": 52.83672880172838
+    },
+    {
+      "seconds": 0.4255697999615222,
+      "rate_nats": 52.8367332447989
+    },
+    {
+      "seconds": 0.43688439996913075,
+      "rate_nats": 52.836733932768865
+    },
+    {
+      "seconds": 0.4597321999608539,
+      "rate_nats": 52.8367340400756
+    }
+  ],
+  "diagnostics": [
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 387,
+      "iterations": 9,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 8,
+      "stationarity_residual": 0.00011963515150803516,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.13451500004157424
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 10,
+      "iterations": 1,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "stationarity_residual": 0.00011963515150803516,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.006702499988023192
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 466,
+      "iterations": 10,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 9,
+      "stationarity_residual": 0.00014476636955805533,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.15959999995538965
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 114,
+      "iterations": 1,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "stationarity_residual": 0.00014476636955805533,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.017642099992372096
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 508,
+      "iterations": 10,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 9,
+      "stationarity_residual": 0.0001608577949472889,
+      "last_subproblem_status": 8,
+      "elapsed_seconds": 0.16595649998635054
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 57,
+      "iterations": 1,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "stationarity_residual": 0.0001608577949472889,
+      "last_subproblem_status": 8,
+      "elapsed_seconds": 0.011508600029628724
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 444,
+      "iterations": 10,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 9,
+      "stationarity_residual": 0.00023867954170329886,
+      "last_subproblem_status": 8,
+      "elapsed_seconds": 0.1525538000278175
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 16,
+      "iterations": 1,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "stationarity_residual": 0.00023867954170329886,
+      "last_subproblem_status": 8,
+      "elapsed_seconds": 0.005701399990357459
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 424,
+      "iterations": 11,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 10,
+      "stationarity_residual": 0.00011715040830409529,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.16336859995499253
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 21,
+      "iterations": 1,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "stationarity_residual": 0.00011715040830409529,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.006304599985014647
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 490,
+      "iterations": 11,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 10,
+      "stationarity_residual": 0.00015116028766805345,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.1735447000246495
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 212,
+      "iterations": 7,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 6,
+      "stationarity_residual": 0.00011392718590529094,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.08991450001485646
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 24,
+      "iterations": 1,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "stationarity_residual": 0.00011392718590529094,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.007090700033586472
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 625,
+      "iterations": 11,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 10,
+      "stationarity_residual": 0.0001422376438661721,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.1884000999853015
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 65,
+      "iterations": 1,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "stationarity_residual": 0.0001422376438661721,
+      "last_subproblem_status": 0,
+      "elapsed_seconds": 0.012020800029858947
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 404,
+      "iterations": 10,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 9,
+      "stationarity_residual": 0.0002029063815578297,
+      "last_subproblem_status": 8,
+      "elapsed_seconds": 0.14916079997783527
+    },
+    {
+      "method": "FU_SCA",
+      "stop_reason": "numerical_stall",
+      "evaluations": 74,
+      "iterations": 1,
+      "cap_count": 0,
+      "error_count": 0,
+      "accepted": 0,
+      "stationarity_residual": 0.0002029063815578297,
+      "last_subproblem_status": 8,
+      "elapsed_seconds": 0.013452299986965954
+    }
+  ],
+  "case": "cdl-c-sep2-s2026110902-M2",
+  "profile": "C",
+  "separation_deg": 2,
+  "seed": 2026110902,
+  "case_sha256": "683fafd9f0d3e5a2bc61a21700a42f44c4a4b776ab32e462be230ee05be59f0a",
+  "order": [
+    "DP-Thu-IDE",
+    "DP-SQP",
+    "DP-Fu-SCA"
+  ]
+}

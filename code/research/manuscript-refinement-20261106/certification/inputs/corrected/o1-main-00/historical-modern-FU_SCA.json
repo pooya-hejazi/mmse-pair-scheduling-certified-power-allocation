@@ -1,0 +1,165 @@
+{
+  "all_seen_candidates": [
+    "candidate-000000.json"
+  ],
+  "best_receipt": "receipt-000001.json",
+  "case_id": "o1-main-00",
+  "case_sha256": "25df03c3c0ddc08ecbcd5a44089a474f8b98a2d1e19fdfabb917d6b4b21d7736",
+  "charged_actual": 15.093999999808148,
+  "charged_allowance": 20,
+  "deadline": 1423444.718,
+  "elapsed": 11.093999999808148,
+  "errors": [],
+  "incumbent_upper_nats": "49189034029376531868717764572757/633825300114114700748351602688",
+  "late_candidates": [],
+  "lower_nats": "98378068058753063737435529116267/1267650600228229401496703205376",
+  "method": "FU_SCA",
+  "peak_RSS_bytes": 0,
+  "receipts": [
+    {
+      "completed_at": 1423428.75,
+      "file": "receipt-000000.json",
+      "sha256": "1f4fd05b5f98fe9a779511bc51e06a5e5e1ce83f56a6687adbfc421cf006a064",
+      "timely": true
+    },
+    {
+      "completed_at": 1423429.312,
+      "file": "receipt-000001.json",
+      "sha256": "f11fb29b023c995e47f5c80d9abd1615ee9e1c5018a94aebf7919c2cc9184fac",
+      "timely": true
+    }
+  ],
+  "returncode": 0,
+  "schedule": [
+    {
+      "powers": [
+        "112587963376685/1125899906842624",
+        "3602821450011723/36028797018963968"
+      ],
+      "resource": 0,
+      "users": [
+        0,
+        1
+      ]
+    },
+    {
+      "powers": [
+        "3601774207808781/36028797018963968",
+        "1801616706188447/18014398509481984"
+      ],
+      "resource": 1,
+      "users": [
+        3,
+        4
+      ]
+    },
+    {
+      "powers": [
+        "1801470627702293/18014398509481984",
+        "18016171432397417/180143985094819840"
+      ],
+      "resource": 2,
+      "users": [
+        5,
+        6
+      ]
+    },
+    {
+      "powers": [
+        "1801537947209665/18014398509481984",
+        "3603142280616457/36028797018963968"
+      ],
+      "resource": 3,
+      "users": [
+        2,
+        7
+      ]
+    }
+  ],
+  "search_deadline": 1423439.718,
+  "solver_seed": 2026113548,
+  "started_at": 1423428.718,
+  "status": "RETURNED",
+  "upper_nats": "120598715016231406629469389650577/1267650600228229401496703205376",
+  "utc": "2026-11-03T04:58:38.090354+00:00",
+  "valid": true,
+  "verification_seconds": 0.01600000006146729,
+  "verification_timeouts": [],
+  "virtual_seconds": 4,
+  "worker_status": {
+    "diagnostics": {
+      "common_anchor": [
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 0,
+          "users": [
+            0,
+            1
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 1,
+          "users": [
+            3,
+            4
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 2,
+          "users": [
+            5,
+            6
+          ]
+        },
+        {
+          "powers": [
+            "1/10",
+            "1/10"
+          ],
+          "resource": 3,
+          "users": [
+            2,
+            7
+          ]
+        }
+      ],
+      "elapsed_seconds": 10.453000000212342,
+      "errors": [],
+      "exchange_accepted": 69,
+      "exchange_candidates": 888,
+      "method": "FU_SCA",
+      "neighborhoods_completed": 10,
+      "planned_start_sha256": "0a29b9bdc6e0d54dc0fc82333b3ea9863ff134c7a3e3141199b95f0b132ab8ae",
+      "power_call_policy": "full_remaining_deadline",
+      "publish_calls": 1,
+      "rejected": 1878,
+      "seed": 2026113548,
+      "starts_completed": 10,
+      "starts_started": 11,
+      "stopped_phase": "exchange"
+    },
+    "diagnostics_sidecar": {
+      "bytes": 14678,
+      "completed_at": 1423439.718,
+      "file": "worker-diagnostics.json.gz",
+      "sha256": "29930fa354d105c9bd47cb3f85a9199b061a5d69387c577b1bd94e4e7ffe4528",
+      "uncompressed_bytes": 226661,
+      "uncompressed_sha256": "b1c7af428eb6c4ae6be2c19f34bb6f94497dfba7d635c254739457a0c0920447"
+    },
+    "ended": 1423439.718,
+    "entered": 1423428.812,
+    "normal": true,
+    "status": "deadline"
+  }
+}

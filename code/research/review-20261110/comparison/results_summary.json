@@ -1,0 +1,64 @@
+{
+  "cases": 24,
+  "arms": {
+    "DP-SQP": {
+      "mean_se": 10.002967667989559,
+      "mean_seconds": 6.375553633338616,
+      "deadline_cases": 0,
+      "total_starts_completed": 192,
+      "total_dp_completed": 437,
+      "power_stop_reasons": {
+        "Positive directional derivative for linesearch": 76,
+        "Optimization terminated successfully": 361
+      },
+      "power_errors": 0,
+      "ide_complete_generations": 0
+    },
+    "DP-Fu-SCA": {
+      "mean_se": 10.0029676654051,
+      "mean_seconds": 7.8008280791643,
+      "deadline_cases": 0,
+      "total_starts_completed": 192,
+      "total_dp_completed": 437,
+      "power_stop_reasons": {
+        "numerical_stall": 437
+      },
+      "power_errors": 0,
+      "ide_complete_generations": 0
+    },
+    "DP-Thu-IDE": {
+      "mean_se": 9.995668432407658,
+      "mean_seconds": 10.003414279157974,
+      "deadline_cases": 24,
+      "total_starts_completed": 40,
+      "total_dp_completed": 120,
+      "power_stop_reasons": {
+        "deadline": 120
+      },
+      "power_errors": 0,
+      "ide_complete_generations": 379
+    }
+  },
+  "comparisons": {
+    "DP-Fu-SCA": {
+      "wins": 0,
+      "ties": 24,
+      "losses": 0,
+      "mean_absolute_difference": 2.584458425047842e-09,
+      "mean_paired_relative_percent": 2.611976237740622e-08,
+      "min_relative_percent": 1.5578331953412866e-08,
+      "max_relative_percent": 4.0749536679474824e-08
+    },
+    "DP-Thu-IDE": {
+      "wins": 24,
+      "ties": 0,
+      "losses": 0,
+      "mean_absolute_difference": 0.0072992355819014865,
+      "mean_paired_relative_percent": 0.07536244331882737,
+      "min_relative_percent": 0.022572338207016582,
+      "max_relative_percent": 0.13100272360837298
+    }
+  },
+  "max_matrix_discrepancy": 3.552713678800501e-14,
+  "max_overrun_seconds": 0.0057888999581336975
+}

@@ -1,0 +1,1225 @@
+{
+  "schema": "bound-figure-inputs-v1",
+  "release": {
+    "status": "approved",
+    "eligible_for_release": true,
+    "audit_evidence_consumed": {
+      "path": "audit/IMPLEMENTATION_AUDIT.md",
+      "source_path": "research/manuscript-refinement-20261106/IMPLEMENTATION_AUDIT.md",
+      "sha256": "e10fc60aed176d1e8ab775d0f8ec7c69ee24142a8b4f2b37362780fa47add5a3",
+      "input_bundle_sha256": "6d91f6ddd74c6afe0e9078216ac4176199ee4b72ae04e709f132065e505f839f",
+      "decision": "PASS for the mathematical certificates and reported primary results; GO within the stated comparison",
+      "scope": "Source review; 32-case saved-witness replay rebuilding 64 bounds and checking 84 archived schedules; independent provenance, aggregation, channel/curvature diagnostics and adversarial fixtures",
+      "implemented_upper": "lambda*P + 2^-40*DP(ceil(2^40*H)); lambda*P remains exact rational; intersected with the universal ceiling",
+      "comparison_scope": "Matched archived grid_repair configuration-dual repair with common grid anchors; actual methods use different price/pair-bound tables; four physical cases supply the 20 historical refiner records",
+      "timing_scope": "Recorded final-call times reconciled, not independently remeasured; imports, archive loading, fallback setup and I/O excluded; no grid solve rerun",
+      "interpretation": "Certification improvement; no broad achieved-rate superiority or overall runtime-speedup claim"
+    }
+  },
+  "source_directory": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification",
+  "bundle": {
+    "name": "bound-inputs.zip",
+    "bytes": 790747,
+    "sha256": "6d91f6ddd74c6afe0e9078216ac4176199ee4b72ae04e709f132065e505f839f"
+  },
+  "members": [
+    {
+      "member": "FROZEN.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\FROZEN.json",
+      "role": "completed bound-study input",
+      "bytes": 1823,
+      "sha256": "091def5fa532e48c536306e8e33f65dd80d3696e9ab7e3d9099e35aef7a36ee4"
+    },
+    {
+      "member": "INPUT_MANIFEST.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\INPUT_MANIFEST.json",
+      "role": "completed bound-study input",
+      "bytes": 63350,
+      "sha256": "873eeb31fd33c6f3d5637b7f4d0e040cd9ad6e23f4604dcd8b746f8ee1852f4f"
+    },
+    {
+      "member": "PROTOCOL.md",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\PROTOCOL.md",
+      "role": "completed bound-study input",
+      "bytes": 7533,
+      "sha256": "f5ab152505fd22feb6f0d2890347e143c6fe0eb3b30bc6fb76417d1861be1f3d"
+    },
+    {
+      "member": "final/results.csv",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\results.csv",
+      "role": "completed bound-study input",
+      "bytes": 9458,
+      "sha256": "bd62533d44ad3bbafd11a322f27cea62bb4030ed9e43e61e7e362870add9bce8"
+    },
+    {
+      "member": "final/summary.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\summary.json",
+      "role": "completed bound-study input",
+      "bytes": 15123,
+      "sha256": "8948eb2d8dab00319d99782c2f51d0c4e3ea813086362ded2f0b73e2bfaa1902"
+    },
+    {
+      "member": "final/rows.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\rows.json",
+      "role": "completed bound-study input",
+      "bytes": 127893,
+      "sha256": "ff4db9c3d5180973771b06185bc0345088f34ef70cbeece6e1f7e40ee9c399eb"
+    },
+    {
+      "member": "final/OUTPUT_MANIFEST.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\OUTPUT_MANIFEST.json",
+      "role": "completed bound-study input",
+      "bytes": 31113,
+      "sha256": "9bbfd58577d3071128a15ccb27e77e2b1089eb872df1284d1f6923a5bdbe8d25"
+    },
+    {
+      "member": "analysis/descriptive.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\analysis\\descriptive.json",
+      "role": "completed bound-study input",
+      "bytes": 54232,
+      "sha256": "ece476d3f80fcc06d3a97fa422595baa7471482824e9c7a7f1b9331ad5a5bca8"
+    },
+    {
+      "member": "analysis/all-case-rates.csv",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\analysis\\all-case-rates.csv",
+      "role": "completed bound-study input",
+      "bytes": 10316,
+      "sha256": "2799ba61ea2645d172caa8b55e6e0e493a3a4086094b785a5a7ff3c81f9bdb27"
+    },
+    {
+      "member": "analysis/historical-modern-rates.csv",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\analysis\\historical-modern-rates.csv",
+      "role": "completed bound-study input",
+      "bytes": 3201,
+      "sha256": "3f124b3e29c4b54af51bc2ddde951a9408dd0dfbe5e049d0e5b4a68f4c7e9514"
+    },
+    {
+      "member": "BOUND_STUDY_REPORT.md",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\BOUND_STUDY_REPORT.md",
+      "role": "scope and interpretation",
+      "bytes": 8105,
+      "sha256": "2cb0575e44a7277986db0229deb072df6bcd9655a88b32d3984732202298112c"
+    },
+    {
+      "member": "final/asu-main-00/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-00\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3605,
+      "sha256": "2315f06bfbf0603a0d87285fe7ea4835b52c8bc989a76417ce743f8391e818fb"
+    },
+    {
+      "member": "final/asu-main-00/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-00\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1480,
+      "sha256": "200476171ef60ba2f2828051264170eab10ccf907b7285dc6f3d72dd2ce8a7fa"
+    },
+    {
+      "member": "final/asu-main-00/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-00\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 364263,
+      "sha256": "33456c5ef96fe7b5dce12d791dff59b7d0b7143c46d8d3cd1229de5d6a6afb2a"
+    },
+    {
+      "member": "final/asu-main-00/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-00\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2552,
+      "sha256": "627ac925f976e48487ca7a1dcdcb6de07c4db9a68f2b2e96643f95c7198e06fd"
+    },
+    {
+      "member": "final/asu-main-00/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-00\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 8040,
+      "sha256": "e9c867c795f6ba44aaea3d1b8ff5c0fb1fbcb0acd786a5cb0978509d60afb867"
+    },
+    {
+      "member": "final/asu-main-01/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-01\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3600,
+      "sha256": "2bc1561998f7f0fbe579c14ee08111e0729908cb4c146256d9216d9960c7a478"
+    },
+    {
+      "member": "final/asu-main-01/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-01\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1474,
+      "sha256": "d8cba8164528d19f97ca9b3f3cd000f38fc1844dc9074d3712d1c391e0e72d86"
+    },
+    {
+      "member": "final/asu-main-01/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-01\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 361124,
+      "sha256": "14178f93162e648ac797bae11f87ac45b7998e814527e3e1f39c31eee805e5b1"
+    },
+    {
+      "member": "final/asu-main-01/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-01\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2555,
+      "sha256": "01e42ba4177a0c09da8a47c7c71d7a7f822d244926b1632790c4ad30f1809472"
+    },
+    {
+      "member": "final/asu-main-01/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-01\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2417,
+      "sha256": "e85ab8742563a086ae1618cd30309d62881d16e5c6ec3b763dd2dd3011a93183"
+    },
+    {
+      "member": "final/asu-main-02/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-02\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3591,
+      "sha256": "b57c7f2b8c18422ae7f4b24da95a178f1b3b51f4c287a75c4634a8362826e798"
+    },
+    {
+      "member": "final/asu-main-02/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-02\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1467,
+      "sha256": "6cd233513a98f21ffe24cd362cd00296fbd2b748c1418815bc98a9bc2ff09b2a"
+    },
+    {
+      "member": "final/asu-main-02/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-02\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 368506,
+      "sha256": "ec7438b0dc1688da161517c408e809896286fc136dc73e0a3c1eba32a48ecb0f"
+    },
+    {
+      "member": "final/asu-main-02/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-02\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2550,
+      "sha256": "26efd0d64482f2726fdf4db3d3487518953c60ce622c4b678e88796d38d0e0b4"
+    },
+    {
+      "member": "final/asu-main-02/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-02\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2430,
+      "sha256": "cc58bc86b25d0b0ba46b617adfba333cd475c184b8717274208afc010e24ea2c"
+    },
+    {
+      "member": "final/asu-main-03/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-03\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3631,
+      "sha256": "71bbb81b455fb1d594282f8d468d38acc26509303f34144e54beb30885d31f4e"
+    },
+    {
+      "member": "final/asu-main-03/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-03\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1482,
+      "sha256": "e231589b849fa5c8e3e9c755c94ca9b157b3806e7368d83212b859a3270d016b"
+    },
+    {
+      "member": "final/asu-main-03/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-03\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 362414,
+      "sha256": "0d7ecb4511277fe5eb55cfbf5242b0ede3a359f199ec9e1e5f3ef6d73ea7a6f6"
+    },
+    {
+      "member": "final/asu-main-03/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-03\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2592,
+      "sha256": "d4aef63f032cec202071ca29e98908b0299547f75d2ed8a7240c43e38cb30676"
+    },
+    {
+      "member": "final/asu-main-03/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-03\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2441,
+      "sha256": "8e603de5f8030629c1e34617ebf556efb620017d6b5e30d3b55cf8a83be7a922"
+    },
+    {
+      "member": "final/asu-main-04/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-04\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3581,
+      "sha256": "19d7938b2effc4865c93280d610b53a1ef9f41a521ea1195fa7f78c056bb81cc"
+    },
+    {
+      "member": "final/asu-main-04/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-04\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1471,
+      "sha256": "8327bab68c6c5b4c27f5f0603a94c40d6d3e504bd8d09ae33eb6e11816f424da"
+    },
+    {
+      "member": "final/asu-main-04/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-04\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 376842,
+      "sha256": "248b8a3e5a53ffa9a27e321d9df38178fc4dc5c1b150805608086b4360b24627"
+    },
+    {
+      "member": "final/asu-main-04/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-04\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2538,
+      "sha256": "95890511c95cc5afcc0ffc4b43a82e3f1109500e4a513a142444f8659ec96417"
+    },
+    {
+      "member": "final/asu-main-04/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-04\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2423,
+      "sha256": "8bde4ea7cb1219301c9de32bbb1eab91bab6398cbb83e5b5c356bef50a8af52c"
+    },
+    {
+      "member": "final/asu-main-05/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-05\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3575,
+      "sha256": "b2a95c05358130818f6b8fbee2973c8d3efe416f00e4456184cc7b7c224e2da4"
+    },
+    {
+      "member": "final/asu-main-05/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-05\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1473,
+      "sha256": "53431a0a3823f8fa8c73229eb64348f278ca18172b19a7baa4350331fa803e7b"
+    },
+    {
+      "member": "final/asu-main-05/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-05\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 363231,
+      "sha256": "225102edc9fd6c702eb92e8ababa8d59666de625eb5ff02430f55e3de8376466"
+    },
+    {
+      "member": "final/asu-main-05/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-05\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2521,
+      "sha256": "96b844cf545164702f6d41624a11a6a096e03461ed48b333ef7febb550f0b3bf"
+    },
+    {
+      "member": "final/asu-main-05/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-05\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2431,
+      "sha256": "3ecb36a82cb9343cdb532fe24c78f6731ecc8301c4c6acb9be36917adb1e8e8e"
+    },
+    {
+      "member": "final/asu-main-06/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-06\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3596,
+      "sha256": "15b14b6e5433dc6e419ec8dc6c7f8b7b1289b48b8ce5f1d64a1947b39c2e9f8e"
+    },
+    {
+      "member": "final/asu-main-06/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-06\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1477,
+      "sha256": "5c7301c7cb24a91684fedaba29b4517272a4639bef94cbfb5791415efe97f51e"
+    },
+    {
+      "member": "final/asu-main-06/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-06\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 364154,
+      "sha256": "105cc220e88c82ed9bca59a6d6c48b0088da66b20d9d9b3baf437bd70b4ac606"
+    },
+    {
+      "member": "final/asu-main-06/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-06\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2547,
+      "sha256": "03818209d424a9e8625ac2cc38418ffd9a2f34d368be8160d7c0212e55dd4fcc"
+    },
+    {
+      "member": "final/asu-main-06/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-06\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 8009,
+      "sha256": "4024d46595917d2a8ad64c9f2527e439d3df328725d1ed4e617b90f38dc5a0c8"
+    },
+    {
+      "member": "final/asu-main-07/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-07\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3579,
+      "sha256": "b4b1d6d3552e7e72ebecd00db71c71323bc2a15eab43a144f720fad29ea8151c"
+    },
+    {
+      "member": "final/asu-main-07/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-07\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1465,
+      "sha256": "1b63335a0686333ac0b737e9db7d54403abf0d4ef24293221984ba4a928fda27"
+    },
+    {
+      "member": "final/asu-main-07/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-07\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 365919,
+      "sha256": "946c1e2334e13173748527d28a749d5c073c23b6f4f78aea56ef82849a5a6e46"
+    },
+    {
+      "member": "final/asu-main-07/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-07\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2534,
+      "sha256": "1ec67769fa9e5ec178808f52326e604c21e1eb7136706fd0a650f0beb4082fff"
+    },
+    {
+      "member": "final/asu-main-07/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-07\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2419,
+      "sha256": "4ad43b4aefbede27f377926f6c6de67915053808455128e451fc004e0ed329b0"
+    },
+    {
+      "member": "final/asu-main-08/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-08\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4114,
+      "sha256": "fc71f759ba0223462376ee8ddb6c6210a3d50c3279fad3a073b512ad58602ddc"
+    },
+    {
+      "member": "final/asu-main-08/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-08\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1482,
+      "sha256": "31235c734ff8976a5110d30889a026b7f5c56794069a2907b008f6c3dcb9f7cd"
+    },
+    {
+      "member": "final/asu-main-08/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-08\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 362951,
+      "sha256": "ef6d059cd827b499b7e88d91c3cbb58e35a4637cd223985cadbb2a44a304345d"
+    },
+    {
+      "member": "final/asu-main-08/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-08\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3322,
+      "sha256": "1e32b11f48446d91a21628ede0fae179133f4e2207ffb5b919cefe2d5a97e722"
+    },
+    {
+      "member": "final/asu-main-08/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-08\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2561,
+      "sha256": "2aad49a4b82e2fd2b53a33e261b9dad6a7576f2d8af8076d44ad95b6bdc791ea"
+    },
+    {
+      "member": "final/asu-main-09/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-09\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3623,
+      "sha256": "33f811870210f01f69243d5d68ff0cc476be76ae5fe2532351b4092d07de0b51"
+    },
+    {
+      "member": "final/asu-main-09/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-09\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1471,
+      "sha256": "91808b83d500f156af7208af00495a944ee3aa16f46a7b9831c00ea1b16038ec"
+    },
+    {
+      "member": "final/asu-main-09/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-09\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 370145,
+      "sha256": "6119aacd43110e66a2d4e64624f33790b4564c8cc96331bf13ac9f856a501a2a"
+    },
+    {
+      "member": "final/asu-main-09/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-09\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2605,
+      "sha256": "6294ac14b8b317642bc0b70991771256db452f52c98cd4afb0180f884382846a"
+    },
+    {
+      "member": "final/asu-main-09/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-09\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2448,
+      "sha256": "bbcf848d8b54def1515bfb64c550d3bd35da405d57deaa08e3c94492d466f307"
+    },
+    {
+      "member": "final/asu-main-10/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-10\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3598,
+      "sha256": "6a767c2f07355b492f636a79c7df7bf4de769f81807f30c6b13d59f9b751069f"
+    },
+    {
+      "member": "final/asu-main-10/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-10\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1470,
+      "sha256": "fdc48ac6583a686baa590ead8bb619fac8a5702a7905c8d54199a4f86fd7b64c"
+    },
+    {
+      "member": "final/asu-main-10/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-10\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 362234,
+      "sha256": "167117a7e5d9b53316e3a61c0094e6299196c810c014e4cabdcf2fdfe05e5acb"
+    },
+    {
+      "member": "final/asu-main-10/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-10\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2559,
+      "sha256": "3ed797580f6c4890b7a8717f791590ab56c660949b55ed0e62178cbc63452490"
+    },
+    {
+      "member": "final/asu-main-10/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-10\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2432,
+      "sha256": "2e86492b977d9d153622d21d15478a1d12c148678fd63fc5a1e5425a991ad2f4"
+    },
+    {
+      "member": "final/asu-main-11/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-11\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3581,
+      "sha256": "febe65b7758bd10c11b001fdbd52e57399712aeaba6e6bc2d149328583b5506a"
+    },
+    {
+      "member": "final/asu-main-11/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-11\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1472,
+      "sha256": "5b10ed0557a28da5101f8850ecfab4c3cb964831460d4eb8be031e632f2fcf4c"
+    },
+    {
+      "member": "final/asu-main-11/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-11\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 365720,
+      "sha256": "06f5c791661bdeacaf7b9aac08a28996f71a31a92b133259fdb2095f86024e0d"
+    },
+    {
+      "member": "final/asu-main-11/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-11\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2534,
+      "sha256": "bc07aafcbf0e7c710c2b9705809cadcac69b45b220cfeef5028794ef74a60f11"
+    },
+    {
+      "member": "final/asu-main-11/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-main-11\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2426,
+      "sha256": "0bdf5969cbc92b6351c4f0345a60a21b7b02a99919030a0be4c38900378ce10a"
+    },
+    {
+      "member": "final/asu-scale-00/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-00\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4681,
+      "sha256": "be356329ba64f476de17b225020281f0567d6fe46803eace1c21eb4b38eefd8c"
+    },
+    {
+      "member": "final/asu-scale-00/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-00\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1480,
+      "sha256": "28bec6362005801431308e4ba453777084580e3857c812fc167d23f4bba67794"
+    },
+    {
+      "member": "final/asu-scale-00/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-00\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 684273,
+      "sha256": "f9eaf07a54bd0811a6e6c9ee3d29e02f8f1606a1efb1fa3b897a59a892d499aa"
+    },
+    {
+      "member": "final/asu-scale-00/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-00\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4173,
+      "sha256": "0f31a85a561d9a4a220d319dc3fdfd277e19dd2461063d319981c2a4956cd610"
+    },
+    {
+      "member": "final/asu-scale-00/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-00\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2980,
+      "sha256": "18f3ccb03ac7acdd7db6e42c8f459aadd6fee5c1207c8fef9c23f182848df97b"
+    },
+    {
+      "member": "final/asu-scale-01/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-01\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4677,
+      "sha256": "61c17f8c0049dc1bfca9f5b8a62497924f8cad54a154be112a915b6c378baec1"
+    },
+    {
+      "member": "final/asu-scale-01/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-01\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1490,
+      "sha256": "b48e2b41510100feeb1b4e8e6c7c17ac03bed7df32c78b16e073281c57b41683"
+    },
+    {
+      "member": "final/asu-scale-01/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-01\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 682685,
+      "sha256": "36292392142f5abe73e676f2ef1674384cf5943b04cafef0f11ad8bab3aedda2"
+    },
+    {
+      "member": "final/asu-scale-01/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-01\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4160,
+      "sha256": "f786d4313598253fcf1aeab18019ff8fdae454fb0a7b73206ac311ebeb912154"
+    },
+    {
+      "member": "final/asu-scale-01/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-01\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2975,
+      "sha256": "ff53aa514e26a507ca145a13391d04cb26a876b70def70858debf73eb30d02be"
+    },
+    {
+      "member": "final/asu-scale-02/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-02\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 5215,
+      "sha256": "d479bfca8c68da131f27e8873ec908cf82d0320cfcad95516d5b5a6047845776"
+    },
+    {
+      "member": "final/asu-scale-02/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-02\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1485,
+      "sha256": "484db010e508fafb3361d6b4b160a6039d65515f4d3d3a0dd99a4e58b1e8067b"
+    },
+    {
+      "member": "final/asu-scale-02/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-02\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 683756,
+      "sha256": "3c53651aac3e3f67ec16038ffa9ff7cbd97c69e5720bc302cee48b3b3bd6c0ec"
+    },
+    {
+      "member": "final/asu-scale-02/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-02\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4975,
+      "sha256": "418834ae21a9f36d97de1a9eefb85aef2b951724d923b5351495815f48cdada6"
+    },
+    {
+      "member": "final/asu-scale-02/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-02\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3243,
+      "sha256": "54101bac2a4455a276abef21ce3fd813ca1066783b43c187f536827a62e953be"
+    },
+    {
+      "member": "final/asu-scale-03/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-03\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4534,
+      "sha256": "8c0eaa9e9853b1959ba4cfca060b0e371c86b6952f745b102d37843654a44e4d"
+    },
+    {
+      "member": "final/asu-scale-03/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-03\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1482,
+      "sha256": "879a4421d3ce0ae5fbe94fe1b52fe359f4c22a7a127525f2b539867c0284af73"
+    },
+    {
+      "member": "final/asu-scale-03/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-03\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 681915,
+      "sha256": "657e6870c120be27cf9f87fe4bb9c1267c95f202e150353e12139442884cab5b"
+    },
+    {
+      "member": "final/asu-scale-03/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-03\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3947,
+      "sha256": "8267d5e75ad549b564beeaf25fc6eb3c314664668672bb5bee4b2aef37a36d29"
+    },
+    {
+      "member": "final/asu-scale-03/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\asu-scale-03\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2902,
+      "sha256": "22b1ab7c67e8482505a3590c6d11b3a6ec59218bfee50274e7768daee70054a4"
+    },
+    {
+      "member": "final/o1-main-00/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-00\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3584,
+      "sha256": "aabaec1826d3b1452fa367c3b6c89f96e794b7a4b939659f60ee83feead3e1e4"
+    },
+    {
+      "member": "final/o1-main-00/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-00\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1471,
+      "sha256": "7654fc0bad2911cadd6d019113accbaf61aeab00546d33b129b295db704b2fbe"
+    },
+    {
+      "member": "final/o1-main-00/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-00\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47615,
+      "sha256": "96dae82b1bf003ffc3d375d9db3281897e0e0e107b278ae0f1329439849965d0"
+    },
+    {
+      "member": "final/o1-main-00/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-00\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2539,
+      "sha256": "23972cbbe80be6710cd1f8f089a9a878bc91a91c4ea5304e59b7593a5cde8a21"
+    },
+    {
+      "member": "final/o1-main-00/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-00\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 8014,
+      "sha256": "93d42f4fd6e6a213f5fd2484166d96b2898365e84fee8fb4065e8be89af2950a"
+    },
+    {
+      "member": "final/o1-main-01/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-01\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3589,
+      "sha256": "8e9f4344377ed59c290303c2c410de69c44ef2a5939566d8cd630200d59a1f85"
+    },
+    {
+      "member": "final/o1-main-01/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-01\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1469,
+      "sha256": "63e5ad48792edf47942085b237d363e09f7cc1695a75aa64d2802bbce2c30ff7"
+    },
+    {
+      "member": "final/o1-main-01/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-01\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47629,
+      "sha256": "f4aedbcdf10049e510ce3211f4c316de6252fcc73d03cf7b0857ee970013efd5"
+    },
+    {
+      "member": "final/o1-main-01/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-01\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2554,
+      "sha256": "14aaf708caba6d05874a79d0ccee43dcef9c8fe4ff20c8ebcfc14d78d083a719"
+    },
+    {
+      "member": "final/o1-main-01/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-01\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2438,
+      "sha256": "b2a08fab787ca69fba1e59222f1c5d7fd873f670b82daa29499629dc8a1d3027"
+    },
+    {
+      "member": "final/o1-main-02/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-02\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3596,
+      "sha256": "a0e4c436de9fef432b2b8cb4cf1ac22fc94d02e1ad601c8c265ddbc9105a85fb"
+    },
+    {
+      "member": "final/o1-main-02/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-02\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1471,
+      "sha256": "0c77beff4a6abedc2b348d199305dffeb4ceb6034a1948df248c7175085cd7ed"
+    },
+    {
+      "member": "final/o1-main-02/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-02\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47601,
+      "sha256": "429b7994cdcdac75092189ddd3c9522c813d468543059f244a3264adefd3576d"
+    },
+    {
+      "member": "final/o1-main-02/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-02\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2565,
+      "sha256": "2b8be4bc312464789e6aa01c5e6831ef0d5c6e5905ccf2682e2b6cb50c991bcf"
+    },
+    {
+      "member": "final/o1-main-02/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-02\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2427,
+      "sha256": "3b913f8a37173aed07ce8f881c9af1c1b32939d2a237a0391ee6fbd52518443c"
+    },
+    {
+      "member": "final/o1-main-03/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-03\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3559,
+      "sha256": "e559ddc446b5268f1a9f90fbe2aa974aa8ec73fd7272bdc9a6924e1a9aef8bd4"
+    },
+    {
+      "member": "final/o1-main-03/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-03\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1466,
+      "sha256": "659a7ce71c534318ef7c76b49656820e1de9d6b5ca96f1f7e2596b79b3eac5be"
+    },
+    {
+      "member": "final/o1-main-03/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-03\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47612,
+      "sha256": "08607cf08c72462c9e9955c186656b7a8979696d2a2af967a5797af9e854a64d"
+    },
+    {
+      "member": "final/o1-main-03/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-03\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2514,
+      "sha256": "039c4a3a4b7c48b61c9ba8fe51fa917b006aa7fd88033b46e482d2b3a1665514"
+    },
+    {
+      "member": "final/o1-main-03/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-03\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2425,
+      "sha256": "8d9aaa2343cffe8ee15b1cb87bebbe6b50ef0375f2fc6f5e5a0f2d56bb445106"
+    },
+    {
+      "member": "final/o1-main-04/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-04\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3599,
+      "sha256": "61bb8f21908bf2f9a55a56628463a80b56dbceb0abb229966f34084b61337e9d"
+    },
+    {
+      "member": "final/o1-main-04/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-04\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1471,
+      "sha256": "41cc2566038bbd7fb96d97c3299d880f12e13b7950b69583a8d4fe4765af41f5"
+    },
+    {
+      "member": "final/o1-main-04/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-04\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47517,
+      "sha256": "5afd3233f17b4211302cac75e01c1c3baeb947100dc3e225618ccba5b8fc319a"
+    },
+    {
+      "member": "final/o1-main-04/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-04\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2566,
+      "sha256": "5f493805a96585d2ea9ede5e1feb6d4927dd34c670212e7a098e8862f1195043"
+    },
+    {
+      "member": "final/o1-main-04/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-04\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2441,
+      "sha256": "fe05b46c9f8f243b6cc267ddfd8fca23e5fa76d83735a767fd012185f6179c42"
+    },
+    {
+      "member": "final/o1-main-05/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-05\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3585,
+      "sha256": "6844a853a210bd454765b22d50cdb9527a11a6f3d337a16d0e7adc44a37c1a93"
+    },
+    {
+      "member": "final/o1-main-05/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-05\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1470,
+      "sha256": "92d3c102cb3c25c5010c27ce68dbac3e1729f827e9d9296cc76c84151d4d36cc"
+    },
+    {
+      "member": "final/o1-main-05/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-05\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47495,
+      "sha256": "c168b5cfdd32563e4244d1fdff5fd2ee53c61eec88bf3ef8136d6be94358afc7"
+    },
+    {
+      "member": "final/o1-main-05/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-05\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2547,
+      "sha256": "d90bf85c222f077b965e89905acd6778b19f2a96f87c8e053a4ce52228707c5f"
+    },
+    {
+      "member": "final/o1-main-05/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-05\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2425,
+      "sha256": "a7a58cebf9f7905afe68c1c13a701724313246a2f9ccaba38661ce4a6b86ac4a"
+    },
+    {
+      "member": "final/o1-main-06/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-06\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3597,
+      "sha256": "66ddfc14823d8e459284e1b2bc0a08b26832956ae35cc6226b3b167888f8208f"
+    },
+    {
+      "member": "final/o1-main-06/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-06\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1466,
+      "sha256": "5bb3b71237d8170c06b810c01c6b52609950b31c3ffdc355380f5e4163514a3b"
+    },
+    {
+      "member": "final/o1-main-06/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-06\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47606,
+      "sha256": "523dc893c7b17d861c8fe39a910bfc1b0d68c5d54b2812323c4c4d24e29ed3fc"
+    },
+    {
+      "member": "final/o1-main-06/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-06\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2574,
+      "sha256": "06e9edbf17d1f6f0f0784560e78bb57c9a5c88e62d2456135248c7743319a60e"
+    },
+    {
+      "member": "final/o1-main-06/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-06\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 7983,
+      "sha256": "8f2982630bede84901da17f65e5acca98f16b515bfac4d843ac19f2a24f9414f"
+    },
+    {
+      "member": "final/o1-main-07/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-07\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3587,
+      "sha256": "606a8fb57346b1dbc2a2c6b37314e60467eb5beaf345ab2a6f7608253f30aae4"
+    },
+    {
+      "member": "final/o1-main-07/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-07\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1465,
+      "sha256": "28fa16df3c15e9a8bd6270e1c922219472eaa17eacabd508396f56a5a3887a6a"
+    },
+    {
+      "member": "final/o1-main-07/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-07\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47557,
+      "sha256": "0c409200176f6ab475ed4677a8ab704538fa1760b6d55d34cf0fa385ab7f0275"
+    },
+    {
+      "member": "final/o1-main-07/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-07\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2557,
+      "sha256": "49c79aa7daea71bd3f632a7b03eefe182d0c606d09ef34939facfc2aabc68126"
+    },
+    {
+      "member": "final/o1-main-07/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-07\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2437,
+      "sha256": "3c7870899597b50366fd2034cc021eff3cc7c4977170783d656daf07d179a05a"
+    },
+    {
+      "member": "final/o1-main-08/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-08\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3596,
+      "sha256": "42b029f837662007575aefd37168f74f5196a5d076f54c7f976eeb6a08f11b92"
+    },
+    {
+      "member": "final/o1-main-08/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-08\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1467,
+      "sha256": "447adde5afc387a6a00e39a472bbb82bed5db88050610cc30516729bc6a132b7"
+    },
+    {
+      "member": "final/o1-main-08/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-08\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47552,
+      "sha256": "2fd4e08f932cd2c2ce54d39df641ad14c0334fb237dd5edfbf025db6df34d569"
+    },
+    {
+      "member": "final/o1-main-08/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-08\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2569,
+      "sha256": "ea869b18a322bf8003ed2c0f28aaa11633e7444acf11d8b3066d5ba80628843b"
+    },
+    {
+      "member": "final/o1-main-08/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-08\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2593,
+      "sha256": "4a8966be30ad5654475b4c3f784c80ff4c0a6bbfc8e8813c6e506a407d6204e7"
+    },
+    {
+      "member": "final/o1-main-09/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-09\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3572,
+      "sha256": "2ce178c8503f3a23d2035fe31c6d121d108071aa36545cc22e14ff5a09919512"
+    },
+    {
+      "member": "final/o1-main-09/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-09\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1460,
+      "sha256": "e75a21643fb4494ebb2a72acb5a0ff7ab472d2523b96945880006a2291afa19d"
+    },
+    {
+      "member": "final/o1-main-09/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-09\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47636,
+      "sha256": "8132c2a070df0d5c203d5a91107c1d746a4dd26e42e824c26530ac238df0aa6d"
+    },
+    {
+      "member": "final/o1-main-09/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-09\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2541,
+      "sha256": "9a762097a2fe6ad59fcc2fdc5037652b5e224883eec9d3e47560a337a8910fb4"
+    },
+    {
+      "member": "final/o1-main-09/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-09\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2426,
+      "sha256": "6cdc1f83f7deaa914c129ebdda81b9ef6aba36bb0030285904ed1195ee74ba92"
+    },
+    {
+      "member": "final/o1-main-10/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-10\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3598,
+      "sha256": "e4804d6e3f8501f0e0bf61a9f92ebc4efda08683ceabd55b2ba208ec5ae4a0e0"
+    },
+    {
+      "member": "final/o1-main-10/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-10\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1470,
+      "sha256": "d969ec953c292305127f428d92571ada0c1a9b22352bb3b9e4e6e3940626e2d5"
+    },
+    {
+      "member": "final/o1-main-10/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-10\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47607,
+      "sha256": "9607dfdced9a196911fddbf8f21b7af88d09f319d4adb2b6827aa5721fd487e9"
+    },
+    {
+      "member": "final/o1-main-10/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-10\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2569,
+      "sha256": "8a292ffc15852774bf422fb6a2c002207ad846c0f8380874c656709c436a0f5d"
+    },
+    {
+      "member": "final/o1-main-10/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-10\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2459,
+      "sha256": "9162bcc9a9918e77997c06552cffe1796bef2d3309165068721c2907abc17ae3"
+    },
+    {
+      "member": "final/o1-main-11/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-11\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3573,
+      "sha256": "ccaab1b1245408652edc6085892729b0e0f5423d8fa6392abc3b8f5a5c40cde6"
+    },
+    {
+      "member": "final/o1-main-11/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-11\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1461,
+      "sha256": "09dffef6490f4339125eee23aa6e9357abd00d347aab188b8099b268e8159460"
+    },
+    {
+      "member": "final/o1-main-11/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-11\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 47602,
+      "sha256": "4522dabc0124b2da00b937c490443b95dbc5d5352376c05698033f76c9f813cb"
+    },
+    {
+      "member": "final/o1-main-11/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-11\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2548,
+      "sha256": "7ca97b8db623500ffc5f31e0812ca21f9ae49064a7cd2576fa694ff31ae1cc8f"
+    },
+    {
+      "member": "final/o1-main-11/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-main-11\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2429,
+      "sha256": "83114259db19e98e6bdc83c55526ff6f90da51d29cbe7111225f5f4a63eace56"
+    },
+    {
+      "member": "final/o1-scale-00/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-00\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4678,
+      "sha256": "c502d1ce3f037f849753e78084c2f0d9fb157c22e8185ac50b8b392401215963"
+    },
+    {
+      "member": "final/o1-scale-00/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-00\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1473,
+      "sha256": "e2436b862d4f9b8fd31cc01a487e6428db942a167d330d25c05c04e747aa8fae"
+    },
+    {
+      "member": "final/o1-scale-00/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-00\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 381685,
+      "sha256": "43d0f60f6d9859677aa78b2c747c6af2cfa62a2654a3c3b27d0121bd3d77eee2"
+    },
+    {
+      "member": "final/o1-scale-00/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-00\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4181,
+      "sha256": "2711a69a56a5dbcfacd1c6a8cf3ea32792e1abdd7bf1d1695ef852eee732b5e4"
+    },
+    {
+      "member": "final/o1-scale-00/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-00\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2985,
+      "sha256": "5419e582a51504a5419895e81f25c023a45894de66864aaa81a8b049a5cc102d"
+    },
+    {
+      "member": "final/o1-scale-01/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-01\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4719,
+      "sha256": "c3486c4e01f8f785f5940ae28a9a287613d9a280effa77c7bca9b31f69640e9a"
+    },
+    {
+      "member": "final/o1-scale-01/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-01\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1468,
+      "sha256": "7bb2f070557087bf4bbeb8b69fed5be13f2fa4928fcf02d9f44da7b138fd1859"
+    },
+    {
+      "member": "final/o1-scale-01/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-01\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 381716,
+      "sha256": "57701c6a047b46477c894d07ffc1a9337f826f79c614f59a3476642d9093a88c"
+    },
+    {
+      "member": "final/o1-scale-01/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-01\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4252,
+      "sha256": "6ff914ac44e6cea28b41c8cc97ba8ea5d4d20807d55f20924569c023c3a8ec68"
+    },
+    {
+      "member": "final/o1-scale-01/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-01\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 3001,
+      "sha256": "1d968a4b556f712274d4815cef6557b4e65a04d5ec5f1698feca9abe1a131305"
+    },
+    {
+      "member": "final/o1-scale-02/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-02\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4693,
+      "sha256": "d63d665374f478801f1e3e9a3582ec494ea3ec43d56b6e869383531e60db7906"
+    },
+    {
+      "member": "final/o1-scale-02/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-02\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1465,
+      "sha256": "2841e6553e4f9528427c36fe2a61c3fc0dd67ffb34e04c1375d502e539fc1020"
+    },
+    {
+      "member": "final/o1-scale-02/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-02\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 381610,
+      "sha256": "d932a020770e8452d9471e701d1459fc3c1dd572e0a6bb4fa44cfab5a851ce9b"
+    },
+    {
+      "member": "final/o1-scale-02/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-02\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4224,
+      "sha256": "2ed3bf6d9f5ee281f503e81c7b3a77bc465559f731466d2e9d2b53a678b3b1c3"
+    },
+    {
+      "member": "final/o1-scale-02/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-02\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2991,
+      "sha256": "ddd5b65b8f5d1c0e6d1c6549fe04e662152829efaa4d116ecb523f4f5d652394"
+    },
+    {
+      "member": "final/o1-scale-03/row.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-03\\row.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4686,
+      "sha256": "fa48d89dbd8be855f2309d4e25ecf6d7e6e416fe4351c76abf6a6e68f2fba0d6"
+    },
+    {
+      "member": "final/o1-scale-03/new-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-03\\new-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 1465,
+      "sha256": "81b4fd9cbbc5f55c59751a920d32a63d234854ac5f8cd61ee831c573400955b9"
+    },
+    {
+      "member": "final/o1-scale-03/new-witness.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-03\\new-witness.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 381656,
+      "sha256": "ccd49b05172bbc41e394cf3949c168be776832235247627c0e5890e33a17e60b"
+    },
+    {
+      "member": "final/o1-scale-03/baseline-checked.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-03\\baseline-checked.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 4212,
+      "sha256": "82a069726217b9cdb87b18656649b47fb35c05c56e66d67934b2b5bb91caefd6"
+    },
+    {
+      "member": "final/o1-scale-03/historical-checks.json",
+      "source_path": "C:\\Users\\pooya\\Documents\\PostDocPaper2\\research\\manuscript-refinement-20261106\\certification\\final\\o1-scale-03\\historical-checks.json",
+      "role": "completed exact endpoint / identity / status record",
+      "bytes": 2987,
+      "sha256": "3438552669b50f99fc1b24d7a0c1999e7a7692a4369490b2e4bfe6c2269a40e9"
+    }
+  ],
+  "capture_scope": "Explicit completed result, receipt, protocol, and descriptive-analysis files"
+}
