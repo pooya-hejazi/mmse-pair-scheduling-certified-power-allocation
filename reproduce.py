@@ -115,6 +115,18 @@ def compare_study(saved, fresh, audit_name, expected_count):
             "results": summaries[1]["decisions" if is_priced else "primary"]}
 
 
+def adaptive_reports(directory):
+    audit_file = directory / "audit.json"
+    audit = read(audit_file)
+    results = read(directory / "results.json")
+    check_equal(results.pop("audit_sha256"), digest(audit_file), "adaptive result audit digest")
+    short = read(directory / "short_price_vs_full.json")
+    canonical = json.dumps(audit, sort_keys=True, separators=(",", ":"), allow_nan=False).encode("utf-8")
+    check_equal(short.pop("canonical_audit_sha256"), hashlib.sha256(canonical).hexdigest(),
+                "short-price audit digest")
+    return {"audit": audit, "results": results, "short_vs_full": short}
+
+
 def replay(selected, output):
     published_code = ROOT / "code"
     output.mkdir(parents=True, exist_ok=True)
@@ -232,13 +244,12 @@ def replay(selected, output):
             run(folder / "generate.py", "verify")
             run(folder / "audit_analysis.py", "--runs", code / folder / "runs/main", "--output", destination)
             published = published_code / folder / "analysis"
-            saved, results = read(published / "results.json"), read(destination / "results.json")
             short = "short_price_vs_full.json"
             run(folder / "short_price_contrast.py", "--runs", code / folder / "runs/main",
                 "--audit", destination / "audit.json", "--output", destination / short)
-            check_equal(read(published / short), read(destination / short), "short versus full pricing")
-            for field in ("primary", "decisions", "contrasts", "screen_passes"):
-                check_equal(saved[field], results[field], "adaptive " + field)
+            regenerated = adaptive_reports(destination)
+            check_equal(adaptive_reports(published), regenerated, "adaptive evidence")
+            results = regenerated["results"]
             for table in ("case_values.csv", "run_values.csv", "block_effects.csv", "cell_contrasts.csv"):
                 check_table(published / table, destination / table)
             report["studies"]["adaptive"] = {"primary": results["primary"], "decisions": results["decisions"],
