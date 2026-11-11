@@ -217,22 +217,34 @@ def replay(selected, output):
                 run(PRICED/"analyze_study.py")
                 run(PRICED/"plot_comparison.py")
                 run(PRICED/"plot_endpoints.py")
-            historical = {row["asset"] for row in read(work/"figures/manifest.json")["figures"]}
-            current = read(work/"figures/manifest-priced.json")
+            current = read(work / "figures/manifest-tcom.json")
             published = {}
+            plotted_data = {}
             for row in current["figures"]:
                 asset = row["asset"]
                 if Path(asset).name != asset or not asset.endswith(".pdf"):
                     raise ValueError("Unexpected figure name")
                 check_equal(row["pdf_sha256"], digest(work/"figures"/asset), asset)
-                if asset not in historical:
+                if asset in ("priced_cdl_comparison.pdf", "priced_cdl_endpoints.pdf"):
                     for ext in (".pdf",".png"):
                         name = Path(asset).with_suffix(ext).name
                         shutil.copyfile(code/PRICED/"analysis/figures"/name, output/"figures"/name)
-                published[asset] = digest(output/"figures"/asset)
+                png = Path(asset).with_suffix(".png").name
+                check_equal(row["png"], png, "PNG name for " + asset)
+                check_equal(row["png_sha256"], digest(work / "figures" / png), png)
+                if not (output / "figures" / png).is_file():
+                    raise ValueError("Missing regenerated PNG: " + png)
+                if "data" in row:
+                    table = Path(asset).with_suffix(".csv").name
+                    check_equal(row["data"], table, "data table for " + asset)
+                    check_equal(row["data_sha256"], digest(work / "figures" / table), table)
+                    plotted_data[table] = digest(output / "figures" / table)
+                    check_equal(row["data_sha256"], plotted_data[table], "regenerated " + table)
+                published[asset] = digest(output / "figures" / asset)
             check_equal(current["figure_asset_count"], len(published), "edition figure count")
             report["studies"]["figures"] = {"published_panels_redrawn":len(published),
-                                            "regenerated_pdf_sha256":published}
+                                            "regenerated_pdf_sha256":published,
+                                            "regenerated_data_sha256":plotted_data}
         if "computational" in selected:
             destination = output / "computational"
             # The sensitivity reader compares with the original releases and creates its own working copy.

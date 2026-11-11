@@ -1,8 +1,22 @@
 # Article and supplementary figures
 
-The [November 11 figure index](manifest-priced.json) maps the final figures to their numbers and pages in the article and supplement. It includes the 27 previously released assets and two new figures for the fresh 180-case experiment. [Price-guided SE differences by channel profile and SNR](priced_cdl_comparison.pdf) · [Prespecified rate and time comparisons](priced_cdl_endpoints.pdf)
+The [current figure index](manifest-tcom.json) maps each asset to its placement in the article or supplement. The [preceding 29-asset index](manifest-priced.json) describes the earlier edition.
 
-Run `python reproduce.py --only figures --output rebuilt-figures` from the repository root to redraw the entire edition. The three-profile line chart uses 180 paired case records and the associated group estimates. The endpoint plot uses 20 independent replicate averages, with intervals and decision margins shown separately for rate and time. Both have matching high-resolution PNGs.
+Run `python reproduce.py --only figures --output rebuilt-figures` from the repository root to redraw the edition. The original 27 assets, the [three-profile price-guided comparison](priced_cdl_comparison.pdf), the [prespecified rate and time endpoints](priced_cdl_endpoints.pdf), and the three comparisons below have matching high-resolution PNGs.
+
+## Additional main-article CDL comparisons
+
+Rebuild the three comparison figures and their adjacent plotted-data CSVs with
+`python -I -B figures/sources/cdl_margins.py --output rebuilt-comparisons` from the repository root.
+The full edition command above also calls this generator. It reads the final JSON run records and checks their audit hashes.
+
+| Figure | Inputs and interpretation |
+| --- | --- |
+| [Assignment and power restrictions](native_assignment_power_margins.pdf) · [18 plotted means and intervals](native_assignment_power_margins.csv) | In the first independent sample, DP–SQP minus Fixed–SQP and DP–uniform uses the same block, profile and SNR. Each point averages 20 paired differences. Both intervals and means are checked against the archived cell estimates. |
+| [Price-guided margins across SNR](priced_snr_margins.pdf) · [12 plotted means and intervals](priced_snr_margins.csv) | In the fresh sample, each block averages three paired profile differences at a given SNR. The 20 blocks receive equal weight. DP–SQP was the unique strongest control on every fresh case under the archived exact objective comparison. Panel (b) resolves the separation between the two near-coincident price-guided margins in panel (a). Averaging the three SNR means reproduces each published overall comparator mean. |
+| [Certified gap coverage](native_certified_coverage.pdf) · [80 checked allocations and empirical counts](native_certified_coverage.csv) | Each of the 20 prespecified CDL-B/10 dB cases supplies one common upper bound from its hash-checked passing replay witness. The original rational checker reconstructs the case, verifies the final schedule and powers for each arm, and evaluates that arm’s own feasible lower bound. The gap uses a lower enclosure of 8 ln 2. The table includes exact rational endpoints and an upward-rounded decimal tolerance (12 decimal places) for each step. All 20 price-guided endpoints must equal the archived rational values. |
+
+SE differences and gap tolerances use occupied-band bit/s/Hz. The first two figures use pointwise 95% percentile intervals from 20,000 draws of the 20 paired blocks and the original study-specific bootstrap seeds. The coverage curves count the specified cases exactly; they do not estimate a population distribution.
 
 ## November 10 independent-CDL release
 

@@ -1,6 +1,6 @@
 # MMSE pair scheduling and power allocation
 
-This repository contains the algorithms, channel inputs, saved schedules and powers, rate checks and figures for *MMSE Pair Scheduling: Sharp Complexity, Certified Power Allocation, and Regime-Dependent Rate Gains*. Each user transmits once, two users share each resource, and a linear MMSE receiver is recomputed at the assigned powers. The occupied-band spectral efficiency is the sum rate in nats divided by the number of resources and by ln 2.
+This repository contains the algorithms, channel inputs, saved schedules and powers, rate checks and figures for *Optimality Certificates for Uplink MMSE Pair Scheduling and Power Allocation*. Each user transmits once, two users share each resource, and a linear MMSE receiver is recomputed at the assigned powers. The occupied-band spectral efficiency is the sum rate in nats divided by the number of resources and by ln 2.
 
 ## Reproduce the results
 
@@ -25,6 +25,8 @@ The command works on a temporary copy of the scientific inputs. It checks the sa
 | Published figures | Vector PDFs and matching PNGs, figure-to-paper mapping, plotting sources and numerical inputs. | `python reproduce.py --only figures` |
 | Re-solving the same channels | 720 additional timed searches on the November 11 channels in a clean Python environment. Check their allocations and compare both runs case by case. | `python reproduce.py --only computational` |
 | Optimizer rerun | A fresh execution of all four methods on the first CDL-A, 0-dB case, followed by independent checking and a comparison with their stored rates. | `python reproduce.py --only optimizer` |
+
+The [current figure index](figures/manifest-tcom.json) maps the printed figures to their PDF and PNG files. Three comparisons report the effect of fixing assignments or powers, paired differences by SNR on the fresh sample, and the certified rate gaps for all four methods on twenty CDL-B channels. Each has a numerical CSV next to the figure.
 
 ## Numerical results
 

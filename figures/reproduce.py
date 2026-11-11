@@ -1,4 +1,4 @@
-"""Regenerate the 27 November-10 figure assets from their scientific evidence."""
+"""Regenerate historical and paired native-CDL figures from their scientific evidence."""
 from __future__ import annotations
 
 import argparse
@@ -135,7 +135,13 @@ def main():
     args = parser.parse_args()
     rows = check_release_files()
     if args.verify_only:
-        print("Verified 27 released PDFs and their 27 PNG counterparts")
+        index = HERE / "manifest-tcom.json"
+        edition = read_json(index if index.exists() else HERE / "manifest-priced.json")["figures"]
+        for row in edition:
+            for key, checksum in (("asset", "pdf_sha256"), ("png", "png_sha256")):
+                if sha(HERE / row[key]) != row[checksum]:
+                    raise ValueError("Edition figure hash mismatch: " + row[key])
+        print(f"Verified {len(edition)} edition PDF/PNG pairs and all 27 historical pairs")
         return
     if args.output is None:
         parser.error("--output is required for regeneration")
@@ -166,13 +172,22 @@ def main():
     actual = {p.name: sha(p) for p in sorted(out.iterdir()) if p.suffix in (".pdf", ".png")}
     if actual.keys() != release_hashes.keys():
         raise ValueError("Regenerated figure-set mismatch: " + str(set(actual) ^ set(release_hashes)))
-    receipt = dict(status="PASS", rendered_or_reused_assets=54,
+    import cdl_margins
+    cdl_margins.generate(out)
+    for name in cdl_margins.NAMES:
+        for ext in (".pdf", ".png", ".csv"):
+            filename = name + ext
+            actual[filename] = sha(out / filename)
+            release_hashes[filename] = sha(HERE / filename)
+        if actual[name + ".csv"] != release_hashes[name + ".csv"]:
+            raise ValueError("Regenerated plotted values differ: " + name)
+    receipt = dict(status="PASS", rendered_or_reused_assets=60,
                    reused_native_plots=args.native_plots is not None,
                    m_scan_uniform_median_ratios=medians, output_sha256=actual,
                    byte_identical_to_release={k: v == release_hashes[k] for k,v in actual.items()},
                    note="Rendering metadata, fonts and installed library versions may affect bytes. Release assets have separately verified hashes.")
     (out / "figure-replay.json").write_text(json.dumps(receipt,indent=2)+"\n", encoding="utf-8")
-    print("Verified all published assets and produced 27 PDF/PNG pairs in", out)
+    print("Produced 30 PDF/PNG pairs and three paired-CDL data tables in", out)
 
 
 if __name__ == "__main__":
