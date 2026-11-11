@@ -90,6 +90,32 @@ def read(path):
     return json.loads(path.read_bytes())
 
 
+def same_beta_endpoint(actual, saved):
+    if type(actual) is not float or type(saved) is not float or not (-1 <= actual <= 1 and -1 <= saved <= 1):
+        return False
+    if actual == saved:
+        return True
+    if actual in (-1, 0, 1) or saved in (-1, 0, 1) or (actual < 0) != (saved < 0):
+        return False
+    # The frozen Conda and PyPI SciPy 1.16.3 beta quantiles differ by up to two binary64 steps.
+    return math.nextafter(math.nextafter(saved, actual), actual) == actual
+
+
+def same_statistics(actual, saved, beta_intervals, path=()):
+    if type(actual) is not type(saved):
+        return False
+    if path in beta_intervals:
+        return isinstance(actual, list) and len(actual) == len(saved) == 2 and all(
+            same_beta_endpoint(x, y) for x, y in zip(actual, saved))
+    if isinstance(actual, dict):
+        return actual.keys() == saved.keys() and all(
+            same_statistics(actual[k], saved[k], beta_intervals, path + (k,)) for k in saved)
+    if isinstance(actual, list):
+        return len(actual) == len(saved) and all(
+            same_statistics(x, y, beta_intervals, path + (i,)) for i, (x, y) in enumerate(zip(actual, saved)))
+    return actual == saved
+
+
 def replay_r3(path, r2_zip, work):
     dest = work / "new-coverage"
     with zipfile.ZipFile(path) as z:
@@ -115,7 +141,10 @@ def replay_r1(path, tmp, fix, seconds):
             root = tmp / prefix
             run(tmp / "reproduction" / "code" / study / "analyze.py", root)
             summary = read(root / "analysis" / "summary.json")
-            require(summary == json.loads(z.read(prefix + "analysis/summary.json")), f"{study}: R1 statistics differ")
+            saved_summary = json.loads(z.read(prefix + "analysis/summary.json"))
+            beta_intervals = {("strata", i, "conservative_interval") for i in range(len(saved_summary["strata"]))}
+            beta_intervals.add(("interval_95_bonferroni",))
+            require(same_statistics(summary, saved_summary, beta_intervals), f"{study}: R1 statistics differ")
             require((root / "analysis" / "all-cells.csv").read_bytes().splitlines() ==
                     z.read(prefix + "analysis/all-cells.csv").splitlines(), f"{study}: R1 cell table differs")
             run(fix, root, "--seconds", seconds)
@@ -205,7 +234,7 @@ def main():
                 z.extractall(r4)
             report["r3"] = replay_r3(paths["r3"], paths["r2"], work)
             s10 = runpy.run_path(str(Path(__file__).with_name("s10.py")))
-            report["s10"] = s10["replay_s10"](paths, work, run, args.seconds)
+            report["s10"] = s10["replay_s10"](paths, work, run, args.seconds, same_statistics)
             report["r4"] = replay_r4(r4, paths["r2"], checker, args.seconds)
             report["r1"] = replay_r1(paths["r1"], work / "r1", r4 / "r4-fixes" / "replay_certificates.py", args.seconds)
         report["status"] = "PASS"

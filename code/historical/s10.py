@@ -31,7 +31,7 @@ def fixed_csi(base, tmp):
                                    "student_t_CI95", "paired_bootstrap_CI95", "confirmatory_superiority")}
 
 
-def four_ap(base, tmp, run, seconds):
+def four_ap(base, tmp, run, seconds, same_statistics):
     result = tmp / "four-ap-verification.json"
     run(base / "postprocessing" / "verify_nominal_artifacts.py", "--root", base.parents[1], "--geometry", "all",
         "--output", result, "--max-seconds", seconds)
@@ -46,14 +46,17 @@ def four_ap(base, tmp, run, seconds):
     conf = base / "confirmation"
     run(conf / "nominal_analysis.py", "--results", conf / "run-01-results", "--output", primary)
     fresh, prior = read(primary), read(campaign / "primary-analysis.json")
-    require(len(fresh["complete_ledger"]) == 176 and fresh["primary"] == prior["primary"] and
-            fresh["failure_accounting"] == prior["failure_accounting"], "four-AP operational primary")
+    require(len(fresh["complete_ledger"]) == 176 and
+            same_statistics(fresh["primary"], prior["primary"], {("conservative95_interval",)}) and
+            same_statistics(fresh["failure_accounting"], prior["failure_accounting"], set()), "four-AP operational primary")
     strict = campaign / "strict-return-sensitivity.json"
     reference = read(strict)
     strict.rename(tmp / "stored-strict-return.json")
     run(base / "strict_return_sensitivity.py")
-    require(read(strict) == reference, "four-AP strict-return sensitivity")
-    return {**{k: checked[k] for k in keys}, "primary": fresh["primary"], "normal_return": reference["paired_sensitivity"]}
+    computed = read(strict)
+    require(same_statistics(computed, reference, {("paired_sensitivity", "conservative95_interval")}),
+            "four-AP strict-return sensitivity")
+    return {**{k: checked[k] for k in keys}, "primary": fresh["primary"], "normal_return": computed["paired_sensitivity"]}
 
 
 def development(root):
@@ -144,7 +147,7 @@ def gpu(research):
             "minimum_power_throughput_fraction": .95, "gpu_last_iterate_feasible": feasible}
 
 
-def replay_s10(paths, work, run, seconds):
+def replay_s10(paths, work, run, seconds, same_statistics):
     root = work / "s10"
     for stage in ("s10-development", "s10-four-ap"):
         with zipfile.ZipFile(paths[stage]) as z:
@@ -153,5 +156,6 @@ def replay_s10(paths, work, run, seconds):
                     z.extract(name, root)
     research = root / "research"
     base = research / "completion-20261031"
-    return {"fixed_csi": fixed_csi(base / "csi-forward", work), "four_ap": four_ap(base, work, run, seconds),
+    return {"fixed_csi": fixed_csi(base / "csi-forward", work),
+            "four_ap": four_ap(base, work, run, seconds, same_statistics),
             "development": development(research), "gpu": gpu(research)}

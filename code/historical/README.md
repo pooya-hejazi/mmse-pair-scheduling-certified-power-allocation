@@ -19,6 +19,8 @@ Use a new output filename. Omitting the output argument prints JSON. The command
 
 ## Provenance and scope
 
+R1 and the four-AP analysis form conservative intervals from SciPy beta quantiles. The frozen Conda and PyPI builds of SciPy 1.16.3 differ by up to two adjacent binary64 values on these endpoints. Replay permits that variation on interior endpoints of those intervals. Boundaries at zero and ±1, plus every other field in those statistical summaries, use exact comparisons with matching data types. The report records the newly computed endpoints.
+
 Each ZIP contains a new `SCIENCE-MANIFEST.json` with the upstream container name and SHA-256 and the original path, size and SHA-256 of every retained member. The new public container digests are pinned in `replay.py`. The builder matched the five upstream source-container hashes and checked each retained member against its original inventory where available. The 332 R2 gzip members contain worker-diagnostics JSON. S10 NPZ members contain numeric NumPy arrays. Older manifests may record absolute original paths, omitted ancillary files or hashes of the original private distributions.
 
 R2’s original launcher required the entire private R1 ZIP. The public entrypoint replaces that container-integrity step with the public archive digests, exact member manifests and the original pinned independent checker. The original R2 numerical routines and source-freeze checks still run.
