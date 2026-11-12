@@ -25,13 +25,13 @@ The command works on a temporary copy of the scientific inputs. It checks the sa
 | Receive subarrays | Exact fixed-power reassignment on the same 32 networks with two, four and eight receive components. | `python reproduce.py --only subarray` |
 | Earlier comparisons | 72 saved common-model allocations and the paired analyses for the earlier simplified CDL and ray-traced inputs. | `python reproduce.py --only components` |
 | Historical supplement | Scientific records from the earlier studies. The historical replay guide lists what can be recovered for each experiment. | `python reproduce.py --only historical` |
-| Published figures | Vector PDFs and matching PNGs, figure-to-paper mapping, plotting sources and numerical inputs. | `python reproduce.py --only figures` |
+| Archived study figures | Original vector PDFs, PNGs, plotting sources and numerical inputs. | `python reproduce.py --only figures` |
 | Re-solving the same channels | 720 additional timed searches on the November 11 channels in a clean Python environment. Check their allocations and compare both runs case by case. | `python reproduce.py --only computational` |
 | Optimizer rerun | A fresh execution of all four methods on the first CDL-A, 0-dB case, followed by independent checking and a comparison with their stored rates. | `python reproduce.py --only optimizer` |
 
-The figure index maps every numbered figure to its vector PDF and PNG. Numerical tables for the paired comparisons accompany the figures. [Current figure index](figures/manifest-headroom.json)
+For Figs. 2, 4, 5(b), and 6 in the manuscript, use the [plotting scripts, input CSVs, and reference PDFs](manuscript-figures/README.md). The [archived figure index](figures/manifest-headroom.json) maps the plots produced by the scientific replay.
 
-To reproduce this edition’s new calculations and figures in one working copy, run `python reproduce.py --only headroom --only equal-power --only adaptive --only figures --output reproduced-edition`.
+To reproduce the archived calculations and study figures in one working copy, run `python reproduce.py --only headroom --only equal-power --only adaptive --only figures --output reproduced-edition`.
 
 ## Numerical results
 

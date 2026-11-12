@@ -1,6 +1,6 @@
 # Article and supplementary figures
 
-The current index maps each vector PDF, PNG and plotted-data table to its placement in the article or supplement. Earlier editions retain their original maps. [Current figure index](manifest-headroom.json) · [32-asset edition](manifest-tcom.json) · [29-asset edition](manifest-priced.json) · [27-asset edition](manifest.json)
+For Figs. 2, 4, 5(b), and 6 in the manuscript, use the [plotting scripts and data](../manuscript-figures/README.md). The index below records figure placements in the November 11 edition. Earlier editions retain their original maps. [Current figure index](manifest-headroom.json) · [32-asset edition](manifest-tcom.json) · [29-asset edition](manifest-priced.json) · [27-asset edition](manifest.json)
 
 Run `python reproduce.py --only figures --output rebuilt-figures` from the repository root to redraw the edition. The figure-only entry point is `python -I -B figures/reproduce.py --output rebuilt-figures`. Both commands use a new or empty output directory. To verify the checked-in figures and numerical tables against the current index, run `python -I -B figures/reproduce.py --verify-only`.
 
